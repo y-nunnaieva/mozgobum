@@ -19,6 +19,27 @@
   @include pop(3px, deep(var(--yellow)), 1px);
 }
 
+// Phones: the name in two lines ("Mózgo" / "bum") in the top bar, so the account, theme and menu buttons fit.
+.topbar .brand-name {
+  // Optically centred on the tile, whose shadow makes it look lower.
+  position: relative;
+  top: 2px;
+  font-size: text(lg);
+
+  span {
+    display: block;
+  }
+
+  @include from(sm) {
+    top: 0;
+    font-size: text(xl);
+
+    span {
+      display: inline;
+    }
+  }
+}
+
 .brand-name {
   font: 800 #{text(xl)}/1 $display;
   letter-spacing: -0.02em;
