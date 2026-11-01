@@ -36,10 +36,11 @@ describe("app shell", () => {
 
   it("opens a chapter page with quiz cards", async () => {
     render(<App />);
-    await goTo("#/historia/2");
-    expect(screen.getByRole("heading", { name: "Starożytna Grecja" })).toBeTruthy();
-    expect(screen.getByRole("link", { name: /Graj/ }).getAttribute("href")).toBe("#/historia/2/sprawdzian");
-    expect(screen.getByRole("link", { name: /Statystyki/ }).getAttribute("href")).toBe("#/historia/2/sprawdzian/statystyki");
+    await goTo("#/biologia/1");
+    expect(screen.getByRole("heading", { name: "Podstawy biologii" })).toBeTruthy();
+    expect(screen.getByRole("link", { name: /Graj/ }).getAttribute("href")).toBe("#/biologia/1/sprawdzian");
+    expect(screen.getByRole("link", { name: /Statystyki/ }).getAttribute("href")).toBe("#/biologia/1/sprawdzian/statystyki");
+    expect(screen.getByText(/^0\/\d+ pyta\S+ · podrozdziały 1\.1/)).toBeTruthy();
   });
 
   it("opens a stats page for a quiz", async () => {
@@ -65,7 +66,6 @@ describe("app shell", () => {
     render(<App />);
     await goTo("#/historia/2");
     expect(screen.getByText(/^0\/\d+ pyta\S+ · 1 trudne$/)).toBeTruthy();
-    expect(screen.getByText(/^0\/\d+ pyta\S+ · podrozdziały 2\.1, 2\.2$/)).toBeTruthy();
     expect(screen.getByRole("link", { name: /Moje trudne pytania/ }).getAttribute("href")).toBe("#/historia/2/trudne");
     localStorage.clear();
   });
