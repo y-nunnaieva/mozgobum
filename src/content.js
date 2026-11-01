@@ -87,10 +87,12 @@ export function buildCatalog(modules) {
         }),
       });
       // Each review has its own progress, but no own hard questions: its mistakes land in the subchapters' ones.
+      // A big test can set its own `limit` and keep only the most important questions (`maxLevel`).
       const reviews = (c.reviews ?? []).map((r) => {
-        const limit = REVIEW_LIMITS[r.type ?? "sprawdzian"];
+        const limit = r.limit ?? REVIEW_LIMITS[r.type ?? "sprawdzian"];
         const review = { ...composed("review", r.id, r.title, r.include), review: `${base}/${r.id}`, limit };
-        return keyCount(review) > limit ? withoutDetails(review) : review;
+        if (r.maxLevel) return upToLevel(review, r.maxLevel);
+        return keyCount(review) > limit ? upToLevel(review, 2) : review;
       });
       // One hard-questions round for the whole chapter, gathered from all its own quizzes.
       const hard = composed("chapter-hard", HARD_ID, "Moje trudne pytania", Object.keys(byName));
@@ -107,10 +109,10 @@ export const allQuestions = (quiz) => quiz.sections.flatMap((s) => s.questions);
 const keyCount = (quiz) => new Set(allQuestions(quiz).map((q) => q.key)).size;
 
 // A twin group stays as long as one of its forms is not a detail.
-const withoutDetails = (quiz) => ({
+const upToLevel = (quiz, level) => ({
   ...quiz,
   sections: quiz.sections
-    .map((s) => ({ ...s, questions: s.questions.filter((q) => q.level < 3) }))
+    .map((s) => ({ ...s, questions: s.questions.filter((q) => q.level <= level) }))
     .filter((s) => s.questions.length),
 });
 

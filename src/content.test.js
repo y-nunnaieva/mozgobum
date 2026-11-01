@@ -94,6 +94,16 @@ describe("buildCatalog", () => {
     expect(count(build(mixed))).toBe(60);
   });
 
+  it("lets a review keep only key questions and set its own limit", () => {
+    const qs = [1, 2, 3].map((level, i) => ({ ...q(`000${i + 1}`), level }));
+    const r = buildCatalog({
+      "/content/g/1/chapter.js": { title: "C", reviews: [{ id: "r", title: "R", include: ["1.1"], maxLevel: 1, limit: 120 }] },
+      "/content/g/1/1.1.js": { title: "A", sections: [{ id: "s", name: "S", icon: "x", questions: qs }] },
+    }).quizzes["g/1/r"];
+    expect(r.limit).toBe(120);
+    expect(r.sections[0].questions.map((x) => x.level)).toEqual([1]);
+  });
+
   it("uses the skill as the stats unit for number questions", () => {
     const c = buildCatalog({
       "/content/mat/1/1.1.js": { title: "M", sections: [{ id: "s", questions: [{ type: "number", skill: "nwd", q: "?", answer: "6" }] }] },
