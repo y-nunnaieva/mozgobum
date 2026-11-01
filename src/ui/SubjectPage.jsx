@@ -15,7 +15,7 @@ function loadOpen() {
   }
 }
 
-const quizLabel = (q) => (q.number ? `${q.number} ${q.title}` : q.title);
+const quizLabel = (q) => (q.label ? `${q.label} ${q.title}` : q.title);
 
 export function SubjectPage({ subject: s }) {
   const [open, setOpen] = useState(loadOpen);

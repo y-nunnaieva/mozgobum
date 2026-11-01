@@ -64,7 +64,8 @@ export function buildCatalog(modules) {
       const names = Object.keys(c.subchapters);
       const isNumber = (name) => /^\d+(\.\d+)*$/.test(name);
       const subchapters = names.filter(isNumber).sort(compareNumbers)
-        .map((num) => ownQuiz(num, { kind: "subchapter", number: num }));
+        // `number` orders the files and keeps stats ids stable; `label` is what the UI shows (none in unnumbered subjects).
+        .map((num) => ownQuiz(num, { kind: "subchapter", number: num, label: s.numbered === false ? null : num, icon: c.subchapters[num].icon }));
       // Non-numbered files (e.g. "obliczenia") are extra quizzes of the chapter, not textbook subchapters.
       const practices = names.filter((n) => !isNumber(n)).sort()
         .map((name) => ownQuiz(name, { kind: "practice", number: null, icon: c.subchapters[name].icon }));
@@ -82,7 +83,7 @@ export function buildCatalog(modules) {
         sections: include.map((name) => {
           const q = byName[name];
           if (!q) throw new Error(`${base}/${id} includes missing quiz ${name}`);
-          return { id: name, kind: q.kind, name: q.title, icon: q.icon ?? name, questions: allQuestions(q) };
+          return { id: name, kind: q.kind, name: q.title, label: q.label, icon: q.label ?? q.icon ?? "", questions: allQuestions(q) };
         }),
       });
       // Each review has its own progress, but no own hard questions: its mistakes land in the subchapters' ones.
@@ -115,14 +116,14 @@ const withoutDetails = (quiz) => ({
 
 // "1.1 W świecie organizmów", "Obliczenia · Podsumowanie"
 export function quizName(quiz) {
-  if (quiz.parent && !quiz.number) return `${quiz.parent.title} · ${quiz.title}`;
-  return quiz.number ? `${quiz.number} ${quiz.title}` : quiz.title;
+  if (quiz.parent && !quiz.label) return `${quiz.parent.title} · ${quiz.title}`;
+  return quiz.label ? `${quiz.label} ${quiz.title}` : quiz.title;
 }
 
 // "podrozdziały 1.1, 1.2 + Obliczenia"
 export function reviewScope(review) {
-  const nums = review.sections.filter((s) => s.kind === "subchapter").map((s) => s.id);
-  const extras = review.sections.filter((s) => s.kind !== "subchapter").map((s) => s.name);
+  const nums = review.sections.filter((s) => s.label).map((s) => s.label);
+  const extras = review.sections.filter((s) => !s.label).map((s) => s.name);
   return [nums.length ? `podrozdziały ${nums.join(", ")}` : null, ...extras].filter(Boolean).join(" + ");
 }
 

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { buildCatalog, reviewScope } from "./content.js";
+import { buildCatalog, quizName, reviewScope } from "./content.js";
 import { catalog } from "./catalog.js";
 import { ICONS } from "./icons.js";
 import { validateCatalog } from "./validate.js";
@@ -52,6 +52,20 @@ describe("buildCatalog", () => {
     expect(c.subjects[0].chapters[0].subchapters.map((s) => s.number)).toEqual(["1.2"]);
     expect(c.quizzes["g/1/obliczenia"]).toMatchObject({ kind: "practice", icon: "🧮", title: "Calc" });
     expect(c.quizzes["g/1/obliczenia"].sections[0].questions[0].id).toBe("g/1/obliczenia/0001");
+  });
+
+  it("hides subchapter numbers in an unnumbered subject but keeps them for order and ids", () => {
+    const c = buildCatalog({
+      "/content/en/subject.js": { name: "En", numbered: false },
+      "/content/en/1/chapter.js": { title: "C", reviews: [{ id: "r", title: "R", include: ["1.1", "1.2"] }] },
+      "/content/en/1/1.2.js": { ...sub("Weather", ["0001"]), icon: "☀️" },
+      "/content/en/1/1.1.js": sub("Countries", ["0001"]),
+    });
+    const [first, second] = c.subjects[0].chapters[0].subchapters;
+    expect([first.title, first.label, first.icon, second.label, second.icon]).toEqual(["Countries", null, undefined, null, "☀️"]);
+    expect(quizName(second)).toBe("Weather");
+    expect(second.sections[0].questions[0].id).toBe("en/1/1.2/0001");
+    expect(reviewScope(c.quizzes["en/1/r"])).toBe("Countries + Weather");
   });
 
   it("lets a review include extra chapter quizzes", () => {

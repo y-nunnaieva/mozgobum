@@ -102,7 +102,7 @@ export function QuizPage({ quiz, onPlayingChange }) {
         <span class="pill-text">Rozdział {quiz.path.split("/")[1]}. {quiz.chapterTitle}</span>
       </a>
       <header class="page-head">
-        <span class={`tile tile--head${quiz.number ? " tile--num" : ""}`}>{quiz.number ?? quiz.icon}</span>
+        <span class={`tile tile--head${quiz.label ? " tile--num" : ""}`}>{quiz.label ?? quiz.icon}</span>
         <div>
           <h1>{quiz.title}</h1>
           <p class="muted">{countLabel(allQuestions(quiz))}</p>

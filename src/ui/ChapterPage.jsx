@@ -27,7 +27,7 @@ export function ChapterPage({ subject: s, chapter: c }) {
       <div class="quiz-list">
         {own.map((q) => (
           <a key={q.path} class="banner banner--quiz hue" href={href(q.path)}>
-            <span class={`tile tile--banner${q.number ? " tile--num" : ""}`}>{q.number ?? q.icon}</span>
+            <span class={`tile tile--banner${q.label ? " tile--num" : ""}`}>{q.label ?? q.icon}</span>
             <div class="banner-text">
               <h2 class="heading--5">{q.title}</h2>
               <ProgressMeta quiz={q} stats={stats} />
