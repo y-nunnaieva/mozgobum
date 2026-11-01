@@ -1,0 +1,158 @@
+@use "../abstracts" as *;
+
+.account-page {
+  max-width: 480px;
+}
+
+.account-head {
+  @include stack(space(8));
+}
+
+.account-form {
+  @include stack(space(16));
+}
+
+// Labels look like the other secondary text (.meta).
+.field {
+  @include stack(space(4));
+  color: var(--muted);
+  font-size: text(sm);
+}
+
+.text-input {
+  width: 100%;
+  min-height: 46px;
+  padding: space(8) space(16);
+  font: 500 text(md) $font;
+  color: var(--ink);
+  background: var(--card);
+  @include outlined(radius(12));
+  @include pop(3px, var(--drop), 1px);
+  transition: box-shadow $hover;
+
+  &:focus {
+    outline: none;
+    @include pop(3px, var(--c), 1px);
+  }
+}
+
+.form-error {
+  font-weight: 600;
+  font-size: text(sm);
+  color: var(--bad);
+}
+
+.account-submit {
+  align-self: flex-start;
+}
+
+// Like "Sprawdź" in the game: on the right, 28px below the fields.
+.account-form .account-submit {
+  align-self: flex-end;
+  margin-top: space(12);
+}
+
+.account-add {
+  display: flex;
+  align-self: flex-start;
+  gap: space(8);
+
+  .icon {
+    font-size: 2rem;
+  }
+}
+
+.text-link {
+  font-weight: 600;
+  color: var(--c-ink);
+}
+
+.kid-list {
+  @include stack(space(12));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kid {
+  @include row(space(12));
+  width: 100%;
+  padding: space(12) space(16) space(12) space(12);
+  text-align: left;
+  @include outlined(radius(16));
+  background: var(--card);
+  color: var(--ink);
+  @include pressable(3px, var(--drop), 1px);
+
+  .tile {
+    @include square(42px);
+    font-size: 2.4rem;
+  }
+}
+
+.kid--current {
+  background: var(--tint);
+}
+
+.kid-name {
+  flex: 1;
+  min-width: 0;
+  font-weight: weight(700);
+  font-size: text(lg);
+  overflow-wrap: break-word;
+}
+
+.kid-action {
+  font-weight: 600;
+  font-size: text(sm);
+  color: var(--c-ink);
+}
+
+.account-logout {
+  @include row(space(8));
+  padding: 0;
+  font: 600 text(sm) $font;
+  text-decoration: none;
+  color: var(--muted);
+}
+
+// Above every page while a parent previews a child.
+.viewing-bar {
+  @include row(space(8));
+  margin-bottom: space(24);
+  padding: space(12) space(16);
+  @include outlined(radius(12));
+  @include bare-link;
+  background: var(--tint);
+  font-size: text(sm);
+
+  .icon {
+    font-size: 2rem;
+    color: var(--c-ink);
+  }
+
+  span:nth-child(2) {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+.viewing-change {
+  font-weight: 600;
+  color: var(--c-ink);
+  text-decoration: underline;
+}
+
+.account-btn {
+  @include bare-link;
+  font-size: 2.4rem;
+  color: var(--muted);
+}
+
+.account-btn--in {
+  color: var(--c-ink);
+}
+
+.account-btn--locked {
+  @include locked;
+}

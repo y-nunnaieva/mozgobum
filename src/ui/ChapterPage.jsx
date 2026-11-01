@@ -1,15 +1,14 @@
-import { useState } from "preact/hooks";
 import { chapterMeta } from "../format.js";
 import { hardUnits } from "../modes.js";
 import { href } from "../router.js";
-import { loadStats } from "../stats.js";
+import { useAccount } from "../account.js";
 import { Icon } from "./Icon.jsx";
 import { ProgressMeta } from "./ProgressMeta.jsx";
 import { ReviewBanner } from "./ReviewBanner.jsx";
 
 export function ChapterPage({ subject: s, chapter: c }) {
   const own = [...c.subchapters, ...c.practices];
-  const [stats, setStats] = useState(loadStats);
+  const { stats } = useAccount();
   const hard = hardUnits(c.hard, stats).length;
 
   return (
@@ -38,7 +37,7 @@ export function ChapterPage({ subject: s, chapter: c }) {
         ))}
       </div>
 
-      {c.reviews.map((r) => <ReviewBanner key={r.path} review={r} stats={stats} setStats={setStats} />)}
+      {c.reviews.map((r) => <ReviewBanner key={r.path} review={r} />)}
 
       {hard > 0 && (
         <div class="banner banner--hard hue">

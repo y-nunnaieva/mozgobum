@@ -1,8 +1,9 @@
 import { useState } from "preact/hooks";
 import { allQuestions, quizName } from "../content.js";
-import { clearQuiz, hardUnits, isReview, progress, progressKey, reviewNeed } from "../modes.js";
+import { hardUnits, isReview, progress, progressKey, reviewNeed } from "../modes.js";
 import { href } from "../router.js";
-import { isMastered, loadStats, resetReview, reviewStreak, saveStats } from "../stats.js";
+import { clearQuiz, useAccount } from "../account.js";
+import { isMastered, reviewStreak } from "../stats.js";
 import { Confirm } from "./Confirm.jsx";
 import { Icon } from "./Icon.jsx";
 import { Meter } from "./Meter.jsx";
@@ -45,7 +46,7 @@ function hardRows(quiz, stats) {
 }
 
 export function StatsPage({ quiz }) {
-  const [stats, setStats] = useState(loadStats);
+  const { stats, canClear } = useAccount();
   const [confirming, setConfirming] = useState(false);
   const review = isReview(quiz);
   const back = href(quiz.back ?? quiz.path);
@@ -62,11 +63,9 @@ export function StatsPage({ quiz }) {
   const { done, total } = progress(quiz, stats);
   const last = review && stats.reviews[quiz.review]?.last;
 
-  const clear = () => {
-    const next = review ? resetReview(stats, quiz.review) : clearQuiz(stats, quiz);
-    saveStats(next);
-    setStats(next);
+  const clear = async () => {
     setConfirming(false);
+    await clearQuiz(quiz);
   };
 
   return (
@@ -128,9 +127,11 @@ export function StatsPage({ quiz }) {
         );
       })}
 
-      <button class="link link--danger" onClick={() => setConfirming(true)}>
-        <Icon name="delete" class="pill-icon" />{review ? "Wyzeruj postęp" : "Wyczyść statystykę"}
-      </button>
+      {canClear && (
+        <button class="link link--danger" onClick={() => setConfirming(true)}>
+          <Icon name="delete" class="pill-icon" />{review ? "Wyzeruj postęp" : "Wyczyść statystykę"}
+        </button>
+      )}
 
       {confirming && (
         <Confirm

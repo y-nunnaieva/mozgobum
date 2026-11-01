@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from "preact/hooks";
 import { href } from "../router.js";
-import { buildRound, hardUnits, hasHardMode, isReview, roundSize } from "../modes.js";
+import { buildRound, hardUnits, hasHardMode, roundSize } from "../modes.js";
 import { allQuestions } from "../content.js";
-import { loadStats, recordAnswer, recordReviewAnswer, saveStats } from "../stats.js";
+import { answer as recordAnswer, useAccount } from "../account.js";
 import { starsFor } from "../game.js";
 import { countLabel, pytan } from "../format.js";
 import { Game } from "./Game.jsx";
@@ -19,13 +19,11 @@ export function QuizPage({ quiz, onPlayingChange }) {
   const direct = DIRECT_MODES[quiz.kind];
   const chapterHref = href(`${quiz.subject.id}/${quiz.path.split("/")[1]}`);
   const backHref = quiz.back ? href(quiz.back) : chapterHref;
-  const [stats, setStats] = useState(loadStats);
+  const { stats } = useAccount();
   const [mode, setMode] = useState(direct ?? "all");
   const [round, setRound] = useState(() => (direct ? buildRound(quiz, direct, stats) : []));
   const [view, setView] = useState(direct ? "game" : "menu");
   const [lastGame, setLastGame] = useState(null);
-
-  useEffect(() => saveStats(stats), [stats]);
 
   useEffect(() => onPlayingChange?.(view === "game"), [view]);
   useEffect(() => () => onPlayingChange?.(false), []);
@@ -52,11 +50,7 @@ export function QuizPage({ quiz, onPlayingChange }) {
   };
 
   // Every answer trains the subchapter; a review also keeps its own progress.
-  const answer = (q, ok) =>
-    setStats((s) => {
-      const next = recordAnswer(s, q.unit, ok);
-      return isReview(quiz) ? recordReviewAnswer(next, quiz.review, q.key, ok) : next;
-    });
+  const answer = (q, ok) => recordAnswer(quiz, q, ok);
 
   const finish = ({ total: n, mistakes, answers }) => {
     setLastGame({ total: n, mistakes, stars: starsFor(mistakes, n), answers });
@@ -151,7 +145,7 @@ export function QuizPage({ quiz, onPlayingChange }) {
         </div>
       </section>
 
-      {quiz.summary && <ReviewBanner review={quiz.summary} stats={stats} setStats={setStats} />}
+      {quiz.summary && <ReviewBanner review={quiz.summary} />}
     </main>
   );
 }

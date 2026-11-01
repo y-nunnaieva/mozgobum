@@ -3,7 +3,7 @@ import { allQuestions, reviewScope, statsPath } from "../content.js";
 import { pytan, typowZadan } from "../format.js";
 import { progress } from "../modes.js";
 import { href } from "../router.js";
-import { resetReview, saveStats } from "../stats.js";
+import { resetReview, useAccount } from "../account.js";
 import { Confirm } from "./Confirm.jsx";
 import { Icon } from "./Icon.jsx";
 import { Meter } from "./Meter.jsx";
@@ -13,17 +13,16 @@ const REMIND_AFTER_DAYS = 3;
 const DAY = 24 * 60 * 60 * 1000;
 
 // A chapter review (sprawdzian, kartkówka) or a subchapter summary, with its stats link and reminder.
-export function ReviewBanner({ review: r, stats, setStats }) {
+export function ReviewBanner({ review: r }) {
+  const { stats } = useAccount();
   const [confirming, setConfirming] = useState(false);
   const { done, total } = progress(r, stats);
   const last = stats.reviews[r.review]?.last;
   const days = last ? Math.floor((Date.now() - Date.parse(last)) / DAY) : 0;
   const remind = total > 0 && done === total && days >= REMIND_AFTER_DAYS;
 
-  const reset = () => {
-    const next = resetReview(stats, r.review);
-    saveStats(next);
-    setStats(next);
+  const reset = async () => {
+    await resetReview(r.review);
     location.hash = href(r.path);
   };
 

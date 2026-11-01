@@ -102,6 +102,8 @@
   z-index: z(drawer);
   width: min(86%, 340px);
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--off) transparent;
   @include stack(space(12));
   padding: space(12) space(16) space(20);
   background: var(--card);
@@ -170,16 +172,19 @@
   }
 }
 
+// At least 80px below the subjects on short screens (with the sidebar's 12px gap); lower when there is room.
 .side-foot {
   @include row(space(12));
   margin-top: auto;
+  padding-top: calc(#{space(80)} - #{space(12)});
 
   &:empty {
     display: none;
   }
 }
 
-.side-theme {
+// Shown in the sidebar only from md; on phones these sit in the top bar.
+.side-md {
   display: none;
 
   @include from(md) {

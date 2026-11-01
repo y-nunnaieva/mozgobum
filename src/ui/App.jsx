@@ -1,9 +1,13 @@
 import { useEffect, useState } from "preact/hooks";
+import { useAccount } from "../account.js";
 import { catalog } from "../catalog.js";
 import { STATS_ID, statsPath } from "../content.js";
 import { paletteVar } from "../palette.js";
 import { href, useHashPath } from "../router.js";
 import { useTheme } from "../theme.js";
+import {
+  ACCOUNT_ID, ACCOUNT_PAGES, ChildAccountPage, LOGIN_ID, LoginPage, PARENT_ID, ParentPage, SIGNUP_ID, SignupPage, ViewingBar, accountHref,
+} from "./AccountPages.jsx";
 import { Backdrop } from "./Backdrop.jsx";
 import { ChapterPage } from "./ChapterPage.jsx";
 import { HomePage } from "./HomePage.jsx";
@@ -16,6 +20,7 @@ import { SubjectPage } from "./SubjectPage.jsx";
 export function App() {
   const path = useHashPath();
   const [theme, toggleTheme] = useTheme();
+  const account = useAccount();
   const [drawerOpen, setDrawerOpen] = useState(false);
   // During a round the menus stay visible but dimmed and inert, so leaving goes through "Wyjdź".
   const [playing, setPlaying] = useState(false);
@@ -47,7 +52,13 @@ export function App() {
   }, [drawerOpen]);
 
   let content;
-  if (!path) content = <HomePage subjects={catalog.subjects} />;
+  // Pages built from stats wait for the account, so a round is never drawn from empty stats.
+  if (account.status === "loading") content = null;
+  else if (!path) content = <HomePage subjects={catalog.subjects} />;
+  else if (path === LOGIN_ID) content = <LoginPage />;
+  else if (path === SIGNUP_ID) content = <SignupPage />;
+  else if (path === PARENT_ID) content = <ParentPage />;
+  else if (path === ACCOUNT_ID) content = <ChildAccountPage />;
   else if (quiz) content = <QuizPage key={path} quiz={quiz} onPlayingChange={setPlaying} />;
   else if (statsQuiz) content = <StatsPage key={path} quiz={statsQuiz} />;
   else if (subject && !chapterId) content = <SubjectPage key={path} subject={subject} />;
@@ -70,6 +81,18 @@ export function App() {
     </button>
   );
 
+  const accountButton = (
+    <a
+      class={`icon-btn account-btn${account.status === "guest" ? "" : " account-btn--in"}${playing ? " account-btn--locked" : ""}`}
+      href={accountHref(account.status)}
+      inert={playing}
+      aria-label={account.profile ? `Konto · ${account.profile.nick}` : "Zaloguj się"}
+      title={account.profile ? account.profile.nick : "Zaloguj się"}
+    >
+      <Icon name="account_circle" />
+    </a>
+  );
+
   return (
     <>
       <Backdrop subject={subject} subjects={catalog.subjects} />
@@ -78,6 +101,7 @@ export function App() {
           <div class="container topbar-inner">
             <Brand locked={playing} />
             <div class="topbar-actions">
+              {accountButton}
               {themeButton}
               <button
                 class={`icon-btn menu-btn${playing ? " menu-btn--locked" : ""}`}
@@ -120,11 +144,11 @@ export function App() {
                   <Icon name="bar_chart" />
                 </a>
               )}
-              <span class="side-theme">{themeButton}</span>
+              <span class="side-md">{accountButton}{themeButton}</span>
             </div>
           </nav>
           {drawerOpen && <div class="drawer-backdrop" onClick={() => setDrawerOpen(false)} />}
-          <div class="page"><div class="container">{content}</div></div>
+          <div class="page"><div class="container">{!ACCOUNT_PAGES.includes(path) && <ViewingBar />}{content}</div></div>
         </div>
       </div>
     </>

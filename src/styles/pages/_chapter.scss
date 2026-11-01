@@ -2,7 +2,7 @@
 
 // Chapter, subchapter and stats pages share their layout: header with a tile, back link,
 // banners with an icon and actions, a card grid.
-$pages: ":is(.chapter-page, .quiz-page, .stats-view, .not-found)";
+$pages: ":is(.chapter-page, .quiz-page, .stats-view, .not-found, .account-page)";
 
 // This page keeps its phone sizes up to ml (900px); the rules below switch there, not at md.
 

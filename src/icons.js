@@ -1,5 +1,6 @@
 import abcSvg from "@material-symbols/svg-500/rounded/abc-fill.svg?raw";
 import accountBalanceSvg from "@material-symbols/svg-500/rounded/account_balance-fill.svg?raw";
+import accountCircleSvg from "@material-symbols/svg-500/rounded/account_circle-fill.svg?raw";
 import arrowBackSvg from "@material-symbols/svg-500/rounded/arrow_back-fill.svg?raw";
 import arrowForwardSvg from "@material-symbols/svg-500/rounded/arrow_forward-fill.svg?raw";
 import assignmentTurnedInSvg from "@material-symbols/svg-500/rounded/assignment_turned_in-fill.svg?raw";
@@ -20,6 +21,7 @@ import ecoSvg from "@material-symbols/svg-500/rounded/eco-fill.svg?raw";
 import editSvg from "@material-symbols/svg-500/rounded/edit-fill.svg?raw";
 import errorSvg from "@material-symbols/svg-500/rounded/error-fill.svg?raw";
 import exploreSvg from "@material-symbols/svg-500/rounded/explore-fill.svg?raw";
+import faceSvg from "@material-symbols/svg-500/rounded/face-fill.svg?raw";
 import flagSvg from "@material-symbols/svg-500/rounded/flag-fill.svg?raw";
 import formatQuoteSvg from "@material-symbols/svg-500/rounded/format_quote-fill.svg?raw";
 import functionsSvg from "@material-symbols/svg-500/rounded/functions-fill.svg?raw";
@@ -35,11 +37,13 @@ import lightbulbSvg from "@material-symbols/svg-500/rounded/lightbulb-fill.svg?r
 import localFireDepartmentSvg from "@material-symbols/svg-500/rounded/local_fire_department-fill.svg?raw";
 import localFloristSvg from "@material-symbols/svg-500/rounded/local_florist-fill.svg?raw";
 import localLibrarySvg from "@material-symbols/svg-500/rounded/local_library-fill.svg?raw";
+import logoutSvg from "@material-symbols/svg-500/rounded/logout-fill.svg?raw";
 import mapSvg from "@material-symbols/svg-500/rounded/map-fill.svg?raw";
 import menuBookSvg from "@material-symbols/svg-500/rounded/menu_book-fill.svg?raw";
 import militaryTechSvg from "@material-symbols/svg-500/rounded/military_tech-fill.svg?raw";
 import mountainFlagSvg from "@material-symbols/svg-500/rounded/mountain_flag-fill.svg?raw";
 import percentSvg from "@material-symbols/svg-500/rounded/percent-fill.svg?raw";
+import personAddSvg from "@material-symbols/svg-500/rounded/person_add-fill.svg?raw";
 import petsSvg from "@material-symbols/svg-500/rounded/pets-fill.svg?raw";
 import pieChartSvg from "@material-symbols/svg-500/rounded/pie_chart-fill.svg?raw";
 import publicSvg from "@material-symbols/svg-500/rounded/public-fill.svg?raw";
@@ -48,6 +52,7 @@ import spellcheckSvg from "@material-symbols/svg-500/rounded/spellcheck-fill.svg
 import squareFootSvg from "@material-symbols/svg-500/rounded/square_foot-fill.svg?raw";
 import theaterComedySvg from "@material-symbols/svg-500/rounded/theater_comedy-fill.svg?raw";
 import translateSvg from "@material-symbols/svg-500/rounded/translate-fill.svg?raw";
+import visibilitySvg from "@material-symbols/svg-500/rounded/visibility-fill.svg?raw";
 import waterDropSvg from "@material-symbols/svg-500/rounded/water_drop-fill.svg?raw";
 import wavesSvg from "@material-symbols/svg-500/rounded/waves-fill.svg?raw";
 
@@ -55,6 +60,7 @@ import wavesSvg from "@material-symbols/svg-500/rounded/waves-fill.svg?raw";
 export const ICONS = {
   abc: abcSvg,
   account_balance: accountBalanceSvg,
+  account_circle: accountCircleSvg,
   arrow_back: arrowBackSvg,
   arrow_forward: arrowForwardSvg,
   assignment_turned_in: assignmentTurnedInSvg,
@@ -75,6 +81,7 @@ export const ICONS = {
   edit: editSvg,
   error: errorSvg,
   explore: exploreSvg,
+  face: faceSvg,
   flag: flagSvg,
   format_quote: formatQuoteSvg,
   functions: functionsSvg,
@@ -90,11 +97,13 @@ export const ICONS = {
   local_fire_department: localFireDepartmentSvg,
   local_florist: localFloristSvg,
   local_library: localLibrarySvg,
+  logout: logoutSvg,
   map: mapSvg,
   menu_book: menuBookSvg,
   military_tech: militaryTechSvg,
   mountain_flag: mountainFlagSvg,
   percent: percentSvg,
+  person_add: personAddSvg,
   pets: petsSvg,
   pie_chart: pieChartSvg,
   public: publicSvg,
@@ -103,6 +112,7 @@ export const ICONS = {
   square_foot: squareFootSvg,
   theater_comedy: theaterComedySvg,
   translate: translateSvg,
+  visibility: visibilitySvg,
   water_drop: waterDropSvg,
   waves: wavesSvg,
 };
