@@ -67,16 +67,18 @@ export function SubjectPage({ subject: s }) {
                       <Icon name="arrow_forward" class="arrow" />
                     </a>
                   </div>
-                  {isOpen && (
-                    <ul class="chapter-quizzes">
-                      {quizzes.map((q) => (
-                        <li key={q.path} class={`quiz-row quiz-row--${q.kind}`}>
-                          <span class="quiz-row-dot" />
-                          <span class="quiz-row-name">{quizLabel(q)}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                  <div class={`chapter-panel${isOpen ? " chapter-panel--open" : ""}`} inert={!isOpen}>
+                    <div class="chapter-panel-inner">
+                      <ul class="chapter-quizzes">
+                        {quizzes.map((q) => (
+                          <li key={q.path} class={`quiz-row quiz-row--${q.kind}`}>
+                            <span class="quiz-row-dot" />
+                            <span class="quiz-row-name">{quizLabel(q)}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               );
             })}
