@@ -1,0 +1,154 @@
+@use "../abstracts" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  --page-bg: var(--page);
+  font-size: 62.5%;
+  background: var(--page-bg);
+  transition: background-color 0.3s;
+
+  &.subject {
+    --page-bg: color-mix(in oklab, var(--c) var(--page-mix), var(--page));
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--page-bg);
+  color: var(--ink);
+  font-family: $font;
+  font-size: text(md);
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+// The tag keeps the document outline, a .heading--N class sets the look: <h2 class="heading--4">.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading--1,
+.heading--2,
+.heading--3,
+.heading--4,
+.heading--5,
+.heading--6 {
+  margin: 0;
+  font-family: $display;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h1,
+.heading--1 {
+  font-weight: weight(800);
+  font-size: heading(1);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+
+  @include from(md) {
+    font-size: heading(1, md);
+  }
+
+  @include from(lg) {
+    font-size: heading(1, lg);
+  }
+}
+
+h2,
+.heading--2 {
+  font-weight: weight(700);
+  font-size: heading(2);
+
+  @include from(md) {
+    font-size: heading(2, md);
+  }
+
+  @include from(lg) {
+    font-size: heading(2, lg);
+  }
+}
+
+h3,
+.heading--3 {
+  font-weight: weight(800);
+  font-size: heading(3);
+  letter-spacing: -0.01em;
+
+  @include from(md) {
+    font-size: heading(3, md);
+  }
+
+  @include from(lg) {
+    font-size: heading(3, lg);
+  }
+}
+
+h4,
+.heading--4 {
+  font-weight: weight(700);
+  font-size: heading(4);
+  letter-spacing: -0.01em;
+
+  @include from(md) {
+    font-size: heading(4, md);
+  }
+
+  @include from(lg) {
+    font-size: heading(4, lg);
+  }
+}
+
+h5,
+.heading--5 {
+  font-weight: weight(700);
+  font-size: heading(5);
+  letter-spacing: -0.01em;
+
+  @include from(md) {
+    font-size: heading(5, md);
+  }
+}
+
+h6,
+.heading--6 {
+  font-weight: weight(700);
+  font-size: heading(6);
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--deep);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}

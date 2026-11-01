@@ -1,0 +1,234 @@
+@use "../abstracts" as *;
+
+// The button itself never moves: Chrome drops clicks near the edge of a transformed
+// button. Only its face (::before) and content slide.
+.icon-btn {
+  @include square(42px);
+  @include center;
+  @include steady-hit;
+  isolation: isolate;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: text(lg);
+  font-weight: weight(700);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    @include outlined(radius(12));
+    background: var(--card);
+    @include pop(3px, var(--drop), 1px);
+  }
+
+  &::before,
+  > * {
+    transition: transform $glide ease-out, box-shadow $glide ease-out;
+  }
+
+  @include on-hover {
+    &:hover:not(:disabled) {
+      &::before,
+      > * {
+        transform: translate(-1px, -1px);
+      }
+
+      &::before {
+        @include pop(4px, var(--drop), 1px);
+      }
+    }
+  }
+
+  &:active:not(:disabled) {
+    &::before,
+    > * {
+      transform: translate(2px, 2px);
+      transition-duration: $press;
+    }
+
+    &::before {
+      @include pop(1px);
+    }
+  }
+}
+
+.theme-btn,
+.side-stats {
+  font-size: 2.2rem;
+}
+
+.theme-btn {
+  color: var(--purple);
+}
+
+.side-stats {
+  @include bare-link;
+  color: var(--c-ink);
+}
+
+.side-stats--locked {
+  @include locked;
+}
+
+.theme-btn--dark {
+  color: var(--yellow);
+}
+
+.stats-btn {
+  @include square(48px);
+  @include bare-link;
+  font-size: 2.8rem;
+  color: var(--c-ink);
+}
+
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: space(4);
+
+  span {
+    width: 18px;
+    height: 2.5px;
+    border-radius: 2px;
+    background: var(--ink);
+  }
+
+  span:last-child {
+    width: 12px;
+    margin-right: 6px;
+  }
+
+  @include from(md) {
+    display: none;
+  }
+}
+
+.menu-btn--locked {
+  @include locked;
+}
+
+.primary,
+.secondary {
+  min-height: 56px;
+  padding: space(16) space(40);
+  @include outlined(radius(12));
+  font: 700 text(lg) $display;
+  @include pressable(3px, var(--drop), 1px);
+}
+
+.primary {
+  background: var(--c);
+  color: var(--on-color);
+
+  &:disabled {
+    background: var(--disabled);
+    color: var(--muted);
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+}
+
+.primary--next {
+  background: var(--outline);
+  color: var(--white);
+  font-weight: weight(700);
+  @include pressable(3px, var(--c), 1px);
+}
+
+.secondary {
+  background: var(--card);
+  color: var(--ink);
+}
+
+// Inside a clickable card: the whole card presses the button.
+.btn {
+  @include center;
+  min-height: 46px;
+  padding: 0 space(24);
+  @include outlined(radius(12));
+  background: var(--c);
+  color: var(--on-color);
+  font: 700 text(md) $font;
+  @include pop(3px, var(--drop), 1px);
+  @include steady-hit;
+  transition: transform $hover, box-shadow $hover;
+
+  @include bare-link;
+  color: var(--on-color);
+
+  @include from(ml) {
+    font-size: text(lg);
+  }
+
+  @include on-hover {
+    .banner:is(a, button):hover &,
+    &:is(a, button):hover {
+      transform: translate(-1px, -1px);
+      @include pop(4px, var(--drop), 1px);
+    }
+  }
+
+  .banner:is(a, button):active &,
+  &:is(a, button):active {
+    transition-duration: $press;
+    transform: translate(2px, 2px);
+    @include pop(1px);
+  }
+}
+
+.btn--secondary {
+  background: var(--card);
+  color: var(--ink);
+  font-weight: weight(700);
+}
+
+.pill {
+  align-self: flex-start;
+  @include row(space(8));
+  min-height: 44px;
+  padding: space(8) space(16) space(8) space(12);
+  @include outlined($pill);
+  background: var(--card);
+  @include bare-link;
+  font: 600 text(sm) $font;
+  transition: background-color $hover;
+
+  @include on-hover {
+    &:hover {
+      background: var(--tint);
+    }
+  }
+}
+
+.pill-icon {
+  @include square(24px);
+  padding: space(4);
+  border-radius: $shape;
+  background: var(--c);
+  color: var(--on-color);
+}
+
+.link {
+  align-self: flex-start;
+  padding: space(8);
+  border: none;
+  border-radius: radius(8);
+  background: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: background-color $hover;
+}
+
+.link--danger {
+  color: var(--bad);
+
+  @include on-hover {
+    &:hover {
+      background: var(--bad-tint);
+    }
+  }
+}

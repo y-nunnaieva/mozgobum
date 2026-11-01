@@ -1,0 +1,199 @@
+@use "../abstracts" as *;
+
+.shell {
+  position: relative;
+  z-index: z(shell);
+  min-height: 100vh;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: z(topbar);
+  padding: space(12) 0 space(16);
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border-bottom: $border solid var(--edge);
+
+  @include from(md) {
+    .shell:not(.shell--home) & {
+      display: none;
+    }
+  }
+}
+
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: space(12);
+}
+
+.topbar-actions {
+  @include row(space(8));
+}
+
+.layout {
+  display: flex;
+  align-items: flex-start;
+}
+
+.page {
+  flex: 1;
+  min-width: 0;
+  padding: space(40) 0;
+
+  @include from(md) {
+    padding-bottom: space(64);
+  }
+
+  .shell:not(.shell--home) & {
+    padding-top: space(32);
+  }
+}
+
+// The same content column for the header and every page.
+.container {
+  box-sizing: content-box;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: $gutter;
+
+  @include from(md) {
+    padding-inline: space(28);
+  }
+}
+
+.view {
+  @include stack(space(32));
+  padding-right: $shadow-room;
+}
+
+.home-page {
+  gap: space(64);
+
+  @include from(md) {
+    gap: space(80);
+  }
+
+  @include from(xl) {
+    gap: space(96);
+  }
+}
+
+.subject-page {
+  gap: space(64);
+
+  .block {
+    gap: space(16);
+  }
+}
+
+.chapter-page,
+.quiz-page,
+.stats-view {
+  gap: space(24);
+}
+
+// A drawer on phones, a sticky sidebar from md up.
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: z(drawer);
+  width: min(86%, 340px);
+  overflow-y: auto;
+  @include stack(space(12));
+  padding: space(12) space(16) space(20);
+  background: var(--card);
+  border-right: $border solid var(--edge);
+  transform: translateX(-100%);
+  visibility: hidden;
+  transition: transform $slow ease, visibility $slow;
+
+  @include from(md) {
+    position: sticky;
+    top: 0;
+    z-index: z(sidebar);
+    width: 288px;
+    height: 100vh;
+    flex: none;
+    padding: space(24) space(16);
+    border-right: none;
+    box-shadow: 1px 0 0 var(--line), 8px 0 32px var(--line);
+    transform: none;
+    visibility: visible;
+    transition: none;
+
+    .shell--home & {
+      display: none;
+    }
+  }
+
+  @include from(lg) {
+    padding-inline: space(20);
+  }
+}
+
+.sidebar--open {
+  transform: none;
+  visibility: visible;
+}
+
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: z(drawer-backdrop);
+  background: var(--overlay);
+
+  @include from(md) {
+    display: none;
+  }
+}
+
+.drawer-head {
+  @include stack(space(24));
+
+  .icon-btn {
+    align-self: flex-end;
+  }
+
+  @include from(md) {
+    margin-top: space(64);
+
+    .icon-btn {
+      display: none;
+    }
+  }
+
+  @include from(lg) {
+    margin-top: space(80);
+  }
+}
+
+.side-foot {
+  @include row(space(12));
+  margin-top: auto;
+
+  &:empty {
+    display: none;
+  }
+}
+
+.side-theme {
+  display: none;
+
+  @include from(md) {
+    display: contents;
+  }
+}
+
+.side-head {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: space(12);
+
+  @include from(md) {
+    display: flex;
+  }
+}

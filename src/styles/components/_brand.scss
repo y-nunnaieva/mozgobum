@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+
+.brand {
+  @include row(space(8));
+  @include bare-link;
+}
+
+.brand--locked {
+  @include locked;
+}
+
+.brand-mark {
+  @include square(42px);
+  @include center;
+  border-radius: radius(12);
+  background: var(--yellow);
+  color: var(--on-color);
+  font-size: 2.4rem;
+  @include pop(3px, deep(var(--yellow)), 1px);
+}
+
+.brand-name {
+  font: 800 #{text(xl)}/1 $display;
+  letter-spacing: -0.02em;
+
+  span {
+    color: var(--blue);
+  }
+}

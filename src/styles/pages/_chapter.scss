@@ -1,0 +1,455 @@
+@use "../abstracts" as *;
+
+// Chapter, subchapter and stats pages share their layout: header with a tile, back link,
+// banners with an icon and actions, a card grid.
+$pages: ":is(.chapter-page, .quiz-page, .stats-view, .not-found)";
+
+// This page keeps its phone sizes up to ml (900px); the rules below switch there, not at md.
+
+// Card titles keep their phone size up to ml.
+:is(#{$pages} .banner--quiz, #{$pages} .block) .heading--5 {
+  @include from(md) {
+    font-size: heading(5);
+  }
+
+  @include from(ml) {
+    font-size: heading(5, md);
+  }
+}
+
+// Card tiles stay a step smaller than the header tile (48 / 56 / 60).
+#{$pages} .banner {
+  --tile: 42px;
+
+  @include from(ml) {
+    --tile: 44px;
+  }
+
+  @include from(lg) {
+    --tile: 48px;
+  }
+}
+
+#{$pages} .tile--banner {
+  @include square(var(--tile));
+  font-size: text(xl);
+
+  @include from(ml) {
+    font-size: 2.4rem;
+  }
+
+  @include from(lg) {
+    font-size: text(2xl);
+  }
+}
+
+#{$pages} .banner {
+  gap: space(12);
+  padding: space(16);
+
+  @include from(ml) {
+    gap: space(20);
+    padding: space(20);
+  }
+}
+
+// The reminder card below a banner keeps the banner's padding.
+#{$pages} .review-hint {
+  padding: space(16);
+
+  @include from(ml) {
+    padding: space(20);
+  }
+}
+
+// Centred on the number tile, i.e. on the first line of the title.
+#{$pages} .banner--quiz:has(> .tile--num) .banner-arrow {
+  align-self: flex-start;
+  margin-top: calc((var(--tile) - 2.4rem) / 2);
+}
+
+// Numbers are sized to the smaller tile, not to the card title.
+#{$pages} .banner--quiz .tile--num {
+  font-size: text(md);
+
+  @include from(ml) {
+    font-size: text(lg);
+  }
+
+  @include from(lg) {
+    font-size: heading(5, md);
+  }
+}
+
+// Icon tiles are centred on the first line of the title (numbers use the baseline rule
+// in _tile.scss). Whichever is shorter, tile or title line, is pushed down to match.
+#{$pages} .banner:not(:has(> .tile--num)) {
+  --title-top: 0px;
+  --title-lh: calc(#{heading(4)} * 1.2);
+  --title-center: calc(var(--title-top) + var(--title-lh) / 2);
+  align-items: flex-start;
+
+  @include from(ml) {
+    --title-lh: calc(#{heading(4, md)} * 1.2);
+  }
+
+  @include from(lg) {
+    --title-lh: calc(#{heading(4, lg)} * 1.2);
+  }
+
+  &:has(.eyebrow) {
+    --title-top: calc(#{text(xs)} + #{space(4)});
+  }
+
+  // A tight line box brings the eyebrow closer to the title.
+  .eyebrow {
+    line-height: 1;
+  }
+
+  > .tile {
+    margin-top: max(0px, calc(var(--title-center) - var(--tile) / 2));
+  }
+
+  > .banner-text {
+    padding-top: max(0px, calc(var(--tile) / 2 - var(--title-center)));
+  }
+
+  > .banner-arrow {
+    align-self: flex-start;
+    margin-top: calc(max(var(--title-center), var(--tile) / 2) - 1.2rem);
+  }
+
+  > .banner-actions,
+  > .btn {
+    align-self: center;
+  }
+}
+
+#{$pages} .banner--quiz:not(:has(> .tile--num)) {
+  --title-lh: calc(#{heading(5)} * 1.2);
+
+  @include from(ml) {
+    --title-lh: calc(#{heading(5, md)} * 1.2);
+  }
+
+  @include from(lg) {
+    --title-lh: calc(#{heading(5, md)} * 1.2);
+  }
+}
+
+// An emoji fills its whole box, so it needs a smaller size than the icons next to it.
+#{$pages} .banner--quiz .tile--banner:not(.tile--num) {
+  font-size: 1.6rem;
+
+  @include from(ml) {
+    font-size: 1.8rem;
+  }
+
+  @include from(lg) {
+    font-size: 2rem;
+  }
+}
+
+// Action buttons follow the card tile (42 / 44 / 48).
+#{$pages} :is(.banner, .review-hint) {
+  .stats-btn {
+    @include square(36px);
+    font-size: text(xl);
+  }
+
+  .btn {
+    min-height: 36px;
+    padding: 0 space(24);
+  }
+
+  @include from(ml) {
+    .stats-btn {
+      @include square(38px);
+    }
+
+    .btn {
+      min-height: 38px;
+      padding: 0 space(28);
+    }
+  }
+
+  @include from(lg) {
+    .stats-btn {
+      @include square(40px);
+      font-size: 2.4rem;
+    }
+
+    .btn {
+      min-height: 40px;
+    }
+  }
+}
+
+// Columns are fixed per breakpoint: actions below the text on phones, beside it from sm,
+// below again from md (the sidebar narrows the card) and beside from ml.
+#{$pages} .banner:not(.banner--quiz) {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+
+  > .banner-text {
+    min-width: 0;
+  }
+
+  > .banner-actions,
+  > .btn {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  // $space-before: extra room between the text and the actions (on top of the column gap).
+  @mixin beside($space-before) {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+
+    > .banner-actions,
+    > .btn {
+      grid-column: auto;
+      margin-left: $space-before;
+    }
+  }
+
+  @mixin below {
+    grid-template-columns: auto minmax(0, 1fr);
+
+    > .banner-actions,
+    > .btn {
+      grid-column: 1 / -1;
+      margin-left: 0;
+    }
+  }
+
+  @include from(sm) {
+    @include beside(space(20));
+  }
+
+  @include from(md) {
+    @include below;
+  }
+
+  @include from(ml) {
+    @include beside(space(12));
+  }
+}
+
+// Global sizes that switch at md elsewhere wait for ml here.
+#{$pages} {
+  .page-head {
+    > div {
+      @include from(md) {
+        gap: space(4);
+      }
+
+      @include from(ml) {
+        gap: space(8);
+      }
+    }
+
+  }
+
+  // A step above the subchapter titles: 20 vs 18 on phones, 22 vs 20 from ml, 24 vs 20 from lg.
+  .banner .heading--4 {
+    @include from(md) {
+      font-size: heading(4);
+    }
+
+    @include from(ml) {
+      font-size: heading(4, md);
+    }
+
+    @include from(lg) {
+      font-size: heading(4, lg);
+    }
+  }
+}
+
+// Fixed columns: one until xl, then two.
+#{$pages} :is(.quiz-list, .section-grid) {
+  grid-template-columns: minmax(0, 1fr);
+
+  @include from(xl) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+// The banners below the grid follow its row gap.
+#{$pages} {
+  @include from(xl) {
+    gap: space(28);
+  }
+}
+
+// Section heading and its grid, as on the subject page.
+#{$pages} .block {
+  gap: space(12);
+  margin-top: space(8);
+}
+
+.quiz-page .section-card {
+  gap: space(12);
+
+  @include from(ml) {
+    gap: space(16);
+  }
+}
+
+// Chapter and subchapter titles can be long: the header uses level 3, a smaller tile and a number one
+// level below the title. Unlike the rest of the page, it grows from sm. A word longer than
+// the line breaks instead of overflowing.
+#{$pages} .page-head {
+  // Tile size and title line height: the tile is centred on the title's first line.
+  --tile: 48px;
+  --title-lh: calc(#{heading(3)} * 1.05);
+  gap: space(12);
+  align-items: flex-start;
+
+  @include from(sm) {
+    --tile: 56px;
+    --title-lh: calc(#{heading(3, md)} * 1.05);
+    --nudge: 2px;
+  }
+
+  @include from(lg) {
+    --tile: 64px;
+    --title-lh: calc(#{heading(2, md)} * 1.05);
+    --nudge: 3px;
+  }
+
+  @include from(xl) {
+    --title-lh: calc(#{heading(2, lg)} * 1.05);
+  }
+
+  // --nudge: from sm the title optically sits high next to the number.
+  > div {
+    padding-top: max(0px, calc((var(--tile) - var(--title-lh)) / 2 + var(--nudge, 0px)));
+  }
+
+  > .tile--num {
+    font-size: heading(4);
+
+    @include from(sm) {
+      font-size: heading(4, md);
+    }
+
+    @include from(lg) {
+      font-size: heading(4, lg);
+    }
+  }
+
+  h1 {
+    overflow-wrap: break-word;
+    font-size: heading(3);
+
+    @include from(sm) {
+      font-size: heading(3, md);
+    }
+
+    // Larger than level 3 on wide screens: the title is the page's only big heading.
+    @include from(lg) {
+      max-width: 80%;
+      font-size: heading(2, md);
+      text-wrap: pretty;
+    }
+
+    @include from(xl) {
+      max-width: 68%;
+      font-size: heading(2, lg);
+    }
+  }
+
+  > .tile--head {
+    @include square(var(--tile));
+  }
+}
+
+// Subchapter numbers (1.1) are wider than chapter ones, so they get one size less.
+.quiz-page .page-head > .tile--num {
+  font-size: heading(5);
+
+  @include from(sm) {
+    font-size: heading(5, md);
+  }
+
+  @include from(lg) {
+    font-size: heading(4, md);
+  }
+}
+
+// Section cards are small, so their grid is tighter than the main card grid.
+.quiz-page .section-grid {
+  gap: space(16);
+
+  @include from(xl) {
+    gap: space(20);
+  }
+}
+
+// Same tile size as the other cards; the icon is centred on the first line of the name
+// (line height 1.25).
+.quiz-page .section-card {
+  --tile: 42px;
+  --name: #{text(md)};
+  align-items: flex-start;
+
+  @include from(ml) {
+    --tile: 44px;
+    --name: #{text(lg)};
+  }
+
+  .section-text b {
+    font-size: var(--name);
+  }
+
+  @include from(lg) {
+    --tile: 48px;
+  }
+
+  .tile--section {
+    @include square(var(--tile));
+  }
+
+  .section-text {
+    padding-top: calc((var(--tile) - var(--name) * 1.25) / 2);
+  }
+}
+
+// Back link: text with the arrow tile, no pill. Only as tall as the 24px tile; the invisible
+// frame keeps a 44px tap area. With the sidebar (md+) its centre lines up with the logo
+// (42px at the 24px sidebar padding vs the 32px page padding).
+#{$pages} .pill {
+  @include steady-hit(10px);
+  min-height: 0;
+  // Keeps the space below as it was with the 44px-tall link.
+  margin-bottom: calc((44px - 24px) / 2);
+  padding: 0;
+
+  @include from(md) {
+    margin-top: calc(#{space(24)} + (42px - 24px) / 2 - #{space(32)});
+  }
+  border: none;
+  background: none;
+  color: var(--muted);
+  transition: color $hover;
+
+  align-items: flex-start;
+
+  .pill-icon {
+    border-radius: radius(8);
+  }
+
+  // The arrow is centred on the first line when the label wraps.
+  .pill-text {
+    padding-top: calc((24px - 1lh) / 2);
+  }
+
+  @include on-hover {
+    &:hover {
+      background: none;
+      color: var(--c-ink);
+    }
+  }
+}

@@ -1,0 +1,202 @@
+@use "../abstracts" as *;
+
+.subject-page {
+  gap: space(48);
+
+  @include from(md) {
+    gap: space(32);
+  }
+}
+
+.subject-head {
+  @include stack(space(12));
+  align-items: flex-start;
+
+  .muted {
+    font-size: text(md);
+  }
+}
+
+.subject-meta {
+  @include row(space(8));
+
+  &::before {
+    content: "";
+    @include square(8px);
+    border-radius: 50%;
+    background: var(--alt);
+  }
+}
+
+// Dark text on the subject colour: keeps its weight in the dark theme too.
+.subject-title {
+  padding: space(16) space(24);
+  font-weight: 800;
+  font-size: heading(2);
+  border-radius: radius(32) radius(12);
+  background: var(--c);
+  color: var(--on-color);
+  @include pop(4px, var(--deep));
+
+  @include from(md) {
+    padding: space(16) space(28);
+    font-size: heading(2, md);
+  }
+
+  @include from(lg) {
+    font-size: heading(2, lg);
+  }
+}
+
+.chapter-list {
+  @include stack(space(2));
+  overflow: hidden;
+  @include outlined(radius(24), var(--c));
+  background: var(--soft);
+  @include pop(5px, var(--deep));
+}
+
+.chapter-row {
+  background: var(--card);
+}
+
+.chapter-main {
+  @include row(space(12), flex-start);
+  padding: space(12);
+
+  @include from(md) {
+    padding-inline: space(16);
+  }
+}
+
+.chevron {
+  --size: 30px;
+  @include square(var(--size));
+  order: 1;
+  // Centred on the number tile (42px, inside the link's 4px padding).
+  margin-top: calc(#{space(4)} + (42px - var(--size)) / 2);
+  @include center;
+  padding: 0;
+  border: none;
+  border-radius: radius(12);
+  background: var(--tint);
+  color: var(--c-ink);
+  font-size: 2rem;
+  transition: background-color $hover;
+
+  @include from(md) {
+    order: 0;
+  }
+
+  @include on-hover {
+    &:hover {
+      background: var(--soft);
+    }
+  }
+
+  &[aria-expanded="true"] .icon {
+    rotate: 180deg;
+  }
+}
+
+.chapter-link {
+  flex: 1;
+  min-width: 0;
+  @include row(space(12));
+  padding: space(4) 0;
+
+  @include from(md) {
+    gap: space(16);
+  }
+  border-radius: radius(12);
+  @include bare-link;
+
+  @include on-hover {
+    &:hover .chapter-name {
+      color: var(--c-ink);
+    }
+  }
+
+  .arrow {
+    display: none;
+    align-self: flex-start;
+    // Centred on the number tile (42px).
+    margin-top: calc((42px - 2.4rem) / 2);
+    font-size: 2.4rem;
+    color: var(--c-ink);
+
+    @include from(md) {
+      display: block;
+    }
+  }
+}
+
+.chapter-text {
+  flex: 1;
+  min-width: 0;
+  @include stack(space(2));
+
+  @include from(md) {
+    gap: space(4);
+  }
+}
+
+.chapter-name {
+  transition: color $hover;
+}
+
+.chapter-quizzes {
+  display: flex;
+  flex-direction: column;
+  margin: 0 space(12) space(20);
+  padding: 0;
+  list-style: none;
+  border-left: $border dashed var(--soft);
+
+  @include from(md) {
+    margin: 0 space(16) space(20) space(64);
+  }
+}
+
+.quiz-row {
+  @include row(space(12), flex-start);
+  padding: space(4) space(12);
+  font-size: text(md);
+
+  @include from(md) {
+    padding-block: space(8);
+  }
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.quiz-row-dot {
+  @include square(10px);
+  flex: none;
+  // Centred on the first line of the name.
+  margin-top: calc((1lh - 10px) / 2);
+  border-radius: $shape;
+  background: var(--card);
+  border: $border solid var(--c);
+
+  .quiz-row--review & {
+    background: var(--alt);
+    border-color: var(--alt);
+  }
+}
+
+.quiz-row-name {
+  flex: 1;
+  min-width: 0;
+  font-weight: weight(500);
+
+  .quiz-row--review & {
+    font-weight: weight(700);
+  }
+}

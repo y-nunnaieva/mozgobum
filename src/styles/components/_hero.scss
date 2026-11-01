@@ -1,0 +1,74 @@
+@use "../abstracts" as *;
+
+.deco {
+  position: absolute;
+}
+
+.hero-text {
+  position: relative;
+  @include stack(space(12));
+
+  p {
+    max-width: 420px;
+    font-size: text(md);
+  }
+}
+
+.welcome {
+  @include row(space(24));
+  flex-wrap: wrap;
+  margin-top: space(24);
+
+  @include from(md) {
+    margin-top: space(40);
+  }
+
+  @include from(xl) {
+    margin-top: space(64);
+  }
+
+  .hero-text {
+    flex: 1;
+    min-width: 200px;
+    gap: space(4);
+  }
+
+  .speech {
+    margin-bottom: space(8);
+  }
+}
+
+.hero-mascot {
+  --m: 96px;
+
+  @include from(md) {
+    --m: 120px;
+  }
+}
+
+.speech {
+  align-self: flex-start;
+  padding: space(8) space(12);
+  border: $border solid var(--edge);
+  border-radius: 14px 14px 14px 2px;
+  background: var(--card);
+  font: #{weight(600)} text(xs) $display;
+}
+
+.page-head {
+  @include row(space(20));
+
+  > div {
+    @include stack(space(4));
+    flex: 1;
+    min-width: 0;
+
+    @include from(md) {
+      gap: space(8);
+    }
+  }
+
+  .muted {
+    font-size: text(md);
+  }
+}

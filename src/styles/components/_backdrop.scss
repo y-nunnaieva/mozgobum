@@ -1,0 +1,61 @@
+@use "../abstracts" as *;
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: z(backdrop);
+  overflow: hidden;
+  pointer-events: none;
+  // Lowest a sticker may sit, so the header doesn't cover it.
+  --sticker-top: 110px;
+
+  @include from(xl) {
+    --sticker-top: 140px;
+  }
+
+  > span {
+    position: absolute;
+    translate: -50% -50%;
+  }
+}
+
+.backdrop-blob {
+  width: calc(var(--w) * 0.55);
+  height: calc(var(--w) * 0.55);
+  background: tint(var(--bc), 20%);
+
+  @include from(md) {
+    width: var(--w);
+    height: var(--w);
+  }
+}
+
+.backdrop-sticker {
+  font-size: calc(var(--s) * 0.7);
+  color: tint(var(--bc), 60%);
+  line-height: 0;
+
+  @include from(md) {
+    font-size: var(--s);
+  }
+}
+
+.backdrop-dot {
+  width: var(--w);
+  height: var(--w);
+  border-radius: 50%;
+  background: var(--bc);
+}
+
+// Midway between the home welcome and the subject grid.
+.backdrop-dot--gap {
+  top: 296px;
+
+  @include from(md) {
+    top: 312px;
+  }
+
+  @include from(xl) {
+    top: 350px;
+  }
+}

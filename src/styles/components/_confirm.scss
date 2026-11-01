@@ -1,0 +1,50 @@
+@use "../abstracts" as *;
+
+.confirm {
+  position: fixed;
+  inset: 0;
+  z-index: z(dialog);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: max(space(16), env(safe-area-inset-top, 0px)) max(space(16), env(safe-area-inset-right, 0px))
+    max(16px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+  background: var(--overlay);
+}
+
+.confirm-box {
+  width: 100%;
+  max-width: 360px;
+  padding: space(24) space(20) space(20);
+  text-align: center;
+  background: var(--card);
+  @include outlined(radius(24));
+  @include pop(6px);
+
+  p {
+    font-size: text(lg);
+    line-height: 1.4;
+  }
+}
+
+.confirm-btns {
+  display: flex;
+  gap: space(12);
+  justify-content: center;
+  margin-top: space(20);
+
+  // Same size as the "Graj" buttons on the card pages.
+  .btn {
+    min-height: 36px;
+    padding: 0 space(24);
+
+    @include from(ml) {
+      min-height: 38px;
+      padding: 0 space(28);
+    }
+
+    @include from(lg) {
+      min-height: 40px;
+    }
+  }
+}

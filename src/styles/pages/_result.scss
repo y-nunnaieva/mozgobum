@@ -1,0 +1,136 @@
+@use "../abstracts" as *;
+
+.result {
+  max-width: 640px;
+
+  .block {
+    gap: space(12);
+  }
+}
+
+.result-card {
+  position: relative;
+  overflow: hidden;
+  @include stack(space(16));
+  align-items: center;
+  padding: space(24) space(16);
+  text-align: center;
+  @include outlined(radius(24), var(--c));
+  background: var(--tint);
+  @include pop(6px, var(--deep));
+
+  > :not(.bg-glyph) {
+    position: relative;
+  }
+
+  p {
+    font-size: text(md);
+  }
+
+  @include from(sm) {
+    padding: space(32) space(20);
+  }
+}
+
+// 40px to "Twoje odpowiedzi" instead of the 24px page gap.
+.result-card + .block {
+  margin-top: space(16);
+}
+
+.result-mascot {
+  --m: 96px;
+  --ball: var(--c);
+  margin-top: space(16);
+}
+
+.result-stars {
+  display: flex;
+  gap: space(8);
+  font-size: 5.8rem;
+  line-height: 1;
+}
+
+.result-star {
+  color: var(--white);
+  -webkit-text-stroke: 2px var(--outline);
+
+  &:nth-child(2) {
+    translate: 0 -10px;
+    scale: 1.15;
+  }
+}
+
+.result-star--on {
+  color: var(--yellow);
+}
+
+// One per line on phones, side by side from sm.
+.result-chips {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  gap: space(4) space(24);
+
+  @include from(sm) {
+    grid-template-columns: auto auto;
+  }
+
+  span {
+    @include row(space(8));
+    font-weight: weight(700);
+    font-size: text(lg);
+
+    &::before {
+      content: "";
+      @include square(8px);
+      border-radius: 50%;
+      background: var(--alt);
+    }
+  }
+}
+
+.answer-row {
+  @include row(space(12), flex-start);
+  padding: space(8) space(16) space(8) space(8);
+  @include outlined(radius(12));
+  background: var(--card);
+
+  .box {
+    color: var(--on-color);
+  }
+}
+
+.answer-row--ok .box {
+  background: var(--good);
+}
+
+.answer-row--bad .box {
+  background: var(--bad);
+}
+
+// The box is centred on the first line of the question.
+.answer-row-text {
+  line-height: 1.2;
+  padding-top: calc((22px - 1lh) / 2);
+}
+
+.answer-q {
+  font-weight: weight(600);
+  font-size: text(md);
+}
+
+// 28px from the answers, like "Dalej" in the game.
+.result-btns {
+  display: grid;
+  gap: space(12);
+  margin-top: space(4);
+
+  @include from(sm) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    // Without "Jeszcze raz" the way back stays on the right.
+    > :only-child {
+      grid-column: 2;
+    }
+  }
+}

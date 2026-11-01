@@ -1,0 +1,187 @@
+@use "../abstracts" as *;
+
+.subject-grid {
+  display: grid;
+  gap: space(24) space(20);
+
+  @include from(sm) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include from(md) {
+    @include auto-grid(230px, space(20));
+    row-gap: space(24);
+  }
+
+  @include from(xl) {
+    gap: space(28) space(24);
+  }
+}
+
+.subject-card {
+  position: relative;
+  overflow: hidden;
+  @include stack(space(16));
+  min-height: 168px;
+  padding: space(20);
+  @include outlined(radius(24), var(--c));
+  background: var(--tint);
+  @include bare-link;
+  @include pop(5px, var(--deep));
+  transition: transform $hover, box-shadow $hover;
+
+  @include on-hover {
+    &:hover {
+      transform: translate(-2px, -2px);
+      @include pop(7px, var(--deep));
+    }
+  }
+
+  &:active {
+    transition-duration: $press;
+    transform: translate(3px, 3px);
+    @include pop(2px, var(--deep));
+  }
+
+  .meta {
+    color: var(--ink);
+  }
+}
+
+.bg-glyph {
+  position: absolute;
+  right: -48px;
+  top: -52px;
+  rotate: -14deg;
+  font-size: 19rem;
+  color: var(--soft);
+}
+
+.subject-card-text {
+  position: relative;
+  @include stack(space(4));
+  margin-top: auto;
+}
+
+.quiz-list {
+  @include card-grid(340px);
+}
+
+.banner {
+  @include row(space(20));
+  flex-wrap: wrap;
+  width: 100%;
+  padding: space(20);
+  text-align: left;
+  @include outlined(radius(24), var(--c));
+  background: var(--tint);
+  @include pop(5px, var(--deep));
+  @include bare-link;
+
+  .btn {
+    min-height: 48px;
+    padding: 0 space(32);
+  }
+}
+
+.banner-actions {
+  @include row(space(12));
+  padding-right: $shadow-room;
+}
+
+.banner > .btn {
+  margin-right: $shadow-room;
+}
+
+// The whole card is a link: it moves like the subject cards.
+.banner--quiz {
+  flex-wrap: nowrap;
+  background: var(--card);
+  @include steady-hit;
+  transition: transform $hover, box-shadow $hover;
+
+  @include on-hover {
+    &:hover {
+      transform: translate(-2px, -2px);
+      @include pop(7px, var(--deep));
+    }
+  }
+
+  &:active {
+    transition-duration: $press;
+    transform: translate(3px, 3px);
+    @include pop(2px, var(--deep));
+  }
+
+  .banner-text {
+    min-width: 0;
+  }
+}
+
+.review-hint {
+  @include stack(space(12));
+  align-items: flex-start;
+  padding: space(16) space(20);
+  @include outlined(radius(20), var(--alt));
+  background: var(--card);
+}
+
+.banner-arrow {
+  font-size: 2.4rem;
+  color: var(--c-ink);
+}
+
+.banner--review {
+  --c: var(--alt);
+}
+
+.banner--hard {
+  --c: var(--bad);
+}
+
+.banner-text {
+  flex: 1;
+  min-width: 200px;
+  @include stack(space(4));
+}
+
+// A step more room below the title than between the other lines.
+:is(.banner-text, .section-text) > :is(.heading--4, .heading--5, b) + * {
+  margin-top: space(4);
+}
+
+.eyebrow {
+  font: 600 text(xs) $display;
+  color: var(--c-ink);
+}
+
+.section-grid {
+  @include card-grid(230px);
+}
+
+.section-card {
+  @include row(space(16));
+  padding: space(16);
+  text-align: left;
+  @include outlined(radius(20));
+  background: var(--card);
+  @include pressable;
+
+  @include on-hover {
+    &:hover {
+      background: var(--tint);
+    }
+  }
+}
+
+.section-text {
+  @include stack(space(4));
+  flex: 1;
+  min-width: 0;
+
+  b {
+    font-weight: weight(700);
+    font-size: text(md);
+    line-height: 1.25;
+  }
+}

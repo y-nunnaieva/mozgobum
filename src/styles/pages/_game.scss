@@ -1,0 +1,225 @@
+@use "../abstracts" as *;
+
+.game,
+.result {
+  width: 100%;
+  margin: 0 auto;
+  gap: space(24);
+  // The game is narrower than the quiz page; fading it in hides the width jump.
+  animation: view-in $hover ease-out;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+@keyframes view-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.game {
+  max-width: 820px;
+
+  // Same rhythm as answers placed straight in the page.
+  form {
+    @include stack(space(24));
+  }
+}
+
+// 20px to the question card instead of the 24px page gap.
+.game-top {
+  @include row(space(8));
+  margin-bottom: -(space(4));
+
+  @include from(sm) {
+    gap: space(16);
+  }
+}
+
+// One outlined track; the questions are cells divided by thin lines (the track colour
+// showing through the gaps), so on narrow screens they never shrink into dots.
+.segments {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  gap: $border;
+  overflow: hidden;
+  @include outlined($pill);
+  background: var(--edge);
+}
+
+.segment {
+  flex: 1;
+  min-width: 0;
+  height: 8px;
+  background: var(--card);
+  transition: background-color 0.2s;
+}
+
+.segment--current {
+  background: var(--soft);
+}
+
+.segment--ok {
+  background: var(--good);
+}
+
+.segment--bad {
+  background: var(--bad);
+}
+
+.counter {
+  font: #{weight(700)} text(sm) $display;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+// Looks like the back link on the chapter pages, lined up with the sidebar logo on md+.
+.crumb {
+  @include row(space(8), flex-start);
+  margin-bottom: space(8);
+  font-size: text(sm);
+  font-weight: 600;
+  color: var(--muted);
+
+  @include from(md) {
+    margin-top: calc(#{space(24)} + (42px - 24px) / 2 - #{space(32)});
+  }
+
+  .pill-icon {
+    border-radius: radius(8);
+  }
+}
+
+// The hint belongs to the question: 16px below the card instead of the 24px page gap.
+.question-card + :is(.hint, form:has(> .hint:first-child)) {
+  margin-top: -(space(8));
+}
+
+// The icon is centred on the first line when the label wraps.
+.crumb-text {
+  padding-top: calc((24px - 1lh) / 2);
+}
+
+.question-card {
+  position: relative;
+  overflow: hidden;
+  @include stack(space(16));
+  padding: space(16);
+  @include outlined(radius(24), var(--c));
+  background: var(--tint);
+  @include pop(6px, var(--deep));
+
+  @include from(sm) {
+    padding: space(20);
+  }
+}
+
+// Same look as the back link: a small tile and muted text.
+.q-label {
+  position: relative;
+  align-self: flex-start;
+  @include row(space(8), flex-start);
+  font: 600 text(sm) $font;
+  color: var(--muted);
+}
+
+.q-label-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  @include square(24px);
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.q-label-text {
+  padding-top: calc((24px - 1lh) / 2);
+}
+
+.question {
+  position: relative;
+  max-width: 600px;
+  font: #{weight(700)} #{heading(4)}/1.25 $display;
+  letter-spacing: -0.02em;
+  text-wrap: pretty;
+
+  @include from(md) {
+    font-size: text(3xl);
+  }
+}
+
+.feedback {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: space(12) space(16);
+  padding: space(16);
+  @include outlined(radius(24));
+
+  @include from(sm) {
+    padding: space(20);
+  }
+
+  .mascot {
+    --m: 42px;
+  }
+
+  // The title is centred on the mascot.
+  > div > b {
+    display: block;
+    padding-top: calc((42px - 1lh) / 2);
+    font: #{weight(700)} #{text(lg)}/1.2 $display;
+  }
+
+  > div > p {
+    margin-top: space(4);
+    font-size: text(md);
+    line-height: 1.45;
+  }
+}
+
+// Starts at the card's left edge, under the mascot; styled like the back link.
+.feedback-note {
+  grid-column: 1 / -1;
+  font: 600 text(sm) $font;
+  color: var(--muted);
+}
+
+.feedback--ok {
+  --face: var(--good);
+  background: var(--good-tint);
+}
+
+.feedback--bad {
+  --face: var(--bad);
+  background: var(--bad-tint);
+}
+
+// "Sprawdź" and "Dalej" sit 12px closer to the content above than the page gap.
+:is(.answers, .pairs, .number-input, .feedback) + .actions {
+  margin-top: -(space(12));
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: space(16) 0 space(20);
+
+  // As tall as the answers, with the .btn font.
+  .primary {
+    min-height: 42px;
+    padding: 0 space(24);
+    font: 700 text(md) $font;
+
+    @include from(ml) {
+      font-size: text(lg);
+    }
+  }
+
+  .primary--next {
+    font-weight: weight(700);
+  }
+}

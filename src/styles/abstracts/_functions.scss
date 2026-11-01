@@ -1,0 +1,66 @@
+@use "sass:list";
+@use "sass:map";
+@use "tokens" as *;
+
+// Shades are mixed by the browser, so they also work for colors set at runtime (--c).
+// oklab, not oklch: against the dark base oklch walks the hue wheel (yellow turns pink).
+@function tint($c, $amount: 16%) {
+  @return color-mix(in oklab, #{$c} $amount, var(--mixbase));
+}
+
+@function soft($c) {
+  @return tint($c, 48%);
+}
+
+@function deep($c) {
+  @return color-mix(in oklch, #{$c} 72%, black);
+}
+
+// oklch shifts green toward blue in the dark theme, srgb keeps it green.
+@function wash($c, $amount) {
+  @return color-mix(in srgb, #{$c} $amount, var(--mixbase));
+}
+
+@function fade($c, $amount) {
+  @return color-mix(in srgb, #{$c} $amount, transparent);
+}
+
+@function -scale-step($scale, $name, $n) {
+  $value: $n * 1px;
+  @if not list.index($scale, $value) {
+    @error "#{$name}(#{$n}) is not on the scale: #{$scale}";
+  }
+  @return $value;
+}
+
+@function space($n) {
+  @return -scale-step($space, "space", $n);
+}
+
+@function radius($n) {
+  @return -scale-step($radius, "radius", $n);
+}
+
+@function text($size) {
+  @return map.get($text, $size);
+}
+
+@function heading($level, $bp: null) {
+  @if $bp == md {
+    @return map.get($heading-md, $level);
+  }
+  @if $bp == lg {
+    @return map.get($heading-lg, $level);
+  }
+  @return map.get($heading, $level);
+}
+
+// Weights of text that turns white in the dark theme: one step lighter there, since light
+// text on a dark background looks bolder. Coloured text keeps a plain number.
+@function weight($n) {
+  @return var(--w-#{$n});
+}
+
+@function z($layer) {
+  @return map.get($z, $layer);
+}

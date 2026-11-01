@@ -1,0 +1,44 @@
+@use "../abstracts" as *;
+
+.nav-list {
+  @include stack(space(16));
+  padding-right: $shadow-room;
+}
+
+.nav-list--locked {
+  @include locked;
+}
+
+.nav-subject {
+  @include row(space(12));
+  width: 100%;
+  border-radius: radius(16);
+  background: var(--card);
+  @include bare-link;
+}
+
+
+.nav-subject {
+  min-height: 54px;
+  padding: space(8) space(16) space(8) space(8);
+  border: $border solid var(--c);
+  @include pressable(4px, var(--deep));
+
+  &[aria-current] {
+    background: var(--tint);
+  }
+}
+
+.nav-name {
+  position: relative;
+  // Optically centred on the icon, whose shadow makes it look lower.
+  top: 2px;
+  flex: 1;
+  min-width: 0;
+  font-weight: weight(700);
+  font-size: text(md);
+
+  @include from(ml) {
+    font-size: text(lg);
+  }
+}

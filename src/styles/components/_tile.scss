@@ -1,0 +1,104 @@
+@use "../abstracts" as *;
+
+.tile {
+  @include square(36px);
+  @include center;
+  border-radius: $shape;
+  background: var(--c);
+  color: var(--on-color);
+  box-shadow: 0 3px 0 var(--deep);
+  font-size: 2.3rem;
+}
+
+.tile--plain {
+  border-radius: radius(12);
+  @include pop(3px, var(--deep));
+}
+
+.tile--big {
+  position: relative;
+  @include square(42px);
+  font-size: 2.4rem;
+  border: $border solid var(--edge);
+  box-shadow: none;
+}
+
+.tile--num {
+  @include square(42px);
+  font: 800 text(sm) $display;
+}
+
+.tile--alt {
+  background: var(--alt);
+  box-shadow: 0 3px 0 var(--alt-deep);
+}
+
+.tile--head {
+  @include square(60px);
+  border: $border solid var(--edge);
+  @include pop(4px);
+  font: 800 text(lg) $display;
+
+  .icon {
+    font-size: 3.2rem;
+  }
+
+  @include from(md) {
+    @include square(76px);
+    font-size: text(xl);
+  }
+}
+
+.tile--banner {
+  @include square(56px);
+  font-size: 3.2rem;
+}
+
+.tile--banner.tile--num {
+  font: 800 text(lg) $display;
+}
+
+.tile--section {
+  @include square(44px);
+  font-size: text(xl);
+  background: var(--tint);
+  border: $border solid var(--c);
+  box-shadow: none;
+}
+
+.tile--mini {
+  @include square(28px);
+  font-size: 1.7rem;
+  border: $border solid var(--edge);
+  box-shadow: none;
+}
+
+// A number tile shares its baseline with the first line of the title next to it.
+:is(.chapter-link, .banner):has(> .tile--num):not(:has(> .tile--num > svg)) {
+  align-items: baseline;
+
+  &:not(.chapter-link, .banner--quiz) > :not(.tile, div) {
+    align-self: center;
+  }
+}
+
+// A number next to a title is set in the title's size.
+.chapter-link > .tile--num {
+  font-size: heading(5);
+
+  @include from(md) {
+    font-size: heading(5, md);
+  }
+}
+
+.page-head > .tile--num:not(:has(svg)) {
+  font-size: heading(1);
+
+  @include from(md) {
+    font-size: heading(1, md);
+  }
+
+  @include from(lg) {
+    font-size: heading(1, lg);
+  }
+}

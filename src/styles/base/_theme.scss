@@ -1,0 +1,96 @@
+@use "../abstracts" as *;
+
+@mixin light {
+  --page: #{$white};
+  --card: #{$white};
+  --mixbase: #{$white};
+  --ink: #{$ink};
+  --muted: #{$slate};
+  --outline: #{$ink};
+  --edge: #{$graphite};
+  --drop: #{$graphite};
+  --disabled: #{$sand};
+  --line: #{fade($ink, 8%)};
+  --off: #{fade($ink, 14%)};
+  --overlay: #{fade($ink, 45%)};
+  --glass: #{fade($white, 86%)};
+  --page-mix: 7%;
+  --w-500: 500;
+  --w-600: 600;
+  --w-700: 700;
+  --w-800: 800;
+}
+
+@mixin dark {
+  --page: #{$night};
+  --card: #{$ink};
+  --mixbase: #{$night};
+  --ink: #{$white};
+  --muted: #{$mist};
+  --outline: #{$night};
+  --edge: #{$night-edge};
+  --drop: #{$night-edge};
+  --disabled: #{$dusk};
+  --line: #{fade($white, 9%)};
+  --off: #{fade($white, 22%)};
+  --overlay: #{fade($night, 70%)};
+  --glass: linear-gradient(to right, #{fade($ink, 86%)}, #{fade($night, 86%)});
+  --page-mix: 9%;
+  --w-500: 400;
+  --w-600: 500;
+  --w-700: 600;
+  --w-800: 700;
+  color-scheme: dark;
+}
+
+:root {
+  @each $name, $color in $palette {
+    --#{$name}: #{$color};
+  }
+  --white: #{$white};
+  --on-color: #{$ink};
+  --good: var(--green);
+  --bad: var(--red);
+  --c: var(--yellow);
+  --alt: var(--purple);
+  @include light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  @include dark;
+}
+
+// Every element that sets its own --c carries .hue, so these are recomputed from it.
+:root,
+.hue {
+  --tint: #{tint(var(--c))};
+  --soft: #{soft(var(--c))};
+  --deep: #{deep(var(--c))};
+  --c-ink: var(--deep);
+  --alt-soft: #{soft(var(--alt))};
+  --alt-deep: #{deep(var(--alt))};
+  --good-tint: #{wash(var(--good), 16%)};
+  --bad-tint: #{wash(var(--bad), 14%)};
+}
+
+@mixin dark-hue {
+  --c-ink: var(--c);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]),
+  :root:not([data-theme="light"]) .hue {
+    @include dark-hue;
+  }
+}
+
+:root[data-theme="dark"],
+:root[data-theme="dark"] .hue {
+  @include dark-hue;
+}

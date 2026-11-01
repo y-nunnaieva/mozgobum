@@ -1,0 +1,131 @@
+@use "../abstracts" as *;
+
+.stats-view {
+  .primary {
+    align-self: flex-start;
+  }
+}
+
+// The icon in the header tile follows the tile size (48 / 56 / 64).
+.stats-view .page-head .tile--head .icon {
+  font-size: 2.4rem;
+
+  @include from(sm) {
+    font-size: 2.8rem;
+  }
+
+  @include from(lg) {
+    font-size: 3.2rem;
+  }
+}
+
+// Phones: one tile per row, number beside its label. From sm: three columns, label below.
+.stat-tiles {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: space(12);
+
+  @include from(sm) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.stat-tile {
+  @include row(space(12), baseline);
+  padding: space(8) space(12);
+  @include outlined(radius(16));
+  background: var(--card);
+  @include pop(3px, var(--drop), 1px);
+
+  @include from(sm) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: space(4);
+    padding: space(12);
+  }
+
+  b {
+    font: 800 text(lg) $display;
+    color: var(--c-ink);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  span {
+    font-size: text(sm);
+    color: var(--muted);
+  }
+}
+
+.row-top {
+  @include row(space(8), baseline);
+  font-size: text(md);
+
+  span:first-child {
+    min-width: 0;
+  }
+}
+
+.row-num {
+  margin-left: auto;
+  font-size: text(sm);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.row-num--danger {
+  color: var(--bad);
+}
+
+.stat-list {
+  @include stack(space(8));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stat-item {
+  @include row(space(12), flex-start);
+  font-size: text(md);
+
+  .meta,
+  .eyebrow {
+    display: block;
+  }
+}
+
+.stat-icon {
+  flex: none;
+  font-size: 2.2rem;
+  color: var(--bad);
+}
+
+// Desktop: the twins note starts its own line.
+.stats-note {
+  @include from(lg) {
+    display: block;
+  }
+}
+
+// Same look as the back link: a small tile with the icon and plain text.
+.stats-view .link--danger {
+  @include row(space(8));
+  @include steady-hit(10px);
+  margin-top: space(32);
+  padding: 0;
+  font: 600 text(sm) $font;
+  text-decoration: none;
+  transition: color $hover;
+
+  .pill-icon {
+    border-radius: radius(8);
+    background: var(--bad);
+  }
+
+  @include on-hover {
+    &:hover {
+      background: none;
+      color: deep(var(--bad));
+    }
+  }
+}

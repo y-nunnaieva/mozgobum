@@ -1,0 +1,216 @@
+@use "sass:list";
+@use "../abstracts" as *;
+
+$pair-colors: blue, yellow, green, red, teal, purple;
+
+.hint {
+  font-size: text(sm);
+  font-weight: 600;
+  color: var(--c-ink);
+}
+
+.answers {
+  display: grid;
+  gap: space(12);
+
+  // Two columns, except at md–ml where the sidebar narrows the page.
+  @include from(sm) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include from(md) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  @include from(ml) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.answer {
+  @include row(space(12), flex-start);
+  min-height: 42px;
+  padding: space(8) space(16) space(8) space(8);
+  @include outlined(radius(12));
+  background: var(--card);
+  color: var(--ink);
+  font: #{weight(600)} #{text(md)}/1.2 $font;
+  text-align: left;
+  @include pop(3px, var(--drop), 1px);
+  @include steady-hit;
+  transition: transform $hover, box-shadow $hover, background-color $hover, opacity $hover;
+
+  @include on-hover {
+    &:hover:not(:disabled) {
+      transform: translate(-1px, -1px);
+      @include pop(4px, var(--drop), 1px);
+    }
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+    box-shadow: none;
+  }
+}
+
+// The box is centred on the first line of the text next to it.
+.box + span {
+  padding-top: calc((22px - 1lh) / 2);
+}
+
+.box {
+  flex: none;
+  @include square(22px);
+  @include center;
+  @include outlined(radius(8));
+  background: var(--tint);
+  font: 700 text(xs) $display;
+  color: var(--ink);
+}
+
+.answer--selected,
+.answer--active {
+  font-weight: 600;
+
+  &,
+  &:hover:not(:disabled) {
+    background: var(--c);
+    color: var(--on-color);
+    transform: translate(-1px, -1px);
+    @include pop(4px, var(--drop), 1px);
+  }
+
+  .box {
+    background: var(--white);
+    color: var(--on-color);
+  }
+}
+
+.answer--correct,
+.answer--missed,
+.answer--wrong {
+  &:disabled {
+    opacity: 1;
+  }
+}
+
+.answer--correct {
+  background: var(--good-tint);
+}
+
+.answer--missed {
+  background: var(--good-tint);
+  border-style: dashed;
+}
+
+.answer--correct .box,
+.answer--missed .box {
+  background: var(--good);
+  color: var(--on-color);
+}
+
+.answer--wrong {
+  background: var(--bad-tint);
+
+  .box {
+    background: var(--bad);
+    color: var(--on-color);
+  }
+}
+
+.pairs {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: space(12);
+
+  // No box here, so the sides are even.
+  .answer {
+    align-items: center;
+    padding: space(8) space(12);
+  }
+
+  &.pairs--wide-left {
+    grid-template-columns: minmax(0, 62fr) minmax(0, 38fr);
+  }
+
+  &.pairs--wide-right {
+    grid-template-columns: minmax(0, 38fr) minmax(0, 62fr);
+  }
+}
+
+.pairs-col {
+  display: grid;
+  gap: space(12);
+  align-content: start;
+}
+
+@for $i from 1 through list.length($pair-colors) {
+  .answer--pair-#{$i} {
+    background: soft(var(--#{list.nth($pair-colors, $i)}));
+  }
+}
+
+.result-list {
+  display: grid;
+  gap: space(12);
+}
+
+.result-item {
+  padding: space(12) space(16);
+  @include outlined(radius(12));
+  font-size: text(md);
+  line-height: 1.35;
+
+  small {
+    display: block;
+    color: var(--muted);
+    font-size: text(sm);
+  }
+}
+
+.result-item--ok {
+  background: var(--good-tint);
+}
+
+.result-item--bad {
+  background: var(--bad-tint);
+}
+
+// Full width wherever the answers are a single column.
+.number-input {
+  width: 100%;
+  padding: space(12) space(16);
+  font: #{weight(700)} text(2xl) $display;
+  text-align: center;
+  color: var(--ink);
+  background: var(--card);
+  @include outlined(radius(12));
+  @include pop(4px);
+  transition: box-shadow $hover, background-color $hover;
+
+  &:focus {
+    outline: none;
+    @include pop(4px, var(--c));
+  }
+
+  @include from(sm) {
+    width: 62%;
+  }
+
+  @include from(md) {
+    width: 100%;
+  }
+
+  @include from(ml) {
+    width: 62%;
+  }
+}
+
+.number-input--correct {
+  background: var(--good-tint);
+}
+
+.number-input--wrong {
+  background: var(--bad-tint);
+}

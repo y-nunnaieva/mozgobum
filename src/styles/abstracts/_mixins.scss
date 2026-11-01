@@ -1,0 +1,122 @@
+@use "sass:math";
+@use "sass:map";
+@use "tokens" as *;
+@use "functions" as *;
+
+@mixin from($bp) {
+  @media (min-width: map.get($breakpoints, $bp)) {
+    @content;
+  }
+}
+
+@mixin outlined($radius, $color: var(--edge)) {
+  border: $border solid $color;
+  border-radius: $radius;
+}
+
+// $spread grows the shadow's corner radius, so on small rounded squares its corner
+// doesn't look tighter than the element's own.
+@mixin pop($size, $color: var(--drop), $spread: 0px) {
+  box-shadow: ($size - $spread) ($size - $spread) 0 $spread $color;
+}
+
+// Hover/press moves the element away from a still cursor, so a click near its edge
+// would land outside; this invisible frame keeps the hit area where it was.
+@mixin steady-hit($reach: 4px) {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: -$reach;
+  }
+}
+
+// Hover styles only for devices that can hover: on touch screens a tap would leave them stuck.
+@mixin on-hover {
+  @media (hover: hover) {
+    @content;
+  }
+}
+
+// Lifts on hover and sinks into its own shadow when pressed.
+@mixin pressable($size: 4px, $color: var(--drop), $spread: 0px) {
+  @include steady-hit;
+  @include pop($size, $color, $spread);
+  transition: transform $hover, box-shadow $hover, background-color $hover;
+
+  @include on-hover {
+    &:hover:not(:disabled) {
+      transform: translate(-1px, -1px);
+      @include pop($size + 1, $color, $spread);
+    }
+  }
+
+  &:active:not(:disabled) {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 $color;
+    transition-duration: $press;
+  }
+}
+
+@mixin pressed($color: var(--drop)) {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 $color;
+}
+
+@mixin locked {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+@mixin stack($gap) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+@mixin row($gap, $align: center) {
+  display: flex;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin center {
+  display: grid;
+  place-items: center;
+}
+
+@mixin auto-grid($min, $gap) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, $min), 1fr));
+  gap: $gap;
+}
+
+// Like auto-grid, but at most two columns: a column is never narrower than half the row.
+@mixin two-col-grid($min, $gap) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, max($min, calc(50% - #{math.div($gap, 2)}))), 1fr));
+  gap: $gap;
+}
+
+// Two-column card grid with the home page gaps (rows 24 / columns 20, from xl 28 / 24).
+@mixin card-grid($min) {
+  @include two-col-grid($min, space(20));
+  row-gap: space(24);
+
+  @include from(xl) {
+    @include two-col-grid($min, space(24));
+    row-gap: space(28);
+  }
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+  flex: none;
+}
+
+@mixin bare-link {
+  color: var(--ink);
+  text-decoration: none;
+}

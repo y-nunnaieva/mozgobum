@@ -1,0 +1,91 @@
+@use "../abstracts" as *;
+
+.mascot {
+  --m: 120px;
+  position: relative;
+  flex: none;
+  display: block;
+  width: var(--m);
+  height: var(--m);
+  border-radius: 54% 46% 50% 50% / 60% 58% 42% 40%;
+  background: var(--face, var(--yellow));
+  border: $border solid var(--outline);
+  @include pop(4px, var(--outline));
+
+  > span {
+    position: absolute;
+  }
+}
+
+.mascot-antenna {
+  left: 50%;
+  top: -18px;
+  width: 3px;
+  height: 18px;
+  background: var(--outline);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: -12px;
+    @include square(15px);
+    border-radius: 50%;
+    background: var(--ball, var(--orange));
+    border: $border solid var(--outline);
+  }
+}
+
+.mascot-eye {
+  top: 33%;
+  width: 11%;
+  height: 16%;
+  border-radius: 50%;
+  background: var(--outline);
+}
+
+.mascot-cheek {
+  top: 54%;
+  width: 13%;
+  height: 9%;
+  border-radius: 50%;
+  background: color-mix(in oklch, var(--red) 55%, var(--white));
+}
+
+.mascot-eye--left { left: 27%; }
+.mascot-eye--right { right: 27%; }
+.mascot-cheek--left { left: 14%; }
+.mascot-cheek--right { right: 14%; }
+
+.mascot-mouth {
+  left: 36%;
+  width: 28%;
+  height: 15%;
+  border: 3px solid var(--outline);
+
+  .mascot--happy & {
+    top: 55%;
+    border-top: none;
+    border-radius: 0 0 $pill $pill;
+  }
+
+  .mascot--sad & {
+    top: 60%;
+    border-bottom: none;
+    border-radius: $pill $pill 0 0;
+  }
+}
+
+.mascot--small {
+  --m: 52px;
+  box-shadow: none;
+
+  .mascot-cheek {
+    display: none;
+  }
+
+  .mascot-mouth {
+    border-width: 2.5px;
+    height: 14%;
+  }
+}
