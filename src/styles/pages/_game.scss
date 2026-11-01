@@ -199,7 +199,7 @@
 }
 
 // "Sprawdź" and "Dalej" sit 12px closer to the content above than the page gap.
-:is(.answers, .pairs, .number-input, .feedback) + .actions {
+:is(.answers, .pairs, .answer-input, .feedback) + .actions {
   margin-top: -(space(12));
 }
 

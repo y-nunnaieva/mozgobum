@@ -178,7 +178,7 @@ $pair-colors: blue, yellow, green, red, teal, purple;
 }
 
 // Full width wherever the answers are a single column.
-.number-input {
+.answer-input {
   width: 100%;
   padding: space(12) space(16);
   font: #{weight(700)} text(2xl) $display;
@@ -207,10 +207,10 @@ $pair-colors: blue, yellow, green, red, teal, purple;
   }
 }
 
-.number-input--correct {
+.answer-input--correct {
   background: var(--good-tint);
 }
 
-.number-input--wrong {
+.answer-input--wrong {
   background: var(--bad-tint);
 }

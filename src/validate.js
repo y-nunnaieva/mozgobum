@@ -1,5 +1,6 @@
 import { PALETTE } from "./palette.js";
 import { parseNumber } from "./types/number.js";
+import { isValidTextAnswer, normalizeText } from "./types/text.js";
 import { allQuestions } from "./content.js";
 
 const hasDuplicates = (arr) => new Set(arr).size !== arr.length;
@@ -32,6 +33,13 @@ function questionErrors(q) {
       if (!n) e.push(`unparseable answer ${JSON.stringify(q.answer)}`);
       else if (!n.reduced) e.push(`answer ${q.answer} is not reduced`);
       if (!q.skill) e.push("missing skill");
+      break;
+    }
+    case "text": {
+      const answers = q.answers ?? [];
+      if (!answers.length) e.push("no answers");
+      for (const a of answers) if (!isValidTextAnswer(a)) e.push(`answer ${JSON.stringify(a)} must be one or two English words`);
+      if (hasDuplicates(answers.map(normalizeText))) e.push("duplicate answers");
       break;
     }
     default:

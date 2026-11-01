@@ -40,7 +40,7 @@ export function NumberView({ question: q, onSubmit }) {
         <p class="hint">Ułamek zapisz jako 3/4, liczbę mieszaną jako 1 2/3. Pamiętaj o skróceniu ułamka.</p>
       )}
       <input
-        class={`number-input${result === null ? "" : result ? " number-input--correct" : " number-input--wrong"}`}
+        class={`answer-input${result === null ? "" : result ? " answer-input--correct" : " answer-input--wrong"}`}
         type="text"
         inputMode={expectsFraction ? "text" : "decimal"}
         autoComplete="off"
