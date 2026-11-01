@@ -50,7 +50,7 @@ export default {
           level: 3,
           q: "Ile mniej więcej komórek jest w ciele człowieka?",
           correct: ["Około 30 bilionów"],
-          wrong: ["Około 30 tysięcy", "Około 30 milionów", "Około 3 miliardów"],
+          wrong: ["Około 30 tysięcy", "Około 30 milionów", "Około 30 miliardów"],
           explain: "Według naukowców w ciele człowieka jest ok. 30 bilionów komórek.",
         },
         {
