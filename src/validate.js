@@ -32,7 +32,8 @@ function questionErrors(q) {
       const n = parseNumber(q.answer ?? "");
       if (!n) e.push(`unparseable answer ${JSON.stringify(q.answer)}`);
       else if (!n.reduced) e.push(`answer ${q.answer} is not reduced`);
-      if (!q.skill) e.push("missing skill");
+      // A number task is tracked either per skill (many variants) or on its own, by id.
+      if (!q.skill && !q.id) e.push("missing skill or id");
       break;
     }
     case "text": {
@@ -45,7 +46,7 @@ function questionErrors(q) {
     default:
       e.push(`unknown type ${q.type}`);
   }
-  if (q.type !== "number" && !/^\d{4}$/.test(q.id?.split("/").pop() ?? "")) e.push("id must be 4 digits");
+  if ((q.type !== "number" || q.id) && !/^\d{4}$/.test(q.id?.split("/").pop() ?? "")) e.push("id must be 4 digits");
   return e;
 }
 

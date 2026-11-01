@@ -68,6 +68,28 @@ describe("buildCatalog", () => {
     expect(reviewScope(c.quizzes["en/1/r"])).toBe("Countries + Weather");
   });
 
+  it("orders extra chapter quizzes by `order`, then by name", () => {
+    const c = buildCatalog({
+      "/content/m/0/dzielenie.js": { ...sub("Dzielenie", ["0001"]), icon: "➗", order: 2 },
+      "/content/m/0/mnozenie.js": { ...sub("Mnożenie", ["0001"]), icon: "✖️", order: 1 },
+      "/content/m/0/inne.js": { ...sub("Inne", ["0001"]), icon: "❓" },
+    });
+    expect(c.subjects[0].chapters[0].practices.map((p) => p.title)).toEqual(["Mnożenie", "Dzielenie", "Inne"]);
+  });
+
+  it("uses a hidden quiz only as a source for a chapter review", () => {
+    const c = buildCatalog({
+      "/content/m/2/chapter.js": { title: "C", reviews: [{ id: "p", title: "Pierwsze", include: ["pierwsze"], eyebrow: "Powtórka" }] },
+      "/content/m/2/2.1.js": sub("Sub", ["0001"]),
+      "/content/m/2/pierwsze.js": { ...sub("Pierwsze", ["0001"]), icon: "💎", hidden: true },
+    });
+    const ch = c.subjects[0].chapters[0];
+    expect(ch.practices).toEqual([]);
+    expect(c.quizzes["m/2/pierwsze/podsumowanie"]).toBeUndefined();
+    expect(c.quizzes["m/2/p"]).toMatchObject({ eyebrow: "Powtórka" });
+    expect(reviewScope(c.quizzes["m/2/p"])).toBe("");
+  });
+
   it("lets a review include extra chapter quizzes", () => {
     const c = buildCatalog({
       "/content/g/1/chapter.js": { title: "C", reviews: [{ id: "r", title: "R", include: ["1.2", "obliczenia"] }] },

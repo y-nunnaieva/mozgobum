@@ -67,10 +67,14 @@ export function buildCatalog(modules) {
         // `number` orders the files and keeps stats ids stable; `label` is what the UI shows (none in unnumbered subjects).
         .map((num) => ownQuiz(num, { kind: "subchapter", number: num, label: s.numbered === false ? null : num, icon: c.subchapters[num].icon }));
       // Non-numbered files (e.g. "obliczenia") are extra quizzes of the chapter, not textbook subchapters.
-      const practices = names.filter((n) => !isNumber(n)).sort()
-        .map((name) => ownQuiz(name, { kind: "practice", number: null, icon: c.subchapters[name].icon }));
+      // An optional `order` puts extra quizzes in a teaching order instead of alphabetical.
+      const practices = names.filter((n) => !isNumber(n))
+        .sort((a, b) => (c.subchapters[a].order ?? Infinity) - (c.subchapters[b].order ?? Infinity) || a.localeCompare(b))
+        .map((name) => ownQuiz(name, { kind: "practice", number: null, icon: c.subchapters[name].icon, hidden: !!c.subchapters[name].hidden }));
+      // A hidden quiz is only a question source for a chapter review (no card, no own summary).
+      const shown = practices.filter((p) => !p.hidden);
       // Every own quiz gets a summary: a review of just that quiz.
-      for (const own of [...subchapters, ...practices]) {
+      for (const own of [...subchapters, ...shown]) {
         const path = `${own.path}/${SUMMARY_ID}`;
         const title = own.number ? "Podsumowanie podrozdziału" : "Podsumowanie";
         own.summary = { ...own, kind: "review", path, title, review: path, back: own.path, parent: own };
@@ -83,21 +87,21 @@ export function buildCatalog(modules) {
         sections: include.map((name) => {
           const q = byName[name];
           if (!q) throw new Error(`${base}/${id} includes missing quiz ${name}`);
-          return { id: name, kind: q.kind, name: q.title, label: q.label, icon: q.label ?? q.icon ?? "", questions: allQuestions(q) };
+          return { id: name, kind: q.kind, name: q.title, label: q.label, icon: q.label ?? q.icon ?? "", hidden: q.hidden, questions: allQuestions(q) };
         }),
       });
       // Each review has its own progress, but no own hard questions: its mistakes land in the subchapters' ones.
       // A big test can set its own `limit` and keep only the most important questions (`maxLevel`).
       const reviews = (c.reviews ?? []).map((r) => {
         const limit = r.limit ?? REVIEW_LIMITS[r.type ?? "sprawdzian"];
-        const review = { ...composed("review", r.id, r.title, r.include), review: `${base}/${r.id}`, limit };
+        const review = { ...composed("review", r.id, r.title, r.include), review: `${base}/${r.id}`, limit, eyebrow: r.eyebrow };
         if (r.maxLevel) return upToLevel(review, r.maxLevel);
         return keyCount(review) > limit ? upToLevel(review, 2) : review;
       });
       // One hard-questions round for the whole chapter, gathered from all its own quizzes.
       const hard = composed("chapter-hard", HARD_ID, "Moje trudne pytania", Object.keys(byName));
       quizzes.push(...reviews, hard, ...subchapters, ...practices);
-      return { id: c.id, title: c.title, subchapters, practices, reviews, hard };
+      return { id: c.id, title: c.title, subchapters, practices: shown, reviews, hard };
     }),
   }));
 
@@ -125,7 +129,7 @@ export function quizName(quiz) {
 // "podrozdziały 1.1, 1.2 + Obliczenia"
 export function reviewScope(review) {
   const nums = review.sections.filter((s) => s.label).map((s) => s.label);
-  const extras = review.sections.filter((s) => !s.label).map((s) => s.name);
+  const extras = review.sections.filter((s) => !s.label && !s.hidden).map((s) => s.name);
   return [nums.length ? `podrozdziały ${nums.join(", ")}` : null, ...extras].filter(Boolean).join(" + ");
 }
 
