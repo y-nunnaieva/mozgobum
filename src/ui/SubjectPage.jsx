@@ -77,6 +77,7 @@ export function SubjectPage({ subject: s }) {
                           </li>
                         ))}
                       </ul>
+                      <a class="btn chapter-open" href={href(key)}>Do rozdziału<Icon name="arrow_forward" /></a>
                     </div>
                   </div>
                 </div>

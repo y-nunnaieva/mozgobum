@@ -4,7 +4,7 @@
   gap: space(48);
 
   @include from(md) {
-    gap: space(32);
+    gap: space(64);
   }
 }
 
@@ -168,10 +168,21 @@
 .chapter-quizzes {
   display: flex;
   flex-direction: column;
-  margin: 0 space(12) space(20);
+  margin: 0 space(12) space(16);
   padding: 0;
   list-style: none;
   border-left: $border dashed var(--soft);
+
+  @include from(md) {
+    margin: 0 space(16) space(16) space(64);
+  }
+}
+
+.chapter-open {
+  width: fit-content;
+  grid-auto-flow: column;
+  gap: space(8);
+  margin: 0 space(12) space(20);
 
   @include from(md) {
     margin: 0 space(16) space(20) space(64);
