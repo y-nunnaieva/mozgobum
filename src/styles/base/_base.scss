@@ -9,6 +9,8 @@
 html {
   --page-bg: var(--page);
   font-size: 62.5%;
+  // Mobile browsers tint the tapped element's box, which shows outside rounded corners.
+  -webkit-tap-highlight-color: transparent;
   background: var(--page-bg);
   transition: background-color 0.3s;
 
