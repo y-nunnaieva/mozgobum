@@ -34,15 +34,32 @@ describe("buildRound", () => {
     expect(buildRound(quiz, "big", emptyStats())).toHaveLength(ROUND_SIZE);
   });
 
+  it("keeps a section round short when only a few questions are open", () => {
+    let st = emptyStats();
+    for (const i of ids(10).slice(2)) for (let n = 0; n < 2; n++) st = recordAnswer(st, `h/1/1.1/${i}`, true);
+    const round = buildRound(quiz, "small", st);
+    expect(round).toHaveLength(2 + CHECKS);
+    expect(round.filter((q) => ["h/1/1.1/0001", "h/1/1.1/0002"].includes(q.id))).toHaveLength(2);
+    for (const i of ids(2)) for (let n = 0; n < 2; n++) st = recordAnswer(st, `h/1/1.1/${i}`, true);
+    expect(buildRound(quiz, "small", st)).toHaveLength(10);
+  });
+
   it("takes every unit once before repeating skill variants", () => {
     const mixed = buildCatalog({ "/content/g/1/1.1.js": { title: "G", sections: [{ id: "s", questions: [
       ...ids(10).map(choice),
       ...ids(60).map((i) => ({ type: "number", skill: "km", q: `km${i}`, answer: "1" })),
     ] }] } }).quizzes["g/1/1.1"];
     const round = buildRound(mixed, "all", emptyStats());
-    expect(round).toHaveLength(ROUND_SIZE);
     expect(round.filter((q) => q.type === "choice")).toHaveLength(10);
-    expect(new Set(round.map((q) => q.q)).size).toBe(ROUND_SIZE);
+    expect(round.filter((q) => q.skill === "km")).toHaveLength(2);
+  });
+
+  it("keeps a round short when only a few task types are left", () => {
+    let st = emptyStats();
+    for (let i = 0; i < 2; i++) st = recordAnswer(st, "m/skill/nww", true);
+    const round = buildRound(cat.quizzes["m/1/1.1"], "all", st);
+    expect(round.filter((q) => q.skill === "nwd")).toHaveLength(2);
+    expect(round).toHaveLength(2 + 1);
   });
 
   it("makes chapter-wide rounds longer", () => {
@@ -61,6 +78,18 @@ describe("buildRound", () => {
       expect(round).toHaveLength(CHAPTER_ROUND_SIZE);
       expect(round.filter((q) => q.skill).length).toBeGreaterThanOrEqual(REVIEW_PRACTICE_MIN);
     }
+  });
+
+  it("gives each task type more variants when a review asks for it", () => {
+    const c = buildCatalog({
+      "/content/g/1/chapter.js": { title: "C", reviews: [{ id: "r", title: "R", include: ["1.1", "calc"], variants: 3 }] },
+      "/content/g/1/1.1.js": { title: "A", sections: [{ id: "s", questions: ids(200).map(choice) }] },
+      "/content/g/1/calc.js": { title: "Calc", icon: "🧮", sections: [{ id: "s", questions:
+        ids(30).map((i) => ({ type: "number", skill: `k${i % 2}`, q: `c${i}`, answer: "1" })) }] },
+    });
+    const round = buildRound(c.quizzes["g/1/r"], "all", emptyStats());
+    expect(round.filter((q) => q.skill === "k0")).toHaveLength(3);
+    expect(round.filter((q) => q.skill === "k1")).toHaveLength(3);
   });
 
   it("uses subchapters as sections of a review", () => {

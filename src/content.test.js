@@ -102,6 +102,17 @@ describe("buildCatalog", () => {
     expect(reviewScope(review)).toBe("podrozdziały 1.2 + Calc");
   });
 
+  it("lets a review take only some sections of a quiz", () => {
+    const section = (id, qid) => ({ id, name: id, icon: "x", questions: [q(qid)] });
+    const calc = { title: "Calc", icon: "🧮", sections: [section("a", "0001"), section("b", "0002"), section("c", "0003")] };
+    const build = (sections) => buildCatalog({
+      "/content/g/1/chapter.js": { title: "C", reviews: [{ id: "r", title: "R", include: [{ quiz: "obliczenia", sections }] }] },
+      "/content/g/1/obliczenia.js": calc,
+    }).quizzes["g/1/r"];
+    expect(build(["a", "c"]).sections[0].questions.map((x) => x.id)).toEqual(["g/1/obliczenia/0001", "g/1/obliczenia/0003"]);
+    expect(() => build(["a", "z"])).toThrow(/missing sections of obliczenia/);
+  });
+
   it("leaves details out of a review only above its limit", () => {
     const questions = (from, n, level) =>
       Array.from({ length: n }, (_, i) => ({ ...q(String(from + i).padStart(4, "0")), level }));

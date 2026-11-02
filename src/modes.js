@@ -1,4 +1,4 @@
-import { allQuestions, REVIEW_SKILL_STREAK } from "./content.js";
+import { allQuestions, REVIEW_SKILL_STREAK, SKILL_STREAK } from "./content.js";
 import { shuffle } from "./game.js";
 import { clearUnits, isHard, isMastered, reviewStreak } from "./stats.js";
 
@@ -119,8 +119,9 @@ function progressRound(quiz, stats, random) {
       return pool.filter((k) => own.has(k)).slice(0, REVIEW_PRACTICE_MIN);
     })
     : [];
-  // A task type in a review comes with as many variants as it needs correct answers in a row.
-  const variants = (k) => (review ? groups.get(k).slice(0, reviewNeed(groups.get(k)[0])) : [groups.get(k)[0]]);
+  // A task type in a review comes with as many variants as it needs correct answers in a row, or more if the review asks.
+  const taskVariants = (q) => (q.skill ? Math.max(reviewNeed(q), quiz.variants ?? 0) : 1);
+  const variants = (k) => (review ? groups.get(k).slice(0, taskVariants(groups.get(k)[0])) : [groups.get(k)[0]]);
   const main = [];
   let room = size - checks.length;
   for (const k of [...reserved, ...pool.filter((k) => !reserved.includes(k))]) {
@@ -131,9 +132,11 @@ function progressRound(quiz, stats, random) {
   }
   const picked = [...main.flatMap(variants), ...checks.map((k) => groups.get(k)[0])];
 
-  // A quiz with few skills fills the round with more variants of the same skills.
+  // An open task type gets a second variant, enough to master it in one round, but no more: a few open types make a short round.
+  // A revision round of mastered types is filled up with their variants.
   if (!review) {
-    const extra = main.flatMap((k) => (groups.get(k)[0].skill ? groups.get(k).slice(1) : []));
+    const more = open.length ? SKILL_STREAK : undefined;
+    const extra = main.flatMap((k) => (groups.get(k)[0].skill ? groups.get(k).slice(1, more) : []));
     picked.push(...shuffle(extra, random).slice(0, size - picked.length));
   }
   return shuffle(picked, random);
@@ -145,5 +148,9 @@ export function buildRound(quiz, mode, stats, random = Math.random) {
   if (mode === "hard") return hardRound(quiz, stats, size, random);
   const section = quiz.sections.find((s) => s.id === mode);
   if (!section) throw new Error(`Unknown mode ${mode}`);
+  // A section plays like a small quiz: its open questions and a few checks; once all is mastered, a full sample.
+  const sub = { ...quiz, sections: [section] };
+  const mastered = masteredFn(sub, stats);
+  if (allQuestions(sub).some((q) => !mastered(progressKey(sub, q)))) return progressRound(sub, stats, random);
   return sampleRound(section.questions, size, random);
 }

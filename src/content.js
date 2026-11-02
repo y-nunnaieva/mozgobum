@@ -84,17 +84,21 @@ export function buildCatalog(modules) {
       // Composed quizzes reference the chapter's own quizzes as sections; questions are never copied.
       const composed = (kind, id, title, include) => ({
         kind, path: `${base}/${id}`, number: null, title, subject: s, chapterTitle: c.title, include, back: base,
-        sections: include.map((name) => {
+        // An entry is a quiz name, or { quiz, sections: [ids] } to take only some of its sections.
+        sections: include.map((entry) => {
+          const { quiz: name, sections: only } = typeof entry === "string" ? { quiz: entry } : entry;
           const q = byName[name];
           if (!q) throw new Error(`${base}/${id} includes missing quiz ${name}`);
-          return { id: name, kind: q.kind, name: q.title, label: q.label, icon: q.label ?? q.icon ?? "", hidden: q.hidden, questions: allQuestions(q) };
+          const picked = only ? q.sections.filter((s) => only.includes(s.id)) : q.sections;
+          if (only && picked.length !== only.length) throw new Error(`${base}/${id} includes missing sections of ${name}: ${only}`);
+          return { id: name, kind: q.kind, name: q.title, label: q.label, icon: q.label ?? q.icon ?? "", hidden: q.hidden, questions: picked.flatMap((s) => s.questions) };
         }),
       });
       // Each review has its own progress, but no own hard questions: its mistakes land in the subchapters' ones.
       // A big test can set its own `limit` and keep only the most important questions (`maxLevel`).
       const reviews = (c.reviews ?? []).map((r) => {
         const limit = r.limit ?? REVIEW_LIMITS[r.type ?? "sprawdzian"];
-        const review = { ...composed("review", r.id, r.title, r.include), review: `${base}/${r.id}`, limit, eyebrow: r.eyebrow };
+        const review = { ...composed("review", r.id, r.title, r.include), review: `${base}/${r.id}`, limit, eyebrow: r.eyebrow, variants: r.variants };
         if (r.maxLevel) return upToLevel(review, r.maxLevel);
         return keyCount(review) > limit ? upToLevel(review, 2) : review;
       });
