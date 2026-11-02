@@ -10,7 +10,7 @@ export default {
         {
           "id": "0001",
           "group": "w-can-i-order-a-pizza-please",
-          "q": "Jak po angielsku jest „Czy mogę zamówić pizzę?”?",
+          "q": "Jak po angielsku jest „Czy mogę zamówić pizzę?”",
           "correct": [
             "Can I order a pizza, please?"
           ],
@@ -24,7 +24,7 @@ export default {
         {
           "id": "0002",
           "group": "w-can-i-order-a-pizza-please",
-          "q": "Co znaczy „Can I order a pizza, please?”?",
+          "q": "Co znaczy „Can I order a pizza, please?”",
           "correct": [
             "Czy mogę zamówić pizzę?"
           ],
@@ -38,7 +38,7 @@ export default {
         {
           "id": "0003",
           "group": "w-what-size",
-          "q": "Jak po angielsku jest „Jaki rozmiar?”?",
+          "q": "Jak po angielsku jest „Jaki rozmiar?”",
           "correct": [
             "What size?"
           ],
@@ -52,7 +52,7 @@ export default {
         {
           "id": "0004",
           "group": "w-what-size",
-          "q": "Co znaczy „What size?”?",
+          "q": "Co znaczy „What size?”",
           "correct": [
             "Jaki rozmiar?"
           ],
@@ -66,7 +66,7 @@ export default {
         {
           "id": "0005",
           "group": "w-small-medium-or-large",
-          "q": "Jak po angielsku jest „Mała, średnia czy duża?”?",
+          "q": "Jak po angielsku jest „Mała, średnia czy duża?”",
           "correct": [
             "Small, medium or large?"
           ],
@@ -80,7 +80,7 @@ export default {
         {
           "id": "0006",
           "group": "w-small-medium-or-large",
-          "q": "Co znaczy „Small, medium or large?”?",
+          "q": "Co znaczy „Small, medium or large?”",
           "correct": [
             "Mała, średnia czy duża?"
           ],
@@ -94,7 +94,7 @@ export default {
         {
           "id": "0007",
           "group": "w-what-s-your-address",
-          "q": "Jak po angielsku jest „Jaki jest twój adres?”?",
+          "q": "Jak po angielsku jest „Jaki jest twój adres?”",
           "correct": [
             "What's your address?"
           ],
@@ -108,7 +108,7 @@ export default {
         {
           "id": "0008",
           "group": "w-what-s-your-address",
-          "q": "Co znaczy „What's your address?”?",
+          "q": "Co znaczy „What's your address?”",
           "correct": [
             "Jaki jest twój adres?"
           ],
@@ -122,7 +122,7 @@ export default {
         {
           "id": "0009",
           "group": "w-and-your-phone-number",
-          "q": "Jak po angielsku jest „Numer telefonu?”?",
+          "q": "Jak po angielsku jest „Numer telefonu?”",
           "correct": [
             "And your phone number?"
           ],
@@ -136,7 +136,7 @@ export default {
         {
           "id": "0010",
           "group": "w-and-your-phone-number",
-          "q": "Co znaczy „And your phone number?”?",
+          "q": "Co znaczy „And your phone number?”",
           "correct": [
             "Numer telefonu?"
           ],
@@ -208,19 +208,6 @@ export default {
       "name": "Kto to mówi?",
       "icon": "🧑‍🍳",
       "questions": [
-        {
-          "id": "0015",
-          "q": "Które zdania mówi pracownik pizzerii?",
-          "correct": [
-            "What size?",
-            "What's your address?",
-            "It'll be with you in 20 minutes."
-          ],
-          "wrong": [
-            "Can I order a pizza, please?"
-          ],
-          "explain": "Klient zamawia pizzę, a pracownik pyta o rozmiar, adres i mówi, kiedy pizza przyjedzie."
-        },
         {
           "id": "0016",
           "q": "Które zdania mówi klient?",

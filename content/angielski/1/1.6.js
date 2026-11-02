@@ -10,7 +10,7 @@ export default {
         {
           "id": "0001",
           "group": "w-can-you-help-me-please",
-          "q": "Jak po angielsku jest „Czy może mi Pan/Pani pomóc?”?",
+          "q": "Jak po angielsku jest „Czy może mi Pan/Pani pomóc?”",
           "correct": [
             "Can you help me, please?"
           ],
@@ -24,7 +24,7 @@ export default {
         {
           "id": "0002",
           "group": "w-can-you-help-me-please",
-          "q": "Co znaczy „Can you help me, please?”?",
+          "q": "Co znaczy „Can you help me, please?”",
           "correct": [
             "Czy może mi Pan/Pani pomóc?"
           ],
@@ -38,7 +38,7 @@ export default {
         {
           "id": "0003",
           "group": "w-can-you-repeat-that-please",
-          "q": "Jak po angielsku jest „Czy może Pan/Pani powtórzyć?”?",
+          "q": "Jak po angielsku jest „Czy może Pan/Pani powtórzyć?”",
           "correct": [
             "Can you repeat that, please?"
           ],
@@ -52,7 +52,7 @@ export default {
         {
           "id": "0004",
           "group": "w-can-you-repeat-that-please",
-          "q": "Co znaczy „Can you repeat that, please?”?",
+          "q": "Co znaczy „Can you repeat that, please?”",
           "correct": [
             "Czy może Pan/Pani powtórzyć?"
           ],
@@ -150,7 +150,7 @@ export default {
         {
           "id": "0011",
           "group": "w-what-does-mean",
-          "q": "Jak po angielsku jest „Co znaczy…?”?",
+          "q": "Jak po angielsku jest „Co znaczy…?”",
           "correct": [
             "What does … mean?"
           ],
@@ -164,7 +164,7 @@ export default {
         {
           "id": "0012",
           "group": "w-what-does-mean",
-          "q": "Co znaczy „What does … mean?”?",
+          "q": "Co znaczy „What does … mean?”",
           "correct": [
             "Co znaczy…?"
           ],
@@ -178,7 +178,7 @@ export default {
         {
           "id": "0013",
           "group": "w-what-is-in-english",
-          "q": "Jak po angielsku jest „Jak po angielsku powiedzieć…?”?",
+          "q": "Jak po angielsku jest „Jak po angielsku powiedzieć…?”",
           "correct": [
             "What is … in English?"
           ],
@@ -192,7 +192,7 @@ export default {
         {
           "id": "0014",
           "group": "w-what-is-in-english",
-          "q": "Co znaczy „What is … in English?”?",
+          "q": "Co znaczy „What is … in English?”",
           "correct": [
             "Jak po angielsku powiedzieć…?"
           ],
@@ -206,7 +206,7 @@ export default {
         {
           "id": "0015",
           "group": "w-how-do-you-spell-it",
-          "q": "Jak po angielsku jest „Jak to się pisze?”?",
+          "q": "Jak po angielsku jest „Jak to się pisze?”",
           "correct": [
             "How do you spell it?"
           ],
@@ -220,7 +220,7 @@ export default {
         {
           "id": "0016",
           "group": "w-how-do-you-spell-it",
-          "q": "Co znaczy „How do you spell it?”?",
+          "q": "Co znaczy „How do you spell it?”",
           "correct": [
             "Jak to się pisze?"
           ],
