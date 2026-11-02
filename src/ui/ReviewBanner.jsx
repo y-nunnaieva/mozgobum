@@ -9,7 +9,9 @@ import { Icon } from "./Icon.jsx";
 import { Meter } from "./Meter.jsx";
 
 // A mastered review untouched this long gets a reminder to check that nothing was forgotten.
+// The database enforces the same waits when a child starts over.
 const REMIND_AFTER_DAYS = 3;
+const SUMMARY_REMIND_AFTER_DAYS = 2;
 const DAY = 24 * 60 * 60 * 1000;
 
 // A chapter review (sprawdzian, kartkówka) or a subchapter summary, with its stats link and reminder.
@@ -19,7 +21,7 @@ export function ReviewBanner({ review: r }) {
   const { done, total } = progress(r, stats);
   const last = stats.reviews[r.review]?.last;
   const days = last ? Math.floor((Date.now() - Date.parse(last)) / DAY) : 0;
-  const remind = total > 0 && done === total && days >= REMIND_AFTER_DAYS;
+  const remind = total > 0 && done === total && days >= (r.parent ? SUMMARY_REMIND_AFTER_DAYS : REMIND_AFTER_DAYS);
   const scope = r.parent ? "" : reviewScope(r);
 
   const reset = async () => {
