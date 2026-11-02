@@ -46,9 +46,14 @@ export function App() {
 
   useEffect(() => {
     if (!drawerOpen) return;
+    // A scrolling page behind the drawer makes the phone toolbar collapse and the drawer jump.
+    document.documentElement.classList.add("scroll-lock");
     const onKey = (e) => e.key === "Escape" && setDrawerOpen(false);
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.documentElement.classList.remove("scroll-lock");
+    };
   }, [drawerOpen]);
 
   let content;

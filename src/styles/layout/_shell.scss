@@ -102,6 +102,7 @@
   z-index: z(drawer);
   width: min(86%, 340px);
   overflow-y: auto;
+  overscroll-behavior: contain;
   scrollbar-width: thin;
   scrollbar-color: var(--off) transparent;
   @include stack(space(12));
@@ -141,9 +142,14 @@
   visibility: visible;
 }
 
+.scroll-lock {
+  overflow: hidden;
+}
+
 .drawer-backdrop {
   position: fixed;
   inset: 0;
+  touch-action: none;
   z-index: z(drawer-backdrop);
   background: var(--overlay);
 
