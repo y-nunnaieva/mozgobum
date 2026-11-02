@@ -63,72 +63,128 @@ export default {
         },
         {
           "id": "0005",
-          "q": "Który zapis to rozkład liczby 84 na czynniki pierwsze?",
+          "q": "Który zapis to rozkład liczby 60 na czynniki pierwsze?",
           "correct": [
-            "84 = 2 · 2 · 3 · 7"
+            "60 = 2 · 2 · 3 · 5"
           ],
           "wrong": [
-            "84 = 2 · 2 · 21",
-            "84 = 2 · 2 · 3",
-            "84 = 2 · 2 · 3 · 7 · 2"
+            "60 = 2 · 2 · 15",
+            "60 = 2 · 2 · 3",
+            "60 = 2 · 2 · 3 · 5 · 2"
           ],
-          "explain": "2 · 2 · 3 · 7 = 84, a wszystkie czynniki są pierwsze."
+          "explain": "2 · 2 · 3 · 5 = 60, a wszystkie czynniki są pierwsze."
         },
         {
           "id": "0006",
-          "q": "Który zapis to rozkład liczby 280 na czynniki pierwsze?",
+          "q": "Który zapis to rozkład liczby 100 na czynniki pierwsze?",
           "correct": [
-            "280 = 2 · 2 · 2 · 5 · 7"
+            "100 = 2 · 2 · 5 · 5"
           ],
           "wrong": [
-            "280 = 2 · 2 · 2 · 35",
-            "280 = 2 · 2 · 2 · 5",
-            "280 = 2 · 2 · 2 · 5 · 7 · 2"
+            "100 = 2 · 2 · 25",
+            "100 = 2 · 2 · 5",
+            "100 = 2 · 2 · 5 · 5 · 2"
           ],
-          "explain": "2 · 2 · 2 · 5 · 7 = 280, a wszystkie czynniki są pierwsze."
+          "explain": "2 · 2 · 5 · 5 = 100, a wszystkie czynniki są pierwsze."
         },
         {
           "id": "0007",
-          "q": "Który zapis to rozkład liczby 160 na czynniki pierwsze?",
+          "q": "Który zapis to rozkład liczby 117 na czynniki pierwsze?",
           "correct": [
-            "160 = 2 · 2 · 2 · 2 · 2 · 5"
+            "117 = 3 · 3 · 13"
           ],
           "wrong": [
-            "160 = 2 · 2 · 2 · 2 · 10",
-            "160 = 2 · 2 · 2 · 2 · 2",
-            "160 = 2 · 2 · 2 · 2 · 2 · 5 · 2"
+            "117 = 3 · 39",
+            "117 = 3 · 3",
+            "117 = 3 · 3 · 13 · 2"
           ],
-          "explain": "2 · 2 · 2 · 2 · 2 · 5 = 160, a wszystkie czynniki są pierwsze."
+          "explain": "3 · 3 · 13 = 117, a wszystkie czynniki są pierwsze."
         },
         {
           "id": "0008",
-          "q": "Który zapis to rozkład liczby 152 na czynniki pierwsze?",
+          "q": "Który zapis to rozkład liczby 207 na czynniki pierwsze?",
           "correct": [
-            "152 = 2 · 2 · 2 · 19"
+            "207 = 3 · 3 · 23"
           ],
           "wrong": [
-            "152 = 2 · 2 · 38",
-            "152 = 2 · 2 · 2",
-            "152 = 2 · 2 · 2 · 19 · 2"
+            "207 = 3 · 69",
+            "207 = 3 · 3",
+            "207 = 3 · 3 · 23 · 2"
           ],
-          "explain": "2 · 2 · 2 · 19 = 152, a wszystkie czynniki są pierwsze."
+          "explain": "3 · 3 · 23 = 207, a wszystkie czynniki są pierwsze."
         },
         {
           "id": "0009",
-          "q": "Który zapis to rozkład liczby 81 na czynniki pierwsze?",
+          "q": "Który zapis to rozkład liczby 250 na czynniki pierwsze?",
           "correct": [
-            "81 = 3 · 3 · 3 · 3"
+            "250 = 2 · 5 · 5 · 5"
           ],
           "wrong": [
-            "81 = 3 · 3 · 9",
-            "81 = 3 · 3 · 3",
-            "81 = 3 · 3 · 3 · 3 · 2"
+            "250 = 2 · 5 · 25",
+            "250 = 2 · 5 · 5",
+            "250 = 2 · 5 · 5 · 5 · 2"
           ],
-          "explain": "3 · 3 · 3 · 3 = 81, a wszystkie czynniki są pierwsze.",
+          "explain": "2 · 5 · 5 · 5 = 250, a wszystkie czynniki są pierwsze.",
           "level": 3
         },
         {
           "id": "0010",
+          "q": "Który zapis to rozkład liczby 282 na czynniki pierwsze?",
+          "correct": [
+            "282 = 2 · 3 · 47"
+          ],
+          "wrong": [
+            "282 = 2 · 141",
+            "282 = 2 · 3",
+            "282 = 2 · 3 · 47 · 2"
+          ],
+          "explain": "2 · 3 · 47 = 282, a wszystkie czynniki są pierwsze.",
+          "level": 3
+        },
+        {
+          "id": "0011",
+          "q": "Który zapis to rozkład liczby 54 na czynniki pierwsze?",
+          "correct": [
+            "54 = 2 · 3 · 3 · 3"
+          ],
+          "wrong": [
+            "54 = 2 · 3 · 9",
+            "54 = 2 · 3 · 3",
+            "54 = 2 · 3 · 3 · 3 · 2"
+          ],
+          "explain": "2 · 3 · 3 · 3 = 54, a wszystkie czynniki są pierwsze.",
+          "level": 3
+        },
+        {
+          "id": "0012",
+          "q": "Który zapis to rozkład liczby 63 na czynniki pierwsze?",
+          "correct": [
+            "63 = 3 · 3 · 7"
+          ],
+          "wrong": [
+            "63 = 3 · 21",
+            "63 = 3 · 3",
+            "63 = 3 · 3 · 7 · 2"
+          ],
+          "explain": "3 · 3 · 7 = 63, a wszystkie czynniki są pierwsze.",
+          "level": 3
+        },
+        {
+          "id": "0013",
+          "q": "Który zapis to rozkład liczby 150 na czynniki pierwsze?",
+          "correct": [
+            "150 = 2 · 3 · 5 · 5"
+          ],
+          "wrong": [
+            "150 = 2 · 3 · 25",
+            "150 = 2 · 3 · 5",
+            "150 = 2 · 3 · 5 · 5 · 2"
+          ],
+          "explain": "2 · 3 · 5 · 5 = 150, a wszystkie czynniki są pierwsze.",
+          "level": 3
+        },
+        {
+          "id": "0014",
           "q": "Który zapis to rozkład liczby 112 na czynniki pierwsze?",
           "correct": [
             "112 = 2 · 2 · 2 · 2 · 7"
@@ -142,35 +198,35 @@ export default {
           "level": 3
         },
         {
-          "id": "0011",
-          "q": "Który zapis to rozkład liczby 124 na czynniki pierwsze?",
+          "id": "0015",
+          "q": "Który zapis to rozkład liczby 208 na czynniki pierwsze?",
           "correct": [
-            "124 = 2 · 2 · 31"
+            "208 = 2 · 2 · 2 · 2 · 13"
           ],
           "wrong": [
-            "124 = 2 · 62",
-            "124 = 2 · 2",
-            "124 = 2 · 2 · 31 · 2"
+            "208 = 2 · 2 · 2 · 26",
+            "208 = 2 · 2 · 2 · 2",
+            "208 = 2 · 2 · 2 · 2 · 13 · 2"
           ],
-          "explain": "2 · 2 · 31 = 124, a wszystkie czynniki są pierwsze.",
+          "explain": "2 · 2 · 2 · 2 · 13 = 208, a wszystkie czynniki są pierwsze.",
           "level": 3
         },
         {
-          "id": "0012",
-          "q": "Który zapis to rozkład liczby 264 na czynniki pierwsze?",
+          "id": "0016",
+          "q": "Który zapis to rozkład liczby 189 na czynniki pierwsze?",
           "correct": [
-            "264 = 2 · 2 · 2 · 3 · 11"
+            "189 = 3 · 3 · 3 · 7"
           ],
           "wrong": [
-            "264 = 2 · 2 · 2 · 33",
-            "264 = 2 · 2 · 2 · 3",
-            "264 = 2 · 2 · 2 · 3 · 11 · 2"
+            "189 = 3 · 3 · 21",
+            "189 = 3 · 3 · 3",
+            "189 = 3 · 3 · 3 · 7 · 2"
           ],
-          "explain": "2 · 2 · 2 · 3 · 11 = 264, a wszystkie czynniki są pierwsze.",
+          "explain": "3 · 3 · 3 · 7 = 189, a wszystkie czynniki są pierwsze.",
           "level": 3
         },
         {
-          "id": "0013",
+          "id": "0017",
           "q": "Który zapis to rozkład liczby 154 na czynniki pierwsze?",
           "correct": [
             "154 = 2 · 7 · 11"
@@ -184,157 +240,101 @@ export default {
           "level": 3
         },
         {
-          "id": "0014",
-          "q": "Który zapis to rozkład liczby 240 na czynniki pierwsze?",
-          "correct": [
-            "240 = 2 · 2 · 2 · 2 · 3 · 5"
-          ],
-          "wrong": [
-            "240 = 2 · 2 · 2 · 2 · 15",
-            "240 = 2 · 2 · 2 · 2 · 3",
-            "240 = 2 · 2 · 2 · 2 · 3 · 5 · 2"
-          ],
-          "explain": "2 · 2 · 2 · 2 · 3 · 5 = 240, a wszystkie czynniki są pierwsze.",
-          "level": 3
-        },
-        {
-          "id": "0015",
-          "q": "Który zapis to rozkład liczby 172 na czynniki pierwsze?",
-          "correct": [
-            "172 = 2 · 2 · 43"
-          ],
-          "wrong": [
-            "172 = 2 · 86",
-            "172 = 2 · 2",
-            "172 = 2 · 2 · 43 · 2"
-          ],
-          "explain": "2 · 2 · 43 = 172, a wszystkie czynniki są pierwsze.",
-          "level": 3
-        },
-        {
-          "id": "0016",
-          "q": "Który zapis to rozkład liczby 66 na czynniki pierwsze?",
-          "correct": [
-            "66 = 2 · 3 · 11"
-          ],
-          "wrong": [
-            "66 = 2 · 33",
-            "66 = 2 · 3",
-            "66 = 2 · 3 · 11 · 2"
-          ],
-          "explain": "2 · 3 · 11 = 66, a wszystkie czynniki są pierwsze.",
-          "level": 3
-        },
-        {
-          "id": "0017",
-          "q": "Który zapis to rozkład liczby 231 na czynniki pierwsze?",
-          "correct": [
-            "231 = 3 · 7 · 11"
-          ],
-          "wrong": [
-            "231 = 3 · 77",
-            "231 = 3 · 7",
-            "231 = 3 · 7 · 11 · 2"
-          ],
-          "explain": "3 · 7 · 11 = 231, a wszystkie czynniki są pierwsze.",
-          "level": 3
-        },
-        {
           "id": "0018",
-          "q": "Który zapis to rozkład liczby 294 na czynniki pierwsze?",
+          "q": "Który zapis to rozkład liczby 236 na czynniki pierwsze?",
           "correct": [
-            "294 = 2 · 3 · 7 · 7"
+            "236 = 2 · 2 · 59"
           ],
           "wrong": [
-            "294 = 2 · 3 · 49",
-            "294 = 2 · 3 · 7",
-            "294 = 2 · 3 · 7 · 7 · 2"
+            "236 = 2 · 118",
+            "236 = 2 · 2",
+            "236 = 2 · 2 · 59 · 2"
           ],
-          "explain": "2 · 3 · 7 · 7 = 294, a wszystkie czynniki są pierwsze.",
+          "explain": "2 · 2 · 59 = 236, a wszystkie czynniki są pierwsze.",
           "level": 3
         },
         {
           "id": "0019",
-          "q": "Który zapis to rozkład liczby 186 na czynniki pierwsze?",
+          "q": "Który zapis to rozkład liczby 124 na czynniki pierwsze?",
           "correct": [
-            "186 = 2 · 3 · 31"
+            "124 = 2 · 2 · 31"
           ],
           "wrong": [
-            "186 = 2 · 93",
-            "186 = 2 · 3",
-            "186 = 2 · 3 · 31 · 2"
+            "124 = 2 · 62",
+            "124 = 2 · 2",
+            "124 = 2 · 2 · 31 · 2"
           ],
-          "explain": "2 · 3 · 31 = 186, a wszystkie czynniki są pierwsze.",
+          "explain": "2 · 2 · 31 = 124, a wszystkie czynniki są pierwsze.",
           "level": 3
         },
         {
           "id": "0020",
-          "q": "Który zapis to rozkład liczby 174 na czynniki pierwsze?",
+          "q": "Który zapis to rozkład liczby 76 na czynniki pierwsze?",
           "correct": [
-            "174 = 2 · 3 · 29"
+            "76 = 2 · 2 · 19"
           ],
           "wrong": [
-            "174 = 2 · 87",
-            "174 = 2 · 3",
-            "174 = 2 · 3 · 29 · 2"
+            "76 = 2 · 38",
+            "76 = 2 · 2",
+            "76 = 2 · 2 · 19 · 2"
           ],
-          "explain": "2 · 3 · 29 = 174, a wszystkie czynniki są pierwsze.",
+          "explain": "2 · 2 · 19 = 76, a wszystkie czynniki są pierwsze.",
           "level": 3
         },
         {
           "id": "0021",
-          "q": "Który zapis to rozkład liczby 75 na czynniki pierwsze?",
+          "q": "Który zapis to rozkład liczby 30 na czynniki pierwsze?",
           "correct": [
-            "75 = 3 · 5 · 5"
+            "30 = 2 · 3 · 5"
           ],
           "wrong": [
-            "75 = 3 · 25",
-            "75 = 3 · 5",
-            "75 = 3 · 5 · 5 · 2"
+            "30 = 2 · 15",
+            "30 = 2 · 3",
+            "30 = 2 · 3 · 5 · 2"
           ],
-          "explain": "3 · 5 · 5 = 75, a wszystkie czynniki są pierwsze.",
+          "explain": "2 · 3 · 5 = 30, a wszystkie czynniki są pierwsze.",
           "level": 3
         },
         {
           "id": "0022",
-          "q": "Który zapis to rozkład liczby 99 na czynniki pierwsze?",
+          "q": "Który zapis to rozkład liczby 220 na czynniki pierwsze?",
           "correct": [
-            "99 = 3 · 3 · 11"
+            "220 = 2 · 2 · 5 · 11"
           ],
           "wrong": [
-            "99 = 3 · 33",
-            "99 = 3 · 3",
-            "99 = 3 · 3 · 11 · 2"
+            "220 = 2 · 2 · 55",
+            "220 = 2 · 2 · 5",
+            "220 = 2 · 2 · 5 · 11 · 2"
           ],
-          "explain": "3 · 3 · 11 = 99, a wszystkie czynniki są pierwsze.",
+          "explain": "2 · 2 · 5 · 11 = 220, a wszystkie czynniki są pierwsze.",
           "level": 3
         },
         {
           "id": "0023",
-          "q": "Który zapis to rozkład liczby 238 na czynniki pierwsze?",
+          "q": "Który zapis to rozkład liczby 190 na czynniki pierwsze?",
           "correct": [
-            "238 = 2 · 7 · 17"
+            "190 = 2 · 5 · 19"
           ],
           "wrong": [
-            "238 = 2 · 119",
-            "238 = 2 · 7",
-            "238 = 2 · 7 · 17 · 2"
+            "190 = 2 · 95",
+            "190 = 2 · 5",
+            "190 = 2 · 5 · 19 · 2"
           ],
-          "explain": "2 · 7 · 17 = 238, a wszystkie czynniki są pierwsze.",
+          "explain": "2 · 5 · 19 = 190, a wszystkie czynniki są pierwsze.",
           "level": 3
         },
         {
           "id": "0024",
-          "q": "Który zapis to rozkład liczby 90 na czynniki pierwsze?",
+          "q": "Który zapis to rozkład liczby 252 na czynniki pierwsze?",
           "correct": [
-            "90 = 2 · 3 · 3 · 5"
+            "252 = 2 · 2 · 3 · 3 · 7"
           ],
           "wrong": [
-            "90 = 2 · 3 · 15",
-            "90 = 2 · 3 · 3",
-            "90 = 2 · 3 · 3 · 5 · 2"
+            "252 = 2 · 2 · 3 · 21",
+            "252 = 2 · 2 · 3 · 3",
+            "252 = 2 · 2 · 3 · 3 · 7 · 2"
           ],
-          "explain": "2 · 3 · 3 · 5 = 90, a wszystkie czynniki są pierwsze.",
+          "explain": "2 · 2 · 3 · 3 · 7 = 252, a wszystkie czynniki są pierwsze.",
           "level": 3
         }
       ]
@@ -347,233 +347,23 @@ export default {
         {
           "type": "number",
           "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 41?",
-          "answer": "246",
-          "explain": "2 · 3 · 41 = 246."
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 5 · 7?",
+          "answer": "70",
+          "explain": "2 · 5 · 7 = 70."
         },
         {
           "type": "number",
           "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 47?",
-          "answer": "188",
-          "explain": "2 · 2 · 47 = 188."
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 23?",
+          "answer": "138",
+          "explain": "2 · 3 · 23 = 138."
         },
         {
           "type": "number",
           "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 3 · 7?",
-          "answer": "84",
-          "explain": "2 · 2 · 3 · 7 = 84."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 3 · 3 · 3 · 5?",
-          "answer": "135",
-          "explain": "3 · 3 · 3 · 5 = 135."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 5 · 5?",
-          "answer": "100",
-          "explain": "2 · 2 · 5 · 5 = 100."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 5 · 11?",
-          "answer": "110",
-          "explain": "2 · 5 · 11 = 110."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 11?",
-          "answer": "66",
-          "explain": "2 · 3 · 11 = 66."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 67?",
-          "answer": "268",
-          "explain": "2 · 2 · 67 = 268."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 59?",
-          "answer": "354",
-          "explain": "2 · 3 · 59 = 354."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 2 · 3 · 11?",
-          "answer": "264",
-          "explain": "2 · 2 · 2 · 3 · 11 = 264."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 3 · 5 · 5?",
-          "answer": "75",
-          "explain": "3 · 5 · 5 = 75."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 2 · 2 · 2 · 2?",
-          "answer": "64",
-          "explain": "2 · 2 · 2 · 2 · 2 · 2 = 64."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 2 · 13?",
-          "answer": "104",
-          "explain": "2 · 2 · 2 · 13 = 104."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 7 · 19?",
-          "answer": "266",
-          "explain": "2 · 7 · 19 = 266."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 5 · 5?",
-          "answer": "50",
-          "explain": "2 · 5 · 5 = 50."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 5?",
-          "answer": "20",
-          "explain": "2 · 2 · 5 = 20."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 3 · 3 · 5?",
-          "answer": "270",
-          "explain": "2 · 3 · 3 · 3 · 5 = 270."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 3 · 7 · 11?",
-          "answer": "231",
-          "explain": "3 · 7 · 11 = 231."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 7 · 23?",
-          "answer": "322",
-          "explain": "2 · 7 · 23 = 322."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 3 · 5 · 19?",
-          "answer": "285",
-          "explain": "3 · 5 · 19 = 285."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 5 · 13?",
-          "answer": "390",
-          "explain": "2 · 3 · 5 · 13 = 390."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 29?",
-          "answer": "174",
-          "explain": "2 · 3 · 29 = 174."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 5 · 5 · 7?",
-          "answer": "350",
-          "explain": "2 · 5 · 5 · 7 = 350."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 3 · 7 · 19?",
-          "answer": "399",
-          "explain": "3 · 7 · 19 = 399."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 3 · 5 · 23?",
-          "answer": "345",
-          "explain": "3 · 5 · 23 = 345."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 3 · 3 · 19?",
-          "answer": "171",
-          "explain": "3 · 3 · 19 = 171."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 2 · 47?",
-          "answer": "376",
-          "explain": "2 · 2 · 2 · 47 = 376."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 3 · 3 · 3 · 3?",
-          "answer": "81",
-          "explain": "3 · 3 · 3 · 3 = 81."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 37?",
-          "answer": "148",
-          "explain": "2 · 2 · 37 = 148."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 2 · 2 · 19?",
-          "answer": "304",
-          "explain": "2 · 2 · 2 · 2 · 19 = 304."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 19?",
-          "answer": "114",
-          "explain": "2 · 3 · 19 = 114."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 79?",
-          "answer": "316",
-          "explain": "2 · 2 · 79 = 316."
-        },
-        {
-          "type": "number",
-          "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 43?",
-          "answer": "258",
-          "explain": "2 · 3 · 43 = 258."
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 5 · 7?",
+          "answer": "140",
+          "explain": "2 · 2 · 5 · 7 = 140."
         },
         {
           "type": "number",
@@ -585,9 +375,163 @@ export default {
         {
           "type": "number",
           "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 5 · 11?",
-          "answer": "330",
-          "explain": "2 · 3 · 5 · 11 = 330."
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 3 · 3 · 17?",
+          "answer": "153",
+          "explain": "3 · 3 · 17 = 153."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 2 · 3?",
+          "answer": "24",
+          "explain": "2 · 2 · 2 · 3 = 24."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 13?",
+          "answer": "78",
+          "explain": "2 · 3 · 13 = 78."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 3 · 31?",
+          "answer": "372",
+          "explain": "2 · 2 · 3 · 31 = 372."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 3 · 5 · 5?",
+          "answer": "75",
+          "explain": "3 · 5 · 5 = 75."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 41?",
+          "answer": "246",
+          "explain": "2 · 3 · 41 = 246."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 3 · 5 · 5?",
+          "answer": "300",
+          "explain": "2 · 2 · 3 · 5 · 5 = 300."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 7 · 19?",
+          "answer": "266",
+          "explain": "2 · 7 · 19 = 266."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 3 · 17?",
+          "answer": "204",
+          "explain": "2 · 2 · 3 · 17 = 204."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 89?",
+          "answer": "356",
+          "explain": "2 · 2 · 89 = 356."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 5 · 13?",
+          "answer": "260",
+          "explain": "2 · 2 · 5 · 13 = 260."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 2 · 2 · 2 · 2?",
+          "answer": "64",
+          "explain": "2 · 2 · 2 · 2 · 2 · 2 = 64."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 5 · 5?",
+          "answer": "50",
+          "explain": "2 · 5 · 5 = 50."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 3?",
+          "answer": "18",
+          "explain": "2 · 3 · 3 = 18."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 59?",
+          "answer": "236",
+          "explain": "2 · 2 · 59 = 236."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 2 · 2 · 5 · 5?",
+          "answer": "400",
+          "explain": "2 · 2 · 2 · 2 · 5 · 5 = 400."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 5 · 5 · 13?",
+          "answer": "325",
+          "explain": "5 · 5 · 13 = 325."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 7 · 17?",
+          "answer": "238",
+          "explain": "2 · 7 · 17 = 238."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 2 · 3 · 7?",
+          "answer": "168",
+          "explain": "2 · 2 · 2 · 3 · 7 = 168."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 3 · 3 · 19?",
+          "answer": "171",
+          "explain": "3 · 3 · 19 = 171."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 3 · 3?",
+          "answer": "54",
+          "explain": "2 · 3 · 3 · 3 = 54."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 2 · 7?",
+          "answer": "56",
+          "explain": "2 · 2 · 2 · 7 = 56."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 5?",
+          "answer": "30",
+          "explain": "2 · 3 · 5 = 30."
         },
         {
           "type": "number",
@@ -599,247 +543,170 @@ export default {
         {
           "type": "number",
           "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 5 · 19?",
-          "answer": "380",
-          "explain": "2 · 2 · 5 · 19 = 380."
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 2 · 5 · 5?",
+          "answer": "200",
+          "explain": "2 · 2 · 2 · 5 · 5 = 200."
         },
         {
           "type": "number",
           "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 3 · 23?",
-          "answer": "276",
-          "explain": "2 · 2 · 3 · 23 = 276."
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 3 · 3 · 11?",
+          "answer": "99",
+          "explain": "3 · 3 · 11 = 99."
         },
         {
           "type": "number",
           "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 3 · 29?",
-          "answer": "348",
-          "explain": "2 · 2 · 3 · 29 = 348."
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 41?",
+          "answer": "164",
+          "explain": "2 · 2 · 41 = 164."
         },
         {
           "type": "number",
           "skill": "Liczba z rozkładu",
-          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 11 · 11?",
-          "answer": "242",
-          "explain": "2 · 11 · 11 = 242."
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 3 · 5 · 17?",
+          "answer": "255",
+          "explain": "3 · 5 · 17 = 255."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 2 · 2 · 2 · 2 · 2?",
+          "answer": "128",
+          "explain": "2 · 2 · 2 · 2 · 2 · 2 · 2 = 128."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 2 · 2 · 5?",
+          "answer": "80",
+          "explain": "2 · 2 · 2 · 2 · 5 = 80."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 79?",
+          "answer": "316",
+          "explain": "2 · 2 · 79 = 316."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 3 · 3 · 7?",
+          "answer": "126",
+          "explain": "2 · 3 · 3 · 7 = 126."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 7 · 11?",
+          "answer": "308",
+          "explain": "2 · 2 · 7 · 11 = 308."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 2 · 2?",
+          "answer": "16",
+          "explain": "2 · 2 · 2 · 2 = 16."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 2 · 37?",
+          "answer": "148",
+          "explain": "2 · 2 · 37 = 148."
+        },
+        {
+          "type": "number",
+          "skill": "Liczba z rozkładu",
+          "q": "Jaka liczba ma rozkład na czynniki pierwsze 2 · 7 · 23?",
+          "answer": "322",
+          "explain": "2 · 7 · 23 = 322."
         },
         {
           "type": "number",
           "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 88 = 2 · ▢ · 2 · 11. Jaka liczba jest w miejscu ▢?",
-          "answer": "2",
-          "explain": "88 = 2 · 2 · 2 · 11."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 290 = ▢ · 5 · 29. Jaka liczba jest w miejscu ▢?",
-          "answer": "2",
-          "explain": "290 = 2 · 5 · 29."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 312 = 2 · 2 · ▢ · 3 · 13. Jaka liczba jest w miejscu ▢?",
-          "answer": "2",
-          "explain": "312 = 2 · 2 · 2 · 3 · 13."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 90 = 2 · 3 · 3 · ▢. Jaka liczba jest w miejscu ▢?",
+          "q": "Uzupełnij rozkład: 80 = 2 · 2 · 2 · 2 · ▢. Jaka liczba jest w miejscu ▢?",
           "answer": "5",
-          "explain": "90 = 2 · 3 · 3 · 5."
+          "explain": "80 = 2 · 2 · 2 · 2 · 5."
         },
         {
           "type": "number",
           "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 27 = ▢ · 3 · 3. Jaka liczba jest w miejscu ▢?",
-          "answer": "3",
-          "explain": "27 = 3 · 3 · 3."
+          "q": "Uzupełnij rozkład: 264 = 2 · 2 · 2 · 3 · ▢. Jaka liczba jest w miejscu ▢?",
+          "answer": "11",
+          "explain": "264 = 2 · 2 · 2 · 3 · 11."
         },
         {
           "type": "number",
           "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 232 = 2 · 2 · ▢ · 29. Jaka liczba jest w miejscu ▢?",
-          "answer": "2",
-          "explain": "232 = 2 · 2 · 2 · 29."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 248 = 2 · 2 · 2 · ▢. Jaka liczba jest w miejscu ▢?",
-          "answer": "31",
-          "explain": "248 = 2 · 2 · 2 · 31."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 174 = 2 · ▢ · 29. Jaka liczba jest w miejscu ▢?",
-          "answer": "3",
-          "explain": "174 = 2 · 3 · 29."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 186 = 2 · ▢ · 31. Jaka liczba jest w miejscu ▢?",
-          "answer": "3",
-          "explain": "186 = 2 · 3 · 31."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 182 = ▢ · 7 · 13. Jaka liczba jest w miejscu ▢?",
-          "answer": "2",
-          "explain": "182 = 2 · 7 · 13."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 310 = 2 · ▢ · 31. Jaka liczba jest w miejscu ▢?",
-          "answer": "5",
-          "explain": "310 = 2 · 5 · 31."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 357 = ▢ · 7 · 17. Jaka liczba jest w miejscu ▢?",
-          "answer": "3",
-          "explain": "357 = 3 · 7 · 17."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 388 = ▢ · 2 · 97. Jaka liczba jest w miejscu ▢?",
-          "answer": "2",
-          "explain": "388 = 2 · 2 · 97."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 258 = ▢ · 3 · 43. Jaka liczba jest w miejscu ▢?",
-          "answer": "2",
-          "explain": "258 = 2 · 3 · 43."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 153 = 3 · ▢ · 17. Jaka liczba jest w miejscu ▢?",
-          "answer": "3",
-          "explain": "153 = 3 · 3 · 17."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 116 = 2 · 2 · ▢. Jaka liczba jest w miejscu ▢?",
-          "answer": "29",
-          "explain": "116 = 2 · 2 · 29."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 333 = 3 · 3 · ▢. Jaka liczba jest w miejscu ▢?",
-          "answer": "37",
-          "explain": "333 = 3 · 3 · 37."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 195 = ▢ · 5 · 13. Jaka liczba jest w miejscu ▢?",
-          "answer": "3",
-          "explain": "195 = 3 · 5 · 13."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 84 = 2 · ▢ · 3 · 7. Jaka liczba jest w miejscu ▢?",
-          "answer": "2",
-          "explain": "84 = 2 · 2 · 3 · 7."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 125 = 5 · ▢ · 5. Jaka liczba jest w miejscu ▢?",
-          "answer": "5",
-          "explain": "125 = 5 · 5 · 5."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 279 = 3 · ▢ · 31. Jaka liczba jest w miejscu ▢?",
-          "answer": "3",
-          "explain": "279 = 3 · 3 · 31."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 110 = 2 · ▢ · 11. Jaka liczba jest w miejscu ▢?",
-          "answer": "5",
-          "explain": "110 = 2 · 5 · 11."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 316 = 2 · ▢ · 79. Jaka liczba jest w miejscu ▢?",
-          "answer": "2",
-          "explain": "316 = 2 · 2 · 79."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 188 = ▢ · 2 · 47. Jaka liczba jest w miejscu ▢?",
-          "answer": "2",
+          "q": "Uzupełnij rozkład: 188 = 2 · 2 · ▢. Jaka liczba jest w miejscu ▢?",
+          "answer": "47",
           "explain": "188 = 2 · 2 · 47."
         },
         {
           "type": "number",
           "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 78 = 2 · 3 · ▢. Jaka liczba jest w miejscu ▢?",
-          "answer": "13",
-          "explain": "78 = 2 · 3 · 13."
+          "q": "Uzupełnij rozkład: 279 = 3 · 3 · ▢. Jaka liczba jest w miejscu ▢?",
+          "answer": "31",
+          "explain": "279 = 3 · 3 · 31."
         },
         {
           "type": "number",
           "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 345 = 3 · ▢ · 23. Jaka liczba jest w miejscu ▢?",
-          "answer": "5",
-          "explain": "345 = 3 · 5 · 23."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 336 = ▢ · 2 · 2 · 2 · 3 · 7. Jaka liczba jest w miejscu ▢?",
+          "q": "Uzupełnij rozkład: 144 = 2 · 2 · ▢ · 2 · 3 · 3. Jaka liczba jest w miejscu ▢?",
           "answer": "2",
-          "explain": "336 = 2 · 2 · 2 · 2 · 3 · 7."
+          "explain": "144 = 2 · 2 · 2 · 2 · 3 · 3."
         },
         {
           "type": "number",
           "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 136 = 2 · ▢ · 2 · 17. Jaka liczba jest w miejscu ▢?",
-          "answer": "2",
-          "explain": "136 = 2 · 2 · 2 · 17."
+          "q": "Uzupełnij rozkład: 363 = 3 · 11 · ▢. Jaka liczba jest w miejscu ▢?",
+          "answer": "11",
+          "explain": "363 = 3 · 11 · 11."
         },
         {
           "type": "number",
           "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 390 = 2 · ▢ · 5 · 13. Jaka liczba jest w miejscu ▢?",
+          "q": "Uzupełnij rozkład: 204 = 2 · 2 · 3 · ▢. Jaka liczba jest w miejscu ▢?",
+          "answer": "17",
+          "explain": "204 = 2 · 2 · 3 · 17."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 144 = 2 · 2 · 2 · 2 · ▢ · 3. Jaka liczba jest w miejscu ▢?",
           "answer": "3",
-          "explain": "390 = 2 · 3 · 5 · 13."
+          "explain": "144 = 2 · 2 · 2 · 2 · 3 · 3."
         },
         {
           "type": "number",
           "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 364 = 2 · ▢ · 7 · 13. Jaka liczba jest w miejscu ▢?",
-          "answer": "2",
-          "explain": "364 = 2 · 2 · 7 · 13."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 24 = 2 · 2 · 2 · ▢. Jaka liczba jest w miejscu ▢?",
+          "q": "Uzupełnij rozkład: 315 = ▢ · 3 · 5 · 7. Jaka liczba jest w miejscu ▢?",
           "answer": "3",
-          "explain": "24 = 2 · 2 · 2 · 3."
+          "explain": "315 = 3 · 3 · 5 · 7."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 44 = ▢ · 2 · 11. Jaka liczba jest w miejscu ▢?",
+          "answer": "2",
+          "explain": "44 = 2 · 2 · 11."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 148 = 2 · ▢ · 37. Jaka liczba jest w miejscu ▢?",
+          "answer": "2",
+          "explain": "148 = 2 · 2 · 37."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 176 = 2 · 2 · ▢ · 2 · 11. Jaka liczba jest w miejscu ▢?",
+          "answer": "2",
+          "explain": "176 = 2 · 2 · 2 · 2 · 11."
         },
         {
           "type": "number",
@@ -851,114 +718,240 @@ export default {
         {
           "type": "number",
           "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 75 = ▢ · 5 · 5. Jaka liczba jest w miejscu ▢?",
-          "answer": "3",
-          "explain": "75 = 3 · 5 · 5."
+          "q": "Uzupełnij rozkład: 225 = 3 · 3 · ▢ · 5. Jaka liczba jest w miejscu ▢?",
+          "answer": "5",
+          "explain": "225 = 3 · 3 · 5 · 5."
         },
         {
           "type": "number",
           "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 244 = 2 · 2 · ▢. Jaka liczba jest w miejscu ▢?",
+          "q": "Uzupełnij rozkład: 368 = 2 · 2 · 2 · 2 · ▢. Jaka liczba jest w miejscu ▢?",
+          "answer": "23",
+          "explain": "368 = 2 · 2 · 2 · 2 · 23."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 78 = 2 · 3 · ▢. Jaka liczba jest w miejscu ▢?",
+          "answer": "13",
+          "explain": "78 = 2 · 3 · 13."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 366 = 2 · 3 · ▢. Jaka liczba jest w miejscu ▢?",
           "answer": "61",
-          "explain": "244 = 2 · 2 · 61."
+          "explain": "366 = 2 · 3 · 61."
         },
         {
           "type": "number",
           "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 369 = 3 · ▢ · 41. Jaka liczba jest w miejscu ▢?",
+          "q": "Uzupełnij rozkład: 288 = 2 · 2 · ▢ · 2 · 2 · 3 · 3. Jaka liczba jest w miejscu ▢?",
+          "answer": "2",
+          "explain": "288 = 2 · 2 · 2 · 2 · 2 · 3 · 3."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 112 = 2 · 2 · 2 · ▢ · 7. Jaka liczba jest w miejscu ▢?",
+          "answer": "2",
+          "explain": "112 = 2 · 2 · 2 · 2 · 7."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 120 = 2 · 2 · 2 · ▢ · 5. Jaka liczba jest w miejscu ▢?",
           "answer": "3",
-          "explain": "369 = 3 · 3 · 41."
+          "explain": "120 = 2 · 2 · 2 · 3 · 5."
         },
         {
           "type": "number",
           "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 352 = 2 · 2 · 2 · 2 · 2 · ▢. Jaka liczba jest w miejscu ▢?",
+          "q": "Uzupełnij rozkład: 338 = 2 · ▢ · 13. Jaka liczba jest w miejscu ▢?",
+          "answer": "13",
+          "explain": "338 = 2 · 13 · 13."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 224 = ▢ · 2 · 2 · 2 · 2 · 7. Jaka liczba jest w miejscu ▢?",
+          "answer": "2",
+          "explain": "224 = 2 · 2 · 2 · 2 · 2 · 7."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 175 = 5 · 5 · ▢. Jaka liczba jest w miejscu ▢?",
+          "answer": "7",
+          "explain": "175 = 5 · 5 · 7."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 360 = ▢ · 2 · 2 · 3 · 3 · 5. Jaka liczba jest w miejscu ▢?",
+          "answer": "2",
+          "explain": "360 = 2 · 2 · 2 · 3 · 3 · 5."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 325 = 5 · 5 · ▢. Jaka liczba jest w miejscu ▢?",
+          "answer": "13",
+          "explain": "325 = 5 · 5 · 13."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 117 = 3 · ▢ · 13. Jaka liczba jest w miejscu ▢?",
+          "answer": "3",
+          "explain": "117 = 3 · 3 · 13."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 228 = 2 · 2 · ▢ · 19. Jaka liczba jest w miejscu ▢?",
+          "answer": "3",
+          "explain": "228 = 2 · 2 · 3 · 19."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 231 = 3 · ▢ · 11. Jaka liczba jest w miejscu ▢?",
+          "answer": "7",
+          "explain": "231 = 3 · 7 · 11."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 198 = 2 · ▢ · 3 · 11. Jaka liczba jest w miejscu ▢?",
+          "answer": "3",
+          "explain": "198 = 2 · 3 · 3 · 11."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 290 = ▢ · 5 · 29. Jaka liczba jest w miejscu ▢?",
+          "answer": "2",
+          "explain": "290 = 2 · 5 · 29."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 228 = 2 · ▢ · 3 · 19. Jaka liczba jest w miejscu ▢?",
+          "answer": "2",
+          "explain": "228 = 2 · 2 · 3 · 19."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 160 = 2 · ▢ · 2 · 2 · 2 · 5. Jaka liczba jest w miejscu ▢?",
+          "answer": "2",
+          "explain": "160 = 2 · 2 · 2 · 2 · 2 · 5."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 246 = ▢ · 3 · 41. Jaka liczba jest w miejscu ▢?",
+          "answer": "2",
+          "explain": "246 = 2 · 3 · 41."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 220 = 2 · 2 · 5 · ▢. Jaka liczba jest w miejscu ▢?",
           "answer": "11",
-          "explain": "352 = 2 · 2 · 2 · 2 · 2 · 11."
+          "explain": "220 = 2 · 2 · 5 · 11."
         },
         {
           "type": "number",
           "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 63 = ▢ · 3 · 7. Jaka liczba jest w miejscu ▢?",
-          "answer": "3",
-          "explain": "63 = 3 · 3 · 7."
-        },
-        {
-          "type": "number",
-          "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 50 = ▢ · 5 · 5. Jaka liczba jest w miejscu ▢?",
+          "q": "Uzupełnij rozkład: 128 = 2 · 2 · ▢ · 2 · 2 · 2 · 2. Jaka liczba jest w miejscu ▢?",
           "answer": "2",
-          "explain": "50 = 2 · 5 · 5."
+          "explain": "128 = 2 · 2 · 2 · 2 · 2 · 2 · 2."
         },
         {
           "type": "number",
           "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 234 = ▢ · 3 · 3 · 13. Jaka liczba jest w miejscu ▢?",
-          "answer": "2",
-          "explain": "234 = 2 · 3 · 3 · 13."
+          "q": "Uzupełnij rozkład: 280 = 2 · 2 · 2 · 5 · ▢. Jaka liczba jest w miejscu ▢?",
+          "answer": "7",
+          "explain": "280 = 2 · 2 · 2 · 5 · 7."
         },
         {
           "type": "number",
           "skill": "Brakujący czynnik",
-          "q": "Uzupełnij rozkład: 396 = 2 · ▢ · 3 · 3 · 11. Jaka liczba jest w miejscu ▢?",
+          "q": "Uzupełnij rozkład: 258 = 2 · ▢ · 43. Jaka liczba jest w miejscu ▢?",
+          "answer": "3",
+          "explain": "258 = 2 · 3 · 43."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 390 = 2 · ▢ · 5 · 13. Jaka liczba jest w miejscu ▢?",
+          "answer": "3",
+          "explain": "390 = 2 · 3 · 5 · 13."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 279 = 3 · ▢ · 31. Jaka liczba jest w miejscu ▢?",
+          "answer": "3",
+          "explain": "279 = 3 · 3 · 31."
+        },
+        {
+          "type": "number",
+          "skill": "Brakujący czynnik",
+          "q": "Uzupełnij rozkład: 68 = 2 · 2 · ▢. Jaka liczba jest w miejscu ▢?",
+          "answer": "17",
+          "explain": "68 = 2 · 2 · 17."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 3 występuje w rozkładzie liczby 234 na czynniki pierwsze?",
           "answer": "2",
-          "explain": "396 = 2 · 2 · 3 · 3 · 11."
+          "explain": "234 = 2 · 3 · 3 · 13 – liczba 3 występuje 2 razy."
         },
         {
           "type": "number",
           "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 5 występuje w rozkładzie liczby 20 na czynniki pierwsze?",
+          "q": "Ile razy liczba 2 występuje w rozkładzie liczby 26 na czynniki pierwsze?",
           "answer": "1",
-          "explain": "20 = 2 · 2 · 5 – liczba 5 występuje 1 raz."
+          "explain": "26 = 2 · 13 – liczba 2 występuje 1 raz."
         },
         {
           "type": "number",
           "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 3 występuje w rozkładzie liczby 177 na czynniki pierwsze?",
+          "q": "Ile razy liczba 71 występuje w rozkładzie liczby 213 na czynniki pierwsze?",
           "answer": "1",
-          "explain": "177 = 3 · 59 – liczba 3 występuje 1 raz."
+          "explain": "213 = 3 · 71 – liczba 71 występuje 1 raz."
         },
         {
           "type": "number",
           "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 5 występuje w rozkładzie liczby 125 na czynniki pierwsze?",
-          "answer": "3",
-          "explain": "125 = 5 · 5 · 5 – liczba 5 występuje 3 razy."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 3 występuje w rozkładzie liczby 243 na czynniki pierwsze?",
-          "answer": "5",
-          "explain": "243 = 3 · 3 · 3 · 3 · 3 – liczba 3 występuje 5 razy."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 2 występuje w rozkładzie liczby 40 na czynniki pierwsze?",
-          "answer": "3",
-          "explain": "40 = 2 · 2 · 2 · 5 – liczba 2 występuje 3 razy."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 7 występuje w rozkładzie liczby 42 na czynniki pierwsze?",
+          "q": "Ile razy liczba 97 występuje w rozkładzie liczby 194 na czynniki pierwsze?",
           "answer": "1",
-          "explain": "42 = 2 · 3 · 7 – liczba 7 występuje 1 raz."
+          "explain": "194 = 2 · 97 – liczba 97 występuje 1 raz."
         },
         {
           "type": "number",
           "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 5 występuje w rozkładzie liczby 265 na czynniki pierwsze?",
+          "q": "Ile razy liczba 3 występuje w rozkładzie liczby 276 na czynniki pierwsze?",
           "answer": "1",
-          "explain": "265 = 5 · 53 – liczba 5 występuje 1 raz."
+          "explain": "276 = 2 · 2 · 3 · 23 – liczba 3 występuje 1 raz."
         },
         {
           "type": "number",
           "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 2 występuje w rozkładzie liczby 288 na czynniki pierwsze?",
-          "answer": "5",
-          "explain": "288 = 2 · 2 · 2 · 2 · 2 · 3 · 3 – liczba 2 występuje 5 razy."
+          "q": "Ile razy liczba 2 występuje w rozkładzie liczby 178 na czynniki pierwsze?",
+          "answer": "1",
+          "explain": "178 = 2 · 89 – liczba 2 występuje 1 raz."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 3 występuje w rozkładzie liczby 240 na czynniki pierwsze?",
+          "answer": "1",
+          "explain": "240 = 2 · 2 · 2 · 2 · 3 · 5 – liczba 3 występuje 1 raz."
         },
         {
           "type": "number",
@@ -970,149 +963,156 @@ export default {
         {
           "type": "number",
           "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 3 występuje w rozkładzie liczby 147 na czynniki pierwsze?",
+          "q": "Ile razy liczba 7 występuje w rozkładzie liczby 84 na czynniki pierwsze?",
           "answer": "1",
-          "explain": "147 = 3 · 7 · 7 – liczba 3 występuje 1 raz."
+          "explain": "84 = 2 · 2 · 3 · 7 – liczba 7 występuje 1 raz."
         },
         {
           "type": "number",
           "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 2 występuje w rozkładzie liczby 62 na czynniki pierwsze?",
+          "q": "Ile razy liczba 17 występuje w rozkładzie liczby 136 na czynniki pierwsze?",
           "answer": "1",
-          "explain": "62 = 2 · 31 – liczba 2 występuje 1 raz."
+          "explain": "136 = 2 · 2 · 2 · 17 – liczba 17 występuje 1 raz."
         },
         {
           "type": "number",
           "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 61 występuje w rozkładzie liczby 122 na czynniki pierwsze?",
-          "answer": "1",
-          "explain": "122 = 2 · 61 – liczba 61 występuje 1 raz."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 5 występuje w rozkładzie liczby 95 na czynniki pierwsze?",
-          "answer": "1",
-          "explain": "95 = 5 · 19 – liczba 5 występuje 1 raz."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 3 występuje w rozkładzie liczby 249 na czynniki pierwsze?",
-          "answer": "1",
-          "explain": "249 = 3 · 83 – liczba 3 występuje 1 raz."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 13 występuje w rozkładzie liczby 117 na czynniki pierwsze?",
-          "answer": "1",
-          "explain": "117 = 3 · 3 · 13 – liczba 13 występuje 1 raz."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 19 występuje w rozkładzie liczby 38 na czynniki pierwsze?",
-          "answer": "1",
-          "explain": "38 = 2 · 19 – liczba 19 występuje 1 raz."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 5 występuje w rozkładzie liczby 235 na czynniki pierwsze?",
-          "answer": "1",
-          "explain": "235 = 5 · 47 – liczba 5 występuje 1 raz."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 29 występuje w rozkładzie liczby 58 na czynniki pierwsze?",
-          "answer": "1",
-          "explain": "58 = 2 · 29 – liczba 29 występuje 1 raz."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 2 występuje w rozkładzie liczby 14 na czynniki pierwsze?",
-          "answer": "1",
-          "explain": "14 = 2 · 7 – liczba 2 występuje 1 raz."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 2 występuje w rozkładzie liczby 240 na czynniki pierwsze?",
-          "answer": "4",
-          "explain": "240 = 2 · 2 · 2 · 2 · 3 · 5 – liczba 2 występuje 4 razy."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 31 występuje w rozkładzie liczby 248 na czynniki pierwsze?",
-          "answer": "1",
-          "explain": "248 = 2 · 2 · 2 · 31 – liczba 31 występuje 1 raz."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 11 występuje w rozkładzie liczby 286 na czynniki pierwsze?",
-          "answer": "1",
-          "explain": "286 = 2 · 11 · 13 – liczba 11 występuje 1 raz."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 43 występuje w rozkładzie liczby 215 na czynniki pierwsze?",
-          "answer": "1",
-          "explain": "215 = 5 · 43 – liczba 43 występuje 1 raz."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 13 występuje w rozkładzie liczby 208 na czynniki pierwsze?",
-          "answer": "1",
-          "explain": "208 = 2 · 2 · 2 · 2 · 13 – liczba 13 występuje 1 raz."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 7 występuje w rozkładzie liczby 91 na czynniki pierwsze?",
-          "answer": "1",
-          "explain": "91 = 7 · 13 – liczba 7 występuje 1 raz."
-        },
-        {
-          "type": "number",
-          "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 2 występuje w rozkładzie liczby 140 na czynniki pierwsze?",
+          "q": "Ile razy liczba 5 występuje w rozkładzie liczby 25 na czynniki pierwsze?",
           "answer": "2",
-          "explain": "140 = 2 · 2 · 5 · 7 – liczba 2 występuje 2 razy."
+          "explain": "25 = 5 · 5 – liczba 5 występuje 2 razy."
         },
         {
           "type": "number",
           "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 5 występuje w rozkładzie liczby 110 na czynniki pierwsze?",
+          "q": "Ile razy liczba 3 występuje w rozkładzie liczby 231 na czynniki pierwsze?",
           "answer": "1",
-          "explain": "110 = 2 · 5 · 11 – liczba 5 występuje 1 raz."
+          "explain": "231 = 3 · 7 · 11 – liczba 3 występuje 1 raz."
         },
         {
           "type": "number",
           "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 13 występuje w rozkładzie liczby 52 na czynniki pierwsze?",
+          "q": "Ile razy liczba 17 występuje w rozkładzie liczby 255 na czynniki pierwsze?",
           "answer": "1",
-          "explain": "52 = 2 · 2 · 13 – liczba 13 występuje 1 raz."
+          "explain": "255 = 3 · 5 · 17 – liczba 17 występuje 1 raz."
         },
         {
           "type": "number",
           "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 2 występuje w rozkładzie liczby 216 na czynniki pierwsze?",
+          "q": "Ile razy liczba 37 występuje w rozkładzie liczby 74 na czynniki pierwsze?",
+          "answer": "1",
+          "explain": "74 = 2 · 37 – liczba 37 występuje 1 raz."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 43 występuje w rozkładzie liczby 86 na czynniki pierwsze?",
+          "answer": "1",
+          "explain": "86 = 2 · 43 – liczba 43 występuje 1 raz."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 5 występuje w rozkładzie liczby 170 na czynniki pierwsze?",
+          "answer": "1",
+          "explain": "170 = 2 · 5 · 17 – liczba 5 występuje 1 raz."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 2 występuje w rozkładzie liczby 28 na czynniki pierwsze?",
+          "answer": "2",
+          "explain": "28 = 2 · 2 · 7 – liczba 2 występuje 2 razy."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 3 występuje w rozkładzie liczby 60 na czynniki pierwsze?",
+          "answer": "1",
+          "explain": "60 = 2 · 2 · 3 · 5 – liczba 3 występuje 1 raz."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 3 występuje w rozkładzie liczby 189 na czynniki pierwsze?",
           "answer": "3",
-          "explain": "216 = 2 · 2 · 2 · 3 · 3 · 3 – liczba 2 występuje 3 razy."
+          "explain": "189 = 3 · 3 · 3 · 7 – liczba 3 występuje 3 razy."
         },
         {
           "type": "number",
           "skill": "Ile razy czynnik w rozkładzie",
-          "q": "Ile razy liczba 5 występuje w rozkładzie liczby 280 na czynniki pierwsze?",
+          "q": "Ile razy liczba 2 występuje w rozkładzie liczby 16 na czynniki pierwsze?",
+          "answer": "4",
+          "explain": "16 = 2 · 2 · 2 · 2 – liczba 2 występuje 4 razy."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 11 występuje w rozkładzie liczby 44 na czynniki pierwsze?",
           "answer": "1",
-          "explain": "280 = 2 · 2 · 2 · 5 · 7 – liczba 5 występuje 1 raz."
+          "explain": "44 = 2 · 2 · 11 – liczba 11 występuje 1 raz."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 2 występuje w rozkładzie liczby 18 na czynniki pierwsze?",
+          "answer": "1",
+          "explain": "18 = 2 · 3 · 3 – liczba 2 występuje 1 raz."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 7 występuje w rozkładzie liczby 147 na czynniki pierwsze?",
+          "answer": "2",
+          "explain": "147 = 3 · 7 · 7 – liczba 7 występuje 2 razy."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 2 występuje w rozkładzie liczby 102 na czynniki pierwsze?",
+          "answer": "1",
+          "explain": "102 = 2 · 3 · 17 – liczba 2 występuje 1 raz."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 2 występuje w rozkładzie liczby 180 na czynniki pierwsze?",
+          "answer": "2",
+          "explain": "180 = 2 · 2 · 3 · 3 · 5 – liczba 2 występuje 2 razy."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 13 występuje w rozkładzie liczby 130 na czynniki pierwsze?",
+          "answer": "1",
+          "explain": "130 = 2 · 5 · 13 – liczba 13 występuje 1 raz."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 3 występuje w rozkładzie liczby 255 na czynniki pierwsze?",
+          "answer": "1",
+          "explain": "255 = 3 · 5 · 17 – liczba 3 występuje 1 raz."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 5 występuje w rozkładzie liczby 165 na czynniki pierwsze?",
+          "answer": "1",
+          "explain": "165 = 3 · 5 · 11 – liczba 5 występuje 1 raz."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 13 występuje w rozkładzie liczby 221 na czynniki pierwsze?",
+          "answer": "1",
+          "explain": "221 = 13 · 17 – liczba 13 występuje 1 raz."
+        },
+        {
+          "type": "number",
+          "skill": "Ile razy czynnik w rozkładzie",
+          "q": "Ile razy liczba 17 występuje w rozkładzie liczby 289 na czynniki pierwsze?",
+          "answer": "2",
+          "explain": "289 = 17 · 17 – liczba 17 występuje 2 razy."
         }
       ]
     }

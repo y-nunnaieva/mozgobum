@@ -15,9 +15,9 @@ export default {
             "Gdy ostatnia cyfra jest parzysta (0, 2, 4, 6, 8)"
           ],
           "wrong": [
+            "Gdy ostatnia cyfra to 0",
             "Gdy ostatnia cyfra to 0 lub 5",
-            "Gdy suma cyfr jest podzielna przez 3",
-            "Gdy dwie ostatnie cyfry tworzą liczbę podzielną przez 4"
+            "Gdy suma cyfr jest podzielna przez 9"
           ],
           "explain": "Liczba jest podzielna przez 2 tylko wtedy, gdy ostatnia cyfra jest parzysta (0, 2, 4, 6, 8)."
         },
@@ -29,8 +29,8 @@ export default {
             "Gdy suma cyfr jest podzielna przez 3"
           ],
           "wrong": [
-            "Gdy ostatnia cyfra jest parzysta (0, 2, 4, 6, 8)",
             "Gdy ostatnia cyfra to 0 lub 5",
+            "Gdy dwie ostatnie cyfry tworzą liczbę podzielną przez 4",
             "Gdy ostatnia cyfra to 0"
           ],
           "explain": "Liczba jest podzielna przez 3 tylko wtedy, gdy suma cyfr jest podzielna przez 3."
@@ -43,9 +43,9 @@ export default {
             "Gdy dwie ostatnie cyfry tworzą liczbę podzielną przez 4"
           ],
           "wrong": [
-            "Gdy suma cyfr jest podzielna przez 3",
-            "Gdy dwie ostatnie cyfry to 00",
-            "Gdy ostatnia cyfra jest parzysta (0, 2, 4, 6, 8)"
+            "Gdy suma cyfr jest podzielna przez 9",
+            "Gdy ostatnia cyfra jest parzysta (0, 2, 4, 6, 8)",
+            "Gdy ostatnia cyfra to 0"
           ],
           "explain": "Liczba jest podzielna przez 4 tylko wtedy, gdy dwie ostatnie cyfry tworzą liczbę podzielną przez 4."
         },
@@ -57,9 +57,9 @@ export default {
             "Gdy ostatnia cyfra to 0 lub 5"
           ],
           "wrong": [
-            "Gdy suma cyfr jest podzielna przez 3",
-            "Gdy ostatnia cyfra to 0",
-            "Gdy ostatnia cyfra jest parzysta (0, 2, 4, 6, 8)"
+            "Gdy suma cyfr jest podzielna przez 9",
+            "Gdy dwie ostatnie cyfry to 00",
+            "Gdy suma cyfr jest podzielna przez 3"
           ],
           "explain": "Liczba jest podzielna przez 5 tylko wtedy, gdy ostatnia cyfra to 0 lub 5."
         },
@@ -71,9 +71,9 @@ export default {
             "Gdy suma cyfr jest podzielna przez 9"
           ],
           "wrong": [
-            "Gdy ostatnia cyfra to 0 lub 5",
             "Gdy ostatnia cyfra to 0",
-            "Gdy suma cyfr jest podzielna przez 3"
+            "Gdy suma cyfr jest podzielna przez 3",
+            "Gdy dwie ostatnie cyfry to 00"
           ],
           "explain": "Liczba jest podzielna przez 9 tylko wtedy, gdy suma cyfr jest podzielna przez 9."
         },
@@ -87,7 +87,7 @@ export default {
           "wrong": [
             "Gdy suma cyfr jest podzielna przez 9",
             "Gdy dwie ostatnie cyfry to 00",
-            "Gdy dwie ostatnie cyfry tworzą liczbę podzielną przez 4"
+            "Gdy ostatnia cyfra to 0 lub 5"
           ],
           "explain": "Liczba jest podzielna przez 10 tylko wtedy, gdy ostatnia cyfra to 0."
         },
@@ -99,9 +99,9 @@ export default {
             "Gdy dwie ostatnie cyfry to 00"
           ],
           "wrong": [
-            "Gdy ostatnia cyfra to 0",
-            "Gdy suma cyfr jest podzielna przez 9",
-            "Gdy suma cyfr jest podzielna przez 3"
+            "Gdy ostatnia cyfra jest parzysta (0, 2, 4, 6, 8)",
+            "Gdy ostatnia cyfra to 0 lub 5",
+            "Gdy ostatnia cyfra to 0"
           ],
           "explain": "Liczba jest podzielna przez 100 tylko wtedy, gdy dwie ostatnie cyfry to 00."
         },
@@ -170,187 +170,187 @@ export default {
           "id": "0012",
           "q": "Które z podanych liczb są podzielne przez 2?",
           "correct": [
+            "768",
+            "72518",
+            "764",
             "612",
-            "1242",
-            "1234",
-            "36054",
-            "696"
+            "1234"
           ],
           "wrong": [
             "12033"
           ],
-          "explain": "Podzielne przez 2: 612, 1242, 1234, 36054, 696 – bo ostatnia cyfra jest parzysta (0, 2, 4, 6, 8)."
+          "explain": "Podzielne przez 2: 768, 72518, 764, 612, 1234 – bo ostatnia cyfra jest parzysta (0, 2, 4, 6, 8)."
         },
         {
           "id": "0013",
           "level": 3,
           "q": "Które z podanych liczb są podzielne przez 2?",
           "correct": [
+            "6030",
             "123456",
-            "508",
-            "2446"
+            "12472"
           ],
           "wrong": [
-            "317",
             "2205",
-            "125"
+            "10011",
+            "317"
           ],
-          "explain": "Podzielne przez 2: 123456, 508, 2446 – bo ostatnia cyfra jest parzysta (0, 2, 4, 6, 8)."
+          "explain": "Podzielne przez 2: 6030, 123456, 12472 – bo ostatnia cyfra jest parzysta (0, 2, 4, 6, 8)."
         },
         {
           "id": "0014",
           "q": "Które z podanych liczb są podzielne przez 3?",
           "correct": [
-            "696",
-            "7980",
-            "12033",
-            "10011"
+            "612",
+            "72720"
           ],
           "wrong": [
-            "7402",
-            "12472"
+            "2446",
+            "2024",
+            "3545",
+            "72518"
           ],
-          "explain": "Podzielne przez 3: 696, 7980, 12033, 10011 – bo suma cyfr jest podzielna przez 3."
+          "explain": "Podzielne przez 3: 612, 72720 – bo suma cyfr jest podzielna przez 3."
         },
         {
           "id": "0015",
           "level": 3,
           "q": "Które z podanych liczb są podzielne przez 3?",
           "correct": [
-            "10011",
-            "36054"
+            "8244",
+            "7980"
           ],
           "wrong": [
-            "12472",
-            "3545",
-            "317",
-            "764"
+            "2024",
+            "508",
+            "764",
+            "2446"
           ],
-          "explain": "Podzielne przez 3: 10011, 36054 – bo suma cyfr jest podzielna przez 3."
+          "explain": "Podzielne przez 3: 8244, 7980 – bo suma cyfr jest podzielna przez 3."
         },
         {
           "id": "0016",
           "q": "Które z podanych liczb są podzielne przez 4?",
           "correct": [
-            "7980",
+            "768",
             "4300",
-            "612",
-            "2024",
-            "768"
+            "696"
           ],
           "wrong": [
-            "10011"
+            "2205",
+            "375",
+            "317"
           ],
-          "explain": "Podzielne przez 4: 7980, 4300, 612, 2024, 768 – bo dwie ostatnie cyfry tworzą liczbę podzielną przez 4."
+          "explain": "Podzielne przez 4: 768, 4300, 696 – bo dwie ostatnie cyfry tworzą liczbę podzielną przez 4."
         },
         {
           "id": "0017",
           "level": 3,
           "q": "Które z podanych liczb są podzielne przez 4?",
           "correct": [
-            "8244",
-            "4300",
-            "612"
+            "123456",
+            "7980"
           ],
           "wrong": [
-            "40302",
-            "375",
-            "317"
+            "36054",
+            "317",
+            "2446",
+            "1242"
           ],
-          "explain": "Podzielne przez 4: 8244, 4300, 612 – bo dwie ostatnie cyfry tworzą liczbę podzielną przez 4."
+          "explain": "Podzielne przez 4: 123456, 7980 – bo dwie ostatnie cyfry tworzą liczbę podzielną przez 4."
         },
         {
           "id": "0018",
           "q": "Które z podanych liczb są podzielne przez 5?",
           "correct": [
-            "72720",
-            "3545"
+            "6030",
+            "125",
+            "9500"
           ],
           "wrong": [
-            "768",
-            "72518",
-            "7402",
-            "832"
+            "36054",
+            "832",
+            "612"
           ],
-          "explain": "Podzielne przez 5: 72720, 3545 – bo ostatnia cyfra to 0 lub 5."
+          "explain": "Podzielne przez 5: 6030, 125, 9500 – bo ostatnia cyfra to 0 lub 5."
         },
         {
           "id": "0019",
           "level": 3,
           "q": "Które z podanych liczb są podzielne przez 5?",
           "correct": [
-            "1020",
+            "3545",
+            "8400",
+            "1305",
             "6030"
           ],
           "wrong": [
-            "832",
-            "2446",
-            "72518",
-            "764"
+            "123456",
+            "768"
           ],
-          "explain": "Podzielne przez 5: 1020, 6030 – bo ostatnia cyfra to 0 lub 5."
+          "explain": "Podzielne przez 5: 3545, 8400, 1305, 6030 – bo ostatnia cyfra to 0 lub 5."
         },
         {
           "id": "0020",
           "q": "Które z podanych liczb są podzielne przez 9?",
           "correct": [
-            "8244",
-            "2205"
+            "1305",
+            "612",
+            "12033"
           ],
           "wrong": [
-            "317",
-            "1001001",
-            "9500",
-            "7402"
+            "8400",
+            "17317",
+            "1001001"
           ],
-          "explain": "Podzielne przez 9: 8244, 2205 – bo suma cyfr jest podzielna przez 9."
+          "explain": "Podzielne przez 9: 1305, 612, 12033 – bo suma cyfr jest podzielna przez 9."
         },
         {
           "id": "0021",
           "level": 3,
           "q": "Które z podanych liczb są podzielne przez 9?",
           "correct": [
-            "1242"
+            "12033"
           ],
           "wrong": [
-            "9124",
-            "72518",
-            "2446",
-            "4300",
-            "508"
+            "696",
+            "7980",
+            "12472",
+            "1020",
+            "2446"
           ],
-          "explain": "Podzielne przez 9: 1242 – bo suma cyfr jest podzielna przez 9."
+          "explain": "Podzielne przez 9: 12033 – bo suma cyfr jest podzielna przez 9."
         },
         {
           "id": "0022",
           "q": "Które z podanych liczb są podzielne przez 10?",
           "correct": [
-            "4300"
+            "6030"
           ],
           "wrong": [
-            "36054",
+            "12472",
             "506",
-            "9124",
-            "2446",
-            "72518"
+            "72518",
+            "508",
+            "40302"
           ],
-          "explain": "Podzielne przez 10: 4300 – bo ostatnia cyfra to 0."
+          "explain": "Podzielne przez 10: 6030 – bo ostatnia cyfra to 0."
         },
         {
           "id": "0023",
           "level": 3,
           "q": "Które z podanych liczb są podzielne przez 10?",
           "correct": [
-            "9500",
-            "1020",
-            "72720"
+            "8400"
           ],
           "wrong": [
-            "7402",
-            "72518",
-            "506"
+            "768",
+            "612",
+            "1242",
+            "17317",
+            "3545"
           ],
-          "explain": "Podzielne przez 10: 9500, 1020, 72720 – bo ostatnia cyfra to 0."
+          "explain": "Podzielne przez 10: 8400 – bo ostatnia cyfra to 0."
         },
         {
           "id": "0024",
@@ -359,11 +359,11 @@ export default {
             "9500"
           ],
           "wrong": [
-            "832",
-            "1242",
-            "1020",
+            "2205",
             "764",
-            "2205"
+            "3545",
+            "125",
+            "317"
           ],
           "explain": "Podzielne przez 100: 9500 – bo dwie ostatnie cyfry to 00."
         },
@@ -372,16 +372,16 @@ export default {
           "level": 3,
           "q": "Które z podanych liczb są podzielne przez 100?",
           "correct": [
-            "9500"
+            "4300"
           ],
           "wrong": [
-            "1020",
-            "1242",
-            "696",
-            "123456",
-            "2024"
+            "6030",
+            "36054",
+            "72518",
+            "2024",
+            "768"
           ],
-          "explain": "Podzielne przez 100: 9500 – bo dwie ostatnie cyfry to 00."
+          "explain": "Podzielne przez 100: 4300 – bo dwie ostatnie cyfry to 00."
         }
       ]
     },
@@ -393,121 +393,44 @@ export default {
         {
           "type": "number",
           "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 99▢ była podzielna przez 3?",
-          "answer": "9",
-          "explain": "Suma pozostałych cyfr to 18. 18 + 9 = 27 dzieli się przez 3. Pasujące cyfry: 0, 3, 6, 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 331▢ była podzielna przez 3?",
-          "answer": "2",
-          "explain": "Suma pozostałych cyfr to 7. 7 + 2 = 9 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 95▢ była podzielna przez 3?",
-          "answer": "7",
-          "explain": "Suma pozostałych cyfr to 14. 14 + 7 = 21 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 8▢9 była podzielna przez 3?",
+          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 5▢69 była podzielna przez 3?",
           "answer": "1",
-          "explain": "Suma pozostałych cyfr to 17. 17 + 1 = 18 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
+          "explain": "Suma pozostałych cyfr to 20. 20 + 1 = 21 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
         },
         {
           "type": "number",
           "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką środkową (ani najmniejszą, ani największą) cyfrę trzeba wpisać w miejsce ▢, aby liczba 94▢ była podzielna przez 3?",
-          "answer": "5",
-          "explain": "Suma pozostałych cyfr to 13. 13 + 5 = 18 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką środkową (ani najmniejszą, ani największą) cyfrę trzeba wpisać w miejsce ▢, aby liczba 36▢4 była podzielna przez 3?",
-          "answer": "5",
-          "explain": "Suma pozostałych cyfr to 13. 13 + 5 = 18 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 9▢2 była podzielna przez 3?",
-          "answer": "7",
-          "explain": "Suma pozostałych cyfr to 11. 11 + 7 = 18 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 3▢8 była podzielna przez 3?",
-          "answer": "7",
-          "explain": "Suma pozostałych cyfr to 11. 11 + 7 = 18 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 12▢5 była podzielna przez 3?",
-          "answer": "1",
-          "explain": "Suma pozostałych cyfr to 8. 8 + 1 = 9 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką środkową (ani najmniejszą, ani największą) cyfrę trzeba wpisać w miejsce ▢, aby liczba 58▢ była podzielna przez 3?",
-          "answer": "5",
-          "explain": "Suma pozostałych cyfr to 13. 13 + 5 = 18 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką środkową (ani najmniejszą, ani największą) cyfrę trzeba wpisać w miejsce ▢, aby liczba 19▢ była podzielna przez 3?",
-          "answer": "5",
-          "explain": "Suma pozostałych cyfr to 10. 10 + 5 = 15 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 5▢2 była podzielna przez 3?",
+          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 694▢ była podzielna przez 3?",
           "answer": "2",
-          "explain": "Suma pozostałych cyfr to 7. 7 + 2 = 9 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
+          "explain": "Suma pozostałych cyfr to 19. 19 + 2 = 21 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
         },
         {
           "type": "number",
           "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 14▢ była podzielna przez 3?",
-          "answer": "7",
-          "explain": "Suma pozostałych cyfr to 5. 5 + 7 = 12 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 58▢6 była podzielna przez 3?",
+          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 2▢62 była podzielna przez 3?",
           "answer": "8",
-          "explain": "Suma pozostałych cyfr to 19. 19 + 8 = 27 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
+          "explain": "Suma pozostałych cyfr to 10. 10 + 8 = 18 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
         },
         {
           "type": "number",
           "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką środkową (ani najmniejszą, ani największą) cyfrę trzeba wpisać w miejsce ▢, aby liczba 82▢1 była podzielna przez 3?",
+          "q": "Jaką środkową (ani najmniejszą, ani największą) cyfrę trzeba wpisać w miejsce ▢, aby liczba 2▢6 była podzielna przez 3?",
           "answer": "4",
-          "explain": "Suma pozostałych cyfr to 11. 11 + 4 = 15 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
+          "explain": "Suma pozostałych cyfr to 8. 8 + 4 = 12 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
         },
         {
           "type": "number",
           "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 90▢4 była podzielna przez 3?",
+          "q": "Jaką środkową (ani najmniejszą, ani największą) cyfrę trzeba wpisać w miejsce ▢, aby liczba 1▢10 była podzielna przez 3?",
+          "answer": "4",
+          "explain": "Suma pozostałych cyfr to 2. 2 + 4 = 6 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 92▢8 była podzielna przez 3?",
           "answer": "2",
-          "explain": "Suma pozostałych cyfr to 13. 13 + 2 = 15 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką środkową (ani najmniejszą, ani największą) cyfrę trzeba wpisać w miejsce ▢, aby liczba 81▢4 była podzielna przez 3?",
-          "answer": "5",
-          "explain": "Suma pozostałych cyfr to 13. 13 + 5 = 18 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
+          "explain": "Suma pozostałych cyfr to 19. 19 + 2 = 21 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
         },
         {
           "type": "number",
@@ -519,268 +442,163 @@ export default {
         {
           "type": "number",
           "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 6▢39 była podzielna przez 3?",
-          "answer": "9",
-          "explain": "Suma pozostałych cyfr to 18. 18 + 9 = 27 dzieli się przez 3. Pasujące cyfry: 0, 3, 6, 9."
+          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 6▢29 była podzielna przez 3?",
+          "answer": "7",
+          "explain": "Suma pozostałych cyfr to 17. 17 + 7 = 24 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
         },
         {
           "type": "number",
           "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 6▢78 była podzielna przez 3?",
-          "answer": "9",
-          "explain": "Suma pozostałych cyfr to 21. 21 + 9 = 30 dzieli się przez 3. Pasujące cyfry: 0, 3, 6, 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 340▢ była podzielna przez 3?",
-          "answer": "8",
-          "explain": "Suma pozostałych cyfr to 7. 7 + 8 = 15 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 3▢6 była podzielna przez 3?",
+          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 54▢ była podzielna przez 3?",
           "answer": "9",
           "explain": "Suma pozostałych cyfr to 9. 9 + 9 = 18 dzieli się przez 3. Pasujące cyfry: 0, 3, 6, 9."
         },
         {
           "type": "number",
           "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 2▢0 była podzielna przez 3?",
-          "answer": "7",
-          "explain": "Suma pozostałych cyfr to 2. 2 + 7 = 9 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
+          "q": "Jaką środkową (ani najmniejszą, ani największą) cyfrę trzeba wpisać w miejsce ▢, aby liczba 2▢03 była podzielna przez 3?",
+          "answer": "4",
+          "explain": "Suma pozostałych cyfr to 5. 5 + 4 = 9 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
         },
         {
           "type": "number",
           "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 2▢0 była podzielna przez 3?",
-          "answer": "1",
-          "explain": "Suma pozostałych cyfr to 2. 2 + 1 = 3 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 17▢ była podzielna przez 3?",
-          "answer": "1",
-          "explain": "Suma pozostałych cyfr to 8. 8 + 1 = 9 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 1▢28 była podzielna przez 3?",
-          "answer": "7",
-          "explain": "Suma pozostałych cyfr to 11. 11 + 7 = 18 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 33▢ była podzielna przez 3?",
-          "answer": "0",
-          "explain": "Suma pozostałych cyfr to 6. 6 + 0 = 6 dzieli się przez 3. Pasujące cyfry: 0, 3, 6, 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką środkową (ani najmniejszą, ani największą) cyfrę trzeba wpisać w miejsce ▢, aby liczba 92▢6 była podzielna przez 3?",
+          "q": "Jaką środkową (ani najmniejszą, ani największą) cyfrę trzeba wpisać w miejsce ▢, aby liczba 863▢ była podzielna przez 3?",
           "answer": "4",
           "explain": "Suma pozostałych cyfr to 17. 17 + 4 = 21 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
         },
         {
           "type": "number",
           "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 67▢ była podzielna przez 3?",
-          "answer": "2",
-          "explain": "Suma pozostałych cyfr to 13. 13 + 2 = 15 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
+          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 7▢32 była podzielna przez 3?",
+          "answer": "0",
+          "explain": "Suma pozostałych cyfr to 12. 12 + 0 = 12 dzieli się przez 3. Pasujące cyfry: 0, 3, 6, 9."
         },
         {
           "type": "number",
           "skill": "Brakująca cyfra – podzielność przez 3",
-          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 6▢05 była podzielna przez 3?",
-          "answer": "1",
-          "explain": "Suma pozostałych cyfr to 11. 11 + 1 = 12 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 60▢ była podzielna przez 9?",
-          "answer": "3",
-          "explain": "Suma pozostałych cyfr to 6. 6 + 3 = 9 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 20▢ była podzielna przez 9?",
-          "answer": "7",
-          "explain": "Suma pozostałych cyfr to 2. 2 + 7 = 9 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 3▢86 była podzielna przez 9?",
-          "answer": "1",
-          "explain": "Suma pozostałych cyfr to 17. 17 + 1 = 18 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 152▢ była podzielna przez 9?",
-          "answer": "1",
-          "explain": "Suma pozostałych cyfr to 8. 8 + 1 = 9 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 3▢1 była podzielna przez 9?",
+          "q": "Jaką środkową (ani najmniejszą, ani największą) cyfrę trzeba wpisać w miejsce ▢, aby liczba 694▢ była podzielna przez 3?",
           "answer": "5",
-          "explain": "Suma pozostałych cyfr to 4. 4 + 5 = 9 dzieli się przez 9."
+          "explain": "Suma pozostałych cyfr to 19. 19 + 5 = 24 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
         },
         {
           "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 515▢ była podzielna przez 9?",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 470▢ była podzielna przez 3?",
           "answer": "7",
-          "explain": "Suma pozostałych cyfr to 11. 11 + 7 = 18 dzieli się przez 9."
+          "explain": "Suma pozostałych cyfr to 11. 11 + 7 = 18 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
         },
         {
           "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 132▢ była podzielna przez 9?",
-          "answer": "3",
-          "explain": "Suma pozostałych cyfr to 6. 6 + 3 = 9 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 31▢7 była podzielna przez 9?",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 77▢ była podzielna przez 3?",
           "answer": "7",
-          "explain": "Suma pozostałych cyfr to 11. 11 + 7 = 18 dzieli się przez 9."
+          "explain": "Suma pozostałych cyfr to 14. 14 + 7 = 21 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
         },
         {
           "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 320▢ była podzielna przez 9?",
-          "answer": "4",
-          "explain": "Suma pozostałych cyfr to 5. 5 + 4 = 9 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 44▢8 była podzielna przez 9?",
-          "answer": "2",
-          "explain": "Suma pozostałych cyfr to 16. 16 + 2 = 18 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 1▢86 była podzielna przez 9?",
-          "answer": "3",
-          "explain": "Suma pozostałych cyfr to 15. 15 + 3 = 18 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 464▢ była podzielna przez 9?",
-          "answer": "4",
-          "explain": "Suma pozostałych cyfr to 14. 14 + 4 = 18 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 480▢ była podzielna przez 9?",
-          "answer": "6",
-          "explain": "Suma pozostałych cyfr to 12. 12 + 6 = 18 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 6▢35 była podzielna przez 9?",
-          "answer": "4",
-          "explain": "Suma pozostałych cyfr to 14. 14 + 4 = 18 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 2▢7 była podzielna przez 9?",
-          "answer": "0",
-          "explain": "Suma pozostałych cyfr to 9. 9 + 0 = 9 dzieli się przez 9. Pasujące cyfry: 0, 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 995▢ była podzielna przez 9?",
-          "answer": "4",
-          "explain": "Suma pozostałych cyfr to 23. 23 + 4 = 27 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 74▢9 była podzielna przez 9?",
-          "answer": "7",
-          "explain": "Suma pozostałych cyfr to 20. 20 + 7 = 27 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 6▢5 była podzielna przez 9?",
-          "answer": "7",
-          "explain": "Suma pozostałych cyfr to 11. 11 + 7 = 18 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 18▢ była podzielna przez 9?",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 8▢7 była podzielna przez 3?",
           "answer": "9",
-          "explain": "Suma pozostałych cyfr to 9. 9 + 9 = 18 dzieli się przez 9. Pasujące cyfry: 0, 9."
+          "explain": "Suma pozostałych cyfr to 15. 15 + 9 = 24 dzieli się przez 3. Pasujące cyfry: 0, 3, 6, 9."
         },
         {
           "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 46▢5 była podzielna przez 9?",
-          "answer": "3",
-          "explain": "Suma pozostałych cyfr to 15. 15 + 3 = 18 dzieli się przez 9."
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 47▢ była podzielna przez 3?",
+          "answer": "7",
+          "explain": "Suma pozostałych cyfr to 11. 11 + 7 = 18 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
         },
         {
           "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 48▢3 była podzielna przez 9?",
-          "answer": "3",
-          "explain": "Suma pozostałych cyfr to 15. 15 + 3 = 18 dzieli się przez 9."
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 4▢04 była podzielna przez 3?",
+          "answer": "1",
+          "explain": "Suma pozostałych cyfr to 8. 8 + 1 = 9 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
         },
         {
           "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 94▢ była podzielna przez 9?",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką środkową (ani najmniejszą, ani największą) cyfrę trzeba wpisać w miejsce ▢, aby liczba 74▢ była podzielna przez 3?",
+          "answer": "4",
+          "explain": "Suma pozostałych cyfr to 11. 11 + 4 = 15 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką środkową (ani najmniejszą, ani największą) cyfrę trzeba wpisać w miejsce ▢, aby liczba 667▢ była podzielna przez 3?",
           "answer": "5",
-          "explain": "Suma pozostałych cyfr to 13. 13 + 5 = 18 dzieli się przez 9."
+          "explain": "Suma pozostałych cyfr to 19. 19 + 5 = 24 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
         },
         {
           "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 31▢9 była podzielna przez 9?",
-          "answer": "5",
-          "explain": "Suma pozostałych cyfr to 13. 13 + 5 = 18 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 40▢ była podzielna przez 9?",
-          "answer": "5",
-          "explain": "Suma pozostałych cyfr to 4. 4 + 5 = 9 dzieli się przez 9."
-        },
-        {
-          "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 268▢ była podzielna przez 9?",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 3▢4 była podzielna przez 3?",
           "answer": "2",
-          "explain": "Suma pozostałych cyfr to 16. 16 + 2 = 18 dzieli się przez 9."
+          "explain": "Suma pozostałych cyfr to 7. 7 + 2 = 9 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
         },
         {
           "type": "number",
-          "skill": "Brakująca cyfra – podzielność przez 9",
-          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 8▢1 była podzielna przez 9?",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 1▢49 była podzielna przez 3?",
+          "answer": "1",
+          "explain": "Suma pozostałych cyfr to 14. 14 + 1 = 15 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 95▢9 była podzielna przez 3?",
+          "answer": "7",
+          "explain": "Suma pozostałych cyfr to 23. 23 + 7 = 30 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 56▢ była podzielna przez 3?",
+          "answer": "7",
+          "explain": "Suma pozostałych cyfr to 11. 11 + 7 = 18 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 8▢31 była podzielna przez 3?",
+          "answer": "9",
+          "explain": "Suma pozostałych cyfr to 12. 12 + 9 = 21 dzieli się przez 3. Pasujące cyfry: 0, 3, 6, 9."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 88▢ była podzielna przez 3?",
+          "answer": "2",
+          "explain": "Suma pozostałych cyfr to 16. 16 + 2 = 18 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 7▢5 była podzielna przez 3?",
           "answer": "0",
-          "explain": "Suma pozostałych cyfr to 9. 9 + 0 = 9 dzieli się przez 9. Pasujące cyfry: 0, 9."
+          "explain": "Suma pozostałych cyfr to 12. 12 + 0 = 12 dzieli się przez 3. Pasujące cyfry: 0, 3, 6, 9."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 1▢9 była podzielna przez 3?",
+          "answer": "8",
+          "explain": "Suma pozostałych cyfr to 10. 10 + 8 = 18 dzieli się przez 3. Pasujące cyfry: 2, 5, 8."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką największą cyfrę trzeba wpisać w miejsce ▢, aby liczba 68▢ była podzielna przez 3?",
+          "answer": "7",
+          "explain": "Suma pozostałych cyfr to 14. 14 + 7 = 21 dzieli się przez 3. Pasujące cyfry: 1, 4, 7."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 3",
+          "q": "Jaką najmniejszą cyfrę trzeba wpisać w miejsce ▢, aby liczba 8▢1 była podzielna przez 3?",
+          "answer": "0",
+          "explain": "Suma pozostałych cyfr to 9. 9 + 0 = 9 dzieli się przez 3. Pasujące cyfry: 0, 3, 6, 9."
         },
         {
           "type": "number",
@@ -788,6 +606,13 @@ export default {
           "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 722▢ była podzielna przez 9?",
           "answer": "7",
           "explain": "Suma pozostałych cyfr to 11. 11 + 7 = 18 dzieli się przez 9."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 60▢ była podzielna przez 9?",
+          "answer": "3",
+          "explain": "Suma pozostałych cyfr to 6. 6 + 3 = 9 dzieli się przez 9."
         },
         {
           "type": "number",
@@ -812,213 +637,178 @@ export default {
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 22034?",
-          "answer": "11",
-          "explain": "2 + 2 + 0 + 3 + 4 = 11."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 76▢ była podzielna przez 9?",
+          "answer": "5",
+          "explain": "Suma pozostałych cyfr to 13. 13 + 5 = 18 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 66994?",
-          "answer": "34",
-          "explain": "6 + 6 + 9 + 9 + 4 = 34."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 19▢7 była podzielna przez 9?",
+          "answer": "1",
+          "explain": "Suma pozostałych cyfr to 17. 17 + 1 = 18 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 62704?",
-          "answer": "19",
-          "explain": "6 + 2 + 7 + 0 + 4 = 19."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 17▢2 była podzielna przez 9?",
+          "answer": "8",
+          "explain": "Suma pozostałych cyfr to 10. 10 + 8 = 18 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 96605?",
-          "answer": "26",
-          "explain": "9 + 6 + 6 + 0 + 5 = 26."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 2▢8 była podzielna przez 9?",
+          "answer": "8",
+          "explain": "Suma pozostałych cyfr to 10. 10 + 8 = 18 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 65878?",
-          "answer": "34",
-          "explain": "6 + 5 + 8 + 7 + 8 = 34."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 10▢1 była podzielna przez 9?",
+          "answer": "7",
+          "explain": "Suma pozostałych cyfr to 2. 2 + 7 = 9 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 57690?",
-          "answer": "27",
-          "explain": "5 + 7 + 6 + 9 + 0 = 27."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 2▢6 była podzielna przez 9?",
+          "answer": "1",
+          "explain": "Suma pozostałych cyfr to 8. 8 + 1 = 9 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 77291?",
-          "answer": "26",
-          "explain": "7 + 7 + 2 + 9 + 1 = 26."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 59▢ była podzielna przez 9?",
+          "answer": "4",
+          "explain": "Suma pozostałych cyfr to 14. 14 + 4 = 18 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 1351?",
-          "answer": "10",
-          "explain": "1 + 3 + 5 + 1 = 10."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 365▢ była podzielna przez 9?",
+          "answer": "4",
+          "explain": "Suma pozostałych cyfr to 14. 14 + 4 = 18 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 99199?",
-          "answer": "37",
-          "explain": "9 + 9 + 1 + 9 + 9 = 37."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 62▢ była podzielna przez 9?",
+          "answer": "1",
+          "explain": "Suma pozostałych cyfr to 8. 8 + 1 = 9 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 45015?",
-          "answer": "15",
-          "explain": "4 + 5 + 0 + 1 + 5 = 15."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 20▢ była podzielna przez 9?",
+          "answer": "7",
+          "explain": "Suma pozostałych cyfr to 2. 2 + 7 = 9 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 70781?",
-          "answer": "23",
-          "explain": "7 + 0 + 7 + 8 + 1 = 23."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 856▢ była podzielna przez 9?",
+          "answer": "8",
+          "explain": "Suma pozostałych cyfr to 19. 19 + 8 = 27 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 55983?",
-          "answer": "30",
-          "explain": "5 + 5 + 9 + 8 + 3 = 30."
-        },
-        {
-          "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 68946?",
-          "answer": "33",
-          "explain": "6 + 8 + 9 + 4 + 6 = 33."
-        },
-        {
-          "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 65495?",
-          "answer": "29",
-          "explain": "6 + 5 + 4 + 9 + 5 = 29."
-        },
-        {
-          "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 10676?",
-          "answer": "20",
-          "explain": "1 + 0 + 6 + 7 + 6 = 20."
-        },
-        {
-          "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 72783?",
-          "answer": "27",
-          "explain": "7 + 2 + 7 + 8 + 3 = 27."
-        },
-        {
-          "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 44477?",
-          "answer": "26",
-          "explain": "4 + 4 + 4 + 7 + 7 = 26."
-        },
-        {
-          "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 21431?",
-          "answer": "11",
-          "explain": "2 + 1 + 4 + 3 + 1 = 11."
-        },
-        {
-          "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 45382?",
-          "answer": "22",
-          "explain": "4 + 5 + 3 + 8 + 2 = 22."
-        },
-        {
-          "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 31482?",
-          "answer": "18",
-          "explain": "3 + 1 + 4 + 8 + 2 = 18."
-        },
-        {
-          "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 2544?",
-          "answer": "15",
-          "explain": "2 + 5 + 4 + 4 = 15."
-        },
-        {
-          "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 20489?",
-          "answer": "23",
-          "explain": "2 + 0 + 4 + 8 + 9 = 23."
-        },
-        {
-          "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 13020?",
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 165▢ była podzielna przez 9?",
           "answer": "6",
-          "explain": "1 + 3 + 0 + 2 + 0 = 6."
+          "explain": "Suma pozostałych cyfr to 12. 12 + 6 = 18 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 84047?",
-          "answer": "23",
-          "explain": "8 + 4 + 0 + 4 + 7 = 23."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 9▢79 była podzielna przez 9?",
+          "answer": "2",
+          "explain": "Suma pozostałych cyfr to 25. 25 + 2 = 27 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 35122?",
-          "answer": "13",
-          "explain": "3 + 5 + 1 + 2 + 2 = 13."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 21▢ była podzielna przez 9?",
+          "answer": "6",
+          "explain": "Suma pozostałych cyfr to 3. 3 + 6 = 9 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 2703?",
-          "answer": "12",
-          "explain": "2 + 7 + 0 + 3 = 12."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 6▢18 była podzielna przez 9?",
+          "answer": "3",
+          "explain": "Suma pozostałych cyfr to 15. 15 + 3 = 18 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 69804?",
-          "answer": "27",
-          "explain": "6 + 9 + 8 + 0 + 4 = 27."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 9▢59 była podzielna przez 9?",
+          "answer": "4",
+          "explain": "Suma pozostałych cyfr to 23. 23 + 4 = 27 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 7713?",
-          "answer": "18",
-          "explain": "7 + 7 + 1 + 3 = 18."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 69▢ była podzielna przez 9?",
+          "answer": "3",
+          "explain": "Suma pozostałych cyfr to 15. 15 + 3 = 18 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 9684?",
-          "answer": "27",
-          "explain": "9 + 6 + 8 + 4 = 27."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 43▢ była podzielna przez 9?",
+          "answer": "2",
+          "explain": "Suma pozostałych cyfr to 7. 7 + 2 = 9 dzieli się przez 9."
         },
         {
           "type": "number",
-          "skill": "Suma cyfr",
-          "q": "Ile wynosi suma cyfr liczby 13947?",
-          "answer": "24",
-          "explain": "1 + 3 + 9 + 4 + 7 = 24."
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 59▢9 była podzielna przez 9?",
+          "answer": "4",
+          "explain": "Suma pozostałych cyfr to 23. 23 + 4 = 27 dzieli się przez 9."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 32▢ była podzielna przez 9?",
+          "answer": "4",
+          "explain": "Suma pozostałych cyfr to 5. 5 + 4 = 9 dzieli się przez 9."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 1▢9 była podzielna przez 9?",
+          "answer": "8",
+          "explain": "Suma pozostałych cyfr to 10. 10 + 8 = 18 dzieli się przez 9."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 523▢ była podzielna przez 9?",
+          "answer": "8",
+          "explain": "Suma pozostałych cyfr to 10. 10 + 8 = 18 dzieli się przez 9."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 615▢ była podzielna przez 9?",
+          "answer": "6",
+          "explain": "Suma pozostałych cyfr to 12. 12 + 6 = 18 dzieli się przez 9."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 79▢ była podzielna przez 9?",
+          "answer": "2",
+          "explain": "Suma pozostałych cyfr to 16. 16 + 2 = 18 dzieli się przez 9."
+        },
+        {
+          "type": "number",
+          "skill": "Brakująca cyfra – podzielność przez 9",
+          "q": "Jaką cyfrę trzeba wpisać w miejsce ▢, aby liczba 15▢ była podzielna przez 9?",
+          "answer": "3",
+          "explain": "Suma pozostałych cyfr to 6. 6 + 3 = 9 dzieli się przez 9."
         }
       ]
     }

@@ -159,61 +159,61 @@ export default {
           "id": "0011",
           "q": "Które z podanych liczb są pierwsze?",
           "correct": [
-            "101",
-            "7",
-            "59"
+            "53"
           ],
           "wrong": [
-            "49",
-            "57",
-            "65"
+            "82",
+            "25",
+            "27",
+            "87",
+            "77"
           ],
-          "explain": "Pierwsze: 101, 7, 59. Pozostałe mają więcej dzielników (np. 91 = 7 · 13, 51 = 3 · 17)."
+          "explain": "Pierwsze: 53. Pozostałe mają więcej dzielników (np. 91 = 7 · 13, 51 = 3 · 17)."
         },
         {
           "id": "0012",
           "q": "Które z podanych liczb są pierwsze?",
           "correct": [
             "43",
-            "53",
-            "19",
-            "11"
+            "29",
+            "17"
           ],
           "wrong": [
-            "25",
-            "87"
+            "65",
+            "99",
+            "72"
           ],
-          "explain": "Pierwsze: 43, 53, 19, 11. Pozostałe mają więcej dzielników (np. 91 = 7 · 13, 51 = 3 · 17)."
+          "explain": "Pierwsze: 43, 29, 17. Pozostałe mają więcej dzielników (np. 91 = 7 · 13, 51 = 3 · 17)."
         },
         {
           "id": "0013",
           "q": "Które z podanych liczb są pierwsze?",
           "correct": [
-            "97",
-            "59",
-            "23"
+            "19",
+            "53"
           ],
           "wrong": [
-            "77",
-            "25",
-            "51"
+            "65",
+            "91",
+            "57",
+            "25"
           ],
-          "explain": "Pierwsze: 97, 59, 23. Pozostałe mają więcej dzielników (np. 91 = 7 · 13, 51 = 3 · 17)."
+          "explain": "Pierwsze: 19, 53. Pozostałe mają więcej dzielników (np. 91 = 7 · 13, 51 = 3 · 17)."
         },
         {
           "id": "0014",
           "q": "Które z podanych liczb są pierwsze?",
           "correct": [
-            "23",
-            "67",
-            "59"
+            "43",
+            "19"
           ],
           "wrong": [
-            "81",
-            "77",
-            "25"
+            "82",
+            "51",
+            "91",
+            "49"
           ],
-          "explain": "Pierwsze: 23, 67, 59. Pozostałe mają więcej dzielników (np. 91 = 7 · 13, 51 = 3 · 17)."
+          "explain": "Pierwsze: 43, 19. Pozostałe mają więcej dzielników (np. 91 = 7 · 13, 51 = 3 · 17)."
         }
       ]
     }
