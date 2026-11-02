@@ -20,10 +20,39 @@ export default {
             "Skąd ludzie mają ogień",
             "Skąd się wzięły nieszczęścia"
           ],
-          "explain": "Mit tłumaczy, skąd biorą się pory roku."
+          "explain": "Mit o Demeter i Korze wyjaśnia zmianę pór roku."
         },
         {
           "id": "0002",
+          "level": 1,
+          "group": "pory",
+          "q": "Dlaczego według mitu jest jesień i zima?",
+          "correct": [
+            "Bo Kora jest wtedy u Hadesa, a Demeter się smuci"
+          ],
+          "wrong": [
+            "Bo Helios odpoczywa",
+            "Bo Zeus gniewa się na ludzi",
+            "Bo Posejdon zalewa pola"
+          ],
+          "explain": "Kiedy Kora jest z Hadesem, matka się smuci, a razem z nią cały świat. Jest wtedy jesień i zima."
+        },
+        {
+          "id": "0003",
+          "level": 1,
+          "q": "Kiedy według mitu jest wiosna i lato?",
+          "correct": [
+            "Kiedy Kora jest z matką na Ziemi"
+          ],
+          "wrong": [
+            "Kiedy Kora jest u Hadesa",
+            "Kiedy Demeter jest na Olimpie",
+            "Kiedy Zeus jest wesoły"
+          ],
+          "explain": "Kiedy Kora jest z matką na Ziemi, jest wiosna i lato."
+        },
+        {
+          "id": "0004",
           "level": 1,
           "q": "Kim była Kora?",
           "correct": [
@@ -37,7 +66,7 @@ export default {
           "explain": "Kora była córką Demeter, bogini urodzaju."
         },
         {
-          "id": "0003",
+          "id": "0005",
           "level": 1,
           "q": "Jaki kwiat zerwała Kora, zanim pojawił się Hades?",
           "correct": [
@@ -45,57 +74,29 @@ export default {
           ],
           "wrong": [
             "Mak",
-            "Jaskier",
-            "Róża"
+            "Róża",
+            "Lilia"
           ],
-          "explain": "Kora zerwała piękny biały narcyz, choć nimfy ją przed tym ostrzegały."
+          "explain": "Kora podziwiała narcyz i go zerwała."
         },
         {
-          "id": "0004",
-          "level": 3,
-          "q": "Skąd wziął się kwiat narcyz?",
-          "correct": [
-            "Wyrósł na grobie młodzieńca Narcyza"
-          ],
-          "wrong": [
-            "Podarowała go Demeter",
-            "Przyniósł go Hades z podziemi",
-            "Wyrósł z łez Kory"
-          ],
-          "explain": "Narcyz zakochał się w swoim odbiciu i umarł z tęsknoty. Na jego grobie wyrósł kwiat o tym imieniu."
-        },
-        {
-          "id": "0005",
+          "id": "0006",
           "level": 1,
           "q": "Kto próbował uratować Korę przed Hadesem?",
           "correct": [
-            "Rusałka Kyane"
+            "Kyane"
           ],
           "wrong": [
             "Hermes",
             "Hekate",
             "Zeus"
           ],
-          "explain": "Rusałka Kyane błagała Hadesa o litość – na próżno."
-        },
-        {
-          "id": "0006",
-          "level": 1,
-          "q": "Dokąd Hades zabrał Korę?",
-          "correct": [
-            "Do podziemi (Tartaru)"
-          ],
-          "wrong": [
-            "Na Olimp",
-            "Do Eleusis",
-            "Na wyspę Naksos"
-          ],
-          "explain": "Hades uprowadził Korę do swojego królestwa w podziemiach."
+          "explain": "Kyane próbowała uratować Korę – na próżno."
         },
         {
           "id": "0007",
           "level": 1,
-          "q": "Kto poradził Demeter, by zwróciła się do Heliosa?",
+          "q": "Kto dał Demeter wskazówkę, gdzie szukać córki?",
           "correct": [
             "Hekate"
           ],
@@ -104,67 +105,54 @@ export default {
             "Kyane",
             "Rea"
           ],
-          "explain": "Hekate poradziła Demeter, by pokłoniła się Heliosowi – on wie, gdzie szukać Kory."
+          "explain": "Hekate poradziła Demeter, by zapytała Heliosa."
         },
         {
           "id": "0008",
-          "q": "Dlaczego to Helios wiedział, co się stało z Korą?",
+          "level": 1,
+          "q": "Dzięki komu Demeter poznała prawdę o Korze?",
           "correct": [
-            "Przemierzał niebo i widział wszystko z góry"
+            "Dzięki Heliosowi"
           ],
           "wrong": [
-            "Był ojcem Kory",
-            "Sam porwał Korę",
-            "Mieszkał w podziemiach"
+            "Dzięki Hermesowi",
+            "Dzięki Kyane",
+            "Dzięki Zeusowi"
           ],
-          "explain": "Helios codziennie przemierzał niebo ognistym rydwanem, więc widział, co dzieje się na ziemi."
+          "explain": "Helios widział wszystko z nieba i powiedział, że Zeus obiecał Korę Hadesowi."
         },
         {
           "id": "0009",
           "level": 1,
-          "q": "Czego dowiedziała się Demeter od Heliosa?",
-          "correct": [
-            "Że to Zeus obiecał Korę Hadesowi"
-          ],
-          "wrong": [
-            "Że Kora uciekła z nimfami",
-            "Że Korę porwali Tytani",
-            "Że Kora utonęła w morzu"
-          ],
-          "explain": "Helios powiedział, że Zeus dawno obiecał Korę Hadesowi."
-        },
-        {
-          "id": "0010",
-          "level": 1,
           "q": "Co zrobiła Demeter, gdy poznała prawdę?",
           "correct": [
             "Wyrzekła się Olimpu",
-            "Sprawiła, że ziemia stała się jałowa"
+            "Rzuciła klątwę na Ziemię"
           ],
           "wrong": [
             "Wypowiedziała wojnę Hadesowi",
             "Zamieniła Hadesa w kamień"
           ],
-          "explain": "Demeter przysięgła, że nie postanie na Olimpie, i rzuciła klątwę: ziemia nie będzie rodzić plonów."
+          "explain": "Demeter wyrzekła się Olimpu i rzuciła klątwę – ziemia przestała rodzić plony."
+        },
+        {
+          "id": "0010",
+          "level": 1,
+          "q": "Co robiła Demeter w czasie rozpaczy?",
+          "correct": [
+            "Ukryła się w pieczarze i wyglądała jak zwykła kobieta"
+          ],
+          "wrong": [
+            "Zamieszkała u Hadesa",
+            "Płynęła po morzu",
+            "Ukryła się na Olimpie"
+          ],
+          "explain": "Demeter ukryła się w pieczarze i zmieniła wygląd w zwyczajną kobietę."
         },
         {
           "id": "0011",
           "level": 1,
-          "q": "Gdzie ukryła się Demeter?",
-          "correct": [
-            "W Eleusis"
-          ],
-          "wrong": [
-            "Na Krecie",
-            "Na Olimpie",
-            "W Hadesie"
-          ],
-          "explain": "Demeter siedziała przed pieczarą w Eleusis i wyglądała jak zwykła kobieta."
-        },
-        {
-          "id": "0012",
-          "level": 1,
-          "q": "Kto przyszedł po Demeter, by zabrać ją na Olimp?",
+          "q": "Kto przybył do Demeter z wiadomością od jej matki Rei?",
           "correct": [
             "Hermes"
           ],
@@ -173,27 +161,26 @@ export default {
             "Helios",
             "Kyane"
           ],
-          "explain": "Hermes, posłaniec bogów, przybył do Eleusis. Demeter poszła z nim, bo wspomniał o jej matce, Rei."
+          "explain": "Posłaniec Hermes przyniósł wiadomość od matki Rei."
         },
         {
-          "id": "0013",
+          "id": "0012",
           "level": 1,
           "q": "Jaki wyrok wydał Zeus w sprawie Kory?",
           "correct": [
-            "Trzecią część roku spędzi z mężem, a dwie trzecie z matką"
+            "Część roku spędzi z mężem, a resztę z matką"
           ],
           "wrong": [
             "Na zawsze zostanie w podziemiach",
             "Wróci na zawsze do matki",
-            "Połowę roku spędzi na Olimpie, a połowę w morzu"
+            "Zamieszka na Olimpie"
           ],
-          "explain": "Zeus postanowił, że Kora – jako Persefona – będzie spędzać z mężem trzecią część roku, a na dwie trzecie wracać do matki."
+          "explain": "Zeus postanowił, że Kora trzecią część roku spędzi z Hadesem, a resztę z matką."
         },
         {
-          "id": "0014",
+          "id": "0013",
           "level": 1,
-          "group": "persefona",
-          "q": "Jak nazywano Korę jako żonę Hadesa i królową podziemi?",
+          "q": "Jak nazywano Korę jako żonę Hadesa?",
           "correct": [
             "Persefona"
           ],
@@ -202,49 +189,134 @@ export default {
             "Kyane",
             "Rea"
           ],
-          "explain": "Kora jako królowa świata podziemnego to Persefona."
+          "explain": "Kora jako królowa podziemi to Persefona."
+        }
+      ]
+    },
+    {
+      "id": "teatr",
+      "name": "Sztuka teatralna",
+      "icon": "🎭",
+      "questions": [
+        {
+          "id": "0014",
+          "level": 1,
+          "group": "tekst-glowny",
+          "q": "Co tworzy tekst główny sztuki teatralnej?",
+          "correct": [
+            "Dialogi i monologi"
+          ],
+          "wrong": [
+            "Didaskalia",
+            "Tytuły aktów",
+            "Lista aktorów"
+          ],
+          "explain": "Tekst główny to dialogi i monologi – to, co mówią postacie."
         },
         {
           "id": "0015",
-          "group": "persefona",
-          "q": "Kim jest Persefona?",
+          "level": 1,
+          "group": "tekst-glowny",
+          "q": "Jak nazywa się tekst główny sztuki teatralnej, czyli to, co mówią postacie?",
           "correct": [
-            "To Kora jako żona Hadesa"
+            "Dialogi i monologi"
           ],
           "wrong": [
-            "Matka Demeter",
-            "Nimfa wodna",
-            "Bogini mądrości"
+            "Didaskalia",
+            "Akt",
+            "Scena"
           ],
-          "explain": "Persefona to imię Kory jako królowej podziemi."
+          "explain": "Tekst główny to dialogi i monologi."
         },
         {
           "id": "0016",
           "level": 1,
-          "group": "pory",
-          "q": "Dlaczego według mitu zimą ziemia jest jałowa?",
+          "group": "didaskalia",
+          "q": "Czym są didaskalia?",
           "correct": [
-            "Bo Kora jest wtedy w podziemiach, a Demeter się smuci"
+            "Wskazówkami dla twórców przedstawienia"
           ],
           "wrong": [
-            "Bo Helios odpoczywa",
-            "Bo Zeus jest zły na ludzi",
-            "Bo Posejdon zalewa pola"
+            "Rozmową dwóch postaci",
+            "Częścią aktu",
+            "Wypowiedzią jednej postaci"
           ],
-          "explain": "Gdy Kora wraca do Hadesa, Demeter się smuci i ziemia nie rodzi plonów. Gdy Kora jest z matką – nastaje wiosna."
+          "explain": "Didaskalia to tekst poboczny, czyli wskazówki dla twórców przedstawienia."
         },
         {
           "id": "0017",
-          "q": "Co działo się, gdy Kora wróciła do matki?",
+          "level": 1,
+          "group": "didaskalia",
+          "q": "Jak nazywa się tekst poboczny – wskazówki dla twórców przedstawienia?",
           "correct": [
-            "Nastała wiosna i świat się zazielenił"
+            "Didaskalia"
           ],
           "wrong": [
-            "Nastała zima",
-            "Ziemia zadrżała",
-            "Morze wyschło"
+            "Dialog",
+            "Monolog",
+            "Akt"
           ],
-          "explain": "Demeter woła: „Niech nastanie wiosna! Niech na nowo świat się zazieleni i rozkwitnie!”"
+          "explain": "Tekst poboczny to didaskalia."
+        },
+        {
+          "id": "0018",
+          "level": 1,
+          "group": "akt",
+          "q": "Czym jest akt?",
+          "correct": [
+            "Częścią sztuki wydzieloną, gdy zmienia się czas lub miejsce akcji"
+          ],
+          "wrong": [
+            "Częścią sceny",
+            "Wskazówką dla aktorów",
+            "Rozmową postaci"
+          ],
+          "explain": "Akt to część sztuki teatralnej wydzielona ze względu na zmianę czasu lub miejsca akcji."
+        },
+        {
+          "id": "0019",
+          "level": 1,
+          "group": "akt",
+          "q": "Jak nazywa się część sztuki wydzielona, gdy zmienia się czas lub miejsce akcji?",
+          "correct": [
+            "Akt"
+          ],
+          "wrong": [
+            "Scena",
+            "Dialog",
+            "Didaskalia"
+          ],
+          "explain": "To akt."
+        },
+        {
+          "id": "0020",
+          "level": 1,
+          "group": "scena",
+          "q": "Czym jest scena?",
+          "correct": [
+            "Częścią aktu wydzieloną, gdy pojawia się lub wychodzi postać"
+          ],
+          "wrong": [
+            "Całą sztuką",
+            "Wskazówką dla twórców",
+            "Częścią sztuki, gdy zmienia się miejsce akcji"
+          ],
+          "explain": "Scena to część aktu wydzielona ze względu na pojawienie się nowej postaci na scenie lub jej zejście ze sceny."
+        },
+        {
+          "id": "0021",
+          "level": 1,
+          "group": "scena",
+          "q": "Jak nazywa się część aktu wydzielona, gdy pojawia się nowa postać lub postać wychodzi?",
+          "correct": [
+            "Scena"
+          ],
+          "wrong": [
+            "Akt",
+            "Monolog",
+            "Didaskalia"
+          ],
+          "explain": "To scena."
         }
       ]
     },
@@ -254,86 +326,60 @@ export default {
       "icon": "📝",
       "questions": [
         {
-          "id": "0018",
-          "level": 1,
-          "type": "order",
-          "q": "Ułóż główne punkty planu w kolejności:",
-          "items": [
-            "Zabawa Kory na łące",
-            "Spotkanie z Hadesem",
-            "Poszukiwanie córki przez Demeter",
-            "Życie Demeter w osamotnieniu",
-            "Przybycie Demeter na Olimp"
-          ],
-          "explain": "Taki plan jest w podręczniku (s. 44)."
-        },
-        {
-          "id": "0019",
-          "type": "order",
-          "q": "Ułóż wydarzenia z punktu „Zabawa Kory na łące”:",
-          "items": [
-            "Zrywanie kwiatów i plecenie wianków",
-            "Podziwianie kwiatu narcyza",
-            "Zerwanie rośliny"
-          ],
-          "explain": "Najpierw wianki, potem narcyz, na końcu jego zerwanie."
-        },
-        {
-          "id": "0020",
-          "type": "order",
-          "q": "Ułóż wydarzenia z poszukiwań Demeter:",
-          "items": [
-            "Otrzymanie wskazówki od Hekate",
-            "Poznanie prawdy dzięki Heliosowi",
-            "Klątwa rzucona na ziemię",
-            "Przybycie Hermesa do Eleusis"
-          ],
-          "explain": "Hekate → Helios → klątwa i ucieczka do Eleusis → Hermes."
-        },
-        {
-          "id": "0021",
-          "type": "order",
-          "q": "Ułóż wydarzenia po kolei:",
-          "items": [
-            "Przybycie Hadesa",
-            "Daremna próba uratowania Kory przez Kyane",
-            "Uprowadzenie Kory do Tartaru"
-          ],
-          "explain": "Hades się pojawia, Kyane go błaga, Hades zabiera Korę."
-        }
-      ]
-    },
-    {
-      "id": "jak-plan",
-      "name": "Jak pisać plan",
-      "icon": "✏️",
-      "questions": [
-        {
           "id": "0022",
           "level": 1,
           "q": "Czym jest plan szczegółowy?",
           "correct": [
-            "Planem, w którym oprócz głównych wydarzeń w podpunktach są wydarzenia bardziej szczegółowe"
+            "Planem, w którym główne punkty mają podpunkty z mniejszymi wydarzeniami"
           ],
           "wrong": [
             "Planem z jednym punktem",
             "Listą bohaterów",
-            "Streszczeniem jednym zdaniem"
+            "Streszczeniem w jednym zdaniu"
           ],
-          "explain": "W planie szczegółowym oprócz głównych wydarzeń w podpunktach (a, b, c) umieszczamy wydarzenia bardziej szczegółowe."
+          "explain": "W planie szczegółowym pod głównymi punktami są podpunkty (a, b, c)."
         },
         {
           "id": "0023",
-          "q": "Który punkt planu jest zapisany poprawnie, w stylu z podręcznika?",
-          "correct": [
-            "Zerwanie kwiatu narcyza"
+          "level": 1,
+          "type": "order",
+          "q": "Ułóż wydarzenia w kolejności:",
+          "items": [
+            "Zabawa Kory na łące",
+            "Spotkanie z Hadesem",
+            "Poszukiwanie córki przez Demeter",
+            "Życie Demeter w rozpaczy",
+            "Przybycie Demeter na Olimp"
           ],
-          "wrong": [
-            "Kora zerwała kwiat narcyza.",
-            "Kora zrywa kwiat, bo jej się spodobał.",
-            "Narcyz!"
+          "explain": "Tak brzmią główne punkty planu z lekcji."
+        },
+        {
+          "id": "0024",
+          "level": 1,
+          "type": "order",
+          "q": "Ułóż wydarzenia w kolejności:",
+          "items": [
+            "Zerwanie narcyza",
+            "Porwanie Kory przez Hadesa",
+            "Wskazówka od Hekate",
+            "Prawda od Heliosa",
+            "Klątwa Demeter"
           ],
-          "explain": "Punkty planu zapisujemy krótko, najczęściej rzeczownikami, bez czasownika, np. „Zabawa Kory na łące”."
+          "explain": "Kora zrywa narcyz, Hades ją porywa, Demeter szuka córki."
+        },
+        {
+          "id": "0025",
+          "level": 1,
+          "type": "order",
+          "q": "Ułóż wydarzenia w kolejności:",
+          "items": [
+            "Ukrycie się w pieczarze",
+            "Przybycie Hermesa",
+            "Wyrok Zeusa",
+            "Spotkanie matki i córki",
+            "Nadejście wiosny"
+          ],
+          "explain": "Tak kończy się mit."
         }
       ]
     }

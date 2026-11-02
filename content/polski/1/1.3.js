@@ -13,212 +13,174 @@ export default {
           "group": "prometeusz",
           "q": "Kim był Prometeusz?",
           "correct": [
-            "Tytanem, przyjacielem i obrońcą ludzi"
+            "Tytanem, przyjacielem ludzi"
           ],
           "wrong": [
-            "Bogiem ognia i kowalstwa",
+            "Bogiem ognia i kowali",
             "Królem Koryntu",
             "Synem Zeusa"
           ],
-          "explain": "Prometeusz był Tytanem, synem Japeta. Stworzył ludzi i bronił ich przed bogami."
+          "explain": "Prometeusz był tytanem i przyjacielem ludzi."
         },
         {
           "id": "0002",
           "level": 1,
           "group": "prometeusz",
-          "q": "Który Tytan był przyjacielem i obrońcą ludzi?",
+          "q": "Który tytan był przyjacielem ludzi?",
           "correct": [
             "Prometeusz"
           ],
           "wrong": [
-            "Kronos",
+            "Helios",
             "Epimeteusz",
-            "Atlas"
+            "Japet"
           ],
-          "explain": "To Prometeusz – stworzył ludzi i podarował im ogień."
+          "explain": "To Prometeusz."
         },
         {
           "id": "0003",
-          "level": 3,
-          "q": "Co znaczy imię Prometeusz?",
+          "level": 1,
+          "q": "Kto był ojcem Prometeusza?",
           "correct": [
-            "Przewidujący"
+            "Japet"
           ],
           "wrong": [
-            "Obdarowany przez wszystkich",
-            "Silny",
-            "Ognisty"
+            "Zeus",
+            "Kronos",
+            "Helios"
           ],
-          "explain": "Prometeusz – z greckiego „przewidujący”. („Obdarowana przez wszystkich” to Pandora.)"
+          "explain": "Prometeusz był synem Japeta."
         },
         {
           "id": "0004",
-          "q": "Kogo pokonał Zeus, zanim zaczął panować na niebie?",
+          "level": 1,
+          "q": "Z czego Prometeusz ulepił ludzi?",
           "correct": [
-            "Swojego ojca Kronosa i Tytanów"
+            "Z gliny"
           ],
           "wrong": [
-            "Posejdona i Hadesa",
-            "Prometeusza",
-            "Olbrzymów z Tartaru"
+            "Z kamienia",
+            "Z drewna",
+            "Z piany morskiej"
           ],
-          "explain": "Zeus pokonał swego ojca Kronosa i strącił z niebios stary ród Tytanów."
+          "explain": "Prometeusz ulepił ludzi z gliny."
         },
         {
           "id": "0005",
           "level": 1,
-          "q": "Z czego Prometeusz ulepił człowieka?",
-          "correct": [
-            "Z gliny i wody źródlanej"
-          ],
-          "wrong": [
-            "Z kamienia",
-            "Z drewna oliwnego",
-            "Z piany morskiej"
-          ],
-          "explain": "Prometeusz wziął grudę gliny, zwilżył ją wodą źródlaną i ukształtował człowieka."
-        },
-        {
-          "id": "0006",
-          "level": 1,
-          "q": "Kto tchnął życie w ludzi ulepionych przez Prometeusza?",
+          "q": "Która bogini tchnęła życie w ludzi?",
           "correct": [
             "Atena"
           ],
           "wrong": [
-            "Zeus",
-            "Hermes",
-            "Hefajstos"
+            "Hera",
+            "Afrodyta",
+            "Demeter"
           ],
-          "explain": "Na prośbę Tytana Atena tchnęła życie w martwe ciała ludzi."
+          "explain": "Atena tchnęła życie w ciała ludzi ulepione przez Prometeusza."
+        },
+        {
+          "id": "0006",
+          "level": 1,
+          "q": "Jakim uczuciem Prometeusz darzył ludzi?",
+          "correct": [
+            "Miłością"
+          ],
+          "wrong": [
+            "Złością",
+            "Strachem",
+            "Zazdrością"
+          ],
+          "explain": "Prometeusz kochał ludzi i bardzo im pomagał."
         },
         {
           "id": "0007",
-          "q": "Jak żyli pierwsi ludzie?",
+          "level": 1,
+          "q": "Na czym polegał podstęp Prometeusza z ofiarą dla bogów?",
           "correct": [
-            "W ciemnych, wilgotnych jaskiniach, bezradni i nędzni"
+            "Ukrył kości pod tłuszczem i Zeus wybrał gorszą część"
           ],
           "wrong": [
-            "W pięknych pałacach",
-            "Na Olimpie razem z bogami",
-            "W chatach z kamienia"
+            "Ukradł ofiarę z ołtarza",
+            "Zatruł mięso",
+            "Zamienił wołu w kamień"
           ],
-          "explain": "Pierwsi ludzie gnieździli się pod ziemią, marzli i bali się dzikich zwierząt."
+          "explain": "Prometeusz podzielił wołu na dwie części. Zeus wybrał tę z tłuszczem – a pod nim były same kości."
         },
         {
           "id": "0008",
           "level": 1,
-          "q": "Na czym polegał podstęp Prometeusza przy ofierze?",
+          "q": "Skąd Prometeusz wziął ogień dla ludzi?",
           "correct": [
-            "Kości przykrył tłuszczem, a mięso zawinął w skórę, żeby Zeus wybrał gorszą część"
+            "Z rydwanu Heliosa, czyli Słońca"
           ],
           "wrong": [
-            "Ukradł ofiarę z ołtarza",
-            "Zamienił byka w kamień",
-            "Zatruł mięso"
+            "Z kuźni Hefajstosa",
+            "Z pałacu Posejdona",
+            "Z wulkanu"
           ],
-          "explain": "Zeus wybrał białą, smakowitą część – a pod tłuszczem były gołe kości. Od tej pory ludzie mogli składać bogom gorsze części."
+          "explain": "Prometeusz zapalił gałązkę od rydwanu Heliosa i dał ogień ludziom."
         },
         {
           "id": "0009",
           "level": 1,
-          "q": "Jak Zeus ukarał ludzi za podstęp Prometeusza?",
+          "q": "Kto postanowił ukarać Prometeusza?",
           "correct": [
-            "Odmówił im daru ognia"
+            "Zeus"
           ],
           "wrong": [
-            "Zesłał na nich potop",
-            "Zamienił ich w zwierzęta",
-            "Zabrał im mowę"
+            "Hades",
+            "Posejdon",
+            "Helios"
           ],
-          "explain": "Zeus postanowił odmówić ludziom ognia – ostatniego i największego daru Prometeusza."
+          "explain": "Zeus był wściekły, że Prometeusz dał ludziom ogień."
         },
         {
           "id": "0010",
           "level": 1,
-          "q": "Skąd Prometeusz wziął ogień dla ludzi?",
+          "q": "Kto pochwycił i uwięził Prometeusza?",
           "correct": [
-            "Od rydwanu Heliosa, boga słońca"
-          ],
-          "wrong": [
-            "Z kuźni Hefajstosa",
-            "Z Olimpu, ukryty w trzcinie",
-            "Z wulkanu"
-          ],
-          "explain": "Prometeusz przytknął gałązkę oliwną do osi wozu Heliosa – suche drewno zajęło się ogniem."
-        },
-        {
-          "id": "0011",
-          "q": "Czym Prometeusz zapalił ogień od rydwanu Heliosa?",
-          "correct": [
-            "Gałązką oliwną"
-          ],
-          "wrong": [
-            "Pochodnią",
-            "Strzałą",
-            "Trzciną"
-          ],
-          "explain": "Ściął długą gałąź oliwki i przytknął ją do osi wozu słonecznego."
-        },
-        {
-          "id": "0012",
-          "q": "Czego Prometeusz nauczył ludzi?",
-          "correct": [
-            "Uprawy roli",
-            "Oswajania dzikich zwierząt",
-            "Budowania chat"
-          ],
-          "wrong": [
-            "Pisania listów"
-          ],
-          "explain": "Prometeusz nauczył ludzi uprawy roli, ujarzmiania zwierząt, wskazał złoża miedzi, srebra i złota."
-        },
-        {
-          "id": "0013",
-          "level": 1,
-          "q": "Kto przykuł Prometeusza do skały?",
-          "correct": [
-            "Hefajstos (z pomocą Kratosa i Bii)"
+            "Hefajstos"
           ],
           "wrong": [
             "Herakles",
             "Hermes",
             "Ares"
           ],
-          "explain": "Zeus rozkazał Hefajstosowi uwięzić Prometeusza. Kratos i Bia (Moc i Siła) przykuli go do skały Kaukazu."
+          "explain": "Na rozkaz Zeusa Hefajstos przykuł Prometeusza do skały."
         },
         {
-          "id": "0014",
+          "id": "0011",
           "level": 1,
-          "q": "Gdzie Prometeusz został przykuty?",
+          "q": "Gdzie przykuto Prometeusza?",
           "correct": [
-            "Do skały Kaukazu"
+            "Do skały w górach Kaukazu"
           ],
           "wrong": [
-            "Do bram Hadesu",
+            "Do bramy Hadesu",
             "Do masztu okrętu",
             "Do skały na Olimpie"
           ],
-          "explain": "Prometeusza przykuto do skalnej ściany Kaukazu – łańcucha górskiego między Morzem Czarnym a Kaspijskim."
+          "explain": "Prometeusza przykuto do skały Kaukazu."
         },
         {
-          "id": "0015",
+          "id": "0012",
           "level": 1,
           "q": "Jaką karę cierpiał przykuty Prometeusz?",
           "correct": [
-            "Orzeł codziennie szarpał jego wątrobę, która odrastała"
+            "Orzeł codziennie wyjadał mu wątrobę, która odrastała"
           ],
           "wrong": [
             "Musiał wtaczać kamień na górę",
-            "Nie mógł pić wody, która uciekała",
-            "Musiał trzymać sklepienie niebieskie"
+            "Nie mógł pić wody",
+            "Musiał trzymać niebo"
           ],
-          "explain": "Zeus wysłał orła, który codziennie szarpał wątrobę Prometeusza, a ona cudownie odrastała. (Kamień to kara Syzyfa.)"
+          "explain": "Codziennie przylatywał orzeł. (Kamień to kara Syzyfa.)"
         },
         {
-          "id": "0016",
+          "id": "0013",
           "level": 1,
-          "q": "Kto uwolnił Prometeusza?",
+          "q": "Kto zabił orła i uwolnił Prometeusza?",
           "correct": [
             "Herakles"
           ],
@@ -227,34 +189,70 @@ export default {
             "Atena",
             "Hefajstos"
           ],
-          "explain": "Herakles zastrzelił orła z łuku i rozbił okowy Tytana."
+          "explain": "Herakles zastrzelił orła z łuku i uwolnił Prometeusza."
+        },
+        {
+          "id": "0014",
+          "level": 1,
+          "q": "Który centaur poszedł do Hadesu zamiast Prometeusza?",
+          "correct": [
+            "Chiron"
+          ],
+          "wrong": [
+            "Nessos",
+            "Japet",
+            "Epimeteusz"
+          ],
+          "explain": "Centaur Chiron zgodził się pójść do Hadesu zamiast Prometeusza."
+        }
+      ]
+    },
+    {
+      "id": "oczy",
+      "name": "Bogowie kontra ludzie",
+      "icon": "⚖️",
+      "questions": [
+        {
+          "id": "0015",
+          "level": 1,
+          "q": "Za co bogowie obwiniali Prometeusza?",
+          "correct": [
+            "Dał ludziom ogień",
+            "Żartował z bogów",
+            "Był zagrożeniem dla Zeusa"
+          ],
+          "wrong": [
+            "Zabił orła Zeusa"
+          ],
+          "explain": "W oczach bogów Prometeusz był winny: dał ludziom ogień, żartował z bogów i był zagrożeniem dla Zeusa."
+        },
+        {
+          "id": "0016",
+          "level": 1,
+          "q": "Za co ludzie byli wdzięczni Prometeuszowi?",
+          "correct": [
+            "Dał im ogień",
+            "Nauczył ich radzić sobie",
+            "Chronił ich"
+          ],
+          "wrong": [
+            "Dał im skrzydła"
+          ],
+          "explain": "W oczach ludzi Prometeusz był bohaterem: dał im ogień, nauczył ich radzić sobie i ich chronił."
         },
         {
           "id": "0017",
           "level": 1,
-          "q": "Kto poszedł do Hadesu w zamian za Prometeusza?",
+          "q": "Kim był Prometeusz w oczach bogów?",
           "correct": [
-            "Centaur Chiron"
+            "Zdrajcą, który ukradł im ogień"
           ],
           "wrong": [
-            "Herakles",
-            "Centaur Nessos",
-            "Epimeteusz"
+            "Najlepszym przyjacielem",
+            "Królem Olimpu",
+            "Sługą Zeusa"
           ],
-          "explain": "Nieśmiertelny centaur Chiron cierpiał z powodu nieuleczalnej rany i zgodził się dobrowolnie pójść do Hadesu – tak wypełniła się wola Zeusa."
-        },
-        {
-          "id": "0018",
-          "q": "Jak zachowywał się Prometeusz przykuty do skały?",
-          "correct": [
-            "Był niezłomny – nie prosił o litość i nie wyrzekł się miłości do ludzi"
-          ],
-          "wrong": [
-            "Błagał Zeusa o przebaczenie",
-            "Zdradził ludzi",
-            "Uciekł z pomocą Hefajstosa"
-          ],
-          "explain": "Mimo cierpień Prometeusz nie chciał się wyrzec miłości dla rodu ludzkiego ani prosić Olimpu o litość."
+          "explain": "Dla bogów Prometeusz był zdrajcą i złodziejem ognia, a dla ludzi – bohaterem."
         }
       ]
     },
@@ -264,43 +262,18 @@ export default {
       "icon": "📝",
       "questions": [
         {
-          "id": "0019",
+          "id": "0018",
           "level": 1,
           "type": "order",
           "q": "Ułóż wydarzenia w kolejności:",
           "items": [
-            "Stworzenie ludzi z gliny",
-            "Podstęp przy ofierze z byka",
-            "Odebranie ludziom ognia",
-            "Kradzież ognia z rydwanu Heliosa",
-            "Przykucie Prometeusza do skały",
+            "Ulepienie ludzi z gliny",
+            "Podstęp z ofiarą dla bogów",
+            "Kradzież ognia",
+            "Przykucie do skały",
             "Uwolnienie przez Heraklesa"
           ],
           "explain": "Tak przebiega mit o Prometeuszu."
-        },
-        {
-          "id": "0020",
-          "type": "order",
-          "q": "Ułóż wydarzenia w kolejności:",
-          "items": [
-            "Zapalenie gałązki od wozu Heliosa",
-            "Zapalenie pierwszego ogniska na ziemi",
-            "Nauka ludzi uprawy roli",
-            "Gniew Zeusa na widok ognia"
-          ],
-          "explain": "Najpierw ogień, potem nauki Prometeusza – a wtedy Zeus zadrżał z gniewu."
-        },
-        {
-          "id": "0021",
-          "type": "order",
-          "q": "Ułóż wydarzenia w kolejności:",
-          "items": [
-            "Zabicie orła przez Heraklesa",
-            "Rozbicie okowów Prometeusza",
-            "Zejście Chirona do Hadesu",
-            "Powrót Prometeusza na Olimp"
-          ],
-          "explain": "Herakles zabija orła i uwalnia Tytana, Chiron idzie do Hadesu, Prometeusz wraca na Olimp."
         }
       ]
     }

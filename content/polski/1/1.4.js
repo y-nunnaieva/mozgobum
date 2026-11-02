@@ -10,16 +10,16 @@ export default {
         {
           "id": "0001",
           "level": 1,
-          "q": "Dlaczego Zeus stworzył Pandorę?",
+          "q": "Dlaczego Zeus kazał stworzyć Pandorę?",
           "correct": [
-            "Chciał ukarać Prometeusza i jego ukochanych ludzi"
+            "Chciał ukarać Prometeusza i ludzi"
           ],
           "wrong": [
             "Chciał dać Prometeuszowi żonę",
             "Chciał nagrodzić Epimeteusza",
             "Chciał, by pilnowała ognia"
           ],
-          "explain": "Zeus pragnął wymierzyć cios Prometeuszowi, więc zesłał nieszczęście na jego ukochany lud."
+          "explain": "To była zemsta Zeusa na Prometeuszu i jego ukochanych ludziach."
         },
         {
           "id": "0002",
@@ -33,61 +33,10 @@ export default {
             "Atena",
             "Hermes"
           ],
-          "explain": "Zeus rozkazał Hefajstosowi, bogu ognia, by ulepił z gliny i wody postać pięknej dziewczyny."
+          "explain": "Na rozkaz Zeusa Hefajstos ulepił Pandorę z gliny i wody."
         },
         {
           "id": "0003",
-          "q": "Z czego Hefajstos ulepił Pandorę?",
-          "correct": [
-            "Z gliny i wody"
-          ],
-          "wrong": [
-            "Z marmuru",
-            "Ze złota",
-            "Z piany morskiej"
-          ],
-          "explain": "Pandorę ulepiono z gliny i wody."
-        },
-        {
-          "id": "0004",
-          "q": "Kto ożywił posąg Pandory?",
-          "correct": [
-            "Zeus"
-          ],
-          "wrong": [
-            "Atena",
-            "Hefajstos",
-            "Afrodyta"
-          ],
-          "explain": "Zeus ożywił posąg drgnieniem swej woli."
-        },
-        {
-          "id": "0005",
-          "level": 1,
-          "type": "pairs",
-          "q": "Połącz bogów z darem, który dali Pandorze:",
-          "pairs": [
-            [
-              "Atena",
-              "tkanie i haft"
-            ],
-            [
-              "charyty",
-              "zasłona i kwiaty"
-            ],
-            [
-              "Hermes",
-              "wymowa i dowcip"
-            ],
-            [
-              "Afrodyta",
-              "czar"
-            ]
-          ],
-          "explain": "Atena nauczyła ją tkania i haftu, charyty dały zasłonę i kwiaty, Hermes – kunszt wymowy i dowcipu, Afrodyta – swój czar."
-        },
-        {
-          "id": "0006",
           "level": 1,
           "q": "Co znaczy imię Pandora?",
           "correct": [
@@ -98,40 +47,13 @@ export default {
             "Piękna",
             "Ciekawa"
           ],
-          "explain": "Pandora znaczy: obdarowana przez wszystkich."
+          "explain": "Każdy bóg dał Pandorze jakiś dar."
         },
         {
-          "id": "0007",
-          "level": 1,
-          "q": "Kto sprowadził Pandorę z Olimpu na ziemię?",
-          "correct": [
-            "Hermes"
-          ],
-          "wrong": [
-            "Hefajstos",
-            "Zeus",
-            "Prometeusz"
-          ],
-          "explain": "Hermes wziął Pandorę za rękę i sprowadził ją z nieba na ziemię."
-        },
-        {
-          "id": "0008",
-          "q": "Kto dał Pandorze szkatułkę i zakazał jej otwierać?",
-          "correct": [
-            "Hermes (na rozkaz Zeusa)"
-          ],
-          "wrong": [
-            "Prometeusz",
-            "Epimeteusz",
-            "Atena"
-          ],
-          "explain": "Hermes wręczył jej szkatułkę i z rozkazu Zeusa zabronił otwierać wieko."
-        },
-        {
-          "id": "0009",
+          "id": "0004",
           "level": 1,
           "group": "epimeteusz",
-          "q": "Do czyjego domu trafiła Pandora?",
+          "q": "Kogo poślubiła Pandora?",
           "correct": [
             "Epimeteusza, brata Prometeusza"
           ],
@@ -140,15 +62,15 @@ export default {
             "Hefajstosa",
             "Heraklesa"
           ],
-          "explain": "Pandora weszła w dom poczciwego i łagodnego Epimeteusza, brata Prometeusza."
+          "explain": "Lekkomyślny Epimeteusz poślubił Pandorę."
         },
         {
-          "id": "0010",
+          "id": "0005",
           "level": 1,
           "group": "epimeteusz",
           "q": "Kim był Epimeteusz?",
           "correct": [
-            "Bratem Prometeusza, który poślubił Pandorę"
+            "Lekkomyślnym bratem Prometeusza"
           ],
           "wrong": [
             "Synem Zeusa",
@@ -158,7 +80,7 @@ export default {
           "explain": "Epimeteusz – brat Prometeusza, mąż Pandory."
         },
         {
-          "id": "0011",
+          "id": "0006",
           "level": 1,
           "q": "Kto ostrzegał Epimeteusza przed darem bogów?",
           "correct": [
@@ -169,10 +91,23 @@ export default {
             "Atena",
             "Zeus"
           ],
-          "explain": "Prometeusz domyślał się podstępu, ale Epimeteusz zapomniał dla Pandory o całym świecie."
+          "explain": "Prometeusz domyślał się podstępu, ale Epimeteusz go nie posłuchał."
         },
         {
-          "id": "0012",
+          "id": "0007",
+          "q": "Dlaczego Pandora chciała otworzyć puszkę?",
+          "correct": [
+            "Z ciekawości"
+          ],
+          "wrong": [
+            "Ze strachu",
+            "Na rozkaz Prometeusza",
+            "Szukała w niej ognia"
+          ],
+          "explain": "Pandora była bardzo ciekawa, co jest w środku."
+        },
+        {
+          "id": "0008",
           "level": 1,
           "q": "Kto otworzył puszkę?",
           "correct": [
@@ -183,62 +118,50 @@ export default {
             "Prometeusz",
             "Hermes"
           ],
-          "explain": "Pandora codziennie prosiła męża, aż Epimeteusz uległ i wspólnie otworzyli wieko."
+          "explain": "Epimeteusz uległ prośbom żony i otworzyli ją razem."
         },
         {
-          "id": "0013",
-          "q": "Dlaczego Pandora chciała otworzyć puszkę?",
-          "correct": [
-            "Z ciekawości"
-          ],
-          "wrong": [
-            "Ze strachu",
-            "Na rozkaz Prometeusza",
-            "Szukała w niej ognia"
-          ],
-          "explain": "Kapryśna Pandora była trawiona ciekawością."
-        },
-        {
-          "id": "0014",
+          "id": "0009",
           "level": 1,
           "q": "Co wyszło z puszki?",
           "correct": [
-            "Jadowite żmije i skorpiony",
-            "Choroby i febry",
-            "Cierpienie i śmierć"
+            "Choroby",
+            "Nieszczęścia",
+            "Jadowite węże i skorpiony"
           ],
           "wrong": [
-            "Ogień i światło"
+            "Ogień"
           ],
-          "explain": "Z puszki wypełzły żmije, węże, skorpiony, pająki i gady, a choroby i cierpienie rozpełzły się po ziemi."
+          "explain": "Z puszki wyszły choroby, nieszczęścia i groźne stworzenia."
         },
         {
-          "id": "0015",
+          "id": "0010",
           "level": 1,
-          "q": "Co się stało z Nadzieją?",
+          "q": "Co zostało zamknięte w puszce?",
           "correct": [
-            "Pandora za podszeptem Zeusa zamknęła ją w skrzyni na zawsze"
+            "Nadzieja"
           ],
           "wrong": [
-            "Wyleciała i pocieszała ludzi",
-            "Zabrał ją Prometeusz",
-            "Ukryła się na Olimpie"
+            "Ogień",
+            "Radość",
+            "Miłość"
           ],
-          "explain": "Gdy z dna unosiła się Nadzieja, Pandora szybko zatrzasnęła wieko, zamykając ją na zawsze. Tak jest w wersji z podręcznika."
+          "explain": "Pandora szybko zatrzasnęła wieko i Nadzieja została w środku. Tak jest w wersji z podręcznika."
         },
         {
-          "id": "0016",
+          "id": "0011",
           "level": 1,
+          "group": "f-pandora",
           "q": "Co znaczy związek wyrazowy „puszka Pandory”?",
           "correct": [
-            "Zbiór, źródło zła, kłopotów, nieszczęść"
+            "Źródło zła, kłopotów i nieszczęść"
           ],
           "wrong": [
             "Prezent, który cieszy",
             "Skarb ukryty w domu",
             "Coś bardzo cennego"
           ],
-          "explain": "Puszka Pandory przenośnie to zbiór, źródło zła, kłopotów i nieszczęść."
+          "explain": "Puszka Pandory to przenośnie źródło zła, kłopotów i nieszczęść."
         }
       ]
     },
@@ -248,31 +171,18 @@ export default {
       "icon": "📝",
       "questions": [
         {
-          "id": "0017",
+          "id": "0012",
           "level": 1,
           "type": "order",
           "q": "Ułóż wydarzenia w kolejności:",
           "items": [
-            "Ulepienie Pandory przez Hefajstosa",
-            "Dary bogów dla Pandory",
-            "Sprowadzenie Pandory na ziemię",
+            "Ulepienie Pandory",
             "Ślub z Epimeteuszem",
             "Otwarcie puszki",
+            "Nieszczęścia na świecie",
             "Zamknięcie Nadziei"
           ],
           "explain": "Tak przebiega mit o Pandorze."
-        },
-        {
-          "id": "0018",
-          "type": "order",
-          "q": "Ułóż wydarzenia w kolejności:",
-          "items": [
-            "Prośby ciekawej Pandory",
-            "Uleganie Epimeteusza namowom żony",
-            "Wspólne otwarcie wieka",
-            "Rozprzestrzenienie się chorób"
-          ],
-          "explain": "Pandora prosi, Epimeteusz ulega, otwierają razem – i nieszczęścia rozchodzą się po świecie."
         }
       ]
     }

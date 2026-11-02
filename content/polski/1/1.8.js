@@ -20,67 +20,56 @@ export default {
             "W Mykenach",
             "Na Itace"
           ],
-          "explain": "Syzyf panował w Koryncie, który sam założył i uczynił bogatym."
+          "explain": "Syzyf założył Korynt i uczynił go bogatym."
         },
         {
           "id": "0002",
           "level": 1,
           "group": "korynt",
-          "q": "Który król założył Korynt i uczynił go bogatym?",
+          "q": "Co zrobił Syzyf jako król?",
           "correct": [
-            "Syzyf"
+            "Założył miasto i uczynił je bogatym"
           ],
           "wrong": [
-            "Eurysteusz",
-            "Alkinoos",
-            "Odyseusz"
+            "Zburzył Troję",
+            "Zbudował Olimp",
+            "Ukradł ogień"
           ],
-          "explain": "To Syzyf – wybrał dogodne miejsce na port i pobierał daninę od statków."
+          "explain": "Syzyf założył Korynt i uczynił go bogatym."
         },
         {
           "id": "0003",
-          "q": "Dlaczego Syzyf był taki rześki i silny mimo lat?",
+          "level": 1,
+          "q": "Za co rozgniewali się na Syzyfa bogowie?",
           "correct": [
-            "Na ucztach u bogów jadł ambrozję i pił nektar"
+            "Plotkował o bogach i zdradzał ich tajemnice"
           ],
           "wrong": [
-            "Codziennie ćwiczył",
-            "Kąpał się w Styksie",
-            "Był synem Zeusa"
+            "Ukradł ogień",
+            "Zabił woły Heliosa",
+            "Otworzył puszkę"
           ],
-          "explain": "Syzyf był ulubieńcem bogów – Zeus zapraszał go na uczty olimpijskie."
+          "explain": "Syzyf bywał na ucztach bogów, a potem zdradzał ludziom ich tajemnice."
         },
         {
           "id": "0004",
           "level": 1,
-          "q": "Jaką wadę miał Syzyf?",
+          "group": "tanatos",
+          "q": "Kim był Tanatos?",
           "correct": [
-            "Lubił plotki"
+            "Bogiem śmierci"
           ],
           "wrong": [
-            "Był tchórzem",
-            "Był skąpy",
-            "Był leniwy"
+            "Bogiem wojny",
+            "Królem Koryntu",
+            "Psem Hadesa"
           ],
-          "explain": "Wracając z Olimpu, zawsze coś przebąknął o tym, co tam się mówiło."
+          "explain": "Tanatos – bóg śmierci."
         },
         {
           "id": "0005",
           "level": 1,
-          "q": "Za co Zeus rozgniewał się na Syzyfa?",
-          "correct": [
-            "Za zdradzenie ludziom sekretu Zeusa"
-          ],
-          "wrong": [
-            "Za kradzież ognia",
-            "Za zabicie wołów Heliosa",
-            "Za otwarcie puszki"
-          ],
-          "explain": "Raz Syzyf wygadał się przed ludźmi z poufnego sekretu Zeusa."
-        },
-        {
-          "id": "0006",
-          "level": 1,
+          "group": "tanatos",
           "q": "Kogo Zeus posłał po Syzyfa?",
           "correct": [
             "Tanatosa, boga śmierci"
@@ -90,26 +79,26 @@ export default {
             "Aresa",
             "Hadesa"
           ],
-          "explain": "Zeus posłał po plotkarza bożka śmierci, Tanatosa."
+          "explain": "Zeus wysłał po Syzyfa boga śmierci."
         },
         {
-          "id": "0007",
+          "id": "0006",
           "level": 1,
           "q": "Co Syzyf zrobił z Tanatosem?",
           "correct": [
-            "Zakuł go w kajdany i zamknął w piwnicy"
+            "Urządził zasadzkę i go uwięził"
           ],
           "wrong": [
             "Ugościł go na uczcie",
             "Oddał go Hadesowi",
             "Zamienił go w kamień"
           ],
-          "explain": "Syzyf urządził zasadzkę, uwięził Tanatosa i zamknął go w piwnicy."
+          "explain": "Syzyf urządził zasadzkę na Tanatosa i zamknął go w piwnicy."
         },
         {
-          "id": "0008",
+          "id": "0007",
           "level": 1,
-          "q": "Co działo się na świecie, gdy Tanatos był uwięziony?",
+          "q": "Co się działo, gdy Tanatos był uwięziony?",
           "correct": [
             "Ludzie przestali umierać"
           ],
@@ -118,105 +107,49 @@ export default {
             "Morze wyschło",
             "Bogowie stracili moc"
           ],
-          "explain": "Ludzie przestali umierać – Hades poszedł ze skargą do Zeusa."
+          "explain": "Bez boga śmierci nikt nie umierał."
         },
         {
-          "id": "0009",
+          "id": "0008",
           "level": 1,
           "q": "Kto uwolnił Tanatosa?",
           "correct": [
-            "Ares"
+            "Ares, bóg wojny"
           ],
           "wrong": [
             "Herakles",
             "Hermes",
             "Hades"
           ],
-          "explain": "Do uwolnienia boga śmierci wysłano Aresa, boga wojny."
+          "explain": "Do uwolnienia Tanatosa Zeus wysłał Aresa."
         },
         {
-          "id": "0010",
+          "id": "0009",
           "level": 1,
-          "q": "Jakie polecenie dał Syzyf żonie przed śmiercią?",
+          "q": "Jak Syzyf oszukał bogów po śmierci?",
           "correct": [
-            "By zostawiła jego ciało niepochowane"
-          ],
-          "wrong": [
-            "By wezwała Heraklesa",
-            "By ukryła jego skarby",
-            "By złożyła ofiarę Zeusowi"
-          ],
-          "explain": "Dusza, której ciała nie pogrzebano, nie mogła wejść do państwa cieni – to był podstęp Syzyfa."
-        },
-        {
-          "id": "0011",
-          "level": 1,
-          "q": "Jak Syzyfowi udało się wrócić na ziemię?",
-          "correct": [
-            "Pluton pozwolił mu wrócić, by ukarał żonę za brak pogrzebu"
+            "Kazał żonie go nie pochować, a potem poprosił o powrót, by ją ukarać"
           ],
           "wrong": [
             "Przekupił Charona",
             "Uciekł, gdy Cerber spał",
             "Pomógł mu Herakles"
           ],
-          "explain": "Syzyf skarżył się, że żona nie sprawiła mu pogrzebu. Pluton pozwolił mu wrócić – a król już nie wrócił do podziemi."
+          "explain": "Syzyf poprosił, by mógł wrócić na ziemię i ukarać żonę za brak pogrzebu – i już nie wrócił do podziemi."
         },
         {
-          "id": "0012",
-          "level": 3,
-          "q": "Kim jest Pluton?",
-          "correct": [
-            "To inne imię Hadesa"
-          ],
-          "wrong": [
-            "Bóg morza",
-            "Syn Syzyfa",
-            "Strażnik Tartaru"
-          ],
-          "explain": "Pluton – inne określenie boga Hadesa."
-        },
-        {
-          "id": "0013",
-          "level": 3,
-          "q": "W jaki sposób Tanatos kończył życie człowieka?",
-          "correct": [
-            "Ucinał mu pukiel włosów"
-          ],
-          "wrong": [
-            "Dotykał go pochodnią",
-            "Wypowiadał jego imię",
-            "Zabierał mu cień"
-          ],
-          "explain": "Według Greków Tanatos zabierał ludzi, ucinając im pukiel włosów."
-        },
-        {
-          "id": "0014",
+          "id": "0010",
           "level": 1,
           "q": "Jaką karę dostał Syzyf w Hadesie?",
           "correct": [
-            "Musi wtaczać wielki kamień na stromą górę, a kamień zawsze spada"
+            "Wtacza kamień na górę, a kamień zawsze spada"
           ],
           "wrong": [
             "Orzeł wyjada mu wątrobę",
-            "Musi trzymać sklepienie niebieskie",
-            "Musi przewozić dusze przez Styks"
+            "Musi trzymać niebo",
+            "Musi przewozić dusze"
           ],
-          "explain": "Gdy Syzyf jest blisko celu, kamień wyrywa mu się z rąk i praca zaczyna się od nowa."
-        },
-        {
-          "id": "0015",
-          "level": 1,
-          "q": "Co znaczy „syzyfowa praca”?",
-          "correct": [
-            "Ciężka, daremna praca, która nigdy się nie kończy"
-          ],
-          "wrong": [
-            "Praca dobrze opłacana",
-            "Praca wykonana bardzo szybko",
-            "Praca dla bogów"
-          ],
-          "explain": "Syzyfowa praca to ciężkie i bezowocne zajęcie – jak wtaczanie kamienia, który zawsze spada."
+          "explain": "Gdy Syzyf jest blisko szczytu, kamień spada i praca zaczyna się od nowa."
         }
       ]
     },
@@ -226,17 +159,16 @@ export default {
       "icon": "📝",
       "questions": [
         {
-          "id": "0016",
+          "id": "0011",
           "level": 1,
           "type": "order",
           "q": "Ułóż wydarzenia w kolejności:",
           "items": [
-            "Zdradzenie sekretu Zeusa",
+            "Założenie bogatego Koryntu",
+            "Zdradzanie tajemnic bogów",
             "Uwięzienie Tanatosa",
-            "Uwolnienie Tanatosa przez Aresa",
-            "Polecenie dla żony",
-            "Powrót na ziemię za zgodą Plutona",
-            "Wtaczanie kamienia na górę"
+            "Podstęp z pogrzebem",
+            "Kara w Hadesie"
           ],
           "explain": "Tak przebiega mit o Syzyfie."
         }

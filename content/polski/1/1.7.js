@@ -3,8 +3,8 @@ export default {
   "icon": "💪",
   "sections": [
     {
-      "id": "mlodosc",
-      "name": "Dzieciństwo i młodość",
+      "id": "heros",
+      "name": "Herakles – heros",
       "icon": "🐍",
       "questions": [
         {
@@ -13,48 +13,83 @@ export default {
           "group": "rodzice",
           "q": "Kim byli rodzice Heraklesa?",
           "correct": [
-            "Zeus i Alkmena"
+            "Bóg Zeus i śmiertelna kobieta Alkmena"
           ],
           "wrong": [
             "Zeus i Hera",
-            "Amfitrion i Hera",
-            "Posejdon i Alkmena"
+            "Posejdon i Alkmena",
+            "Kronos i Rea"
           ],
-          "explain": "Herakles był synem Zeusa i Alkmeny. Mężem Alkmeny był Amfitrion."
+          "explain": "Herakles był synem Zeusa i Alkmeny."
         },
         {
           "id": "0002",
           "level": 1,
           "group": "rodzice",
-          "q": "Jak miała na imię matka Heraklesa?",
+          "q": "Dlaczego Herakles jest herosem?",
           "correct": [
-            "Alkmena"
+            "Był synem boga i śmiertelnej kobiety",
+            "Dokonał niezwykłych czynów"
           ],
           "wrong": [
-            "Klymena",
-            "Dejanira",
-            "Hebe"
+            "Mieszkał na Olimpie od urodzenia",
+            "Był tytanem"
           ],
-          "explain": "Matką Heraklesa była Alkmena, córka króla Elektriona."
+          "explain": "Heros to syn boga i człowieka, który dokonał wielkich czynów (wiedza ogólna). Herakles był synem Zeusa i Alkmeny."
         },
         {
           "id": "0003",
           "level": 1,
-          "q": "Dlaczego Hera chciała zemścić się na Heraklesie?",
+          "q": "Kto był herosem?",
           "correct": [
-            "Był synem jej męża Zeusa i innej kobiety"
+            "Herakles"
           ],
           "wrong": [
-            "Herakles ukradł jej pawia",
-            "Herakles obraził ją na uczcie",
-            "Herakles zabił jej syna"
+            "Zeus",
+            "Pandora",
+            "Syzyf"
           ],
-          "explain": "Pogłoski, że Herakles to syn Zeusa, dotarły na Olimp, a zazdrosna małżonka Zeusa postanowiła się zemścić."
+          "explain": "Herakles to heros. Zeus to bóg, a Pandora i Syzyf to ludzie."
         },
         {
           "id": "0004",
           "level": 1,
-          "q": "Co zrobił ośmiomiesięczny Herakles z wężami zesłanymi przez Herę?",
+          "type": "pairs",
+          "q": "Połącz postać z tym, kim była:",
+          "pairs": [
+            [
+              "Zeus",
+              "bóg"
+            ],
+            [
+              "Herakles",
+              "heros"
+            ],
+            [
+              "Syzyf",
+              "człowiek"
+            ]
+          ],
+          "explain": "Zeus to bóg, Herakles – heros (syn boga i człowieka), Syzyf – człowiek."
+        },
+        {
+          "id": "0005",
+          "level": 1,
+          "q": "Dlaczego Hera nienawidziła Heraklesa?",
+          "correct": [
+            "Był synem Zeusa i innej kobiety"
+          ],
+          "wrong": [
+            "Ukradł jej pawia",
+            "Obraził ją na uczcie",
+            "Zabił jej syna"
+          ],
+          "explain": "Hera była zazdrosna, bo Herakles był synem jej męża i innej kobiety."
+        },
+        {
+          "id": "0006",
+          "level": 1,
+          "q": "Co zrobił mały Herakles z wężami od Hery?",
           "correct": [
             "Udusił je"
           ],
@@ -63,104 +98,20 @@ export default {
             "Zamienił je w kamień",
             "Oswoił je"
           ],
-          "explain": "Mały Herakles chwycił gady za łby i je udusił."
-        },
-        {
-          "id": "0005",
-          "level": 1,
-          "q": "Co przepowiedział Heraklesowi wieszcz Tyrezjasz?",
-          "correct": [
-            "Że będzie bohaterem i największym herosem Hellady"
-          ],
-          "wrong": [
-            "Że zostanie królem Aten",
-            "Że zginie w dzieciństwie",
-            "Że będzie wróżbitą"
-          ],
-          "explain": "Ślepy Tyrezjasz przepowiedział, że Herakles będzie zmagał się z potworami, pomoże ludziom i stanie się największym herosem Hellady."
-        },
-        {
-          "id": "0006",
-          "level": 3,
-          "q": "Co zrobił Herakles z nauczycielem muzyki Linosem?",
-          "correct": [
-            "Uderzył go kitarą i zabił"
-          ],
-          "wrong": [
-            "Nauczył go gry na lirze",
-            "Wygnał go z Teb",
-            "Uratował mu życie"
-          ],
-          "explain": "Rozzłoszczony chłopiec uderzył starca kitarą w głowę i zabił go."
+          "explain": "Mały Herakles chwycił węże i je udusił."
         },
         {
           "id": "0007",
-          "level": 3,
-          "q": "Gdzie Amfitrion wysłał Heraklesa po zabiciu Linosa?",
-          "correct": [
-            "W góry Kiteron, do pasterzy"
-          ],
-          "wrong": [
-            "Do Myken",
-            "Na Olimp",
-            "Do Egiptu"
-          ],
-          "explain": "Amfitrion zabrał Heraklesa w góry Kiteron i zostawił pod opieką pasterza Skitisa."
-        },
-        {
-          "id": "0008",
-          "level": 1,
-          "q": "Jakie dwie kobiety spotkał Herakles na rozstajach dróg?",
-          "correct": [
-            "Szczęście (Nieszczęście) i Cnotę (Arete)"
-          ],
-          "wrong": [
-            "Herę i Atenę",
-            "Alkmenę i Dejanirę",
-            "Dwie nimfy z Kiteronu"
-          ],
-          "explain": "Pierwsza nazywała się Szczęście (wrogowie mówili: Nieszczęście), druga – Arete, czyli Cnota."
-        },
-        {
-          "id": "0009",
-          "level": 1,
-          "q": "Którą drogę wybrał Herakles?",
+          "q": "Którą drogę wybrał młody Herakles?",
           "correct": [
             "Trudną drogę Cnoty"
           ],
           "wrong": [
             "Łatwą drogę Szczęścia",
             "Drogę do Olimpu",
-            "Żadną – wrócił do domu"
+            "Drogę do domu"
           ],
-          "explain": "Cnota obiecała trudną drogę: sens życia w kochaniu ludzi i pomaganiu im. Herakles odpowiedział: „Twoja droga bardziej mi odpowiada”."
-        },
-        {
-          "id": "0010",
-          "q": "Co obiecywała Heraklesowi Cnota (Arete)?",
-          "correct": [
-            "Trudną drogę, która ma sens, gdy kocha się ludzi i pomaga im"
-          ],
-          "wrong": [
-            "Bogactwo i wygodne życie",
-            "Władzę nad całym światem",
-            "Nieśmiertelność bez wysiłku"
-          ],
-          "explain": "Niczego nie osiągniesz bez wysiłku i trudu – mówiła Cnota."
-        },
-        {
-          "id": "0011",
-          "level": 3,
-          "q": "Przed kim Herakles obronił Teby?",
-          "correct": [
-            "Przed wojskiem młodego władcy Orchomenosa"
-          ],
-          "wrong": [
-            "Przed Persami",
-            "Przed Amazonkami",
-            "Przed centaurami"
-          ],
-          "explain": "Herakles poprowadził Tebańczyków przeciw armii władcy Orchomenosa i zwyciężyli."
+          "explain": "Herakles wybrał trudną drogę – pomaganie ludziom."
         }
       ]
     },
@@ -170,62 +121,21 @@ export default {
       "icon": "🦁",
       "questions": [
         {
-          "id": "0012",
+          "id": "0008",
           "level": 1,
-          "q": "Gdzie Herakles zabił słynnego lwa?",
+          "q": "Co musiał zrobić Herakles w stajni Augiasza?",
           "correct": [
-            "W Nemei"
+            "Oczyścić ją"
           ],
           "wrong": [
-            "Na Krecie",
-            "W Erymancie",
-            "W Lernie"
+            "Złapać konie",
+            "Zbudować ją",
+            "Spalić ją"
           ],
-          "explain": "Lew nemejski mieszkał w Mrocznej Jaskini w Nemei."
+          "explain": "Herakles oczyścił ogromne, brudne stajnie króla Augiasza. Stąd „stajnia Augiasza” – bałagan."
         },
         {
-          "id": "0013",
-          "level": 1,
-          "q": "Jak Herakles pokonał lwa nemejskiego?",
-          "correct": [
-            "Udusił go gołymi rękami"
-          ],
-          "wrong": [
-            "Zastrzelił go z łuku",
-            "Przebił go mieczem",
-            "Zrzucił go ze skały"
-          ],
-          "explain": "Strzały odbiły się od skóry lwa, a maczuga utknęła w jego kłach. Herakles skoczył na lwa i go udusił."
-        },
-        {
-          "id": "0014",
-          "q": "Co Herakles zrobił ze skórą lwa nemejskiego?",
-          "correct": [
-            "Zarzucił ją na barki jako nowe odzienie"
-          ],
-          "wrong": [
-            "Sprzedał ją w Mykenach",
-            "Złożył ją w ofierze",
-            "Podarował matce"
-          ],
-          "explain": "Jego dawne odzienie było postrzępione, więc zarzucił skórę lwa na barki."
-        },
-        {
-          "id": "0015",
-          "level": 1,
-          "q": "Pod jakim warunkiem Eurysteusz zgodził się, by rodzice Heraklesa wrócili do Myken?",
-          "correct": [
-            "Że Herakles wykona dwanaście zadań"
-          ],
-          "wrong": [
-            "Że Herakles poślubi jego córkę",
-            "Że Herakles odda mu skórę lwa",
-            "Że Herakles opuści Grecję"
-          ],
-          "explain": "Eurysteusz obiecał spełnić życzenie pod warunkiem, że Herakles wykona dwanaście zadań."
-        },
-        {
-          "id": "0016",
+          "id": "0009",
           "level": 1,
           "q": "Ile prac wykonał Herakles?",
           "correct": [
@@ -236,264 +146,152 @@ export default {
             "Dziesięć",
             "Trzy"
           ],
-          "explain": "Herakles wykonał wszystkie dwanaście prac wyznaczonych przez Eurysteusza."
+          "explain": "Herakles wykonał dwanaście prac."
         },
         {
-          "id": "0017",
+          "id": "0010",
           "level": 1,
-          "q": "Który król wyznaczył Heraklesowi dwanaście prac?",
+          "q": "Który król kazał Heraklesowi wykonać dwanaście prac?",
           "correct": [
             "Eurysteusz"
           ],
           "wrong": [
-            "Elektrion",
-            "Alkinoos",
-            "Amfitrion"
+            "Zeus",
+            "Augiasz",
+            "Odyseusz"
           ],
-          "explain": "Prace wyznaczył Eurysteusz, władca Myken."
+          "explain": "Prace wyznaczył król Eurysteusz."
         },
         {
-          "id": "0018",
+          "id": "0011",
           "level": 1,
-          "q": "Które z tych zadań należały do 12 prac Heraklesa?",
+          "q": "Jaka była pierwsza praca Heraklesa?",
           "correct": [
-            "Oczyszczenie stajni Augiasza",
-            "Zgładzenie hydry lernejskiej",
-            "Porwanie Cerbera z Hadesu"
+            "Zabicie lwa z Nemei"
           ],
           "wrong": [
-            "Zdobycie złotego runa"
+            "Oczyszczenie stajni Augiasza",
+            "Zabicie hydry lernejskiej",
+            "Zdobycie jabłek Hesperyd"
           ],
-          "explain": "Złote runo zdobył Jazon – to nie praca Heraklesa."
+          "explain": "Pierwszą pracą było zabicie lwa z Nemei."
         },
         {
-          "id": "0019",
-          "level": 1,
-          "q": "Które z tych zadań należały do 12 prac Heraklesa?",
+          "id": "0012",
+          "q": "Jak Herakles pokonał lwa z Nemei?",
           "correct": [
-            "Złapanie łani Artemidy",
-            "Wytępienie ptaków stymfalijskich",
-            "Zdobycie pasa Hipolity"
+            "Udusił go gołymi rękami"
+          ],
+          "wrong": [
+            "Zastrzelił go z łuku",
+            "Przebił go mieczem",
+            "Zrzucił go ze skały"
+          ],
+          "explain": "Strzały odbijały się od skóry lwa, więc Herakles go udusił."
+        },
+        {
+          "id": "0013",
+          "level": 1,
+          "q": "Które z tych zadań były pracami Heraklesa?",
+          "correct": [
+            "Zabicie hydry lernejskiej",
+            "Schwytanie łani cerynejskiej",
+            "Złapanie dzika erymantejskiego"
           ],
           "wrong": [
             "Zabicie Minotaura"
           ],
-          "explain": "Minotaura zabił Tezeusz – to nie praca Heraklesa."
+          "explain": "Minotaura zabił Tezeusz."
         },
         {
-          "id": "0020",
-          "q": "Które z tych zadań należały do 12 prac Heraklesa?",
-          "correct": [
-            "Upolowanie dzika erymantejskiego",
-            "Złapanie byka kreteńskiego",
-            "Przyprowadzenie klaczy Diomedesa"
-          ],
-          "wrong": [
-            "Oślepienie cyklopa Polifema"
-          ],
-          "explain": "Polifema oślepił Odyseusz."
-        },
-        {
-          "id": "0021",
-          "q": "Które z tych zadań należały do 12 prac Heraklesa?",
-          "correct": [
-            "Uprowadzenie czerwonych byków Geriona",
-            "Zdobycie jabłek Hesperyd",
-            "Zabicie lwa nemejskiego"
-          ],
-          "wrong": [
-            "Zabicie orła Prometeusza"
-          ],
-          "explain": "Herakles zabił orła i uwolnił Prometeusza, ale to nie była jedna z 12 prac."
-        },
-        {
-          "id": "0022",
+          "id": "0014",
           "level": 1,
-          "q": "Z którego zadania Heraklesa pochodzi związek „stajnia Augiasza”?",
+          "q": "Które z tych zadań były pracami Heraklesa?",
           "correct": [
-            "Z oczyszczenia stajni Augiasza"
+            "Oczyszczenie stajni Augiasza",
+            "Przepędzenie ptaków stymfalijskich",
+            "Schwytanie byka kreteńskiego"
           ],
           "wrong": [
-            "Z porwania Cerbera",
-            "Ze złapania byka kreteńskiego",
-            "Z przyprowadzenia klaczy Diomedesa"
+            "Oślepienie cyklopa"
           ],
-          "explain": "Herakles musiał oczyścić ogromne, zaniedbane stajnie króla Augiasza. Stąd „stajnia Augiasza” = ogromny bałagan."
+          "explain": "Cyklopa oślepił Odyseusz."
         },
         {
-          "id": "0023",
-          "level": 3,
-          "q": "Kogo Herakles przyprowadził z Hadesu?",
+          "id": "0015",
+          "level": 1,
+          "q": "Które z tych zadań były pracami Heraklesa?",
           "correct": [
-            "Cerbera"
+            "Przyprowadzenie klaczy Diomedesa",
+            "Zdobycie pasa Hipolity",
+            "Uprowadzenie byków Geriona"
           ],
           "wrong": [
-            "Persefonę",
-            "Syzyfa",
-            "Tanatosa"
+            "Kradzież ognia"
           ],
-          "explain": "Ostatnią, dwunastą pracą było porwanie Cerbera z Hadesu."
+          "explain": "Ogień ukradł Prometeusz."
         },
         {
-          "id": "0024",
-          "level": 3,
-          "q": "Czego strzegła hydra lernejska?",
+          "id": "0016",
+          "level": 1,
+          "q": "Które z tych zadań były pracami Heraklesa?",
           "correct": [
-            "Bagien w Lernie – była wielogłowym potworem"
+            "Przyniesienie jabłek Hesperyd",
+            "Zabicie lwa z Nemei",
+            "Zabicie hydry lernejskiej"
           ],
           "wrong": [
-            "Stajni Augiasza",
-            "Jabłek Hesperyd",
-            "Wejścia do Hadesu"
+            "Wtaczanie kamienia na górę"
           ],
-          "explain": "Hydra lernejska to wielogłowy wąż – na ilustracji w podręczniku ma wiele głów."
+          "explain": "Kamień wtaczał Syzyf."
         }
       ]
     },
     {
       "id": "smierc",
-      "name": "Dejanira i śmierć herosa",
+      "name": "Śmierć herosa",
       "icon": "👕",
       "questions": [
         {
-          "id": "0025",
+          "id": "0017",
           "level": 1,
-          "q": "Kogo poślubił Herakles?",
+          "q": "Kto dał Heraklesowi zatrutą koszulę?",
           "correct": [
-            "Królewnę Dejanirę"
+            "Jego żona Dejanira"
           ],
           "wrong": [
-            "Hebe",
-            "Alkmenę",
-            "Hipolitę"
+            "Hera",
+            "Eurysteusz",
+            "Centaur Chiron"
           ],
-          "explain": "Herakles poślubił królewnę Dejanirę. Urodził im się syn Illos."
+          "explain": "Dejanira była zazdrosna. Centaur Nessos oszukał ją, że jego krew sprawi, że mąż będzie ją kochał."
         },
         {
-          "id": "0026",
+          "id": "0018",
           "level": 1,
-          "q": "Kto porwał Dejanirę nad rzeką Evinos?",
+          "q": "Co stało się, gdy Herakles założył koszulę od Dejaniry?",
           "correct": [
-            "Centaur Nessos"
-          ],
-          "wrong": [
-            "Centaur Chiron",
-            "Król Eurysteusz",
-            "Hades"
-          ],
-          "explain": "Gdy Herakles przeprawiał się przez rzekę, centaur Nessos porwał Dejanirę."
-        },
-        {
-          "id": "0027",
-          "level": 1,
-          "q": "Co doradził umierający Nessos Dejanirze?",
-          "correct": [
-            "By umoczyła koszulę Heraklesa w jego krwi, a Herakles będzie ją kochał wiecznie"
-          ],
-          "wrong": [
-            "By uciekła od Heraklesa",
-            "By ukryła łuk Heraklesa",
-            "By wróciła do ojca"
-          ],
-          "explain": "Nessos skłamał – chciał się zemścić na Heraklesie."
-        },
-        {
-          "id": "0028",
-          "level": 1,
-          "q": "Dlaczego Dejanira dała Heraklesowi koszulę nasączoną krwią Nessosa?",
-          "correct": [
-            "Z zazdrości – bała się, że mąż przestanie ją kochać"
-          ],
-          "wrong": [
-            "Chciała go zabić",
-            "Kazał jej Eurysteusz",
-            "Chciała go uleczyć"
-          ],
-          "explain": "Z czasem uczucie zazdrości zaczęło górować – przypomniała sobie słowa Nessosa."
-        },
-        {
-          "id": "0029",
-          "level": 1,
-          "q": "Co stało się, gdy Herakles założył koszulę?",
-          "correct": [
-            "Poczuł wielki żar i nie mógł jej zdjąć"
+            "Czuł straszny ból i nie mógł jej zdjąć"
           ],
           "wrong": [
             "Stał się niewidzialny",
-            "Zyskał jeszcze większą siłę",
+            "Zyskał większą siłę",
             "Zasnął na sto lat"
           ],
-          "explain": "Herakles krzyczał z bólu i próbował zedrzeć koszulę – na próżno."
+          "explain": "Stąd „koszula Dejaniry” – cierpienie, którego nie można się pozbyć."
         },
         {
-          "id": "0030",
-          "level": 1,
-          "q": "Kto podpalił stos, na który rzucił się Herakles?",
-          "correct": [
-            "Dejanira"
-          ],
-          "wrong": [
-            "Sam Herakles",
-            "Zeus piorunem",
-            "Jego syn Illos"
-          ],
-          "explain": "Nikt nie chciał spalić wybawiciela. Dejanira wyznała mu prawdę, podpaliła stos i przebiła się sztyletem."
-        },
-        {
-          "id": "0031",
-          "level": 1,
+          "id": "0019",
           "q": "Co stało się z Heraklesem po śmierci?",
           "correct": [
-            "Srebrzysty obłok zabrał go na Olimp, gdzie zamieszkał z bogami"
+            "Zamieszkał z bogami na Olimpie"
           ],
           "wrong": [
             "Trafił do Tartaru",
             "Zamienił się w gwiazdę",
-            "Wrócił jako król Myken"
+            "Został królem"
           ],
-          "explain": "Herakles zamieszkał na Olimpie. Nawet Hera uznała go za syna i dała mu za żonę Hebe."
-        },
-        {
-          "id": "0032",
-          "level": 3,
-          "q": "Kogo poślubił Herakles na Olimpie?",
-          "correct": [
-            "Hebe, boginię wiecznej młodości"
-          ],
-          "wrong": [
-            "Atenę",
-            "Persefonę",
-            "Dejanirę"
-          ],
-          "explain": "Hera dała mu za żonę swoją córkę Hebe, boginię wiecznej młodości."
-        },
-        {
-          "id": "0033",
-          "level": 3,
-          "q": "Jak brzmi rzymskie imię Heraklesa?",
-          "correct": [
-            "Herkules"
-          ],
-          "wrong": [
-            "Hermes",
-            "Hektor",
-            "Heros"
-          ],
-          "explain": "W mitologii rzymskiej Herakles występował jako Herkules."
-        },
-        {
-          "id": "0034",
-          "level": 1,
-          "q": "Z którego mitu pochodzi związek „koszula Dejaniry”?",
-          "correct": [
-            "Z mitu o Heraklesie"
-          ],
-          "wrong": [
-            "Z mitu o Prometeuszu",
-            "Z mitu o Syzyfie",
-            "Z tułaczki Odyseusza"
-          ],
-          "explain": "Koszula nasączona krwią Nessosa zabiła Heraklesa."
+          "explain": "Herakles zamieszkał na Olimpie. Nawet Hera go uznała."
         }
       ]
     },
@@ -503,34 +301,18 @@ export default {
       "icon": "📝",
       "questions": [
         {
-          "id": "0035",
+          "id": "0020",
           "level": 1,
           "type": "order",
           "q": "Ułóż wydarzenia w kolejności:",
           "items": [
-            "Uduszenie węży zesłanych przez Herę",
-            "Przepowiednia Tyrezjasza",
-            "Wybór drogi Cnoty",
-            "Zabicie lwa nemejskiego",
-            "Wykonanie dwunastu prac",
-            "Ślub z Dejanirą"
+            "Narodziny syna Zeusa",
+            "Uduszenie węży",
+            "Wybór trudnej drogi",
+            "Dwanaście prac",
+            "Życie na Olimpie"
           ],
-          "explain": "Tak przebiega życie Heraklesa w podręczniku."
-        },
-        {
-          "id": "0036",
-          "level": 1,
-          "type": "order",
-          "q": "Ułóż wydarzenia w kolejności:",
-          "items": [
-            "Porwanie Dejaniry przez Nessosa",
-            "Śmierć Nessosa od strzały",
-            "Zazdrość Dejaniry",
-            "Założenie szkarłatnej koszuli",
-            "Śmierć Heraklesa na stosie",
-            "Herakles na Olimpie"
-          ],
-          "explain": "Nessos → koszula → zazdrość → stos → Olimp."
+          "explain": "Tak przebiega życie Heraklesa."
         }
       ]
     }

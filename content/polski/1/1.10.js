@@ -19,7 +19,7 @@ export default {
             ],
             [
               "syzyfowa praca",
-              "daremny trud"
+              "trud bez efektu"
             ],
             [
               "stajnia Augiasza",
@@ -30,7 +30,7 @@ export default {
               "słaby punkt"
             ]
           ],
-          "explain": "Puszka Pandory – źródło zła i kłopotów, syzyfowa praca – ciężka i bezowocna, stajnia Augiasza – bałagan, pięta Achillesa – słaby punkt."
+          "explain": "Puszka Pandory – źródło nieszczęść, syzyfowa praca – trud bez efektu, stajnia Augiasza – bałagan, pięta Achillesa – słaby punkt."
         },
         {
           "id": "0002",
@@ -44,7 +44,7 @@ export default {
             ],
             [
               "syreni śpiew",
-              "kuszące, zwodnicze słowa"
+              "kusi i prowadzi do zła"
             ],
             [
               "koszula Dejaniry",
@@ -55,25 +55,40 @@ export default {
               "każdy wybór jest zły"
             ]
           ],
-          "explain": "Koń trojański – podstęp, syreni śpiew – zwodnicze słowa, koszula Dejaniry – coś, czego nie można się pozbyć, a przynosi cierpienie, Scylla i Charybda – sytuacja bez dobrego wyjścia."
+          "explain": "Koń trojański – podstęp, syreni śpiew – wabi i prowadzi do niebezpieczeństwa, koszula Dejaniry – cierpienie, którego nie można się pozbyć, Scylla i Charybda – brak dobrego wyjścia."
         },
         {
           "id": "0003",
           "level": 1,
-          "group": "f-pandora",
-          "q": "Co znaczy „puszka Pandory”?",
+          "group": "f-syzyf",
+          "q": "Co znaczy „syzyfowa praca”?",
           "correct": [
-            "Zbiór, źródło zła, kłopotów, nieszczęść"
+            "Praca, która mimo wysiłku nie daje efektu i nigdy się nie kończy"
           ],
           "wrong": [
-            "Coś bardzo cennego",
-            "Tajemniczy prezent, który cieszy",
-            "Miejsce, gdzie chowa się skarby"
+            "Praca wykonana bardzo szybko",
+            "Praca dla króla",
+            "Praca, za którą dostaje się nagrodę"
           ],
-          "explain": "Z puszki Pandory wyszły wszystkie nieszczęścia świata."
+          "explain": "Syzyfowa praca to działanie, które mimo wysiłku nie przynosi efektu – praca, której nigdy nie uda się skończyć."
         },
         {
           "id": "0004",
+          "level": 1,
+          "group": "f-syzyf",
+          "q": "Który związek oznacza pracę, która mimo wysiłku nie daje efektu?",
+          "correct": [
+            "Syzyfowa praca"
+          ],
+          "wrong": [
+            "Puszka Pandory",
+            "Koń trojański",
+            "Syreni śpiew"
+          ],
+          "explain": "To syzyfowa praca."
+        },
+        {
+          "id": "0005",
           "level": 1,
           "group": "f-pandora",
           "q": "Który związek oznacza źródło zła, kłopotów i nieszczęść?",
@@ -81,62 +96,122 @@ export default {
             "Puszka Pandory"
           ],
           "wrong": [
-            "Pięta Achillesa",
+            "Jabłko niezgody",
             "Koń trojański",
             "Syreni śpiew"
           ],
           "explain": "To puszka Pandory."
         },
         {
-          "id": "0005",
-          "level": 1,
-          "group": "f-syzyf",
-          "q": "Co znaczy „syzyfowa praca”?",
-          "correct": [
-            "Ciężka, daremna praca, która nie daje efektów"
-          ],
-          "wrong": [
-            "Praca wykonana bardzo szybko",
-            "Praca dla króla",
-            "Praca, za którą dostaje się nagrodę"
-          ],
-          "explain": "Syzyf w nieskończoność wtacza kamień, który zawsze spada."
-        },
-        {
           "id": "0006",
           "level": 1,
-          "group": "f-syzyf",
-          "q": "Który związek oznacza ciężką pracę bez efektów?",
+          "group": "f-kon",
+          "q": "Co znaczy „koń trojański”?",
           "correct": [
-            "Syzyfowa praca"
+            "Podstęp, ukryte niebezpieczeństwo"
           ],
           "wrong": [
-            "Stajnia Augiasza",
-            "Koszula Dejaniry",
-            "Puszka Pandory"
+            "Bardzo szybki koń",
+            "Drogi prezent",
+            "Zwycięstwo w wojnie"
           ],
-          "explain": "To syzyfowa praca."
+          "explain": "Grecy zdobyli Troję dzięki drewnianemu koniowi, w którym ukryli wojowników."
         },
         {
           "id": "0007",
           "level": 1,
+          "group": "f-kon",
+          "q": "Który związek oznacza podstęp i ukryte niebezpieczeństwo?",
+          "correct": [
+            "Koń trojański"
+          ],
+          "wrong": [
+            "Syzyfowa praca",
+            "Jabłko niezgody",
+            "Puszka Pandory"
+          ],
+          "explain": "To koń trojański."
+        },
+        {
+          "id": "0008",
+          "level": 1,
+          "group": "f-syreny",
+          "q": "Co znaczy „syreni śpiew”?",
+          "correct": [
+            "Coś kuszącego, co prowadzi do niebezpieczeństwa"
+          ],
+          "wrong": [
+            "Piękna muzyka",
+            "Głośny krzyk",
+            "Kołysanka"
+          ],
+          "explain": "Syreni śpiew to wabiący śpiew, który prowadzi do niebezpieczeństwa."
+        },
+        {
+          "id": "0009",
+          "level": 1,
+          "group": "f-syreny",
+          "q": "Który związek oznacza coś kuszącego, co prowadzi do niebezpieczeństwa?",
+          "correct": [
+            "Syreni śpiew"
+          ],
+          "wrong": [
+            "Koń trojański",
+            "Puszka Pandory",
+            "Jabłko niezgody"
+          ],
+          "explain": "To syreni śpiew."
+        },
+        {
+          "id": "0010",
+          "level": 1,
+          "group": "f-scylla",
+          "q": "Co znaczy „znaleźć się między Scyllą a Charybdą”?",
+          "correct": [
+            "Być w sytuacji, w której każdy wybór jest zły"
+          ],
+          "wrong": [
+            "Płynąć bezpiecznie",
+            "Mieć dwóch przyjaciół",
+            "Wygrać spór"
+          ],
+          "explain": "Odyseusz musiał płynąć między dwoma potworami."
+        },
+        {
+          "id": "0011",
+          "level": 1,
+          "group": "f-scylla",
+          "q": "Który związek oznacza sytuację, w której każdy wybór jest zły?",
+          "correct": [
+            "Znaleźć się między Scyllą a Charybdą"
+          ],
+          "wrong": [
+            "Syzyfowa praca",
+            "Jabłko niezgody",
+            "Syreni śpiew"
+          ],
+          "explain": "To Scylla i Charybda."
+        },
+        {
+          "id": "0012",
+          "level": 1,
           "group": "f-augiasz",
           "q": "Co znaczy „stajnia Augiasza”?",
           "correct": [
-            "Ogromny bałagan, zaniedbanie"
+            "Ogromny bałagan"
           ],
           "wrong": [
             "Duży dom",
             "Miejsce pełne koni",
             "Coś bardzo czystego"
           ],
-          "explain": "Herakles oczyścił ogromne, zaniedbane stajnie króla Augiasza."
+          "explain": "Herakles oczyścił ogromne, brudne stajnie króla Augiasza."
         },
         {
-          "id": "0008",
+          "id": "0013",
           "level": 1,
           "group": "f-augiasz",
-          "q": "Który związek oznacza ogromny bałagan i zaniedbanie?",
+          "q": "Który związek oznacza ogromny bałagan?",
           "correct": [
             "Stajnia Augiasza"
           ],
@@ -148,7 +223,7 @@ export default {
           "explain": "To stajnia Augiasza."
         },
         {
-          "id": "0009",
+          "id": "0014",
           "level": 1,
           "group": "f-achilles",
           "q": "Co znaczy „pięta Achillesa”?",
@@ -160,10 +235,10 @@ export default {
             "Szybki bieg",
             "Stara rana"
           ],
-          "explain": "Achilles był nie do zranienia oprócz pięty – zginął od strzały w piętę."
+          "explain": "Achillesa nie dało się zranić – oprócz pięty."
         },
         {
-          "id": "0010",
+          "id": "0015",
           "level": 1,
           "group": "f-achilles",
           "q": "Który związek oznacza czyjś słaby punkt?",
@@ -178,97 +253,7 @@ export default {
           "explain": "To pięta Achillesa."
         },
         {
-          "id": "0011",
-          "level": 1,
-          "group": "f-kon",
-          "q": "Co znaczy „koń trojański”?",
-          "correct": [
-            "Podstęp; podarunek, który kryje zagrożenie"
-          ],
-          "wrong": [
-            "Bardzo szybki koń",
-            "Drogi prezent",
-            "Zwycięstwo w wojnie"
-          ],
-          "explain": "Grecy zdobyli Troję dzięki drewnianemu koniowi, w którym ukryli wojowników."
-        },
-        {
-          "id": "0012",
-          "level": 1,
-          "group": "f-kon",
-          "q": "Który związek oznacza podstęp lub podarunek kryjący zagrożenie?",
-          "correct": [
-            "Koń trojański"
-          ],
-          "wrong": [
-            "Stajnia Augiasza",
-            "Syzyfowa praca",
-            "Pięta Achillesa"
-          ],
-          "explain": "To koń trojański."
-        },
-        {
-          "id": "0013",
-          "level": 1,
-          "group": "f-syreny",
-          "q": "Co znaczy „syreni śpiew”?",
-          "correct": [
-            "Kuszące, ale zwodnicze i niebezpieczne słowa"
-          ],
-          "wrong": [
-            "Piękna muzyka",
-            "Głośny krzyk",
-            "Kołysanka"
-          ],
-          "explain": "Syreny wabiły żeglarzy śpiewem na skały."
-        },
-        {
-          "id": "0014",
-          "level": 1,
-          "group": "f-syreny",
-          "q": "Który związek oznacza kuszące, ale zwodnicze słowa?",
-          "correct": [
-            "Syreni śpiew"
-          ],
-          "wrong": [
-            "Koń trojański",
-            "Puszka Pandory",
-            "Koszula Dejaniry"
-          ],
-          "explain": "To syreni śpiew."
-        },
-        {
-          "id": "0015",
-          "level": 1,
-          "group": "f-scylla",
-          "q": "Co znaczy „znaleźć się między Scyllą a Charybdą”?",
-          "correct": [
-            "Być w sytuacji, w której każdy wybór jest zły"
-          ],
-          "wrong": [
-            "Płynąć bezpiecznie",
-            "Mieć dwóch przyjaciół",
-            "Wygrać spór"
-          ],
-          "explain": "Odyseusz musiał wybierać między dwoma potworami."
-        },
-        {
           "id": "0016",
-          "level": 1,
-          "group": "f-scylla",
-          "q": "Który związek oznacza sytuację, w której każdy wybór jest zły?",
-          "correct": [
-            "Znaleźć się między Scyllą a Charybdą"
-          ],
-          "wrong": [
-            "Syzyfowa praca",
-            "Stajnia Augiasza",
-            "Pięta Achillesa"
-          ],
-          "explain": "To Scylla i Charybda."
-        },
-        {
-          "id": "0017",
           "level": 1,
           "group": "f-dejanira",
           "q": "Co znaczy „koszula Dejaniry”?",
@@ -280,10 +265,10 @@ export default {
             "Prezent od żony",
             "Szczęśliwe wspomnienie"
           ],
-          "explain": "Koszuli nasączonej krwią Nessosa Herakles nie mógł zdjąć."
+          "explain": "Herakles nie mógł zdjąć zatrutej koszuli od Dejaniry."
         },
         {
-          "id": "0018",
+          "id": "0017",
           "level": 1,
           "group": "f-dejanira",
           "q": "Który związek oznacza coś, co przynosi cierpienie i czego nie można się pozbyć?",
@@ -296,6 +281,36 @@ export default {
             "Puszka Pandory"
           ],
           "explain": "To koszula Dejaniry."
+        },
+        {
+          "id": "0018",
+          "level": 1,
+          "group": "f-jablko",
+          "q": "Co znaczy „jabłko niezgody”?",
+          "correct": [
+            "Przyczyna kłótni i sporu"
+          ],
+          "wrong": [
+            "Smaczny owoc",
+            "Prezent na zgodę",
+            "Nagroda za zwycięstwo"
+          ],
+          "explain": "Jabłko niezgody to przyczyna kłótni (wiedza ogólna: o złote jabłko pokłóciły się trzy boginie)."
+        },
+        {
+          "id": "0019",
+          "level": 1,
+          "group": "f-jablko",
+          "q": "Który związek oznacza przyczynę kłótni i sporu?",
+          "correct": [
+            "Jabłko niezgody"
+          ],
+          "wrong": [
+            "Koń trojański",
+            "Syreni śpiew",
+            "Puszka Pandory"
+          ],
+          "explain": "To jabłko niezgody."
         }
       ]
     },
@@ -305,14 +320,14 @@ export default {
       "icon": "📚",
       "questions": [
         {
-          "id": "0019",
+          "id": "0020",
           "level": 1,
           "type": "pairs",
           "q": "Połącz związek z mitem, z którego pochodzi:",
           "pairs": [
             [
               "stajnia Augiasza",
-              "Mit o Heraklesie"
+              "Herakles"
             ],
             [
               "syzyfowa praca",
@@ -320,17 +335,17 @@ export default {
             ],
             [
               "puszka Pandory",
-              "Puszka Pandory"
+              "Pandora"
             ],
             [
               "syreni śpiew",
-              "Tułaczka Odyseusza"
+              "Odyseusz"
             ]
           ],
-          "explain": "Stajnia Augiasza i koszula Dejaniry – z mitu o Heraklesie; syreni śpiew i Scylla z Charybdą – z tułaczki Odyseusza."
+          "explain": "Stajnia Augiasza – z mitu o Heraklesie, syzyfowa praca – o Syzyfie, puszka Pandory – o Pandorze, syreni śpiew – z tułaczki Odyseusza."
         },
         {
-          "id": "0020",
+          "id": "0021",
           "level": 1,
           "q": "Które związki pochodzą z mitu o Heraklesie?",
           "correct": [
@@ -344,7 +359,7 @@ export default {
           "explain": "Herakles oczyścił stajnie Augiasza i zginął w koszuli od Dejaniry."
         },
         {
-          "id": "0021",
+          "id": "0022",
           "level": 1,
           "q": "Które związki pochodzą z tułaczki Odyseusza?",
           "correct": [
@@ -352,26 +367,26 @@ export default {
             "Znaleźć się między Scyllą a Charybdą"
           ],
           "wrong": [
-            "Stajnia Augiasza",
-            "Syzyfowa praca"
+            "Syzyfowa praca",
+            "Puszka Pandory"
           ],
-          "explain": "Syreny i Scylla z Charybdą to przygody Odyseusza."
+          "explain": "Syreny, Scylla i Charybda to przygody Odyseusza."
         },
         {
-          "id": "0022",
+          "id": "0023",
           "q": "Który związek pasuje do zdania: „Uczę się, uczę, a i tak wszystko zapominam – to prawdziwa …”?",
           "correct": [
             "Syzyfowa praca"
           ],
           "wrong": [
             "Puszka Pandory",
-            "Pięta Achillesa",
-            "Stajnia Augiasza"
+            "Jabłko niezgody",
+            "Koń trojański"
           ],
-          "explain": "Ciężka praca bez efektów – syzyfowa praca."
+          "explain": "Praca bez efektu – syzyfowa praca."
         },
         {
-          "id": "0023",
+          "id": "0024",
           "q": "Który związek pasuje do zdania: „Ortografia to moja …”?",
           "correct": [
             "Pięta Achillesa"
@@ -384,7 +399,7 @@ export default {
           "explain": "Słaby punkt – pięta Achillesa."
         },
         {
-          "id": "0024",
+          "id": "0025",
           "q": "Który związek pasuje do zdania: „Twój pokój to prawdziwa …!”?",
           "correct": [
             "Stajnia Augiasza"
@@ -397,30 +412,30 @@ export default {
           "explain": "Ogromny bałagan – stajnia Augiasza."
         },
         {
-          "id": "0025",
+          "id": "0026",
+          "q": "Który związek pasuje do zdania: „Ostatni kawałek tortu stał się … między braćmi”?",
+          "correct": [
+            "Jabłkiem niezgody"
+          ],
+          "wrong": [
+            "Koniem trojańskim",
+            "Syzyfową pracą",
+            "Puszką Pandory"
+          ],
+          "explain": "Przyczyna kłótni – jabłko niezgody."
+        },
+        {
+          "id": "0027",
           "q": "Który związek pasuje do zdania: „Ta darmowa gra okazała się …, bo zawierała wirusa”?",
           "correct": [
             "Koniem trojańskim"
           ],
           "wrong": [
-            "Piętą Achillesa",
-            "Stajnią Augiasza",
-            "Syzyfową pracą"
+            "Jabłkiem niezgody",
+            "Syzyfową pracą",
+            "Puszką Pandory"
           ],
-          "explain": "Podarunek kryjący zagrożenie – koń trojański."
-        },
-        {
-          "id": "0026",
-          "q": "Który związek pasuje do zdania: „Nie słuchaj … reklam – obiecują za dużo”?",
-          "correct": [
-            "Syrenich śpiewów"
-          ],
-          "wrong": [
-            "Syzyfowych prac",
-            "Koni trojańskich",
-            "Pięt Achillesa"
-          ],
-          "explain": "Kuszące, zwodnicze słowa – syreni śpiew."
+          "explain": "Ukryte niebezpieczeństwo – koń trojański."
         }
       ]
     }

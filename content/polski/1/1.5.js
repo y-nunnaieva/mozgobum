@@ -10,6 +10,33 @@ export default {
         {
           "id": "0001",
           "level": 1,
+          "q": "Kto był władcą mórz?",
+          "correct": [
+            "Posejdon"
+          ],
+          "wrong": [
+            "Okeanos",
+            "Helios",
+            "Hades"
+          ],
+          "explain": "Posejdon – władca mórz, brat Zeusa."
+        },
+        {
+          "id": "0002",
+          "q": "Co jest znakiem Posejdona?",
+          "correct": [
+            "Trójząb"
+          ],
+          "wrong": [
+            "Piorun",
+            "Lira",
+            "Miecz"
+          ],
+          "explain": "Trójząb to atrybut Posejdona."
+        },
+        {
+          "id": "0003",
+          "level": 1,
           "group": "amfitryta",
           "q": "W kim zakochał się Posejdon?",
           "correct": [
@@ -20,10 +47,10 @@ export default {
             "W Pandorze",
             "W Kalipso"
           ],
-          "explain": "Posejdon zakochał się w Amfitrycie o jasnych warkoczach."
+          "explain": "Posejdon zakochał się w Amfitrycie."
         },
         {
-          "id": "0002",
+          "id": "0004",
           "level": 1,
           "group": "amfitryta",
           "q": "Kim była Amfitryta?",
@@ -32,41 +59,41 @@ export default {
           ],
           "wrong": [
             "Córką Zeusa i Hery",
-            "Czarodziejką z wyspy Ajai",
+            "Czarodziejką",
             "Nimfą z Olimpu"
           ],
-          "explain": "Amfitryta – córka starego boga wodnego Okeanosa, żona Posejdona i królowa morza."
+          "explain": "Amfitryta była córką Okeanosa i została królową morza."
         },
         {
-          "id": "0003",
+          "id": "0005",
           "level": 1,
-          "q": "Gdzie Posejdon po raz pierwszy zobaczył Amfitrytę?",
+          "q": "Kim był Okeanos?",
           "correct": [
-            "Na przyjęciu u Okeanosa na wyspie Naksos"
+            "Ojcem Amfitryty, starym bogiem wód"
           ],
           "wrong": [
-            "Na Olimpie",
-            "Na dnie morza",
-            "W Atenach"
+            "Bratem Zeusa",
+            "Synem Posejdona",
+            "Delfinem"
           ],
-          "explain": "Posejdon był na przyjęciu, które wydawał Okeanos na wyspie Naksos. Po uczcie tańczyły jego córki."
+          "explain": "Okeanos był ojcem Amfitryty. Na lekcji pisaliśmy do niego list."
         },
         {
-          "id": "0004",
+          "id": "0006",
           "level": 1,
           "q": "Dlaczego Amfitryta nie chciała wyjść za Posejdona?",
           "correct": [
-            "Odstraszał ją jego wygląd"
+            "Bała się jego wyglądu"
           ],
           "wrong": [
             "Kochała innego boga",
             "Nie chciała mieszkać w morzu",
             "Ojciec jej zabronił"
           ],
-          "explain": "Posejdon miał śniadą cerę, zwichrzone włosy, brodę pełną mułu i groźne oczy – budził przestrach."
+          "explain": "Posejdon miał zwichrzone włosy i groźne oczy – Amfitryta się go bała."
         },
         {
-          "id": "0005",
+          "id": "0007",
           "level": 1,
           "q": "Kto pomógł Posejdonowi przekonać Amfitrytę?",
           "correct": [
@@ -75,131 +102,86 @@ export default {
           "wrong": [
             "Hermes",
             "Okeanos",
-            "Tryton"
+            "Ośmiornica"
           ],
-          "explain": "Delfin, najmądrzejsze ze stworzeń morza, opowiedział Amfitrycie o bogactwach Posejdona."
-        },
-        {
-          "id": "0006",
-          "level": 1,
-          "q": "W jaki sposób delfin przekonał Amfitrytę?",
-          "correct": [
-            "Opowiedział jej o bogactwach i wspaniałym pałacu Posejdona"
-          ],
-          "wrong": [
-            "Porwał ją na swój grzbiet",
-            "Dał jej perłę",
-            "Zaśpiewał jej pieśń"
-          ],
-          "explain": "Delfin opowiadał o posiadłościach pana morza i o pałacu pod wodą."
-        },
-        {
-          "id": "0007",
-          "q": "Jak wyglądał pałac Posejdona według opowieści delfina?",
-          "correct": [
-            "Miał dach z muszli",
-            "Miał okna z bursztynu",
-            "Ze ścian wyrastały żywe kwiaty"
-          ],
-          "wrong": [
-            "Był zbudowany ze złota i kości słoniowej"
-          ],
-          "explain": "Pałac był błękitny, z dachem z muszli z perłami, ścianami z żywych kwiatów i oknami z bursztynu. (Złoty pałac miał Helios.)"
-        },
+          "explain": "Delfin opowiedział Amfitrycie o pięknym pałacu Posejdona."
+        }
+      ]
+    },
+    {
+      "id": "palac",
+      "name": "Pałac władcy mórz",
+      "icon": "🐚",
+      "questions": [
         {
           "id": "0008",
-          "level": 3,
-          "q": "Jakie drzewa rosły w ogrodzie Posejdona?",
+          "level": 1,
+          "q": "Jaki był pałac Posejdona?",
           "correct": [
-            "Szafirowe i czerwone, ze złotymi owocami"
+            "Błękitny",
+            "Miał dach z muszli",
+            "Miał okna z bursztynu"
           ],
           "wrong": [
-            "Oliwne i figowe",
-            "Zielone jabłonie",
-            "Cyprysy i topole"
+            "Był ze złota"
           ],
-          "explain": "W sadzie drzewa szafirowe i czerwone rodzą złote owoce."
+          "explain": "Pałac był błękitny, miał dach z muszli i okna bursztynowe. (Złoty pałac miał Helios.)"
         },
         {
           "id": "0009",
-          "q": "Na jakim tronie zasiadła Amfitryta obok Posejdona?",
+          "level": 1,
+          "q": "Co było w pałacu i ogrodzie Posejdona?",
           "correct": [
-            "Na szmaragdowym"
+            "Cudne perły",
+            "Lilie morskie jak drobne palmy",
+            "Gąbki szkliste"
           ],
           "wrong": [
-            "Na złotym",
-            "Na kamiennym",
-            "Na koralowym"
+            "Złote kolumny"
           ],
-          "explain": "W kilka dni później zasiadła na szmaragdowym tronie obok Posejdona jako królowa morza."
+          "explain": "Tak delfin opisywał królestwo Posejdona."
         },
         {
           "id": "0010",
-          "level": 3,
-          "q": "Ile sióstr – okeanid – miała Amfitryta?",
+          "level": 1,
+          "q": "Do czego były podobne lilie morskie?",
           "correct": [
-            "Trzy tysiące"
+            "Do drobnych palm"
           ],
           "wrong": [
-            "Pięćdziesiąt",
-            "Dwanaście",
-            "Trzysta"
+            "Do gwiazd",
+            "Do muszli",
+            "Do pereł"
           ],
-          "explain": "Okeanid, córek Okeanosa, było trzy tysiące."
+          "explain": "Lilie morskie były jak drobne palmy o wielolistnej koronie."
         },
         {
           "id": "0011",
-          "level": 3,
-          "q": "Ile nereid służyło Amfitrycie?",
+          "level": 1,
+          "q": "Do czego porównano słońce widziane z dna morza?",
           "correct": [
-            "Pięćdziesiąt"
+            "Do kielicha wielkiego purpurowego kwiatu"
           ],
           "wrong": [
-            "Trzy tysiące",
-            "Dwanaście",
-            "Siedem"
+            "Do złotej monety",
+            "Do bursztynowego okna",
+            "Do perły"
           ],
-          "explain": "Amfitrycie służyło pięćdziesiąt nereid – wesołych bogiń."
+          "explain": "Słońce było niby otwarty kielich wielkiego purpurowego kwiatu."
         },
         {
           "id": "0012",
-          "q": "Co robi Posejdon, gdy wiatry wzburzają fale?",
-          "correct": [
-            "Uspokaja je jednym spojrzeniem"
-          ],
-          "wrong": [
-            "Rozpętuje jeszcze większą burzę",
-            "Ucieka do pałacu",
-            "Wzywa Zeusa"
-          ],
-          "explain": "Posejdon jednym spojrzeniem uśmierza bałwany i rozpędza burze."
-        },
-        {
-          "id": "0013",
-          "q": "Jak Posejdon pomaga żeglarzom według mitu?",
-          "correct": [
-            "Trójzębem dźwiga okręty uwięzione wśród skał",
-            "Posyła rozbitkom prądy, które niosą ich do brzegu"
-          ],
-          "wrong": [
-            "Daje im mapy morskie",
-            "Zamienia ich w delfiny"
-          ],
-          "explain": "Trójzębem dźwiga okręty z mielizn, a rozbitkom posyła wartkie prądy do bezpiecznych brzegów."
-        },
-        {
-          "id": "0014",
           "level": 1,
-          "q": "Co jest znakiem rozpoznawczym Posejdona?",
+          "q": "Jakie okna miał pałac Posejdona?",
           "correct": [
-            "Trójząb"
+            "Bursztynowe"
           ],
           "wrong": [
-            "Piorun",
-            "Lira",
-            "Maczuga"
+            "Złote",
+            "Kryształowe",
+            "Srebrne"
           ],
-          "explain": "Trójząb – broń o trzech metalowych zębach – to znak Posejdona."
+          "explain": "Pałac miał okna bursztynowe."
         }
       ]
     },
@@ -209,18 +191,18 @@ export default {
       "icon": "📝",
       "questions": [
         {
-          "id": "0015",
+          "id": "0013",
           "level": 1,
           "type": "order",
           "q": "Ułóż wydarzenia w kolejności:",
           "items": [
-            "Przyjęcie u Okeanosa na Naksos",
+            "Uczta u Okeanosa",
             "Oświadczyny Posejdona",
-            "Niechęć Amfitryty",
+            "Strach Amfitryty",
             "Pomoc delfina",
-            "Ślub i szmaragdowy tron"
+            "Ślub"
           ],
-          "explain": "Posejdon widzi Amfitrytę, oświadcza się, ona go nie chce, delfin pomaga – i odbywa się ślub."
+          "explain": "Posejdon widzi Amfitrytę, ona się go boi, delfin pomaga – i jest ślub."
         }
       ]
     }
