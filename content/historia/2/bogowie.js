@@ -50,7 +50,7 @@ export default {
             "bogini miłości, zrodzona z piany morskiej",
             "bogini podziemi i wiosny"
           ],
-          "explain": "Hera – żona Zeusa, bogini niebios, opiekunka rodziny i kobiet. Atrybut: 🦚 paw."
+          "explain": "Hera – żona Zeusa, bogini niebios, opiekunka rodziny i kobiet. Atrybut: 👑 diadem i paw."
         },
         {
           "id": "0004",
@@ -65,7 +65,7 @@ export default {
             "Artemida",
             "Demeter"
           ],
-          "explain": "Hera – żona Zeusa, bogini niebios, opiekunka rodziny i kobiet. Atrybut: 🦚 paw."
+          "explain": "Hera – żona Zeusa, bogini niebios, opiekunka rodziny i kobiet. Atrybut: 👑 diadem i paw."
         },
         {
           "id": "0005",
@@ -80,7 +80,7 @@ export default {
             "bogini ogniska domowego",
             "bogini podziemi i wiosny"
           ],
-          "explain": "Atena – córka Zeusa, bogini mądrości, pokoju i sprawiedliwej wojny. Atrybut: 🦉 sowa."
+          "explain": "Atena – córka Zeusa, bogini mądrości, pokoju i sprawiedliwej wojny. Atrybut: 🦉 sowa i tarcza."
         },
         {
           "id": "0006",
@@ -95,7 +95,7 @@ export default {
             "Hera",
             "Demeter"
           ],
-          "explain": "Atena – córka Zeusa, bogini mądrości, pokoju i sprawiedliwej wojny. Atrybut: 🦉 sowa."
+          "explain": "Atena – córka Zeusa, bogini mądrości, pokoju i sprawiedliwej wojny. Atrybut: 🦉 sowa i tarcza."
         },
         {
           "id": "0007",
@@ -200,7 +200,7 @@ export default {
             "bogini podziemi i wiosny",
             "córka Zeusa, bogini mądrości, pokoju i sprawiedliwej wojny"
           ],
-          "explain": "Afrodyta – bogini miłości, zrodzona z piany morskiej. Atrybut: 🕊️ gołąb."
+          "explain": "Afrodyta – bogini miłości, zrodzona z piany morskiej. Atrybut: 🌹 róża i gołąb."
         },
         {
           "id": "0014",
@@ -215,7 +215,7 @@ export default {
             "Persefona",
             "Hera"
           ],
-          "explain": "Afrodyta – bogini miłości, zrodzona z piany morskiej. Atrybut: 🕊️ gołąb."
+          "explain": "Afrodyta – bogini miłości, zrodzona z piany morskiej. Atrybut: 🌹 róża i gołąb."
         },
         {
           "id": "0015",
@@ -657,20 +657,20 @@ export default {
           "group": "attr-hera",
           "q": "Jaki atrybut ma Hera?",
           "correct": [
-            "🦚 paw"
+            "👑 diadem i paw"
           ],
           "wrong": [
             "🍎 owoc granatu",
-            "🕊️ gołąb",
+            "🌹 róża i gołąb",
             "🌾 kłosy zboża"
           ],
-          "explain": "Hera – żona Zeusa, bogini niebios, opiekunka rodziny i kobiet. Atrybut: 🦚 paw."
+          "explain": "Hera – żona Zeusa, bogini niebios, opiekunka rodziny i kobiet. Atrybut: 👑 diadem i paw."
         },
         {
           "id": "0036",
           "level": 2,
           "group": "attr-hera",
-          "q": "Do kogo należy atrybut: 🦚 paw?",
+          "q": "Do kogo należy atrybut: 👑 diadem i paw?",
           "correct": [
             "Hera"
           ],
@@ -679,7 +679,7 @@ export default {
             "Hestia",
             "Demeter"
           ],
-          "explain": "Hera – żona Zeusa, bogini niebios, opiekunka rodziny i kobiet. Atrybut: 🦚 paw."
+          "explain": "Hera – żona Zeusa, bogini niebios, opiekunka rodziny i kobiet. Atrybut: 👑 diadem i paw."
         },
         {
           "id": "0037",
@@ -687,20 +687,20 @@ export default {
           "group": "attr-atena",
           "q": "Jaki atrybut ma Atena?",
           "correct": [
-            "🦉 sowa"
+            "🦉 sowa i tarcza"
           ],
           "wrong": [
             "🌾 kłosy zboża",
             "🏹 łuk i strzały",
-            "🦚 paw"
+            "👑 diadem i paw"
           ],
-          "explain": "Atena – córka Zeusa, bogini mądrości, pokoju i sprawiedliwej wojny. Atrybut: 🦉 sowa."
+          "explain": "Atena – córka Zeusa, bogini mądrości, pokoju i sprawiedliwej wojny. Atrybut: 🦉 sowa i tarcza."
         },
         {
           "id": "0038",
           "level": 2,
           "group": "attr-atena",
-          "q": "Do kogo należy atrybut: 🦉 sowa?",
+          "q": "Do kogo należy atrybut: 🦉 sowa i tarcza?",
           "correct": [
             "Atena"
           ],
@@ -709,7 +709,7 @@ export default {
             "Afrodyta",
             "Hestia"
           ],
-          "explain": "Atena – córka Zeusa, bogini mądrości, pokoju i sprawiedliwej wojny. Atrybut: 🦉 sowa."
+          "explain": "Atena – córka Zeusa, bogini mądrości, pokoju i sprawiedliwej wojny. Atrybut: 🦉 sowa i tarcza."
         },
         {
           "id": "0039",
@@ -807,20 +807,20 @@ export default {
           "group": "attr-afrodyta",
           "q": "Jaki atrybut ma Afrodyta?",
           "correct": [
-            "🕊️ gołąb"
+            "🌹 róża i gołąb"
           ],
           "wrong": [
             "🏹 łuk i strzały",
             "🔥 ognisko",
-            "🦚 paw"
+            "👑 diadem i paw"
           ],
-          "explain": "Afrodyta – bogini miłości, zrodzona z piany morskiej. Atrybut: 🕊️ gołąb."
+          "explain": "Afrodyta – bogini miłości, zrodzona z piany morskiej. Atrybut: 🌹 róża i gołąb."
         },
         {
           "id": "0046",
           "level": 2,
           "group": "attr-afrodyta",
-          "q": "Do kogo należy atrybut: 🕊️ gołąb?",
+          "q": "Do kogo należy atrybut: 🌹 róża i gołąb?",
           "correct": [
             "Afrodyta"
           ],
@@ -829,7 +829,7 @@ export default {
             "Demeter",
             "Persefona"
           ],
-          "explain": "Afrodyta – bogini miłości, zrodzona z piany morskiej. Atrybut: 🕊️ gołąb."
+          "explain": "Afrodyta – bogini miłości, zrodzona z piany morskiej. Atrybut: 🌹 róża i gołąb."
         },
         {
           "id": "0047",
@@ -930,7 +930,7 @@ export default {
             "🏹 łuk i strzały"
           ],
           "wrong": [
-            "🦉 sowa",
+            "🦉 sowa i tarcza",
             "🌾 kłosy zboża",
             "🍎 owoc granatu"
           ],
@@ -1020,7 +1020,7 @@ export default {
             "🔥 ognisko"
           ],
           "wrong": [
-            "🕊️ gołąb",
+            "🌹 róża i gołąb",
             "🏹 łuk i strzały",
             "🌾 kłosy zboża"
           ],
@@ -1052,7 +1052,7 @@ export default {
           "wrong": [
             "🌾 kłosy zboża",
             "🏹 łuk i strzały",
-            "🦉 sowa"
+            "🦉 sowa i tarcza"
           ],
           "explain": "Persefona – bogini podziemi i wiosny. Atrybut: 🍎 owoc granatu."
         },
