@@ -13,20 +13,20 @@ export default {
           "group": "dom-zeus",
           "q": "Kim jest Zeus?",
           "correct": [
-            "najważniejszy bóg, bóg nieba i ziemi"
+            "najważniejszy bóg, władca nieba i ziemi, bogów i ludzi"
           ],
           "wrong": [
-            "tytan Słońca, źródła światła i życia",
-            "bóg sztuki, przewodził dziewięciu muzom",
+            "tytan, bóg Słońca",
+            "bóg sztuki, muzyki i poezji",
             "posłaniec bogów, bóg podróżnych, kupców i złodziei"
           ],
-          "explain": "Zeus – najważniejszy bóg, bóg nieba i ziemi. Atrybut: ⚡ piorun."
+          "explain": "Zeus – najważniejszy bóg, władca nieba i ziemi, bogów i ludzi. Atrybut: ⚡ piorun."
         },
         {
           "id": "0002",
           "level": 1,
           "group": "dom-zeus",
-          "q": "Kto to jest: najważniejszy bóg, bóg nieba i ziemi?",
+          "q": "Kto to jest: najważniejszy bóg, władca nieba i ziemi, bogów i ludzi?",
           "correct": [
             "Zeus"
           ],
@@ -35,7 +35,7 @@ export default {
             "Posejdon",
             "Apollo"
           ],
-          "explain": "Zeus – najważniejszy bóg, bóg nieba i ziemi. Atrybut: ⚡ piorun."
+          "explain": "Zeus – najważniejszy bóg, władca nieba i ziemi, bogów i ludzi. Atrybut: ⚡ piorun."
         },
         {
           "id": "0003",
@@ -43,20 +43,20 @@ export default {
           "group": "dom-posejdon",
           "q": "Kim jest Posejdon?",
           "correct": [
-            "władca mórz i oceanów, patron żeglarzy i rybaków"
+            "władca mórz i oceanów, opiekun żeglarzy i rybaków"
           ],
           "wrong": [
-            "bóg kowali, metalu i ognia",
+            "bóg ognia, kowali i metalu",
             "bóg wojny",
             "posłaniec bogów, bóg podróżnych, kupców i złodziei"
           ],
-          "explain": "Posejdon – władca mórz i oceanów, patron żeglarzy i rybaków. Atrybut: 🔱 trójząb."
+          "explain": "Posejdon – władca mórz i oceanów, opiekun żeglarzy i rybaków. Atrybut: 🔱 trójząb."
         },
         {
           "id": "0004",
           "level": 1,
           "group": "dom-posejdon",
-          "q": "Kto to jest: władca mórz i oceanów, patron żeglarzy i rybaków?",
+          "q": "Kto to jest: władca mórz i oceanów, opiekun żeglarzy i rybaków?",
           "correct": [
             "Posejdon"
           ],
@@ -65,7 +65,7 @@ export default {
             "Hermes",
             "Hades"
           ],
-          "explain": "Posejdon – władca mórz i oceanów, patron żeglarzy i rybaków. Atrybut: 🔱 trójząb."
+          "explain": "Posejdon – władca mórz i oceanów, opiekun żeglarzy i rybaków. Atrybut: 🔱 trójząb."
         },
         {
           "id": "0005",
@@ -76,9 +76,9 @@ export default {
             "bóg świata podziemnego, władca krainy umarłych"
           ],
           "wrong": [
-            "bóg kowali, metalu i ognia",
-            "władca mórz i oceanów, patron żeglarzy i rybaków",
-            "bóg sztuki, przewodził dziewięciu muzom"
+            "bóg ognia, kowali i metalu",
+            "władca mórz i oceanów, opiekun żeglarzy i rybaków",
+            "bóg sztuki, muzyki i poezji"
           ],
           "explain": "Hades – bóg świata podziemnego, władca krainy umarłych. Atrybut: 🔑 berło i klucze."
         },
@@ -103,29 +103,29 @@ export default {
           "group": "dom-hera",
           "q": "Kim jest Hera?",
           "correct": [
-            "żona Zeusa, bogini małżeństwa i macierzyństwa"
+            "bogini małżeństwa i macierzyństwa, opiekunka rodziny i kobiet"
           ],
           "wrong": [
-            "bogini mądrości i sprawiedliwej wojny",
             "bogini miłości i piękna",
-            "bogini domowego ogniska"
+            "bogini mądrości, pokoju i sprawiedliwej wojny",
+            "bogini łowów i dzikiej przyrody"
           ],
-          "explain": "Hera – żona Zeusa, bogini małżeństwa i macierzyństwa. Atrybut: 🦚 paw i owoc granatu."
+          "explain": "Hera – bogini małżeństwa i macierzyństwa, opiekunka rodziny i kobiet. Atrybut: 🦚 paw i owoc granatu."
         },
         {
           "id": "0008",
           "level": 1,
           "group": "dom-hera",
-          "q": "Kto to jest: żona Zeusa, bogini małżeństwa i macierzyństwa?",
+          "q": "Kto to jest: bogini małżeństwa i macierzyństwa, opiekunka rodziny i kobiet?",
           "correct": [
             "Hera"
           ],
           "wrong": [
-            "Hestia",
+            "Afrodyta",
             "Demeter",
-            "Artemida"
+            "Atena"
           ],
-          "explain": "Hera – żona Zeusa, bogini małżeństwa i macierzyństwa. Atrybut: 🦚 paw i owoc granatu."
+          "explain": "Hera – bogini małżeństwa i macierzyństwa, opiekunka rodziny i kobiet. Atrybut: 🦚 paw i owoc granatu."
         },
         {
           "id": "0009",
@@ -133,29 +133,29 @@ export default {
           "group": "dom-demeter",
           "q": "Kim jest Demeter?",
           "correct": [
-            "bogini rolnictwa i urodzaju, odpowiada za pory roku"
+            "bogini urodzaju i rolnictwa, odpowiada za pory roku"
           ],
           "wrong": [
-            "bogini miłości i piękna",
-            "bogini mądrości i sprawiedliwej wojny",
-            "bogini domowego ogniska"
+            "bogini łowów i dzikiej przyrody",
+            "bogini małżeństwa i macierzyństwa, opiekunka rodziny i kobiet",
+            "bogini ogniska domowego"
           ],
-          "explain": "Demeter – bogini rolnictwa i urodzaju, odpowiada za pory roku. Atrybut: 🌾 wieniec z kłosów."
+          "explain": "Demeter – bogini urodzaju i rolnictwa, odpowiada za pory roku. Atrybut: 🌾 wieniec z kłosów."
         },
         {
           "id": "0010",
           "level": 1,
           "group": "dom-demeter",
-          "q": "Kto to jest: bogini rolnictwa i urodzaju, odpowiada za pory roku?",
+          "q": "Kto to jest: bogini urodzaju i rolnictwa, odpowiada za pory roku?",
           "correct": [
             "Demeter"
           ],
           "wrong": [
-            "Artemida",
-            "Hera",
-            "Afrodyta"
+            "Atena",
+            "Afrodyta",
+            "Hera"
           ],
-          "explain": "Demeter – bogini rolnictwa i urodzaju, odpowiada za pory roku. Atrybut: 🌾 wieniec z kłosów."
+          "explain": "Demeter – bogini urodzaju i rolnictwa, odpowiada za pory roku. Atrybut: 🌾 wieniec z kłosów."
         },
         {
           "id": "0011",
@@ -163,29 +163,29 @@ export default {
           "group": "dom-hestia",
           "q": "Kim jest Hestia?",
           "correct": [
-            "bogini domowego ogniska"
+            "bogini ogniska domowego"
           ],
           "wrong": [
-            "bogini mądrości i sprawiedliwej wojny",
-            "bogini łowów i polowania",
-            "córka Demeter, żona Hadesa, królowa podziemi"
+            "bogini małżeństwa i macierzyństwa, opiekunka rodziny i kobiet",
+            "bogini mądrości, pokoju i sprawiedliwej wojny",
+            "bogini łowów i dzikiej przyrody"
           ],
-          "explain": "Hestia – bogini domowego ogniska. Atrybut: 🔥 pochodnia."
+          "explain": "Hestia – bogini ogniska domowego. Atrybut: 🔥 pochodnia."
         },
         {
           "id": "0012",
           "level": 1,
           "group": "dom-hestia",
-          "q": "Kto to jest: bogini domowego ogniska?",
+          "q": "Kto to jest: bogini ogniska domowego?",
           "correct": [
             "Hestia"
           ],
           "wrong": [
-            "Hera",
             "Persefona",
+            "Hera",
             "Demeter"
           ],
-          "explain": "Hestia – bogini domowego ogniska. Atrybut: 🔥 pochodnia."
+          "explain": "Hestia – bogini ogniska domowego. Atrybut: 🔥 pochodnia."
         },
         {
           "id": "0013",
@@ -193,29 +193,29 @@ export default {
           "group": "dom-helios",
           "q": "Kim jest Helios?",
           "correct": [
-            "tytan Słońca, źródła światła i życia"
+            "tytan, bóg Słońca"
           ],
           "wrong": [
-            "bóg świata podziemnego, władca krainy umarłych",
-            "najważniejszy bóg, bóg nieba i ziemi",
-            "bóg śmierci"
+            "posłaniec bogów, bóg podróżnych, kupców i złodziei",
+            "bóg wojny",
+            "władca mórz i oceanów, opiekun żeglarzy i rybaków"
           ],
-          "explain": "Helios – tytan Słońca, źródła światła i życia. Atrybut: ☀️ słoneczny rydwan."
+          "explain": "Helios – tytan, bóg Słońca. Atrybut: ☀️ słoneczny rydwan."
         },
         {
           "id": "0014",
           "level": 1,
           "group": "dom-helios",
-          "q": "Kto to jest: tytan Słońca, źródła światła i życia?",
+          "q": "Kto to jest: tytan, bóg Słońca?",
           "correct": [
             "Helios"
           ],
           "wrong": [
             "Zeus",
-            "Posejdon",
-            "Apollo"
+            "Hefajstos",
+            "Posejdon"
           ],
-          "explain": "Helios – tytan Słońca, źródła światła i życia. Atrybut: ☀️ słoneczny rydwan."
+          "explain": "Helios – tytan, bóg Słońca. Atrybut: ☀️ słoneczny rydwan."
         },
         {
           "id": "0015",
@@ -226,9 +226,9 @@ export default {
             "posłaniec bogów, bóg podróżnych, kupców i złodziei"
           ],
           "wrong": [
-            "bóg śmierci",
-            "bóg sztuki, przewodził dziewięciu muzom",
-            "bóg wojny"
+            "władca mórz i oceanów, opiekun żeglarzy i rybaków",
+            "bóg ognia, kowali i metalu",
+            "bóg śmierci"
           ],
           "explain": "Hermes – posłaniec bogów, bóg podróżnych, kupców i złodziei. Atrybut: 👟 skrzydlate sandały."
         },
@@ -241,9 +241,9 @@ export default {
             "Hermes"
           ],
           "wrong": [
-            "Zeus",
-            "Tanatos",
-            "Helios"
+            "Helios",
+            "Hefajstos",
+            "Zeus"
           ],
           "explain": "Hermes – posłaniec bogów, bóg podróżnych, kupców i złodziei. Atrybut: 👟 skrzydlate sandały."
         },
@@ -253,29 +253,29 @@ export default {
           "group": "dom-atena",
           "q": "Kim jest Atena?",
           "correct": [
-            "bogini mądrości i sprawiedliwej wojny"
+            "bogini mądrości, pokoju i sprawiedliwej wojny"
           ],
           "wrong": [
-            "bogini domowego ogniska",
-            "żona Zeusa, bogini małżeństwa i macierzyństwa",
-            "bogini miłości i piękna"
+            "bogini miłości i piękna",
+            "bogini łowów i dzikiej przyrody",
+            "bogini urodzaju i rolnictwa, odpowiada za pory roku"
           ],
-          "explain": "Atena – bogini mądrości i sprawiedliwej wojny. Atrybut: 🦉 sowa i tarcza."
+          "explain": "Atena – bogini mądrości, pokoju i sprawiedliwej wojny. Atrybut: 🦉 sowa i tarcza."
         },
         {
           "id": "0018",
           "level": 1,
           "group": "dom-atena",
-          "q": "Kto to jest: bogini mądrości i sprawiedliwej wojny?",
+          "q": "Kto to jest: bogini mądrości, pokoju i sprawiedliwej wojny?",
           "correct": [
             "Atena"
           ],
           "wrong": [
-            "Hera",
+            "Persefona",
             "Demeter",
-            "Artemida"
+            "Hera"
           ],
-          "explain": "Atena – bogini mądrości i sprawiedliwej wojny. Atrybut: 🦉 sowa i tarcza."
+          "explain": "Atena – bogini mądrości, pokoju i sprawiedliwej wojny. Atrybut: 🦉 sowa i tarcza."
         },
         {
           "id": "0019",
@@ -286,9 +286,9 @@ export default {
             "bóg wojny"
           ],
           "wrong": [
-            "bóg śmierci",
-            "posłaniec bogów, bóg podróżnych, kupców i złodziei",
-            "władca mórz i oceanów, patron żeglarzy i rybaków"
+            "tytan, bóg Słońca",
+            "bóg ognia, kowali i metalu",
+            "najważniejszy bóg, władca nieba i ziemi, bogów i ludzi"
           ],
           "explain": "Ares – bóg wojny. Atrybut: 🗡️ miecz."
         },
@@ -301,9 +301,9 @@ export default {
             "Ares"
           ],
           "wrong": [
-            "Hermes",
-            "Hades",
-            "Helios"
+            "Apollo",
+            "Helios",
+            "Tanatos"
           ],
           "explain": "Ares – bóg wojny. Atrybut: 🗡️ miecz."
         },
@@ -313,29 +313,29 @@ export default {
           "group": "dom-hefajstos",
           "q": "Kim jest Hefajstos?",
           "correct": [
-            "bóg kowali, metalu i ognia"
+            "bóg ognia, kowali i metalu"
           ],
           "wrong": [
-            "tytan Słońca, źródła światła i życia",
-            "najważniejszy bóg, bóg nieba i ziemi",
-            "władca mórz i oceanów, patron żeglarzy i rybaków"
+            "władca mórz i oceanów, opiekun żeglarzy i rybaków",
+            "tytan, bóg Słońca",
+            "bóg śmierci"
           ],
-          "explain": "Hefajstos – bóg kowali, metalu i ognia. Atrybut: 🔨 młot i kowadło."
+          "explain": "Hefajstos – bóg ognia, kowali i metalu. Atrybut: 🔨 młot i kowadło."
         },
         {
           "id": "0022",
           "level": 1,
           "group": "dom-hefajstos",
-          "q": "Kto to jest: bóg kowali, metalu i ognia?",
+          "q": "Kto to jest: bóg ognia, kowali i metalu?",
           "correct": [
             "Hefajstos"
           ],
           "wrong": [
-            "Hermes",
-            "Tanatos",
-            "Hades"
+            "Ares",
+            "Hades",
+            "Zeus"
           ],
-          "explain": "Hefajstos – bóg kowali, metalu i ognia. Atrybut: 🔨 młot i kowadło."
+          "explain": "Hefajstos – bóg ognia, kowali i metalu. Atrybut: 🔨 młot i kowadło."
         },
         {
           "id": "0023",
@@ -346,9 +346,9 @@ export default {
             "bogini miłości i piękna"
           ],
           "wrong": [
-            "bogini domowego ogniska",
-            "bogini łowów i polowania",
-            "córka Demeter, żona Hadesa, królowa podziemi"
+            "bogini łowów i dzikiej przyrody",
+            "bogini ogniska domowego",
+            "bogini urodzaju i rolnictwa, odpowiada za pory roku"
           ],
           "explain": "Afrodyta – bogini miłości i piękna. Atrybut: 🌹 róża i gołąb."
         },
@@ -361,9 +361,9 @@ export default {
             "Afrodyta"
           ],
           "wrong": [
-            "Artemida",
+            "Hestia",
             "Hera",
-            "Demeter"
+            "Persefona"
           ],
           "explain": "Afrodyta – bogini miłości i piękna. Atrybut: 🌹 róża i gołąb."
         },
@@ -373,29 +373,29 @@ export default {
           "group": "dom-apollo",
           "q": "Kim jest Apollo?",
           "correct": [
-            "bóg sztuki, przewodził dziewięciu muzom"
+            "bóg sztuki, muzyki i poezji"
           ],
           "wrong": [
-            "bóg kowali, metalu i ognia",
-            "tytan Słońca, źródła światła i życia",
-            "bóg wojny"
+            "najważniejszy bóg, władca nieba i ziemi, bogów i ludzi",
+            "władca mórz i oceanów, opiekun żeglarzy i rybaków",
+            "posłaniec bogów, bóg podróżnych, kupców i złodziei"
           ],
-          "explain": "Apollo – bóg sztuki, przewodził dziewięciu muzom. Atrybut: 🎶 lira."
+          "explain": "Apollo – bóg sztuki, muzyki i poezji. Atrybut: 🎶 lira."
         },
         {
           "id": "0026",
           "level": 1,
           "group": "dom-apollo",
-          "q": "Kto to jest: bóg sztuki, przewodził dziewięciu muzom?",
+          "q": "Kto to jest: bóg sztuki, muzyki i poezji?",
           "correct": [
             "Apollo"
           ],
           "wrong": [
             "Posejdon",
-            "Zeus",
+            "Helios",
             "Hades"
           ],
-          "explain": "Apollo – bóg sztuki, przewodził dziewięciu muzom. Atrybut: 🎶 lira."
+          "explain": "Apollo – bóg sztuki, muzyki i poezji. Atrybut: 🎶 lira."
         },
         {
           "id": "0027",
@@ -403,29 +403,29 @@ export default {
           "group": "dom-artemida",
           "q": "Kim jest Artemida?",
           "correct": [
-            "bogini łowów i polowania"
+            "bogini łowów i dzikiej przyrody"
           ],
           "wrong": [
-            "bogini mądrości i sprawiedliwej wojny",
-            "bogini domowego ogniska",
-            "żona Zeusa, bogini małżeństwa i macierzyństwa"
+            "bogini podziemi i wiosny",
+            "bogini mądrości, pokoju i sprawiedliwej wojny",
+            "bogini miłości i piękna"
           ],
-          "explain": "Artemida – bogini łowów i polowania. Atrybut: 🏹 łuk i strzały."
+          "explain": "Artemida – bogini łowów i dzikiej przyrody. Atrybut: 🏹 łuk i strzały."
         },
         {
           "id": "0028",
           "level": 1,
           "group": "dom-artemida",
-          "q": "Kto to jest: bogini łowów i polowania?",
+          "q": "Kto to jest: bogini łowów i dzikiej przyrody?",
           "correct": [
             "Artemida"
           ],
           "wrong": [
-            "Atena",
             "Persefona",
+            "Atena",
             "Hera"
           ],
-          "explain": "Artemida – bogini łowów i polowania. Atrybut: 🏹 łuk i strzały."
+          "explain": "Artemida – bogini łowów i dzikiej przyrody. Atrybut: 🏹 łuk i strzały."
         },
         {
           "id": "0029",
@@ -433,29 +433,29 @@ export default {
           "group": "dom-persefona",
           "q": "Kim jest Persefona?",
           "correct": [
-            "córka Demeter, żona Hadesa, królowa podziemi"
+            "bogini podziemi i wiosny"
           ],
           "wrong": [
-            "bogini mądrości i sprawiedliwej wojny",
-            "bogini miłości i piękna",
-            "bogini łowów i polowania"
+            "bogini łowów i dzikiej przyrody",
+            "bogini mądrości, pokoju i sprawiedliwej wojny",
+            "bogini miłości i piękna"
           ],
-          "explain": "Persefona – córka Demeter, żona Hadesa, królowa podziemi. Atrybut: 🍎 owoc granatu."
+          "explain": "Persefona – bogini podziemi i wiosny. Atrybut: 🍎 owoc granatu."
         },
         {
           "id": "0030",
           "level": 1,
           "group": "dom-persefona",
-          "q": "Kto to jest: córka Demeter, żona Hadesa, królowa podziemi?",
+          "q": "Kto to jest: bogini podziemi i wiosny?",
           "correct": [
             "Persefona"
           ],
           "wrong": [
             "Atena",
-            "Afrodyta",
-            "Artemida"
+            "Hera",
+            "Afrodyta"
           ],
-          "explain": "Persefona – córka Demeter, żona Hadesa, królowa podziemi. Atrybut: 🍎 owoc granatu."
+          "explain": "Persefona – bogini podziemi i wiosny. Atrybut: 🍎 owoc granatu."
         },
         {
           "id": "0031",
@@ -466,9 +466,9 @@ export default {
             "bóg śmierci"
           ],
           "wrong": [
-            "posłaniec bogów, bóg podróżnych, kupców i złodziei",
-            "najważniejszy bóg, bóg nieba i ziemi",
-            "bóg wojny"
+            "bóg ognia, kowali i metalu",
+            "bóg wojny",
+            "tytan, bóg Słońca"
           ],
           "explain": "Tanatos – bóg śmierci. Atrybut: 🕯️ zgaszona pochodnia."
         },
@@ -481,9 +481,9 @@ export default {
             "Tanatos"
           ],
           "wrong": [
-            "Zeus",
-            "Hermes",
-            "Posejdon"
+            "Hefajstos",
+            "Posejdon",
+            "Helios"
           ],
           "explain": "Tanatos – bóg śmierci. Atrybut: 🕯️ zgaszona pochodnia."
         }
@@ -503,11 +503,11 @@ export default {
             "⚡ piorun"
           ],
           "wrong": [
-            "☀️ słoneczny rydwan",
-            "🔑 berło i klucze",
-            "🕯️ zgaszona pochodnia"
+            "🕯️ zgaszona pochodnia",
+            "👟 skrzydlate sandały",
+            "🔱 trójząb"
           ],
-          "explain": "Zeus – najważniejszy bóg, bóg nieba i ziemi. Atrybut: ⚡ piorun."
+          "explain": "Zeus – najważniejszy bóg, władca nieba i ziemi, bogów i ludzi. Atrybut: ⚡ piorun."
         },
         {
           "id": "0034",
@@ -518,11 +518,11 @@ export default {
             "Zeus"
           ],
           "wrong": [
-            "Ares",
-            "Hefajstos",
-            "Hades"
+            "Tanatos",
+            "Hades",
+            "Apollo"
           ],
-          "explain": "Zeus – najważniejszy bóg, bóg nieba i ziemi. Atrybut: ⚡ piorun."
+          "explain": "Zeus – najważniejszy bóg, władca nieba i ziemi, bogów i ludzi. Atrybut: ⚡ piorun."
         },
         {
           "id": "0035",
@@ -534,10 +534,10 @@ export default {
           ],
           "wrong": [
             "🎶 lira",
-            "🔑 berło i klucze",
-            "⚡ piorun"
+            "🔨 młot i kowadło",
+            "☀️ słoneczny rydwan"
           ],
-          "explain": "Posejdon – władca mórz i oceanów, patron żeglarzy i rybaków. Atrybut: 🔱 trójząb."
+          "explain": "Posejdon – władca mórz i oceanów, opiekun żeglarzy i rybaków. Atrybut: 🔱 trójząb."
         },
         {
           "id": "0036",
@@ -548,11 +548,11 @@ export default {
             "Posejdon"
           ],
           "wrong": [
-            "Apollo",
-            "Zeus",
-            "Hermes"
+            "Hades",
+            "Helios",
+            "Ares"
           ],
-          "explain": "Posejdon – władca mórz i oceanów, patron żeglarzy i rybaków. Atrybut: 🔱 trójząb."
+          "explain": "Posejdon – władca mórz i oceanów, opiekun żeglarzy i rybaków. Atrybut: 🔱 trójząb."
         },
         {
           "id": "0037",
@@ -563,7 +563,7 @@ export default {
             "🔑 berło i klucze"
           ],
           "wrong": [
-            "☀️ słoneczny rydwan",
+            "🎶 lira",
             "👟 skrzydlate sandały",
             "🔨 młot i kowadło"
           ],
@@ -578,9 +578,9 @@ export default {
             "Hades"
           ],
           "wrong": [
-            "Posejdon",
-            "Zeus",
-            "Hefajstos"
+            "Helios",
+            "Ares",
+            "Apollo"
           ],
           "explain": "Hades – bóg świata podziemnego, władca krainy umarłych. Atrybut: 🔑 berło i klucze."
         },
@@ -593,11 +593,11 @@ export default {
             "🦚 paw i owoc granatu"
           ],
           "wrong": [
-            "🦉 sowa i tarcza",
-            "🏹 łuk i strzały",
-            "🔥 pochodnia"
+            "🌾 wieniec z kłosów",
+            "🌹 róża i gołąb",
+            "🍎 owoc granatu"
           ],
-          "explain": "Hera – żona Zeusa, bogini małżeństwa i macierzyństwa. Atrybut: 🦚 paw i owoc granatu."
+          "explain": "Hera – bogini małżeństwa i macierzyństwa, opiekunka rodziny i kobiet. Atrybut: 🦚 paw i owoc granatu."
         },
         {
           "id": "0040",
@@ -609,10 +609,10 @@ export default {
           ],
           "wrong": [
             "Demeter",
-            "Atena",
-            "Afrodyta"
+            "Hestia",
+            "Persefona"
           ],
-          "explain": "Hera – żona Zeusa, bogini małżeństwa i macierzyństwa. Atrybut: 🦚 paw i owoc granatu."
+          "explain": "Hera – bogini małżeństwa i macierzyństwa, opiekunka rodziny i kobiet. Atrybut: 🦚 paw i owoc granatu."
         },
         {
           "id": "0041",
@@ -623,11 +623,11 @@ export default {
             "🌾 wieniec z kłosów"
           ],
           "wrong": [
-            "🦚 paw i owoc granatu",
-            "🌹 róża i gołąb",
-            "🦉 sowa i tarcza"
+            "🔥 pochodnia",
+            "🦉 sowa i tarcza",
+            "🦚 paw i owoc granatu"
           ],
-          "explain": "Demeter – bogini rolnictwa i urodzaju, odpowiada za pory roku. Atrybut: 🌾 wieniec z kłosów."
+          "explain": "Demeter – bogini urodzaju i rolnictwa, odpowiada za pory roku. Atrybut: 🌾 wieniec z kłosów."
         },
         {
           "id": "0042",
@@ -638,11 +638,11 @@ export default {
             "Demeter"
           ],
           "wrong": [
-            "Hera",
-            "Hestia",
-            "Atena"
+            "Afrodyta",
+            "Atena",
+            "Artemida"
           ],
-          "explain": "Demeter – bogini rolnictwa i urodzaju, odpowiada za pory roku. Atrybut: 🌾 wieniec z kłosów."
+          "explain": "Demeter – bogini urodzaju i rolnictwa, odpowiada za pory roku. Atrybut: 🌾 wieniec z kłosów."
         },
         {
           "id": "0043",
@@ -654,10 +654,10 @@ export default {
           ],
           "wrong": [
             "🦉 sowa i tarcza",
-            "🌹 róża i gołąb",
+            "🍎 owoc granatu",
             "🏹 łuk i strzały"
           ],
-          "explain": "Hestia – bogini domowego ogniska. Atrybut: 🔥 pochodnia."
+          "explain": "Hestia – bogini ogniska domowego. Atrybut: 🔥 pochodnia."
         },
         {
           "id": "0044",
@@ -668,11 +668,11 @@ export default {
             "Hestia"
           ],
           "wrong": [
-            "Artemida",
-            "Afrodyta",
-            "Hera"
+            "Atena",
+            "Demeter",
+            "Artemida"
           ],
-          "explain": "Hestia – bogini domowego ogniska. Atrybut: 🔥 pochodnia."
+          "explain": "Hestia – bogini ogniska domowego. Atrybut: 🔥 pochodnia."
         },
         {
           "id": "0045",
@@ -683,11 +683,11 @@ export default {
             "☀️ słoneczny rydwan"
           ],
           "wrong": [
+            "⚡ piorun",
             "👟 skrzydlate sandały",
-            "🔱 trójząb",
             "🔑 berło i klucze"
           ],
-          "explain": "Helios – tytan Słońca, źródła światła i życia. Atrybut: ☀️ słoneczny rydwan."
+          "explain": "Helios – tytan, bóg Słońca. Atrybut: ☀️ słoneczny rydwan."
         },
         {
           "id": "0046",
@@ -698,11 +698,11 @@ export default {
             "Helios"
           ],
           "wrong": [
-            "Zeus",
             "Hades",
-            "Ares"
+            "Hefajstos",
+            "Hermes"
           ],
-          "explain": "Helios – tytan Słońca, źródła światła i życia. Atrybut: ☀️ słoneczny rydwan."
+          "explain": "Helios – tytan, bóg Słońca. Atrybut: ☀️ słoneczny rydwan."
         },
         {
           "id": "0047",
@@ -713,9 +713,9 @@ export default {
             "👟 skrzydlate sandały"
           ],
           "wrong": [
-            "🔨 młot i kowadło",
-            "☀️ słoneczny rydwan",
-            "🎶 lira"
+            "🗡️ miecz",
+            "🔱 trójząb",
+            "🔑 berło i klucze"
           ],
           "explain": "Hermes – posłaniec bogów, bóg podróżnych, kupców i złodziei. Atrybut: 👟 skrzydlate sandały."
         },
@@ -728,9 +728,9 @@ export default {
             "Hermes"
           ],
           "wrong": [
-            "Hefajstos",
-            "Posejdon",
-            "Helios"
+            "Tanatos",
+            "Helios",
+            "Zeus"
           ],
           "explain": "Hermes – posłaniec bogów, bóg podróżnych, kupców i złodziei. Atrybut: 👟 skrzydlate sandały."
         },
@@ -743,11 +743,11 @@ export default {
             "🦉 sowa i tarcza"
           ],
           "wrong": [
-            "🔥 pochodnia",
+            "🌾 wieniec z kłosów",
             "🦚 paw i owoc granatu",
-            "🍎 owoc granatu"
+            "🏹 łuk i strzały"
           ],
-          "explain": "Atena – bogini mądrości i sprawiedliwej wojny. Atrybut: 🦉 sowa i tarcza."
+          "explain": "Atena – bogini mądrości, pokoju i sprawiedliwej wojny. Atrybut: 🦉 sowa i tarcza."
         },
         {
           "id": "0050",
@@ -758,11 +758,11 @@ export default {
             "Atena"
           ],
           "wrong": [
-            "Hera",
-            "Afrodyta",
-            "Persefona"
+            "Artemida",
+            "Persefona",
+            "Demeter"
           ],
-          "explain": "Atena – bogini mądrości i sprawiedliwej wojny. Atrybut: 🦉 sowa i tarcza."
+          "explain": "Atena – bogini mądrości, pokoju i sprawiedliwej wojny. Atrybut: 🦉 sowa i tarcza."
         },
         {
           "id": "0051",
@@ -773,9 +773,9 @@ export default {
             "🗡️ miecz"
           ],
           "wrong": [
-            "🔱 trójząb",
             "👟 skrzydlate sandały",
-            "🔨 młot i kowadło"
+            "🔱 trójząb",
+            "🎶 lira"
           ],
           "explain": "Ares – bóg wojny. Atrybut: 🗡️ miecz."
         },
@@ -788,9 +788,9 @@ export default {
             "Ares"
           ],
           "wrong": [
-            "Apollo",
-            "Hefajstos",
-            "Helios"
+            "Tanatos",
+            "Hermes",
+            "Posejdon"
           ],
           "explain": "Ares – bóg wojny. Atrybut: 🗡️ miecz."
         },
@@ -803,11 +803,11 @@ export default {
             "🔨 młot i kowadło"
           ],
           "wrong": [
-            "⚡ piorun",
+            "☀️ słoneczny rydwan",
             "🕯️ zgaszona pochodnia",
-            "☀️ słoneczny rydwan"
+            "🔱 trójząb"
           ],
-          "explain": "Hefajstos – bóg kowali, metalu i ognia. Atrybut: 🔨 młot i kowadło."
+          "explain": "Hefajstos – bóg ognia, kowali i metalu. Atrybut: 🔨 młot i kowadło."
         },
         {
           "id": "0054",
@@ -818,11 +818,11 @@ export default {
             "Hefajstos"
           ],
           "wrong": [
-            "Hermes",
             "Posejdon",
-            "Apollo"
+            "Apollo",
+            "Ares"
           ],
-          "explain": "Hefajstos – bóg kowali, metalu i ognia. Atrybut: 🔨 młot i kowadło."
+          "explain": "Hefajstos – bóg ognia, kowali i metalu. Atrybut: 🔨 młot i kowadło."
         },
         {
           "id": "0055",
@@ -833,9 +833,9 @@ export default {
             "🌹 róża i gołąb"
           ],
           "wrong": [
+            "🦉 sowa i tarcza",
             "🍎 owoc granatu",
-            "🌾 wieniec z kłosów",
-            "🏹 łuk i strzały"
+            "🔥 pochodnia"
           ],
           "explain": "Afrodyta – bogini miłości i piękna. Atrybut: 🌹 róża i gołąb."
         },
@@ -848,9 +848,9 @@ export default {
             "Afrodyta"
           ],
           "wrong": [
-            "Hestia",
+            "Persefona",
             "Artemida",
-            "Atena"
+            "Hera"
           ],
           "explain": "Afrodyta – bogini miłości i piękna. Atrybut: 🌹 róża i gołąb."
         },
@@ -864,10 +864,10 @@ export default {
           ],
           "wrong": [
             "🔨 młot i kowadło",
-            "🗡️ miecz",
-            "🔱 trójząb"
+            "🕯️ zgaszona pochodnia",
+            "☀️ słoneczny rydwan"
           ],
-          "explain": "Apollo – bóg sztuki, przewodził dziewięciu muzom. Atrybut: 🎶 lira."
+          "explain": "Apollo – bóg sztuki, muzyki i poezji. Atrybut: 🎶 lira."
         },
         {
           "id": "0058",
@@ -878,11 +878,11 @@ export default {
             "Apollo"
           ],
           "wrong": [
-            "Ares",
             "Helios",
-            "Hefajstos"
+            "Hermes",
+            "Zeus"
           ],
-          "explain": "Apollo – bóg sztuki, przewodził dziewięciu muzom. Atrybut: 🎶 lira."
+          "explain": "Apollo – bóg sztuki, muzyki i poezji. Atrybut: 🎶 lira."
         },
         {
           "id": "0059",
@@ -893,11 +893,11 @@ export default {
             "🏹 łuk i strzały"
           ],
           "wrong": [
+            "🌹 róża i gołąb",
             "🌾 wieniec z kłosów",
-            "🦉 sowa i tarcza",
-            "🔥 pochodnia"
+            "🍎 owoc granatu"
           ],
-          "explain": "Artemida – bogini łowów i polowania. Atrybut: 🏹 łuk i strzały."
+          "explain": "Artemida – bogini łowów i dzikiej przyrody. Atrybut: 🏹 łuk i strzały."
         },
         {
           "id": "0060",
@@ -908,11 +908,11 @@ export default {
             "Artemida"
           ],
           "wrong": [
-            "Persefona",
-            "Afrodyta",
-            "Hestia"
+            "Hera",
+            "Demeter",
+            "Atena"
           ],
-          "explain": "Artemida – bogini łowów i polowania. Atrybut: 🏹 łuk i strzały."
+          "explain": "Artemida – bogini łowów i dzikiej przyrody. Atrybut: 🏹 łuk i strzały."
         },
         {
           "id": "0061",
@@ -923,11 +923,11 @@ export default {
             "🍎 owoc granatu"
           ],
           "wrong": [
-            "🔥 pochodnia",
-            "🏹 łuk i strzały",
-            "🦉 sowa i tarcza"
+            "🦚 paw i owoc granatu",
+            "🌹 róża i gołąb",
+            "🔥 pochodnia"
           ],
-          "explain": "Persefona – córka Demeter, żona Hadesa, królowa podziemi. Atrybut: 🍎 owoc granatu."
+          "explain": "Persefona – bogini podziemi i wiosny. Atrybut: 🍎 owoc granatu."
         },
         {
           "id": "0062",
@@ -938,11 +938,11 @@ export default {
             "Persefona"
           ],
           "wrong": [
+            "Hera",
             "Hestia",
-            "Atena",
             "Artemida"
           ],
-          "explain": "Persefona – córka Demeter, żona Hadesa, królowa podziemi. Atrybut: 🍎 owoc granatu."
+          "explain": "Persefona – bogini podziemi i wiosny. Atrybut: 🍎 owoc granatu."
         },
         {
           "id": "0063",
@@ -954,8 +954,8 @@ export default {
           ],
           "wrong": [
             "⚡ piorun",
-            "🔱 trójząb",
-            "🎶 lira"
+            "🗡️ miecz",
+            "🔱 trójząb"
           ],
           "explain": "Tanatos – bóg śmierci. Atrybut: 🕯️ zgaszona pochodnia."
         },
@@ -968,9 +968,9 @@ export default {
             "Tanatos"
           ],
           "wrong": [
-            "Zeus",
-            "Posejdon",
-            "Hermes"
+            "Helios",
+            "Hermes",
+            "Zeus"
           ],
           "explain": "Tanatos – bóg śmierci. Atrybut: 🕯️ zgaszona pochodnia."
         }
