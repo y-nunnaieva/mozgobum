@@ -18,7 +18,7 @@ export function Game({ questions, sectionOf, onAnswer, onFinish, onExit, quiz })
   const q = currentQuestion(round);
   const section = sectionOf.get(q);
   const { View, solution } = questionTypes[q.type];
-  const done = round.total - round.queue.length + (result ? 1 : 0);
+  const done = round.total - round.queue.length + (result !== null ? 1 : 0);
 
   const answer = (ok) => {
     setResult(ok);

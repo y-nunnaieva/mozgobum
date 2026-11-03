@@ -46,8 +46,10 @@ describe("game flow", () => {
   it("ends the round after a wrong answer, counts the mistake and records stats", () => {
     render(<QuizPage quiz={quiz} />);
     startSection("Jednokrotny");
+    expect(document.querySelector(".counter").textContent).toBe("0 / 1");
     choose("Sparta");
     expect(screen.getByText("Niestety!")).toBeTruthy();
+    expect(document.querySelector(".counter").textContent).toBe("1 / 1");
     expect(screen.getByText("Ateny").closest(".answer--correct")).toBeTruthy();
     expect(screen.getByText(/To pytanie trafi do trudnych/)).toBeTruthy();
     click("Dalej →");
