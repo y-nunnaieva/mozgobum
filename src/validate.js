@@ -72,12 +72,12 @@ export function validateCatalog(catalog) {
     if (hasDuplicates(quiz.sections.map((s) => s.id))) errors.push(`${quiz.path}: duplicate section ids`);
     allQuestions(quiz).forEach((q, i) => {
       const label = `${quiz.path} #${i + 1}${q.id ? ` (${q.id})` : ""}`;
-      if (q.id) {
+      if (q.id && !q.isVariant) {
         if (seen.has(q.id)) errors.push(`${label}: duplicate id`);
         seen.add(q.id);
       }
       for (const msg of questionErrors(q)) errors.push(`${label}: ${msg}`);
-      if (q.group) {
+      if (q.group && !q.isVariant) {
         if (q.skill) errors.push(`${label}: number tasks can't be grouped`);
         groups.set(q.key, (groups.get(q.key) ?? 0) + 1);
       }

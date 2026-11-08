@@ -78,7 +78,8 @@ function groupByKey(quiz, random) {
 // Weakest first; skill units with many variants get a fresh random variant per turn.
 function hardRound(quiz, stats, size, random) {
   const groups = groupByKey(quiz, random);
-  const queues = hardUnits(quiz, stats).map((k) => groups.get(k));
+  // Only task types repeat in one round; other wordings of a question are for later rounds.
+  const queues = hardUnits(quiz, stats).map((k) => (groups.get(k)[0].skill ? groups.get(k) : groups.get(k).slice(0, 1)));
   const picked = [];
   // Twin forms of one review key never share a round.
   const perKey = isReview(quiz) ? 1 : HARD_VARIANTS;
@@ -93,8 +94,8 @@ function sampleRound(questions, size, random) {
   const seen = new Set();
   const first = [], rest = [];
   for (const q of shuffle(questions, random)) {
-    if (seen.has(q.unit)) rest.push(q);
-    else seen.add(q.unit), first.push(q);
+    if (!seen.has(q.unit)) seen.add(q.unit), first.push(q);
+    else if (q.skill) rest.push(q);
   }
   if (first.length >= size) return first.slice(0, size);
   return shuffle([...first, ...rest.slice(0, size - first.length)], random);

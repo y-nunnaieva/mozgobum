@@ -30,6 +30,9 @@ function prepareQuestion(q, subjectId, chapterPath, subPath, origin) {
   return { ...q, type, id, unit, key, origin, level: q.level ?? DEFAULT_LEVEL, streakToMaster: q.skill ? SKILL_STREAK : QUESTION_STREAK };
 }
 
+// Other wordings of one question: they share its id and stats, so new examples never reset progress.
+const expandVariants = ({ variants = [], ...q }) => [q, ...variants.map((v) => ({ ...q, ...v, isVariant: true }))];
+
 // `modules` maps "/content/<subject>/[<chapter>/]<file>.js" to the file's default export.
 export function buildCatalog(modules) {
   const subjects = {};
@@ -57,7 +60,7 @@ export function buildCatalog(modules) {
           ...extra, path, title: data.title, subject: s, chapterTitle: c.title,
           sections: data.sections.map((sec) => ({
             ...sec,
-            questions: sec.questions.map((q) => prepareQuestion(q, s.id, base, path, sec.name)),
+            questions: sec.questions.flatMap(expandVariants).map((q) => prepareQuestion(q, s.id, base, path, sec.name)),
           })),
         };
       };
@@ -98,7 +101,12 @@ export function buildCatalog(modules) {
       // A big test can set its own `limit` and keep only the most important questions (`maxLevel`).
       const reviews = (c.reviews ?? []).map((r) => {
         const limit = r.limit ?? REVIEW_LIMITS[r.type ?? "sprawdzian"];
-        const review = { ...composed("review", r.id, r.title, r.include), review: `${base}/${r.id}`, limit, eyebrow: r.eyebrow, variants: r.variants };
+        const built = composed("review", r.id, r.title, r.include);
+        // Questions on one topic count once here only: a `group` would also change the keys of existing summaries.
+        const sections = r.byTopic
+          ? built.sections.map((sec) => ({ ...sec, questions: sec.questions.map((q) => (q.topic ? { ...q, key: `${base}/topic/${q.topic}` } : q)) }))
+          : built.sections;
+        const review = { ...built, sections, review: `${base}/${r.id}`, limit, eyebrow: r.eyebrow, variants: r.variants };
         if (r.maxLevel) return upToLevel(review, r.maxLevel);
         return keyCount(review) > limit ? upToLevel(review, 2) : review;
       });

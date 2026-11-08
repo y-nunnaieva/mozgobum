@@ -24,6 +24,67 @@ const quiz = cat.quizzes["h/1/1.1"];
 const review = cat.quizzes["h/1/r"];
 const allOf = (q) => q.sections.flatMap((s) => s.questions);
 
+describe("question variants", () => {
+  const withVariants = (id, word) => ({ ...choice(id), variants: ["x", "y", "z"].map((v) => ({ q: `${word}-${v}` })) });
+  const c = buildCatalog({
+    "/content/p/1/chapter.js": { title: "C", reviews: [{ id: "r", title: "R", include: ["1.1"] }] },
+    "/content/p/1/1.1.js": { title: "A", sections: [{ id: "s", questions: [withVariants("0001", "a"), withVariants("0002", "b"), choice("0003")] }] },
+  });
+  const q = c.quizzes["p/1/1.1"];
+  const OLD = "p/1/1.1/0001";
+
+  it("counts a question with variants once and keeps its existing stats", () => {
+    let st = recordAnswer(emptyStats(), OLD, true);
+    st = recordAnswer(st, OLD, true);
+    expect(progress(q, st)).toEqual({ done: 1, total: 3 });
+    expect(new Set(allOf(q).filter((x) => x.id === OLD).map((x) => x.unit))).toEqual(new Set([OLD]));
+  });
+
+  it("serves one wording per round and every wording over many rounds", () => {
+    const seen = new Set();
+    for (let i = 0; i < 200; i++) {
+      const round = buildRound(q, "all", emptyStats());
+      expect(round.filter((x) => x.unit === OLD)).toHaveLength(1);
+      round.filter((x) => x.unit === OLD).forEach((x) => seen.add(x.q));
+    }
+    expect(seen).toEqual(new Set(["Q0001", "a-x", "a-y", "a-z"]));
+  });
+
+  it("does not repeat a question in a section, hard or revision round", () => {
+    let st = recordAnswer(emptyStats(), OLD, false);
+    expect(buildRound(q, "hard", st).filter((x) => x.unit === OLD)).toHaveLength(1);
+    st = emptyStats();
+    for (const u of ["0001", "0002", "0003"]) for (let n = 0; n < 2; n++) st = recordAnswer(st, `p/1/1.1/${u}`, true);
+    expect(buildRound(q, "s", st)).toHaveLength(3);
+    expect(buildRound(q, "all", st)).toHaveLength(3);
+  });
+
+  it("gives a review one key per question, also with variants", () => {
+    const review = c.quizzes["p/1/r"];
+    expect(progress(review, emptyStats()).total).toBe(3);
+    expect(buildRound(review, "all", emptyStats())).toHaveLength(3);
+  });
+});
+
+describe("review topics", () => {
+  const topical = (id, topic) => ({ ...choice(id), topic });
+  const files = (reviews) => ({
+    "/content/p/1/chapter.js": { title: "C", reviews },
+    "/content/p/1/1.1.js": { title: "A", sections: [{ id: "s", questions: [topical("0001", "t"), topical("0002", "t"), choice("0003")] }] },
+  });
+  const review = { id: "r", title: "R", include: ["1.1"] };
+
+  it("counts questions on one topic once only in a review that asks for it", () => {
+    expect(progress(buildCatalog(files([{ ...review, byTopic: true }])).quizzes["p/1/r"], emptyStats()).total).toBe(2);
+    expect(progress(buildCatalog(files([review])).quizzes["p/1/r"], emptyStats()).total).toBe(3);
+  });
+
+  it("leaves the keys of a subchapter summary unchanged", () => {
+    const summary = buildCatalog(files([{ ...review, byTopic: true }])).quizzes["p/1/1.1/podsumowanie"];
+    expect(allOf(summary).map((q) => q.key)).toEqual(["p/1/1.1/0001", "p/1/1.1/0002", "p/1/1.1/0003"]);
+  });
+});
+
 describe("buildRound", () => {
   it("'all' samples a full round from the whole quiz", () => {
     expect(buildRound(quiz, "all", emptyStats())).toHaveLength(ROUND_SIZE);

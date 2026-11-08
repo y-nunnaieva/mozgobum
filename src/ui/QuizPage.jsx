@@ -37,7 +37,7 @@ export function QuizPage({ quiz, onPlayingChange }) {
     () => new Map(quiz.sections.flatMap((s) => s.questions.map((q) => [q, s]))),
     [quiz],
   );
-  const total = allQuestions(quiz).length;
+  const total = allQuestions(quiz).filter((q) => !q.isVariant).length;
   const hard = direct || hasHardMode(quiz) ? hardUnits(quiz, stats).length : 0;
 
   const start = (m) => {
