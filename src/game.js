@@ -11,6 +11,12 @@ export function createRound(questions) {
   return { queue: [...questions], total: questions.length, mistakes: 0 };
 }
 
+export function resumeRound(questions, results) {
+  return { queue: questions.slice(results.length), total: questions.length, mistakes: countMistakes(results) };
+}
+
+export const countMistakes = (results) => results.filter((ok) => !ok).length;
+
 export const currentQuestion = (round) => round.queue[0] ?? null;
 
 export const isFinished = (round) => round.queue.length === 0;

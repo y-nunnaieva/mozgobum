@@ -1,5 +1,5 @@
 import { useRef, useState } from "preact/hooks";
-import { createRound, currentQuestion, isFinished, submitAnswer } from "../game.js";
+import { currentQuestion, isFinished, resumeRound, submitAnswer } from "../game.js";
 import { quizName } from "../content.js";
 import { playAnswerSound, unlockSound } from "../sound.js";
 import { questionTypes } from "../types/index.js";
@@ -7,13 +7,13 @@ import { Confirm } from "./Confirm.jsx";
 import { Icon } from "./Icon.jsx";
 import { Mascot } from "./Mascot.jsx";
 
-export function Game({ questions, sectionOf, onAnswer, onFinish, onExit, quiz }) {
-  const [round, setRound] = useState(() => createRound(questions));
+export function Game({ questions, results = [], sectionOf, onAnswer, onFinish, onExit, quiz }) {
+  const [round, setRound] = useState(() => resumeRound(questions, results));
   const [result, setResult] = useState(null);
-  const [attempt, setAttempt] = useState(0);
+  const [attempt, setAttempt] = useState(results.length);
   const [confirmExit, setConfirmExit] = useState(false);
-  const [status, setStatus] = useState(() => new Map());
-  const answers = useRef(new Map());
+  const [status, setStatus] = useState(() => new Map(results.map((ok, i) => [questions[i], ok ? "ok" : "bad"])));
+  const answers = useRef(new Map(results.map((ok, i) => [questions[i], ok])));
   const nextRef = useRef(null);
 
   const q = currentQuestion(round);

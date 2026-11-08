@@ -1,10 +1,11 @@
-import { useEffect, useMemo, useState } from "preact/hooks";
+import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 import { href } from "../router.js";
 import { buildRound, hardUnits, hasHardMode, roundSize } from "../modes.js";
 import { allQuestions } from "../content.js";
 import { answer as recordAnswer, useAccount } from "../account.js";
-import { starsFor } from "../game.js";
+import { countMistakes, starsFor } from "../game.js";
 import { countLabel, pytan } from "../format.js";
+import { clearRound, loadRound, saveRound } from "../savedRound.js";
 import { Game } from "./Game.jsx";
 import { Icon } from "./Icon.jsx";
 import { ProgressMeta } from "./ProgressMeta.jsx";
@@ -15,18 +16,40 @@ import { ReviewBanner } from "./ReviewBanner.jsx";
 const DIRECT_MODES = { review: "all", "chapter-hard": "hard" };
 export const hasMenu = (quiz) => !DIRECT_MODES[quiz.kind];
 
+const gameSummary = (questions, results) => {
+  const mistakes = countMistakes(results);
+  return {
+    total: questions.length,
+    mistakes,
+    stars: starsFor(mistakes, questions.length),
+    answers: questions.map((question, i) => ({ question, ok: results[i] })),
+  };
+};
+
 export function QuizPage({ quiz, onPlayingChange }) {
   const direct = DIRECT_MODES[quiz.kind];
   const chapterHref = href(`${quiz.subject.id}/${quiz.path.split("/")[1]}`);
   const backHref = quiz.back ? href(quiz.back) : chapterHref;
   const { stats } = useAccount();
-  const [mode, setMode] = useState(direct ?? "all");
-  const [round, setRound] = useState(() => (direct ? buildRound(quiz, direct, stats) : []));
-  const [view, setView] = useState(direct ? "game" : "menu");
-  const [lastGame, setLastGame] = useState(null);
+  const [saved] = useState(() => loadRound(quiz));
+  const savedDone = saved && saved.results.length === saved.questions.length;
+  const results = useRef(saved?.results ?? []);
+  const [mode, setMode] = useState(saved?.mode ?? direct ?? "all");
+  const [round, setRound] = useState(() => saved?.questions ?? (direct ? buildRound(quiz, direct, stats) : []));
+  const [view, setView] = useState(savedDone ? "result" : saved || direct ? "game" : "menu");
+  // The page died on the last answer, before "Dalej": all that was left to show is the result.
+  const [lastGame, setLastGame] = useState(() => (savedDone ? gameSummary(saved.questions, saved.results) : null));
 
   useEffect(() => onPlayingChange?.(view === "game"), [view]);
-  useEffect(() => () => onPlayingChange?.(false), []);
+  useEffect(() => () => {
+    onPlayingChange?.(false);
+    // Leaving through the app ends the round; a page that dies never gets here, so its round stays saved.
+    clearRound(quiz);
+  }, []);
+  useEffect(() => {
+    if (view !== "game") clearRound(quiz);
+    else if (round.length) saveRound(quiz, mode, round, results.current);
+  }, [view, round]);
 
   const empty = direct && view === "game" && !round.length;
   useEffect(() => {
@@ -43,6 +66,7 @@ export function QuizPage({ quiz, onPlayingChange }) {
   const start = (m) => {
     const questions = buildRound(quiz, m, stats);
     if (!questions.length) return;
+    results.current = [];
     setMode(m);
     setRound(questions);
     setView("game");
@@ -50,7 +74,11 @@ export function QuizPage({ quiz, onPlayingChange }) {
   };
 
   // Every answer trains the subchapter; a review also keeps its own progress.
-  const answer = (q, ok) => recordAnswer(quiz, q, ok);
+  const answer = (q, ok) => {
+    recordAnswer(quiz, q, ok);
+    results.current = [...results.current, ok];
+    saveRound(quiz, mode, round, results.current);
+  };
 
   const finish = ({ total: n, mistakes, answers }) => {
     setLastGame({ total: n, mistakes, stars: starsFor(mistakes, n), answers });
@@ -72,6 +100,7 @@ export function QuizPage({ quiz, onPlayingChange }) {
     return (
       <Game
         questions={round}
+        results={saved?.questions === round ? saved.results : undefined}
         sectionOf={sectionOf}
         onAnswer={answer}
         onFinish={finish}
