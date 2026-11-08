@@ -67,7 +67,9 @@ async function fetchStats(childId) {
 
 async function loadAccount() {
   const sb = await supabase();
-  const { data: { session } } = await sb.auth.getSession();
+  const { data: { session }, error: sessionError } = await sb.auth.getSession();
+  // A phone waking up has no network yet: the refresh fails, but the stored session is still good.
+  if (sessionError && storage.get(SESSION_KEY)) throw sessionError;
   if (!session) {
     set({ status: "guest", profile: null, kids: [], viewing: null, stats: loadStats() });
     return;
@@ -93,10 +95,13 @@ async function reload() {
 
 // Guests never load the Supabase client; a stored session means someone signed in on this device.
 export function startAccount() {
+  // A stored session on a "guest" means the page opened offline: the account comes back with the network.
+  const refresh = () => {
+    if (document.visibilityState === "visible" && (state.status !== "guest" || storage.get(SESSION_KEY))) reload();
+  };
   // Another device may have played in the meantime.
-  document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible" && state.status !== "guest") reload();
-  });
+  document.addEventListener("visibilitychange", refresh);
+  window.addEventListener("online", refresh);
   // A parent watching an open tab sees the child's newest answers on every page.
   window.addEventListener("hashchange", () => state.status === "parent" && state.viewing && reload());
 
