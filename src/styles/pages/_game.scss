@@ -107,6 +107,9 @@
   position: relative;
   overflow: hidden;
   @include stack(space(16));
+  justify-content: center;
+  // As tall as a two-line question on a phone; a lower card makes the radius look like a pill.
+  min-height: 126px;
   padding: space(16);
   @include outlined(radius(24), var(--c));
   background: var(--tint);
