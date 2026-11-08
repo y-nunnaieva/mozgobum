@@ -2,17 +2,20 @@ import { useMemo, useState } from "preact/hooks";
 import { shuffle } from "../game.js";
 import { checkPairs } from "./pairs.js";
 
-// One side gets the wider column once its texts are this many times longer.
+// One side gets the wider column once its texts or its longest word are this many times longer.
 const WIDE_RATIO = 1.5;
+
+export function wideClass(pairs) {
+  const chars = (side) => pairs.reduce((sum, p) => sum + p[side].length, 0);
+  const word = (side) => Math.max(...pairs.flatMap((p) => p[side].split(/[\s-]+/).map((w) => w.length)));
+  const longer = (a, b) => chars(a) >= chars(b) * WIDE_RATIO || word(a) >= word(b) * WIDE_RATIO;
+  return longer(1, 0) ? " pairs--wide-right" : longer(0, 1) ? " pairs--wide-left" : "";
+}
 
 export function PairsView({ question: q, onSubmit }) {
   const lefts = useMemo(() => shuffle(q.pairs.map((p) => p[0])), [q]);
   const rights = useMemo(() => shuffle(q.pairs.map((p) => p[1])), [q]);
-  const wide = useMemo(() => {
-    const chars = (side) => q.pairs.reduce((sum, p) => sum + p[side].length, 0);
-    const [left, right] = [chars(0), chars(1)];
-    return right >= left * WIDE_RATIO ? " pairs--wide-right" : left >= right * WIDE_RATIO ? " pairs--wide-left" : "";
-  }, [q]);
+  const wide = useMemo(() => wideClass(q.pairs), [q]);
   const [matched, setMatched] = useState({});
   const [active, setActive] = useState(null);
   const [done, setDone] = useState(false);

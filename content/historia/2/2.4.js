@@ -566,7 +566,7 @@ export default {
           level: 1,
           type: "pairs",
           q: "Połącz filozofa z tym, co o nim wiesz:",
-          pairs: [["Sokrates", "nauczyciel Platona"], ["Platon", "założył Akademię"], ["Arystoteles", "najwszechstronniejszy uczony"]],
+          pairs: [["Sokrates", "nauczyciel Platona"], ["Platon", "założył Akademię"], ["Arystoteles", "najbardziej wszechstronny uczony"]],
           explain: "Platon był uczniem Sokratesa i założył Akademię. Arystoteles był najwszechstronniejszym uczonym starożytności.",
         },
         {

@@ -119,10 +119,16 @@ $pair-colors: blue, yellow, green, red, teal, purple;
   }
 }
 
+// The narrower side never shrinks below its longest word, or its buttons would slide under
+// the other column. The other side takes the rest and breaks a word only as a last resort.
 .pairs {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(min-content, 1fr) minmax(0, 1fr);
   gap: space(12);
+
+  .pairs-col:last-child .answer {
+    overflow-wrap: anywhere;
+  }
 
   // No box here, so the sides are even.
   .answer {
@@ -131,11 +137,19 @@ $pair-colors: blue, yellow, green, red, teal, purple;
   }
 
   &.pairs--wide-left {
-    grid-template-columns: minmax(0, 62fr) minmax(0, 38fr);
+    grid-template-columns: minmax(0, 62fr) minmax(min-content, 38fr);
+
+    .pairs-col:first-child .answer {
+      overflow-wrap: anywhere;
+    }
+
+    .pairs-col:last-child .answer {
+      overflow-wrap: normal;
+    }
   }
 
   &.pairs--wide-right {
-    grid-template-columns: minmax(0, 38fr) minmax(0, 62fr);
+    grid-template-columns: minmax(min-content, 38fr) minmax(0, 62fr);
   }
 }
 
