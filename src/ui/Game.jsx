@@ -1,6 +1,7 @@
 import { useRef, useState } from "preact/hooks";
 import { createRound, currentQuestion, isFinished, submitAnswer } from "../game.js";
 import { quizName } from "../content.js";
+import { playAnswerSound, unlockSound } from "../sound.js";
 import { questionTypes } from "../types/index.js";
 import { Confirm } from "./Confirm.jsx";
 import { Icon } from "./Icon.jsx";
@@ -25,6 +26,7 @@ export function Game({ questions, sectionOf, onAnswer, onFinish, onExit, quiz })
     setStatus((m) => new Map(m).set(q, ok ? "ok" : "bad"));
     answers.current.set(q, ok);
     onAnswer(q, ok);
+    playAnswerSound(ok);
     requestAnimationFrame(() => nextRef.current?.focus({ preventScroll: true }));
   };
 
@@ -47,7 +49,8 @@ export function Game({ questions, sectionOf, onAnswer, onFinish, onExit, quiz })
   const exit = () => (attempt > 0 || result !== null ? setConfirmExit(true) : onExit());
 
   return (
-    <main class="view game">
+    // A typed answer sent with the phone keyboard may not count as a gesture, so any earlier tap unlocks the audio.
+    <main class="view game" onClick={unlockSound}>
       {quiz && (
         <div class="crumb">
           <Icon name={quiz.subject.glyph} class="pill-icon" />

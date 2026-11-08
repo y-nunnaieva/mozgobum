@@ -55,12 +55,30 @@
 }
 
 .theme-btn,
+.sound-btn,
 .side-stats {
   font-size: 2.2rem;
 }
 
+.sound-btn {
+  color: var(--c-ink);
+}
+
+.sound-btn--off {
+  color: var(--muted);
+}
+
 .theme-btn {
   color: var(--purple);
+}
+
+// On phones the theme lives in the drawer, leaving room in the top bar.
+.topbar .theme-btn {
+  display: none;
+
+  @include from(md) {
+    @include center;
+  }
 }
 
 .side-stats {

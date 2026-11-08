@@ -4,6 +4,7 @@ import { catalog } from "../catalog.js";
 import { STATS_ID, statsPath } from "../content.js";
 import { paletteVar } from "../palette.js";
 import { href, useHashPath } from "../router.js";
+import { useSound } from "../sound.js";
 import { useTheme } from "../theme.js";
 import {
   ACCOUNT_ID, ACCOUNT_PAGES, ChildAccountPage, LOGIN_ID, LoginPage, PARENT_ID, ParentPage, SIGNUP_ID, SignupPage, ViewingBar, accountHref,
@@ -20,6 +21,7 @@ import { SubjectPage } from "./SubjectPage.jsx";
 export function App() {
   const path = useHashPath();
   const [theme, toggleTheme] = useTheme();
+  const [soundOn, toggleSound] = useSound();
   const account = useAccount();
   const [drawerOpen, setDrawerOpen] = useState(false);
   // During a round the menus stay visible but dimmed and inert, so leaving goes through "Wyjdź".
@@ -86,6 +88,17 @@ export function App() {
     </button>
   );
 
+  const soundButton = (
+    <button
+      class={`icon-btn sound-btn${soundOn ? "" : " sound-btn--off"}`}
+      onClick={toggleSound}
+      aria-label={soundOn ? "Wyłącz dźwięk" : "Włącz dźwięk"}
+      title={soundOn ? "Wyłącz dźwięk" : "Włącz dźwięk"}
+    >
+      <Icon name={soundOn ? "volume_up" : "volume_off"} />
+    </button>
+  );
+
   const accountButton = (
     <a
       class={`icon-btn account-btn${account.status === "guest" ? "" : " account-btn--in"}${playing ? " account-btn--locked" : ""}`}
@@ -108,6 +121,7 @@ export function App() {
             <div class="topbar-actions">
               {accountButton}
               {themeButton}
+              {soundButton}
               <button
                 class={`icon-btn menu-btn${playing ? " menu-btn--locked" : ""}`}
                 disabled={playing}
@@ -138,6 +152,9 @@ export function App() {
             </div>
             <SubjectNav subjects={catalog.subjects} current={subject?.id} locked={playing} />
             <div class="side-foot">
+              <span class="side-md">{accountButton}</span>
+              {themeButton}
+              <span class="side-md">{soundButton}</span>
               {quiz && hasMenu(quiz) && (
                 <a
                   class={`icon-btn side-stats${playing ? " side-stats--locked" : ""}`}
@@ -149,7 +166,6 @@ export function App() {
                   <Icon name="bar_chart" />
                 </a>
               )}
-              <span class="side-md">{accountButton}{themeButton}</span>
             </div>
           </nav>
           {drawerOpen && <div class="drawer-backdrop" onClick={() => setDrawerOpen(false)} />}

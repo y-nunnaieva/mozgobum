@@ -54,6 +54,8 @@ import theaterComedySvg from "@material-symbols/svg-500/rounded/theater_comedy-f
 import translateSvg from "@material-symbols/svg-500/rounded/translate-fill.svg?raw";
 import visibilitySvg from "@material-symbols/svg-500/rounded/visibility-fill.svg?raw";
 import waterDropSvg from "@material-symbols/svg-500/rounded/water_drop-fill.svg?raw";
+import volumeOffSvg from "@material-symbols/svg-500/rounded/volume_off-fill.svg?raw";
+import volumeUpSvg from "@material-symbols/svg-500/rounded/volume_up-fill.svg?raw";
 import wavesSvg from "@material-symbols/svg-500/rounded/waves-fill.svg?raw";
 
 // Inlined SVGs instead of the icon font, which weighs several megabytes.
@@ -113,6 +115,8 @@ export const ICONS = {
   theater_comedy: theaterComedySvg,
   translate: translateSvg,
   visibility: visibilitySvg,
+  volume_off: volumeOffSvg,
+  volume_up: volumeUpSvg,
   water_drop: waterDropSvg,
   waves: wavesSvg,
 };

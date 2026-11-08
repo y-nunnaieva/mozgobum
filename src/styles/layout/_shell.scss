@@ -183,10 +183,6 @@
   @include row(space(12));
   margin-top: auto;
   padding-top: calc(#{space(80)} - #{space(12)});
-
-  &:empty {
-    display: none;
-  }
 }
 
 // Shown in the sidebar only from md; on phones these sit in the top bar.
