@@ -68,14 +68,14 @@ export default {
           "level": 1,
           "q": "Kiedy wykonujemy potęgowanie?",
           "correct": [
-            "Przed innymi działaniami (ale po nawiasach)"
+            "Przed innymi działaniami"
           ],
           "wrong": [
             "Na samym końcu",
             "Razem z dodawaniem",
             "Od lewej, jak wszystkie działania"
           ],
-          "explain": "Potęgowanie wykonujemy przed innymi działaniami: 5² − 2³ = 25 − 8 = 17."
+          "explain": "Potęgowanie wykonujemy przed innymi działaniami: 5² − 2³ = 25 − 8 = 17. Ale po nawiasach."
         },
         {
           "id": "0006",

@@ -201,7 +201,174 @@ export default {
           "wrong": [
             "Zabicie Minotaura"
           ],
-          "explain": "Minotaura zabił Tezeusz."
+          "explain": "Minotaura zabił Tezeusz.",
+          "variants": [
+            {
+              "correct": [
+                "Schwytanie byka kreteńskiego",
+                "Zabicie hydry lernejskiej",
+                "Oczyszczenie stajni Augiasza"
+              ],
+              "wrong": [
+                "Kradzież ognia"
+              ],
+              "explain": "Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Schwytanie byka kreteńskiego",
+                "Zabicie lwa z Nemei"
+              ],
+              "wrong": [
+                "Oślepienie cyklopa",
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Cyklopa oślepił Odyseusz. Kamień wtaczał Syzyf."
+            },
+            {
+              "correct": [
+                "Złapanie dzika erymantejskiego",
+                "Przepędzenie ptaków stymfalijskich",
+                "Zabicie hydry lernejskiej"
+              ],
+              "wrong": [
+                "Zabicie Minotaura"
+              ],
+              "explain": "Minotaura zabił Tezeusz."
+            },
+            {
+              "correct": [
+                "Przepędzenie ptaków stymfalijskich",
+                "Schwytanie łani cerynejskiej"
+              ],
+              "wrong": [
+                "Kradzież ognia",
+                "Oślepienie cyklopa"
+              ],
+              "explain": "Ogień ukradł Prometeusz. Cyklopa oślepił Odyseusz."
+            },
+            {
+              "correct": [
+                "Oczyszczenie stajni Augiasza",
+                "Przepędzenie ptaków stymfalijskich",
+                "Złapanie dzika erymantejskiego"
+              ],
+              "wrong": [
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Kamień wtaczał Syzyf."
+            },
+            {
+              "correct": [
+                "Uprowadzenie byków Geriona",
+                "Zabicie hydry lernejskiej"
+              ],
+              "wrong": [
+                "Wtaczanie kamienia na górę",
+                "Zabicie Minotaura"
+              ],
+              "explain": "Kamień wtaczał Syzyf. Minotaura zabił Tezeusz."
+            },
+            {
+              "correct": [
+                "Złapanie dzika erymantejskiego",
+                "Zabicie hydry lernejskiej",
+                "Oczyszczenie stajni Augiasza"
+              ],
+              "wrong": [
+                "Oślepienie cyklopa"
+              ],
+              "explain": "Cyklopa oślepił Odyseusz."
+            },
+            {
+              "correct": [
+                "Uprowadzenie byków Geriona",
+                "Schwytanie byka kreteńskiego"
+              ],
+              "wrong": [
+                "Oślepienie cyklopa",
+                "Kradzież ognia"
+              ],
+              "explain": "Cyklopa oślepił Odyseusz. Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Zabicie lwa z Nemei",
+                "Przyniesienie jabłek Hesperyd",
+                "Przepędzenie ptaków stymfalijskich"
+              ],
+              "wrong": [
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Kamień wtaczał Syzyf."
+            },
+            {
+              "correct": [
+                "Zabicie lwa z Nemei",
+                "Zabicie hydry lernejskiej"
+              ],
+              "wrong": [
+                "Oślepienie cyklopa",
+                "Zabicie Minotaura"
+              ],
+              "explain": "Cyklopa oślepił Odyseusz. Minotaura zabił Tezeusz."
+            },
+            {
+              "correct": [
+                "Uprowadzenie byków Geriona",
+                "Przyprowadzenie klaczy Diomedesa",
+                "Przyniesienie jabłek Hesperyd"
+              ],
+              "wrong": [
+                "Kradzież ognia"
+              ],
+              "explain": "Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Przepędzenie ptaków stymfalijskich",
+                "Oczyszczenie stajni Augiasza"
+              ],
+              "wrong": [
+                "Oślepienie cyklopa",
+                "Kradzież ognia"
+              ],
+              "explain": "Cyklopa oślepił Odyseusz. Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Złapanie dzika erymantejskiego",
+                "Przyniesienie jabłek Hesperyd",
+                "Przyprowadzenie klaczy Diomedesa"
+              ],
+              "wrong": [
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Kamień wtaczał Syzyf."
+            },
+            {
+              "correct": [
+                "Zabicie hydry lernejskiej",
+                "Uprowadzenie byków Geriona"
+              ],
+              "wrong": [
+                "Kradzież ognia",
+                "Oślepienie cyklopa"
+              ],
+              "explain": "Ogień ukradł Prometeusz. Cyklopa oślepił Odyseusz."
+            },
+            {
+              "correct": [
+                "Przyprowadzenie klaczy Diomedesa",
+                "Schwytanie byka kreteńskiego",
+                "Złapanie dzika erymantejskiego"
+              ],
+              "wrong": [
+                "Oślepienie cyklopa"
+              ],
+              "explain": "Cyklopa oślepił Odyseusz."
+            }
+          ]
         },
         {
           "id": "0014",
@@ -215,7 +382,174 @@ export default {
           "wrong": [
             "Oślepienie cyklopa"
           ],
-          "explain": "Cyklopa oślepił Odyseusz."
+          "explain": "Cyklopa oślepił Odyseusz.",
+          "variants": [
+            {
+              "correct": [
+                "Złapanie dzika erymantejskiego",
+                "Zabicie hydry lernejskiej",
+                "Uprowadzenie byków Geriona"
+              ],
+              "wrong": [
+                "Kradzież ognia"
+              ],
+              "explain": "Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Zabicie hydry lernejskiej",
+                "Przyniesienie jabłek Hesperyd"
+              ],
+              "wrong": [
+                "Zabicie Minotaura",
+                "Kradzież ognia"
+              ],
+              "explain": "Minotaura zabił Tezeusz. Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Zabicie lwa z Nemei",
+                "Przepędzenie ptaków stymfalijskich",
+                "Zabicie hydry lernejskiej"
+              ],
+              "wrong": [
+                "Zabicie Minotaura"
+              ],
+              "explain": "Minotaura zabił Tezeusz."
+            },
+            {
+              "correct": [
+                "Zabicie lwa z Nemei",
+                "Przepędzenie ptaków stymfalijskich"
+              ],
+              "wrong": [
+                "Oślepienie cyklopa",
+                "Kradzież ognia"
+              ],
+              "explain": "Cyklopa oślepił Odyseusz. Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Zabicie lwa z Nemei",
+                "Zdobycie pasa Hipolity",
+                "Zabicie hydry lernejskiej"
+              ],
+              "wrong": [
+                "Kradzież ognia"
+              ],
+              "explain": "Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Zdobycie pasa Hipolity",
+                "Złapanie dzika erymantejskiego"
+              ],
+              "wrong": [
+                "Zabicie Minotaura",
+                "Kradzież ognia"
+              ],
+              "explain": "Minotaura zabił Tezeusz. Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Zabicie lwa z Nemei",
+                "Przepędzenie ptaków stymfalijskich",
+                "Przyprowadzenie klaczy Diomedesa"
+              ],
+              "wrong": [
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Kamień wtaczał Syzyf."
+            },
+            {
+              "correct": [
+                "Przyprowadzenie klaczy Diomedesa",
+                "Zabicie hydry lernejskiej"
+              ],
+              "wrong": [
+                "Kradzież ognia",
+                "Oślepienie cyklopa"
+              ],
+              "explain": "Ogień ukradł Prometeusz. Cyklopa oślepił Odyseusz."
+            },
+            {
+              "correct": [
+                "Zdobycie pasa Hipolity",
+                "Zabicie hydry lernejskiej",
+                "Zabicie lwa z Nemei"
+              ],
+              "wrong": [
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Kamień wtaczał Syzyf."
+            },
+            {
+              "correct": [
+                "Uprowadzenie byków Geriona",
+                "Zdobycie pasa Hipolity"
+              ],
+              "wrong": [
+                "Oślepienie cyklopa",
+                "Kradzież ognia"
+              ],
+              "explain": "Cyklopa oślepił Odyseusz. Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Schwytanie łani cerynejskiej",
+                "Uprowadzenie byków Geriona",
+                "Przyniesienie jabłek Hesperyd"
+              ],
+              "wrong": [
+                "Zabicie Minotaura"
+              ],
+              "explain": "Minotaura zabił Tezeusz."
+            },
+            {
+              "correct": [
+                "Oczyszczenie stajni Augiasza",
+                "Schwytanie byka kreteńskiego"
+              ],
+              "wrong": [
+                "Wtaczanie kamienia na górę",
+                "Oślepienie cyklopa"
+              ],
+              "explain": "Kamień wtaczał Syzyf. Cyklopa oślepił Odyseusz."
+            },
+            {
+              "correct": [
+                "Zdobycie pasa Hipolity",
+                "Przyniesienie jabłek Hesperyd",
+                "Oczyszczenie stajni Augiasza"
+              ],
+              "wrong": [
+                "Kradzież ognia"
+              ],
+              "explain": "Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Zdobycie pasa Hipolity",
+                "Oczyszczenie stajni Augiasza"
+              ],
+              "wrong": [
+                "Oślepienie cyklopa",
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Cyklopa oślepił Odyseusz. Kamień wtaczał Syzyf."
+            },
+            {
+              "correct": [
+                "Przepędzenie ptaków stymfalijskich",
+                "Oczyszczenie stajni Augiasza",
+                "Schwytanie łani cerynejskiej"
+              ],
+              "wrong": [
+                "Kradzież ognia"
+              ],
+              "explain": "Ogień ukradł Prometeusz."
+            }
+          ]
         },
         {
           "id": "0015",
@@ -229,7 +563,174 @@ export default {
           "wrong": [
             "Kradzież ognia"
           ],
-          "explain": "Ogień ukradł Prometeusz."
+          "explain": "Ogień ukradł Prometeusz.",
+          "variants": [
+            {
+              "correct": [
+                "Zdobycie pasa Hipolity",
+                "Schwytanie łani cerynejskiej",
+                "Przepędzenie ptaków stymfalijskich"
+              ],
+              "wrong": [
+                "Kradzież ognia"
+              ],
+              "explain": "Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Przyniesienie jabłek Hesperyd",
+                "Zabicie hydry lernejskiej"
+              ],
+              "wrong": [
+                "Oślepienie cyklopa",
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Cyklopa oślepił Odyseusz. Kamień wtaczał Syzyf."
+            },
+            {
+              "correct": [
+                "Złapanie dzika erymantejskiego",
+                "Zdobycie pasa Hipolity",
+                "Przyniesienie jabłek Hesperyd"
+              ],
+              "wrong": [
+                "Oślepienie cyklopa"
+              ],
+              "explain": "Cyklopa oślepił Odyseusz."
+            },
+            {
+              "correct": [
+                "Zdobycie pasa Hipolity",
+                "Złapanie dzika erymantejskiego"
+              ],
+              "wrong": [
+                "Zabicie Minotaura",
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Minotaura zabił Tezeusz. Kamień wtaczał Syzyf."
+            },
+            {
+              "correct": [
+                "Przyprowadzenie klaczy Diomedesa",
+                "Zdobycie pasa Hipolity",
+                "Przepędzenie ptaków stymfalijskich"
+              ],
+              "wrong": [
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Kamień wtaczał Syzyf."
+            },
+            {
+              "correct": [
+                "Przepędzenie ptaków stymfalijskich",
+                "Schwytanie łani cerynejskiej"
+              ],
+              "wrong": [
+                "Oślepienie cyklopa",
+                "Kradzież ognia"
+              ],
+              "explain": "Cyklopa oślepił Odyseusz. Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Oczyszczenie stajni Augiasza",
+                "Zdobycie pasa Hipolity",
+                "Zabicie hydry lernejskiej"
+              ],
+              "wrong": [
+                "Kradzież ognia"
+              ],
+              "explain": "Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Zabicie lwa z Nemei",
+                "Uprowadzenie byków Geriona"
+              ],
+              "wrong": [
+                "Kradzież ognia",
+                "Zabicie Minotaura"
+              ],
+              "explain": "Ogień ukradł Prometeusz. Minotaura zabił Tezeusz."
+            },
+            {
+              "correct": [
+                "Schwytanie łani cerynejskiej",
+                "Schwytanie byka kreteńskiego",
+                "Przyprowadzenie klaczy Diomedesa"
+              ],
+              "wrong": [
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Kamień wtaczał Syzyf."
+            },
+            {
+              "correct": [
+                "Przyniesienie jabłek Hesperyd",
+                "Schwytanie byka kreteńskiego"
+              ],
+              "wrong": [
+                "Kradzież ognia",
+                "Zabicie Minotaura"
+              ],
+              "explain": "Ogień ukradł Prometeusz. Minotaura zabił Tezeusz."
+            },
+            {
+              "correct": [
+                "Uprowadzenie byków Geriona",
+                "Zabicie lwa z Nemei",
+                "Złapanie dzika erymantejskiego"
+              ],
+              "wrong": [
+                "Zabicie Minotaura"
+              ],
+              "explain": "Minotaura zabił Tezeusz."
+            },
+            {
+              "correct": [
+                "Złapanie dzika erymantejskiego",
+                "Uprowadzenie byków Geriona"
+              ],
+              "wrong": [
+                "Kradzież ognia",
+                "Oślepienie cyklopa"
+              ],
+              "explain": "Ogień ukradł Prometeusz. Cyklopa oślepił Odyseusz."
+            },
+            {
+              "correct": [
+                "Schwytanie byka kreteńskiego",
+                "Zabicie hydry lernejskiej",
+                "Zdobycie pasa Hipolity"
+              ],
+              "wrong": [
+                "Zabicie Minotaura"
+              ],
+              "explain": "Minotaura zabił Tezeusz."
+            },
+            {
+              "correct": [
+                "Przyniesienie jabłek Hesperyd",
+                "Schwytanie byka kreteńskiego"
+              ],
+              "wrong": [
+                "Kradzież ognia",
+                "Oślepienie cyklopa"
+              ],
+              "explain": "Ogień ukradł Prometeusz. Cyklopa oślepił Odyseusz."
+            },
+            {
+              "correct": [
+                "Złapanie dzika erymantejskiego",
+                "Zdobycie pasa Hipolity",
+                "Zabicie lwa z Nemei"
+              ],
+              "wrong": [
+                "Zabicie Minotaura"
+              ],
+              "explain": "Minotaura zabił Tezeusz."
+            }
+          ]
         },
         {
           "id": "0016",
@@ -243,7 +744,174 @@ export default {
           "wrong": [
             "Wtaczanie kamienia na górę"
           ],
-          "explain": "Kamień wtaczał Syzyf."
+          "explain": "Kamień wtaczał Syzyf.",
+          "variants": [
+            {
+              "correct": [
+                "Zabicie lwa z Nemei",
+                "Oczyszczenie stajni Augiasza",
+                "Zabicie hydry lernejskiej"
+              ],
+              "wrong": [
+                "Kradzież ognia"
+              ],
+              "explain": "Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Przyniesienie jabłek Hesperyd",
+                "Zabicie hydry lernejskiej"
+              ],
+              "wrong": [
+                "Oślepienie cyklopa",
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Cyklopa oślepił Odyseusz. Kamień wtaczał Syzyf."
+            },
+            {
+              "correct": [
+                "Przyprowadzenie klaczy Diomedesa",
+                "Schwytanie łani cerynejskiej",
+                "Uprowadzenie byków Geriona"
+              ],
+              "wrong": [
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Kamień wtaczał Syzyf."
+            },
+            {
+              "correct": [
+                "Przyprowadzenie klaczy Diomedesa",
+                "Zabicie hydry lernejskiej"
+              ],
+              "wrong": [
+                "Kradzież ognia",
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Ogień ukradł Prometeusz. Kamień wtaczał Syzyf."
+            },
+            {
+              "correct": [
+                "Uprowadzenie byków Geriona",
+                "Zabicie hydry lernejskiej",
+                "Zabicie lwa z Nemei"
+              ],
+              "wrong": [
+                "Kradzież ognia"
+              ],
+              "explain": "Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Zabicie hydry lernejskiej",
+                "Przyniesienie jabłek Hesperyd"
+              ],
+              "wrong": [
+                "Oślepienie cyklopa",
+                "Kradzież ognia"
+              ],
+              "explain": "Cyklopa oślepił Odyseusz. Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Schwytanie byka kreteńskiego",
+                "Uprowadzenie byków Geriona",
+                "Zdobycie pasa Hipolity"
+              ],
+              "wrong": [
+                "Kradzież ognia"
+              ],
+              "explain": "Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Zdobycie pasa Hipolity",
+                "Schwytanie łani cerynejskiej"
+              ],
+              "wrong": [
+                "Kradzież ognia",
+                "Zabicie Minotaura"
+              ],
+              "explain": "Ogień ukradł Prometeusz. Minotaura zabił Tezeusz."
+            },
+            {
+              "correct": [
+                "Przyprowadzenie klaczy Diomedesa",
+                "Zdobycie pasa Hipolity",
+                "Złapanie dzika erymantejskiego"
+              ],
+              "wrong": [
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Kamień wtaczał Syzyf."
+            },
+            {
+              "correct": [
+                "Zabicie lwa z Nemei",
+                "Przyniesienie jabłek Hesperyd"
+              ],
+              "wrong": [
+                "Kradzież ognia",
+                "Zabicie Minotaura"
+              ],
+              "explain": "Ogień ukradł Prometeusz. Minotaura zabił Tezeusz."
+            },
+            {
+              "correct": [
+                "Schwytanie byka kreteńskiego",
+                "Zabicie hydry lernejskiej",
+                "Schwytanie łani cerynejskiej"
+              ],
+              "wrong": [
+                "Kradzież ognia"
+              ],
+              "explain": "Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Uprowadzenie byków Geriona",
+                "Przyprowadzenie klaczy Diomedesa"
+              ],
+              "wrong": [
+                "Zabicie Minotaura",
+                "Oślepienie cyklopa"
+              ],
+              "explain": "Minotaura zabił Tezeusz. Cyklopa oślepił Odyseusz."
+            },
+            {
+              "correct": [
+                "Schwytanie łani cerynejskiej",
+                "Schwytanie byka kreteńskiego",
+                "Uprowadzenie byków Geriona"
+              ],
+              "wrong": [
+                "Kradzież ognia"
+              ],
+              "explain": "Ogień ukradł Prometeusz."
+            },
+            {
+              "correct": [
+                "Schwytanie łani cerynejskiej",
+                "Przyniesienie jabłek Hesperyd"
+              ],
+              "wrong": [
+                "Kradzież ognia",
+                "Zabicie Minotaura"
+              ],
+              "explain": "Ogień ukradł Prometeusz. Minotaura zabił Tezeusz."
+            },
+            {
+              "correct": [
+                "Przyprowadzenie klaczy Diomedesa",
+                "Schwytanie łani cerynejskiej",
+                "Złapanie dzika erymantejskiego"
+              ],
+              "wrong": [
+                "Wtaczanie kamienia na górę"
+              ],
+              "explain": "Kamień wtaczał Syzyf."
+            }
+          ]
         }
       ]
     },

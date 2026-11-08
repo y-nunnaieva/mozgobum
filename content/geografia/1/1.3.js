@@ -106,9 +106,9 @@ export default {
         {
           id: "0011",
           q: "W czym wyrażone są wysokości na mapie poziomicowej?",
-          correct: ["W metrach nad poziomem morza (m n.p.m.)"],
+          correct: ["W metrach nad poziomem morza"],
           wrong: ["W centymetrach", "W kilometrach", "W metrach od podnóża wzniesienia"],
-          explain: "Wysokości na mapie poziomicowej podaje się w metrach nad poziomem morza.",
+          explain: "Wysokości na mapie poziomicowej podaje się w metrach nad poziomem morza. M n.p.m.",
         },
         {
           id: "0012",
@@ -265,6 +265,7 @@ export default {
         },
         {
           id: "0024",
+          variants: [{"q":"Punkt leży dokładnie na poziomicy 150. Jaka jest jego wysokość bezwzględna?","correct":["150 m n.p.m."],"wrong":["150 m","200 m n.p.m.","Nie da się tego odczytać"]},{"q":"Punkt leży dokładnie na poziomicy 200. Jaka jest jego wysokość bezwzględna?","correct":["200 m n.p.m."],"wrong":["200 m","250 m n.p.m.","Nie da się tego odczytać"]},{"q":"Punkt leży dokładnie na poziomicy 300. Jaka jest jego wysokość bezwzględna?","correct":["300 m n.p.m."],"wrong":["300 m","350 m n.p.m.","Nie da się tego odczytać"]},{"q":"Punkt leży dokładnie na poziomicy 350. Jaka jest jego wysokość bezwzględna?","correct":["350 m n.p.m."],"wrong":["350 m","400 m n.p.m.","Nie da się tego odczytać"]},{"q":"Punkt leży dokładnie na poziomicy 500. Jaka jest jego wysokość bezwzględna?","correct":["500 m n.p.m."],"wrong":["500 m","550 m n.p.m.","Nie da się tego odczytać"]},{"q":"Punkt leży dokładnie na poziomicy 600. Jaka jest jego wysokość bezwzględna?","correct":["600 m n.p.m."],"wrong":["600 m","650 m n.p.m.","Nie da się tego odczytać"]},{"q":"Punkt leży dokładnie na poziomicy 750. Jaka jest jego wysokość bezwzględna?","correct":["750 m n.p.m."],"wrong":["750 m","800 m n.p.m.","Nie da się tego odczytać"]},{"q":"Punkt leży dokładnie na poziomicy 900. Jaka jest jego wysokość bezwzględna?","correct":["900 m n.p.m."],"wrong":["900 m","950 m n.p.m.","Nie da się tego odczytać"]}], // variants: generated
           group: "na-poziomicy",
           q: "Punkt leży dokładnie na poziomicy 450. Jaka jest jego wysokość bezwzględna?",
           correct: ["450 m n.p.m."],
@@ -273,6 +274,7 @@ export default {
         },
         {
           id: "0025",
+          variants: [{"q":"Punkt leży między poziomicami 150 i 200. Jaka może być jego przybliżona wysokość?","correct":["180 m n.p.m."],"wrong":["100 m n.p.m.","220 m n.p.m.","250 m n.p.m."],"explain":"Podajemy wartość pośrednią między sąsiednimi poziomicami, np. 180 m n.p.m."},{"q":"Punkt leży między poziomicami 200 i 250. Jaka może być jego przybliżona wysokość?","correct":["230 m n.p.m."],"wrong":["150 m n.p.m.","270 m n.p.m.","300 m n.p.m."],"explain":"Podajemy wartość pośrednią między sąsiednimi poziomicami, np. 230 m n.p.m."},{"q":"Punkt leży między poziomicami 300 i 350. Jaka może być jego przybliżona wysokość?","correct":["320 m n.p.m."],"wrong":["250 m n.p.m.","370 m n.p.m.","400 m n.p.m."],"explain":"Podajemy wartość pośrednią między sąsiednimi poziomicami, np. 320 m n.p.m."},{"q":"Punkt leży między poziomicami 450 i 500. Jaka może być jego przybliżona wysokość?","correct":["470 m n.p.m."],"wrong":["400 m n.p.m.","520 m n.p.m.","550 m n.p.m."],"explain":"Podajemy wartość pośrednią między sąsiednimi poziomicami, np. 470 m n.p.m."},{"q":"Punkt leży między poziomicami 500 i 550. Jaka może być jego przybliżona wysokość?","correct":["530 m n.p.m."],"wrong":["450 m n.p.m.","570 m n.p.m.","600 m n.p.m."],"explain":"Podajemy wartość pośrednią między sąsiednimi poziomicami, np. 530 m n.p.m."},{"q":"Punkt leży między poziomicami 600 i 650. Jaka może być jego przybliżona wysokość?","correct":["620 m n.p.m."],"wrong":["550 m n.p.m.","670 m n.p.m.","700 m n.p.m."],"explain":"Podajemy wartość pośrednią między sąsiednimi poziomicami, np. 620 m n.p.m."},{"q":"Punkt leży między poziomicami 700 i 750. Jaka może być jego przybliżona wysokość?","correct":["730 m n.p.m."],"wrong":["650 m n.p.m.","770 m n.p.m.","800 m n.p.m."],"explain":"Podajemy wartość pośrednią między sąsiednimi poziomicami, np. 730 m n.p.m."}], // variants: generated
           level: 3,
           q: "Punkt leży między poziomicami 350 i 400. Jaka może być jego przybliżona wysokość?",
           correct: ["380 m n.p.m."],
@@ -293,6 +295,7 @@ export default {
         },
         {
           id: "0027",
+          variants: [{"q":"Szczyt ma 850 m n.p.m., a dno doliny 300 m n.p.m. Jaka jest wysokość względna szczytu nad doliną?","correct":["550 m"],"wrong":["1 150 m","550 m n.p.m.","850 m"],"explain":"850 – 300 = 550. Wysokość względną zapisujemy w metrach, bez n.p.m."},{"q":"Szczyt ma 640 m n.p.m., a dno doliny 150 m n.p.m. Jaka jest wysokość względna szczytu nad doliną?","correct":["490 m"],"wrong":["790 m","490 m n.p.m.","640 m"],"explain":"640 – 150 = 490. Wysokość względną zapisujemy w metrach, bez n.p.m."},{"q":"Szczyt ma 930 m n.p.m., a dno doliny 410 m n.p.m. Jaka jest wysokość względna szczytu nad doliną?","correct":["520 m"],"wrong":["1 340 m","520 m n.p.m.","930 m"],"explain":"930 – 410 = 520. Wysokość względną zapisujemy w metrach, bez n.p.m."},{"q":"Szczyt ma 1 200 m n.p.m., a dno doliny 700 m n.p.m. Jaka jest wysokość względna szczytu nad doliną?","correct":["500 m"],"wrong":["1 900 m","500 m n.p.m.","1 200 m"],"explain":"1 200 – 700 = 500. Wysokość względną zapisujemy w metrach, bez n.p.m."},{"q":"Szczyt ma 560 m n.p.m., a dno doliny 120 m n.p.m. Jaka jest wysokość względna szczytu nad doliną?","correct":["440 m"],"wrong":["680 m","440 m n.p.m.","560 m"],"explain":"560 – 120 = 440. Wysokość względną zapisujemy w metrach, bez n.p.m."},{"q":"Szczyt ma 780 m n.p.m., a dno doliny 350 m n.p.m. Jaka jest wysokość względna szczytu nad doliną?","correct":["430 m"],"wrong":["1 130 m","430 m n.p.m.","780 m"],"explain":"780 – 350 = 430. Wysokość względną zapisujemy w metrach, bez n.p.m."},{"q":"Szczyt ma 1 050 m n.p.m., a dno doliny 600 m n.p.m. Jaka jest wysokość względna szczytu nad doliną?","correct":["450 m"],"wrong":["1 650 m","450 m n.p.m.","1 050 m"],"explain":"1 050 – 600 = 450. Wysokość względną zapisujemy w metrach, bez n.p.m."}], // variants: generated
           level: 3,
           q: "Szczyt ma 720 m n.p.m., a dno doliny 200 m n.p.m. Jaka jest wysokość względna szczytu nad doliną?",
           correct: ["520 m"],

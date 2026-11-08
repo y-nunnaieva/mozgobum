@@ -453,9 +453,9 @@ export default {
         {
           id: "0056",
           q: "Na czym zapisywano imiona podczas ostracyzmu?",
-          correct: ["Na glinianych skorupkach (ostrakonach)"],
+          correct: ["Na glinianych skorupkach"],
           wrong: ["Na papirusie", "Na woskowych tabliczkach", "Na liściach oliwnych"],
-          explain: "Imiona pisano na glinianych skorupkach zwanych ostrakonami – stąd nazwa „ostracyzm”.",
+          explain: "Imiona pisano na glinianych skorupkach zwanych ostrakonami – stąd nazwa „ostracyzm”. Ostrakonach.",
         },
         {
           id: "0057",

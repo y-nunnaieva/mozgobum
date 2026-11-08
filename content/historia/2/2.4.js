@@ -322,9 +322,9 @@ export default {
           id: "0039",
           level: 3,
           q: "Kto grał w starożytnym teatrze greckim?",
-          correct: ["Wyłącznie mężczyźni – także w rolach kobiecych"],
+          correct: ["Wyłącznie mężczyźni"],
           wrong: ["Mężczyźni i kobiety", "Tylko kobiety", "Dzieci"],
-          explain: "W sztukach grali tylko mężczyźni. Role kobiece też grali mężczyźni w kostiumach, maskach i perukach.",
+          explain: "W sztukach grali tylko mężczyźni. Role kobiece też grali mężczyźni w kostiumach, maskach i perukach. Także w rolach kobiecych.",
         },
         {
           id: "0040",

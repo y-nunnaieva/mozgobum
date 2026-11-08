@@ -119,9 +119,9 @@ export default {
         {
           id: "0014",
           q: "Dlaczego między delfinami, lisami i nietoperzami jest wiele podobieństw?",
-          correct: ["Bo są bliskimi „krewnymi” – mają wspólnego przodka"],
+          correct: ["Bo są bliskimi „krewnymi”"],
           wrong: ["Bo żyją w tym samym środowisku", "Bo wszystkie potrafią latać", "Bo wszystkie są rybami"],
-          explain: "Delfiny, lisy i nietoperze są bliskimi „krewnymi”. Ich wspólnym przodkiem był gatunek zwierzęcia żyjący przed milionami lat.",
+          explain: "Delfiny, lisy i nietoperze są bliskimi „krewnymi”. Ich wspólnym przodkiem był gatunek zwierzęcia żyjący przed milionami lat. Mają wspólnego przodka.",
         },
         {
           id: "0015",
@@ -182,7 +182,7 @@ export default {
           id: "0021",
           level: 1,
           q: "Czemu w drzewie życia odpowiadają gałęzie wyrastające z pnia?",
-          correct: ["Królestwom – największym grupom organizmów"],
+          correct: ["Królestwom"],
           wrong: ["Pojedynczym gatunkom", "Narządom", "Komórkom"],
           explain: "Gałęzie odpowiadają największym grupom organizmów – królestwom. Wyrastające z nich cienkie gałązki to kolejne, mniejsze grupy.",
         },

@@ -76,14 +76,14 @@ export default {
           "id": "0006",
           "q": "Do czego służy „there is / there are”?",
           "correct": [
-            "Mówimy, że coś gdzieś jest (albo czego nie ma)"
+            "Mówimy, że coś gdzieś jest"
           ],
           "wrong": [
             "Mówimy, co mamy",
             "Pytamy o imię",
             "Mówimy o pogodzie"
           ],
-          "explain": "There is a garage in the garden. – W ogrodzie jest garaż."
+          "explain": "There is a garage in the garden. – W ogrodzie jest garaż. Albo czego nie ma."
         },
         {
           "id": "0007",

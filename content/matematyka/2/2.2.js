@@ -107,14 +107,14 @@ export default {
           "id": "0008",
           "q": "Czy NWD liczb 15 i 27 może być większy od 15?",
           "correct": [
-            "Nie – dzielnik liczby nie może być większy od niej samej"
+            "Nie"
           ],
           "wrong": [
             "Tak",
             "Tylko gdy obie są nieparzyste",
             "Zawsze jest równy 27"
           ],
-          "explain": "NWD(15, 27) = 3. Wspólny dzielnik nie przekroczy mniejszej z liczb."
+          "explain": "NWD(15, 27) = 3. Wspólny dzielnik nie przekroczy mniejszej z liczb. Dzielnik liczby nie może być większy od niej samej."
         },
         {
           "id": "0009",
@@ -129,7 +129,204 @@ export default {
             "10",
             "8"
           ],
-          "explain": "3, 2 dzielą 18 bez reszty. Wszystkie dzielniki 18: 1, 2, 3, 6, 9, 18."
+          "explain": "3, 2 dzielą 18 bez reszty. Wszystkie dzielniki 18: 1, 2, 3, 6, 9, 18.",
+          "variants": [
+            {
+              "correct": [
+                "1",
+                "3"
+              ],
+              "wrong": [
+                "4",
+                "15",
+                "36",
+                "11"
+              ],
+              "explain": "1, 3 dzielą 18 bez reszty."
+            },
+            {
+              "correct": [
+                "18",
+                "6",
+                "9"
+              ],
+              "wrong": [
+                "5",
+                "12",
+                "15"
+              ],
+              "explain": "18, 6, 9 dzielą 18 bez reszty."
+            },
+            {
+              "correct": [
+                "18",
+                "2",
+                "6",
+                "9"
+              ],
+              "wrong": [
+                "7",
+                "12"
+              ],
+              "explain": "18, 2, 6, 9 dzielą 18 bez reszty."
+            },
+            {
+              "correct": [
+                "3",
+                "18"
+              ],
+              "wrong": [
+                "10",
+                "14",
+                "15",
+                "36"
+              ],
+              "explain": "3, 18 dzielą 18 bez reszty."
+            },
+            {
+              "correct": [
+                "3",
+                "6",
+                "2"
+              ],
+              "wrong": [
+                "5",
+                "13",
+                "4"
+              ],
+              "explain": "3, 6, 2 dzielą 18 bez reszty."
+            },
+            {
+              "correct": [
+                "9",
+                "6",
+                "3",
+                "1"
+              ],
+              "wrong": [
+                "11",
+                "16"
+              ],
+              "explain": "9, 6, 3, 1 dzielą 18 bez reszty."
+            },
+            {
+              "correct": [
+                "9",
+                "3"
+              ],
+              "wrong": [
+                "13",
+                "36",
+                "16",
+                "7"
+              ],
+              "explain": "9, 3 dzielą 18 bez reszty."
+            },
+            {
+              "correct": [
+                "18",
+                "6",
+                "2"
+              ],
+              "wrong": [
+                "10",
+                "13",
+                "4"
+              ],
+              "explain": "18, 6, 2 dzielą 18 bez reszty."
+            },
+            {
+              "correct": [
+                "3",
+                "2",
+                "1",
+                "6"
+              ],
+              "wrong": [
+                "10",
+                "16"
+              ],
+              "explain": "3, 2, 1, 6 dzielą 18 bez reszty."
+            },
+            {
+              "correct": [
+                "18",
+                "6"
+              ],
+              "wrong": [
+                "8",
+                "4",
+                "16",
+                "11"
+              ],
+              "explain": "18, 6 dzielą 18 bez reszty."
+            },
+            {
+              "correct": [
+                "2",
+                "9",
+                "6"
+              ],
+              "wrong": [
+                "16",
+                "7",
+                "13"
+              ],
+              "explain": "2, 9, 6 dzielą 18 bez reszty."
+            },
+            {
+              "correct": [
+                "3",
+                "18",
+                "6",
+                "9"
+              ],
+              "wrong": [
+                "36",
+                "11"
+              ],
+              "explain": "3, 18, 6, 9 dzielą 18 bez reszty."
+            },
+            {
+              "correct": [
+                "1",
+                "2"
+              ],
+              "wrong": [
+                "10",
+                "14",
+                "4",
+                "12"
+              ],
+              "explain": "1, 2 dzielą 18 bez reszty."
+            },
+            {
+              "correct": [
+                "3",
+                "2",
+                "1"
+              ],
+              "wrong": [
+                "14",
+                "17",
+                "16"
+              ],
+              "explain": "3, 2, 1 dzielą 18 bez reszty."
+            },
+            {
+              "correct": [
+                "18",
+                "3",
+                "9",
+                "2"
+              ],
+              "wrong": [
+                "13",
+                "8"
+              ],
+              "explain": "18, 3, 9, 2 dzielą 18 bez reszty."
+            }
+          ]
         },
         {
           "id": "0010",
@@ -144,7 +341,204 @@ export default {
             "11",
             "13"
           ],
-          "explain": "9, 3, 2 dzielą 36 bez reszty. Wszystkie dzielniki 36: 1, 2, 3, 4, 6, 9, 12, 18, 36."
+          "explain": "9, 3, 2 dzielą 36 bez reszty. Wszystkie dzielniki 36: 1, 2, 3, 4, 6, 9, 12, 18, 36.",
+          "variants": [
+            {
+              "correct": [
+                "2",
+                "12"
+              ],
+              "wrong": [
+                "15",
+                "16",
+                "11",
+                "21"
+              ],
+              "explain": "2, 12 dzielą 36 bez reszty."
+            },
+            {
+              "correct": [
+                "12",
+                "6",
+                "3"
+              ],
+              "wrong": [
+                "15",
+                "5",
+                "19"
+              ],
+              "explain": "12, 6, 3 dzielą 36 bez reszty."
+            },
+            {
+              "correct": [
+                "4",
+                "36",
+                "3",
+                "9"
+              ],
+              "wrong": [
+                "19",
+                "11"
+              ],
+              "explain": "4, 36, 3, 9 dzielą 36 bez reszty."
+            },
+            {
+              "correct": [
+                "36",
+                "12"
+              ],
+              "wrong": [
+                "27",
+                "8",
+                "11",
+                "20"
+              ],
+              "explain": "36, 12 dzielą 36 bez reszty."
+            },
+            {
+              "correct": [
+                "1",
+                "3",
+                "6"
+              ],
+              "wrong": [
+                "26",
+                "72",
+                "11"
+              ],
+              "explain": "1, 3, 6 dzielą 36 bez reszty."
+            },
+            {
+              "correct": [
+                "9",
+                "12",
+                "4",
+                "18"
+              ],
+              "wrong": [
+                "15",
+                "24"
+              ],
+              "explain": "9, 12, 4, 18 dzielą 36 bez reszty."
+            },
+            {
+              "correct": [
+                "6",
+                "12"
+              ],
+              "wrong": [
+                "23",
+                "26",
+                "10",
+                "29"
+              ],
+              "explain": "6, 12 dzielą 36 bez reszty."
+            },
+            {
+              "correct": [
+                "3",
+                "18",
+                "9"
+              ],
+              "wrong": [
+                "19",
+                "20",
+                "13"
+              ],
+              "explain": "3, 18, 9 dzielą 36 bez reszty."
+            },
+            {
+              "correct": [
+                "3",
+                "2",
+                "6",
+                "18"
+              ],
+              "wrong": [
+                "17",
+                "24"
+              ],
+              "explain": "3, 2, 6, 18 dzielą 36 bez reszty."
+            },
+            {
+              "correct": [
+                "3",
+                "36"
+              ],
+              "wrong": [
+                "11",
+                "19",
+                "22",
+                "29"
+              ],
+              "explain": "3, 36 dzielą 36 bez reszty."
+            },
+            {
+              "correct": [
+                "1",
+                "4",
+                "12"
+              ],
+              "wrong": [
+                "29",
+                "14",
+                "5"
+              ],
+              "explain": "1, 4, 12 dzielą 36 bez reszty."
+            },
+            {
+              "correct": [
+                "3",
+                "36",
+                "1",
+                "6"
+              ],
+              "wrong": [
+                "26",
+                "13"
+              ],
+              "explain": "3, 36, 1, 6 dzielą 36 bez reszty."
+            },
+            {
+              "correct": [
+                "36",
+                "3",
+                "1"
+              ],
+              "wrong": [
+                "20",
+                "13",
+                "30"
+              ],
+              "explain": "36, 3, 1 dzielą 36 bez reszty."
+            },
+            {
+              "correct": [
+                "3",
+                "4",
+                "9",
+                "12"
+              ],
+              "wrong": [
+                "24",
+                "15"
+              ],
+              "explain": "3, 4, 9, 12 dzielą 36 bez reszty."
+            },
+            {
+              "correct": [
+                "2",
+                "18",
+                "36"
+              ],
+              "wrong": [
+                "19",
+                "7",
+                "27"
+              ],
+              "explain": "2, 18, 36 dzielą 36 bez reszty."
+            }
+          ]
         },
         {
           "id": "0011",
@@ -159,7 +553,204 @@ export default {
             "26",
             "14"
           ],
-          "explain": "45 dzielą 45 bez reszty. Wszystkie dzielniki 45: 1, 3, 5, 9, 15, 45."
+          "explain": "45 dzielą 45 bez reszty. Wszystkie dzielniki 45: 1, 3, 5, 9, 15, 45.",
+          "variants": [
+            {
+              "correct": [
+                "3",
+                "5"
+              ],
+              "wrong": [
+                "10",
+                "23",
+                "7",
+                "17"
+              ],
+              "explain": "3, 5 dzielą 45 bez reszty."
+            },
+            {
+              "correct": [
+                "15",
+                "3",
+                "45"
+              ],
+              "wrong": [
+                "12",
+                "11",
+                "6"
+              ],
+              "explain": "15, 3, 45 dzielą 45 bez reszty."
+            },
+            {
+              "correct": [
+                "3",
+                "5",
+                "9",
+                "15"
+              ],
+              "wrong": [
+                "28",
+                "20"
+              ],
+              "explain": "3, 5, 9, 15 dzielą 45 bez reszty."
+            },
+            {
+              "correct": [
+                "3",
+                "9"
+              ],
+              "wrong": [
+                "20",
+                "4",
+                "8",
+                "22"
+              ],
+              "explain": "3, 9 dzielą 45 bez reszty."
+            },
+            {
+              "correct": [
+                "5",
+                "45",
+                "3"
+              ],
+              "wrong": [
+                "23",
+                "17",
+                "16"
+              ],
+              "explain": "5, 45, 3 dzielą 45 bez reszty."
+            },
+            {
+              "correct": [
+                "3",
+                "5",
+                "45",
+                "1"
+              ],
+              "wrong": [
+                "20",
+                "10"
+              ],
+              "explain": "3, 5, 45, 1 dzielą 45 bez reszty."
+            },
+            {
+              "correct": [
+                "5",
+                "45"
+              ],
+              "wrong": [
+                "28",
+                "17",
+                "10",
+                "16"
+              ],
+              "explain": "5, 45 dzielą 45 bez reszty."
+            },
+            {
+              "correct": [
+                "9",
+                "15",
+                "1"
+              ],
+              "wrong": [
+                "7",
+                "18",
+                "24"
+              ],
+              "explain": "9, 15, 1 dzielą 45 bez reszty."
+            },
+            {
+              "correct": [
+                "9",
+                "5",
+                "45",
+                "1"
+              ],
+              "wrong": [
+                "7",
+                "13"
+              ],
+              "explain": "9, 5, 45, 1 dzielą 45 bez reszty."
+            },
+            {
+              "correct": [
+                "1",
+                "5",
+                "15"
+              ],
+              "wrong": [
+                "19",
+                "20",
+                "10"
+              ],
+              "explain": "1, 5, 15 dzielą 45 bez reszty."
+            },
+            {
+              "correct": [
+                "45",
+                "3",
+                "15",
+                "1"
+              ],
+              "wrong": [
+                "13",
+                "12"
+              ],
+              "explain": "45, 3, 15, 1 dzielą 45 bez reszty."
+            },
+            {
+              "correct": [
+                "9",
+                "1"
+              ],
+              "wrong": [
+                "11",
+                "19",
+                "30",
+                "20"
+              ],
+              "explain": "9, 1 dzielą 45 bez reszty."
+            },
+            {
+              "correct": [
+                "5",
+                "9",
+                "15"
+              ],
+              "wrong": [
+                "2",
+                "13",
+                "27"
+              ],
+              "explain": "5, 9, 15 dzielą 45 bez reszty."
+            },
+            {
+              "correct": [
+                "5",
+                "1",
+                "15",
+                "3"
+              ],
+              "wrong": [
+                "7",
+                "4"
+              ],
+              "explain": "5, 1, 15, 3 dzielą 45 bez reszty."
+            },
+            {
+              "correct": [
+                "1",
+                "5",
+                "45"
+              ],
+              "wrong": [
+                "13",
+                "22",
+                "7"
+              ],
+              "explain": "1, 5, 45 dzielą 45 bez reszty."
+            }
+          ]
         },
         {
           "id": "0012",
@@ -175,7 +766,204 @@ export default {
           "wrong": [
             "17"
           ],
-          "explain": "3, 6, 1, 20, 4 dzielą 60 bez reszty. Wszystkie dzielniki 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60."
+          "explain": "3, 6, 1, 20, 4 dzielą 60 bez reszty. Wszystkie dzielniki 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60.",
+          "variants": [
+            {
+              "correct": [
+                "10",
+                "20"
+              ],
+              "wrong": [
+                "21",
+                "9",
+                "25",
+                "17"
+              ],
+              "explain": "10, 20 dzielą 60 bez reszty."
+            },
+            {
+              "correct": [
+                "2",
+                "20",
+                "6"
+              ],
+              "wrong": [
+                "11",
+                "25",
+                "8"
+              ],
+              "explain": "2, 20, 6 dzielą 60 bez reszty."
+            },
+            {
+              "correct": [
+                "12",
+                "60",
+                "1",
+                "30"
+              ],
+              "wrong": [
+                "26",
+                "14"
+              ],
+              "explain": "12, 60, 1, 30 dzielą 60 bez reszty."
+            },
+            {
+              "correct": [
+                "10",
+                "15"
+              ],
+              "wrong": [
+                "17",
+                "18",
+                "7",
+                "16"
+              ],
+              "explain": "10, 15 dzielą 60 bez reszty."
+            },
+            {
+              "correct": [
+                "3",
+                "12",
+                "5"
+              ],
+              "wrong": [
+                "21",
+                "16",
+                "23"
+              ],
+              "explain": "3, 12, 5 dzielą 60 bez reszty."
+            },
+            {
+              "correct": [
+                "10",
+                "3",
+                "5",
+                "30"
+              ],
+              "wrong": [
+                "120",
+                "19"
+              ],
+              "explain": "10, 3, 5, 30 dzielą 60 bez reszty."
+            },
+            {
+              "correct": [
+                "1",
+                "15"
+              ],
+              "wrong": [
+                "19",
+                "9",
+                "14",
+                "22"
+              ],
+              "explain": "1, 15 dzielą 60 bez reszty."
+            },
+            {
+              "correct": [
+                "5",
+                "15",
+                "30"
+              ],
+              "wrong": [
+                "26",
+                "16",
+                "19"
+              ],
+              "explain": "5, 15, 30 dzielą 60 bez reszty."
+            },
+            {
+              "correct": [
+                "2",
+                "12",
+                "30",
+                "6"
+              ],
+              "wrong": [
+                "11",
+                "21"
+              ],
+              "explain": "2, 12, 30, 6 dzielą 60 bez reszty."
+            },
+            {
+              "correct": [
+                "30",
+                "20"
+              ],
+              "wrong": [
+                "22",
+                "120",
+                "29",
+                "9"
+              ],
+              "explain": "30, 20 dzielą 60 bez reszty."
+            },
+            {
+              "correct": [
+                "60",
+                "12",
+                "3"
+              ],
+              "wrong": [
+                "22",
+                "25",
+                "28"
+              ],
+              "explain": "60, 12, 3 dzielą 60 bez reszty."
+            },
+            {
+              "correct": [
+                "5",
+                "60",
+                "10",
+                "12"
+              ],
+              "wrong": [
+                "27",
+                "22"
+              ],
+              "explain": "5, 60, 10, 12 dzielą 60 bez reszty."
+            },
+            {
+              "correct": [
+                "10",
+                "5"
+              ],
+              "wrong": [
+                "16",
+                "26",
+                "21",
+                "7"
+              ],
+              "explain": "10, 5 dzielą 60 bez reszty."
+            },
+            {
+              "correct": [
+                "2",
+                "12",
+                "15"
+              ],
+              "wrong": [
+                "24",
+                "28",
+                "17"
+              ],
+              "explain": "2, 12, 15 dzielą 60 bez reszty."
+            },
+            {
+              "correct": [
+                "3",
+                "4",
+                "10",
+                "6"
+              ],
+              "wrong": [
+                "24",
+                "19"
+              ],
+              "explain": "3, 4, 10, 6 dzielą 60 bez reszty."
+            }
+          ]
         },
         {
           "id": "0013",
@@ -191,7 +979,204 @@ export default {
             "19",
             "7"
           ],
-          "explain": "10, 5 dzielą 120 bez reszty. Wszystkie dzielniki 120: 1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120."
+          "explain": "10, 5 dzielą 120 bez reszty. Wszystkie dzielniki 120: 1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120.",
+          "variants": [
+            {
+              "correct": [
+                "15",
+                "1"
+              ],
+              "wrong": [
+                "27",
+                "22",
+                "7",
+                "28"
+              ],
+              "explain": "15, 1 dzielą 120 bez reszty."
+            },
+            {
+              "correct": [
+                "2",
+                "6",
+                "15"
+              ],
+              "wrong": [
+                "17",
+                "25",
+                "7"
+              ],
+              "explain": "2, 6, 15 dzielą 120 bez reszty."
+            },
+            {
+              "correct": [
+                "6",
+                "20",
+                "3",
+                "2"
+              ],
+              "wrong": [
+                "18",
+                "25"
+              ],
+              "explain": "6, 20, 3, 2 dzielą 120 bez reszty."
+            },
+            {
+              "correct": [
+                "30",
+                "12"
+              ],
+              "wrong": [
+                "23",
+                "16",
+                "7",
+                "28"
+              ],
+              "explain": "30, 12 dzielą 120 bez reszty."
+            },
+            {
+              "correct": [
+                "2",
+                "6",
+                "3"
+              ],
+              "wrong": [
+                "23",
+                "11",
+                "19"
+              ],
+              "explain": "2, 6, 3 dzielą 120 bez reszty."
+            },
+            {
+              "correct": [
+                "120",
+                "12",
+                "5",
+                "2"
+              ],
+              "wrong": [
+                "9",
+                "19"
+              ],
+              "explain": "120, 12, 5, 2 dzielą 120 bez reszty."
+            },
+            {
+              "correct": [
+                "30",
+                "24"
+              ],
+              "wrong": [
+                "240",
+                "17",
+                "28",
+                "13"
+              ],
+              "explain": "30, 24 dzielą 120 bez reszty."
+            },
+            {
+              "correct": [
+                "2",
+                "1",
+                "30"
+              ],
+              "wrong": [
+                "25",
+                "11",
+                "23"
+              ],
+              "explain": "2, 1, 30 dzielą 120 bez reszty."
+            },
+            {
+              "correct": [
+                "20",
+                "2",
+                "120",
+                "24"
+              ],
+              "wrong": [
+                "22",
+                "25"
+              ],
+              "explain": "20, 2, 120, 24 dzielą 120 bez reszty."
+            },
+            {
+              "correct": [
+                "6",
+                "15"
+              ],
+              "wrong": [
+                "28",
+                "13",
+                "21",
+                "25"
+              ],
+              "explain": "6, 15 dzielą 120 bez reszty."
+            },
+            {
+              "correct": [
+                "120",
+                "10",
+                "5"
+              ],
+              "wrong": [
+                "14",
+                "22",
+                "17"
+              ],
+              "explain": "120, 10, 5 dzielą 120 bez reszty."
+            },
+            {
+              "correct": [
+                "20",
+                "12",
+                "5",
+                "30"
+              ],
+              "wrong": [
+                "28",
+                "23"
+              ],
+              "explain": "20, 12, 5, 30 dzielą 120 bez reszty."
+            },
+            {
+              "correct": [
+                "20",
+                "10"
+              ],
+              "wrong": [
+                "9",
+                "27",
+                "13",
+                "29"
+              ],
+              "explain": "20, 10 dzielą 120 bez reszty."
+            },
+            {
+              "correct": [
+                "24",
+                "6",
+                "20"
+              ],
+              "wrong": [
+                "19",
+                "27",
+                "23"
+              ],
+              "explain": "24, 6, 20 dzielą 120 bez reszty."
+            },
+            {
+              "correct": [
+                "8",
+                "4",
+                "10",
+                "1"
+              ],
+              "wrong": [
+                "7",
+                "26"
+              ],
+              "explain": "8, 4, 10, 1 dzielą 120 bez reszty."
+            }
+          ]
         },
         {
           "id": "0014",
@@ -207,7 +1192,204 @@ export default {
             "56",
             "12"
           ],
-          "explain": "14, 2 dzielą 28 bez reszty. Wszystkie dzielniki 28: 1, 2, 4, 7, 14, 28."
+          "explain": "14, 2 dzielą 28 bez reszty. Wszystkie dzielniki 28: 1, 2, 4, 7, 14, 28.",
+          "variants": [
+            {
+              "correct": [
+                "7",
+                "14"
+              ],
+              "wrong": [
+                "56",
+                "15",
+                "5",
+                "22"
+              ],
+              "explain": "7, 14 dzielą 28 bez reszty."
+            },
+            {
+              "correct": [
+                "14",
+                "1",
+                "2"
+              ],
+              "wrong": [
+                "24",
+                "8",
+                "20"
+              ],
+              "explain": "14, 1, 2 dzielą 28 bez reszty."
+            },
+            {
+              "correct": [
+                "4",
+                "1",
+                "14",
+                "2"
+              ],
+              "wrong": [
+                "6",
+                "10"
+              ],
+              "explain": "4, 1, 14, 2 dzielą 28 bez reszty."
+            },
+            {
+              "correct": [
+                "7",
+                "2"
+              ],
+              "wrong": [
+                "20",
+                "8",
+                "18",
+                "56"
+              ],
+              "explain": "7, 2 dzielą 28 bez reszty."
+            },
+            {
+              "correct": [
+                "7",
+                "1",
+                "14"
+              ],
+              "wrong": [
+                "20",
+                "5",
+                "18"
+              ],
+              "explain": "7, 1, 14 dzielą 28 bez reszty."
+            },
+            {
+              "correct": [
+                "2",
+                "7",
+                "1"
+              ],
+              "wrong": [
+                "10",
+                "11",
+                "27"
+              ],
+              "explain": "2, 7, 1 dzielą 28 bez reszty."
+            },
+            {
+              "correct": [
+                "14",
+                "7",
+                "1",
+                "4"
+              ],
+              "wrong": [
+                "6",
+                "17"
+              ],
+              "explain": "14, 7, 1, 4 dzielą 28 bez reszty."
+            },
+            {
+              "correct": [
+                "28",
+                "7"
+              ],
+              "wrong": [
+                "8",
+                "26",
+                "24",
+                "27"
+              ],
+              "explain": "28, 7 dzielą 28 bez reszty."
+            },
+            {
+              "correct": [
+                "2",
+                "14",
+                "7"
+              ],
+              "wrong": [
+                "12",
+                "22",
+                "23"
+              ],
+              "explain": "2, 14, 7 dzielą 28 bez reszty."
+            },
+            {
+              "correct": [
+                "14",
+                "1",
+                "28",
+                "2"
+              ],
+              "wrong": [
+                "12",
+                "13"
+              ],
+              "explain": "14, 1, 28, 2 dzielą 28 bez reszty."
+            },
+            {
+              "correct": [
+                "1",
+                "4"
+              ],
+              "wrong": [
+                "15",
+                "3",
+                "8",
+                "9"
+              ],
+              "explain": "1, 4 dzielą 28 bez reszty."
+            },
+            {
+              "correct": [
+                "14",
+                "1",
+                "28"
+              ],
+              "wrong": [
+                "26",
+                "13",
+                "56"
+              ],
+              "explain": "14, 1, 28 dzielą 28 bez reszty."
+            },
+            {
+              "correct": [
+                "28",
+                "2",
+                "14",
+                "4"
+              ],
+              "wrong": [
+                "23",
+                "13"
+              ],
+              "explain": "28, 2, 14, 4 dzielą 28 bez reszty."
+            },
+            {
+              "correct": [
+                "14",
+                "1"
+              ],
+              "wrong": [
+                "19",
+                "13",
+                "26",
+                "27"
+              ],
+              "explain": "14, 1 dzielą 28 bez reszty."
+            },
+            {
+              "correct": [
+                "28",
+                "2",
+                "1"
+              ],
+              "wrong": [
+                "25",
+                "15",
+                "26"
+              ],
+              "explain": "28, 2, 1 dzielą 28 bez reszty."
+            }
+          ]
         }
       ]
     },

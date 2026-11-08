@@ -220,6 +220,7 @@ export default {
         },
         {
           id: "0020",
+          variants: [{"q":"Jak czytamy skalę 1:2 000?","correct":["1 do 2 000"],"wrong":["1 razy 2 000","1 przez 2 000 metrów","2 001"],"explain":"Skalę 1:2 000 czytamy: 1 do 2 000."},{"q":"Jak czytamy skalę 1:5 000?","correct":["1 do 5 000"],"wrong":["1 razy 5 000","1 przez 5 000 metrów","5 001"],"explain":"Skalę 1:5 000 czytamy: 1 do 5 000."},{"q":"Jak czytamy skalę 1:10 000?","correct":["1 do 10 000"],"wrong":["1 razy 10 000","1 przez 10 000 metrów","10 001"],"explain":"Skalę 1:10 000 czytamy: 1 do 10 000."},{"q":"Jak czytamy skalę 1:20 000?","correct":["1 do 20 000"],"wrong":["1 razy 20 000","1 przez 20 000 metrów","20 001"],"explain":"Skalę 1:20 000 czytamy: 1 do 20 000."},{"q":"Jak czytamy skalę 1:50 000?","correct":["1 do 50 000"],"wrong":["1 razy 50 000","1 przez 50 000 metrów","50 001"],"explain":"Skalę 1:50 000 czytamy: 1 do 50 000."},{"q":"Jak czytamy skalę 1:100 000?","correct":["1 do 100 000"],"wrong":["1 razy 100 000","1 przez 100 000 metrów","100 001"],"explain":"Skalę 1:100 000 czytamy: 1 do 100 000."}], // variants: generated
           level: 3,
           q: "Jak czytamy skalę 1:1000?",
           correct: ["1 do 1000"],
@@ -257,6 +258,7 @@ export default {
         },
         {
           id: "0024",
+          variants: [{"q":"Skala mianowana 1 cm – 100 cm po przeliczeniu na metry to:","correct":["1 cm – 1 m"],"wrong":["1 cm – 10 m","1 cm – 100 m","1 cm – 0,1 m"],"explain":"100 cm = 1 m, więc 1 cm na mapie odpowiada 1 m w terenie."},{"q":"Skala mianowana 1 cm – 200 cm po przeliczeniu na metry to:","correct":["1 cm – 2 m"],"wrong":["1 cm – 20 m","1 cm – 200 m","1 cm – 0,2 m"],"explain":"200 cm = 2 m, więc 1 cm na mapie odpowiada 2 m w terenie."},{"q":"Skala mianowana 1 cm – 500 cm po przeliczeniu na metry to:","correct":["1 cm – 5 m"],"wrong":["1 cm – 50 m","1 cm – 500 m","1 cm – 0,5 m"],"explain":"500 cm = 5 m, więc 1 cm na mapie odpowiada 5 m w terenie."},{"q":"Skala mianowana 1 cm – 2 000 cm po przeliczeniu na metry to:","correct":["1 cm – 20 m"],"wrong":["1 cm – 200 m","1 cm – 2 000 m","1 cm – 2 m"],"explain":"2 000 cm = 20 m, więc 1 cm na mapie odpowiada 20 m w terenie."},{"q":"Skala mianowana 1 cm – 5 000 cm po przeliczeniu na metry to:","correct":["1 cm – 50 m"],"wrong":["1 cm – 500 m","1 cm – 5 000 m","1 cm – 5 m"],"explain":"5 000 cm = 50 m, więc 1 cm na mapie odpowiada 50 m w terenie."},{"q":"Skala mianowana 1 cm – 10 000 cm po przeliczeniu na metry to:","correct":["1 cm – 100 m"],"wrong":["1 cm – 1 000 m","1 cm – 10 000 m","1 cm – 10 m"],"explain":"10 000 cm = 100 m, więc 1 cm na mapie odpowiada 100 m w terenie."}], // variants: generated
           level: 3,
           q: "Skala mianowana 1 cm – 1000 cm po przeliczeniu na metry to:",
           correct: ["1 cm – 10 m"],
@@ -265,6 +267,7 @@ export default {
         },
         {
           id: "0025",
+          variants: [{"q":"Jak zapisać skalę 1:10 000 w postaci mianowanej?","correct":["1 cm – 100 m"],"wrong":["1 cm – 1000 m","1 cm – 10 m","1 cm – 100 km"],"explain":"10 000 cm = 0,1 km, więc 1 cm – 100 m."},{"q":"Jak zapisać skalę 1:20 000 w postaci mianowanej?","correct":["1 cm – 200 m"],"wrong":["1 cm – 2000 m","1 cm – 20 m","1 cm – 200 km"],"explain":"20 000 cm = 0,2 km, więc 1 cm – 200 m."},{"q":"Jak zapisać skalę 1:50 000 w postaci mianowanej?","correct":["1 cm – 500 m"],"wrong":["1 cm – 5000 m","1 cm – 50 m","1 cm – 500 km"],"explain":"50 000 cm = 0,5 km, więc 1 cm – 500 m."},{"q":"Jak zapisać skalę 1:200 000 w postaci mianowanej?","correct":["1 cm – 2 km"],"wrong":["1 cm – 20 km","1 cm – 200 km","1 cm – 200 m"],"explain":"200 000 cm = 2 km, więc 1 cm – 2 km."},{"q":"Jak zapisać skalę 1:500 000 w postaci mianowanej?","correct":["1 cm – 5 km"],"wrong":["1 cm – 50 km","1 cm – 500 km","1 cm – 500 m"],"explain":"500 000 cm = 5 km, więc 1 cm – 5 km."},{"q":"Jak zapisać skalę 1:1 000 000 w postaci mianowanej?","correct":["1 cm – 10 km"],"wrong":["1 cm – 100 km","1 cm – 1000 km","1 cm – 1000 m"],"explain":"1 000 000 cm = 10 km, więc 1 cm – 10 km."}], // variants: generated
           level: 3,
           q: "Jak zapisać skalę 1:100 000 w postaci mianowanej?",
           correct: ["1 cm – 1 km"],
@@ -324,6 +327,7 @@ export default {
       questions: [
         {
           id: "0030",
+          variants: [{"q":"Ile razy pomniejszono odległości na mapie w skali 1:1 000?","correct":["1 000 razy"],"wrong":["100 razy","10 000 razy","10 razy"],"explain":"Skala 1:1 000 oznacza, że odległości z terenu podzielono przez 1 000."},{"q":"Ile razy pomniejszono odległości na mapie w skali 1:2 000?","correct":["2 000 razy"],"wrong":["200 razy","20 000 razy","20 razy"],"explain":"Skala 1:2 000 oznacza, że odległości z terenu podzielono przez 2 000."},{"q":"Ile razy pomniejszono odległości na mapie w skali 1:5 000?","correct":["5 000 razy"],"wrong":["500 razy","50 000 razy","50 razy"],"explain":"Skala 1:5 000 oznacza, że odległości z terenu podzielono przez 5 000."},{"q":"Ile razy pomniejszono odległości na mapie w skali 1:20 000?","correct":["20 000 razy"],"wrong":["2 000 razy","200 000 razy","200 razy"],"explain":"Skala 1:20 000 oznacza, że odległości z terenu podzielono przez 20 000."},{"q":"Ile razy pomniejszono odległości na mapie w skali 1:50 000?","correct":["50 000 razy"],"wrong":["5 000 razy","500 000 razy","500 razy"],"explain":"Skala 1:50 000 oznacza, że odległości z terenu podzielono przez 50 000."},{"q":"Ile razy pomniejszono odległości na mapie w skali 1:100 000?","correct":["100 000 razy"],"wrong":["10 000 razy","1 000 000 razy","1 000 razy"],"explain":"Skala 1:100 000 oznacza, że odległości z terenu podzielono przez 100 000."}], // variants: generated
           q: "Ile razy pomniejszono odległości na mapie w skali 1:10 000?",
           correct: ["10 000 razy"],
           wrong: ["1000 razy", "100 razy", "10 razy"],

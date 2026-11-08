@@ -104,7 +104,204 @@ export default {
             "28",
             "170"
           ],
-          "explain": "Wielokrotności liczby 3: 33, 45, 51 – dzielą się przez 3 bez reszty. Pamiętaj: 0 też jest wielokrotnością."
+          "explain": "Wielokrotności liczby 3: 33, 45, 51 – dzielą się przez 3 bez reszty. Pamiętaj: 0 też jest wielokrotnością.",
+          "variants": [
+            {
+              "correct": [
+                "60",
+                "9"
+              ],
+              "wrong": [
+                "49",
+                "2",
+                "32",
+                "23"
+              ],
+              "explain": "Wielokrotności liczby 3: 60, 9 – dzielą się przez 3 bez reszty."
+            },
+            {
+              "correct": [
+                "24",
+                "3",
+                "30"
+              ],
+              "wrong": [
+                "29",
+                "17",
+                "52"
+              ],
+              "explain": "Wielokrotności liczby 3: 24, 3, 30 – dzielą się przez 3 bez reszty."
+            },
+            {
+              "correct": [
+                "51",
+                "27",
+                "30",
+                "3"
+              ],
+              "wrong": [
+                "7",
+                "32"
+              ],
+              "explain": "Wielokrotności liczby 3: 51, 27, 30, 3 – dzielą się przez 3 bez reszty."
+            },
+            {
+              "correct": [
+                "21",
+                "30"
+              ],
+              "wrong": [
+                "1",
+                "32",
+                "40",
+                "5"
+              ],
+              "explain": "Wielokrotności liczby 3: 21, 30 – dzielą się przez 3 bez reszty."
+            },
+            {
+              "correct": [
+                "18",
+                "48",
+                "33"
+              ],
+              "wrong": [
+                "50",
+                "2",
+                "19"
+              ],
+              "explain": "Wielokrotności liczby 3: 18, 48, 33 – dzielą się przez 3 bez reszty."
+            },
+            {
+              "correct": [
+                "51",
+                "3",
+                "18",
+                "33"
+              ],
+              "wrong": [
+                "19",
+                "59"
+              ],
+              "explain": "Wielokrotności liczby 3: 51, 3, 18, 33 – dzielą się przez 3 bez reszty."
+            },
+            {
+              "correct": [
+                "6",
+                "48"
+              ],
+              "wrong": [
+                "2",
+                "32",
+                "35",
+                "16"
+              ],
+              "explain": "Wielokrotności liczby 3: 6, 48 – dzielą się przez 3 bez reszty."
+            },
+            {
+              "correct": [
+                "21",
+                "15",
+                "39"
+              ],
+              "wrong": [
+                "28",
+                "17",
+                "56"
+              ],
+              "explain": "Wielokrotności liczby 3: 21, 15, 39 – dzielą się przez 3 bez reszty."
+            },
+            {
+              "correct": [
+                "60",
+                "3",
+                "15",
+                "30"
+              ],
+              "wrong": [
+                "34",
+                "55"
+              ],
+              "explain": "Wielokrotności liczby 3: 60, 3, 15, 30 – dzielą się przez 3 bez reszty."
+            },
+            {
+              "correct": [
+                "39",
+                "6"
+              ],
+              "wrong": [
+                "53",
+                "38",
+                "4",
+                "1"
+              ],
+              "explain": "Wielokrotności liczby 3: 39, 6 – dzielą się przez 3 bez reszty."
+            },
+            {
+              "correct": [
+                "39",
+                "9",
+                "42"
+              ],
+              "wrong": [
+                "47",
+                "37",
+                "1"
+              ],
+              "explain": "Wielokrotności liczby 3: 39, 9, 42 – dzielą się przez 3 bez reszty."
+            },
+            {
+              "correct": [
+                "39",
+                "30",
+                "33",
+                "27"
+              ],
+              "wrong": [
+                "55",
+                "22"
+              ],
+              "explain": "Wielokrotności liczby 3: 39, 30, 33, 27 – dzielą się przez 3 bez reszty."
+            },
+            {
+              "correct": [
+                "33",
+                "30"
+              ],
+              "wrong": [
+                "2",
+                "8",
+                "25",
+                "29"
+              ],
+              "explain": "Wielokrotności liczby 3: 33, 30 – dzielą się przez 3 bez reszty."
+            },
+            {
+              "correct": [
+                "9",
+                "51",
+                "36"
+              ],
+              "wrong": [
+                "11",
+                "56",
+                "17"
+              ],
+              "explain": "Wielokrotności liczby 3: 9, 51, 36 – dzielą się przez 3 bez reszty."
+            },
+            {
+              "correct": [
+                "60",
+                "18",
+                "27",
+                "48"
+              ],
+              "wrong": [
+                "59",
+                "56"
+              ],
+              "explain": "Wielokrotności liczby 3: 60, 18, 27, 48 – dzielą się przez 3 bez reszty."
+            }
+          ]
         },
         {
           "id": "0008",
@@ -119,7 +316,204 @@ export default {
             "170",
             "34"
           ],
-          "explain": "Wielokrotności liczby 4: 0, 28 – dzielą się przez 4 bez reszty. Pamiętaj: 0 też jest wielokrotnością."
+          "explain": "Wielokrotności liczby 4: 0, 28 – dzielą się przez 4 bez reszty. Pamiętaj: 0 też jest wielokrotnością.",
+          "variants": [
+            {
+              "correct": [
+                "4",
+                "40"
+              ],
+              "wrong": [
+                "23",
+                "18",
+                "27",
+                "38"
+              ],
+              "explain": "Wielokrotności liczby 4: 4, 40 – dzielą się przez 4 bez reszty."
+            },
+            {
+              "correct": [
+                "8",
+                "12",
+                "32"
+              ],
+              "wrong": [
+                "3",
+                "51",
+                "45"
+              ],
+              "explain": "Wielokrotności liczby 4: 8, 12, 32 – dzielą się przez 4 bez reszty."
+            },
+            {
+              "correct": [
+                "52",
+                "24",
+                "12",
+                "36"
+              ],
+              "wrong": [
+                "30",
+                "9"
+              ],
+              "explain": "Wielokrotności liczby 4: 52, 24, 12, 36 – dzielą się przez 4 bez reszty."
+            },
+            {
+              "correct": [
+                "32",
+                "8"
+              ],
+              "wrong": [
+                "53",
+                "37",
+                "46",
+                "43"
+              ],
+              "explain": "Wielokrotności liczby 4: 32, 8 – dzielą się przez 4 bez reszty."
+            },
+            {
+              "correct": [
+                "44",
+                "20",
+                "60"
+              ],
+              "wrong": [
+                "45",
+                "7",
+                "31"
+              ],
+              "explain": "Wielokrotności liczby 4: 44, 20, 60 – dzielą się przez 4 bez reszty."
+            },
+            {
+              "correct": [
+                "32",
+                "48",
+                "56",
+                "4"
+              ],
+              "wrong": [
+                "10",
+                "57"
+              ],
+              "explain": "Wielokrotności liczby 4: 32, 48, 56, 4 – dzielą się przez 4 bez reszty."
+            },
+            {
+              "correct": [
+                "44",
+                "16"
+              ],
+              "wrong": [
+                "58",
+                "59",
+                "41",
+                "22"
+              ],
+              "explain": "Wielokrotności liczby 4: 44, 16 – dzielą się przez 4 bez reszty."
+            },
+            {
+              "correct": [
+                "24",
+                "36",
+                "44"
+              ],
+              "wrong": [
+                "11",
+                "15",
+                "59"
+              ],
+              "explain": "Wielokrotności liczby 4: 24, 36, 44 – dzielą się przez 4 bez reszty."
+            },
+            {
+              "correct": [
+                "60",
+                "4",
+                "32",
+                "40"
+              ],
+              "wrong": [
+                "30",
+                "10"
+              ],
+              "explain": "Wielokrotności liczby 4: 60, 4, 32, 40 – dzielą się przez 4 bez reszty."
+            },
+            {
+              "correct": [
+                "8",
+                "52"
+              ],
+              "wrong": [
+                "53",
+                "41",
+                "25",
+                "29"
+              ],
+              "explain": "Wielokrotności liczby 4: 8, 52 – dzielą się przez 4 bez reszty."
+            },
+            {
+              "correct": [
+                "40",
+                "32",
+                "8"
+              ],
+              "wrong": [
+                "47",
+                "33",
+                "38"
+              ],
+              "explain": "Wielokrotności liczby 4: 40, 32, 8 – dzielą się przez 4 bez reszty."
+            },
+            {
+              "correct": [
+                "52",
+                "8",
+                "20",
+                "44"
+              ],
+              "wrong": [
+                "45",
+                "7"
+              ],
+              "explain": "Wielokrotności liczby 4: 52, 8, 20, 44 – dzielą się przez 4 bez reszty."
+            },
+            {
+              "correct": [
+                "16",
+                "20"
+              ],
+              "wrong": [
+                "50",
+                "31",
+                "10",
+                "49"
+              ],
+              "explain": "Wielokrotności liczby 4: 16, 20 – dzielą się przez 4 bez reszty."
+            },
+            {
+              "correct": [
+                "60",
+                "28",
+                "40"
+              ],
+              "wrong": [
+                "58",
+                "31",
+                "50"
+              ],
+              "explain": "Wielokrotności liczby 4: 60, 28, 40 – dzielą się przez 4 bez reszty."
+            },
+            {
+              "correct": [
+                "32",
+                "16",
+                "36",
+                "60"
+              ],
+              "wrong": [
+                "59",
+                "10"
+              ],
+              "explain": "Wielokrotności liczby 4: 32, 16, 36, 60 – dzielą się przez 4 bez reszty."
+            }
+          ]
         },
         {
           "id": "0009",
@@ -134,7 +528,204 @@ export default {
             "12",
             "180"
           ],
-          "explain": "Wielokrotności liczby 8: 64, 24, 16 – dzielą się przez 8 bez reszty. Pamiętaj: 0 też jest wielokrotnością."
+          "explain": "Wielokrotności liczby 8: 64, 24, 16 – dzielą się przez 8 bez reszty. Pamiętaj: 0 też jest wielokrotnością.",
+          "variants": [
+            {
+              "correct": [
+                "16",
+                "72"
+              ],
+              "wrong": [
+                "62",
+                "91",
+                "54",
+                "68"
+              ],
+              "explain": "Wielokrotności liczby 8: 16, 72 – dzielą się przez 8 bez reszty."
+            },
+            {
+              "correct": [
+                "24",
+                "56",
+                "96"
+              ],
+              "wrong": [
+                "66",
+                "23",
+                "45"
+              ],
+              "explain": "Wielokrotności liczby 8: 24, 56, 96 – dzielą się przez 8 bez reszty."
+            },
+            {
+              "correct": [
+                "32",
+                "48",
+                "24",
+                "80"
+              ],
+              "wrong": [
+                "82",
+                "2"
+              ],
+              "explain": "Wielokrotności liczby 8: 32, 48, 24, 80 – dzielą się przez 8 bez reszty."
+            },
+            {
+              "correct": [
+                "48",
+                "88"
+              ],
+              "wrong": [
+                "36",
+                "69",
+                "57",
+                "4"
+              ],
+              "explain": "Wielokrotności liczby 8: 48, 88 – dzielą się przez 8 bez reszty."
+            },
+            {
+              "correct": [
+                "32",
+                "56",
+                "24"
+              ],
+              "wrong": [
+                "53",
+                "51",
+                "33"
+              ],
+              "explain": "Wielokrotności liczby 8: 32, 56, 24 – dzielą się przez 8 bez reszty."
+            },
+            {
+              "correct": [
+                "64",
+                "48",
+                "32",
+                "24"
+              ],
+              "wrong": [
+                "36",
+                "74"
+              ],
+              "explain": "Wielokrotności liczby 8: 64, 48, 32, 24 – dzielą się przez 8 bez reszty."
+            },
+            {
+              "correct": [
+                "24",
+                "80"
+              ],
+              "wrong": [
+                "52",
+                "36",
+                "31",
+                "50"
+              ],
+              "explain": "Wielokrotności liczby 8: 24, 80 – dzielą się przez 8 bez reszty."
+            },
+            {
+              "correct": [
+                "48",
+                "32",
+                "24"
+              ],
+              "wrong": [
+                "77",
+                "63",
+                "94"
+              ],
+              "explain": "Wielokrotności liczby 8: 48, 32, 24 – dzielą się przez 8 bez reszty."
+            },
+            {
+              "correct": [
+                "56",
+                "48",
+                "24",
+                "88"
+              ],
+              "wrong": [
+                "74",
+                "26"
+              ],
+              "explain": "Wielokrotności liczby 8: 56, 48, 24, 88 – dzielą się przez 8 bez reszty."
+            },
+            {
+              "correct": [
+                "8",
+                "96",
+                "32"
+              ],
+              "wrong": [
+                "49",
+                "73",
+                "20"
+              ],
+              "explain": "Wielokrotności liczby 8: 8, 96, 32 – dzielą się przez 8 bez reszty."
+            },
+            {
+              "correct": [
+                "64",
+                "56",
+                "72",
+                "80"
+              ],
+              "wrong": [
+                "1",
+                "42"
+              ],
+              "explain": "Wielokrotności liczby 8: 64, 56, 72, 80 – dzielą się przez 8 bez reszty."
+            },
+            {
+              "correct": [
+                "48",
+                "24"
+              ],
+              "wrong": [
+                "67",
+                "15",
+                "13",
+                "38"
+              ],
+              "explain": "Wielokrotności liczby 8: 48, 24 – dzielą się przez 8 bez reszty."
+            },
+            {
+              "correct": [
+                "32",
+                "64",
+                "48"
+              ],
+              "wrong": [
+                "51",
+                "46",
+                "31"
+              ],
+              "explain": "Wielokrotności liczby 8: 32, 64, 48 – dzielą się przez 8 bez reszty."
+            },
+            {
+              "correct": [
+                "88",
+                "40",
+                "24",
+                "80"
+              ],
+              "wrong": [
+                "60",
+                "83"
+              ],
+              "explain": "Wielokrotności liczby 8: 88, 40, 24, 80 – dzielą się przez 8 bez reszty."
+            },
+            {
+              "correct": [
+                "16",
+                "88"
+              ],
+              "wrong": [
+                "38",
+                "43",
+                "21",
+                "1"
+              ],
+              "explain": "Wielokrotności liczby 8: 16, 88 – dzielą się przez 8 bez reszty."
+            }
+          ]
         },
         {
           "id": "0010",
@@ -149,7 +740,204 @@ export default {
             "16",
             "63"
           ],
-          "explain": "Wielokrotności liczby 17: 51, 0, 170 – dzielą się przez 17 bez reszty. Pamiętaj: 0 też jest wielokrotnością."
+          "explain": "Wielokrotności liczby 17: 51, 0, 170 – dzielą się przez 17 bez reszty. Pamiętaj: 0 też jest wielokrotnością.",
+          "variants": [
+            {
+              "correct": [
+                "153",
+                "51"
+              ],
+              "wrong": [
+                "16",
+                "78",
+                "59",
+                "21"
+              ],
+              "explain": "Wielokrotności liczby 17: 153, 51 – dzielą się przez 17 bez reszty."
+            },
+            {
+              "correct": [
+                "68",
+                "170",
+                "17"
+              ],
+              "wrong": [
+                "61",
+                "180",
+                "122"
+              ],
+              "explain": "Wielokrotności liczby 17: 68, 170, 17 – dzielą się przez 17 bez reszty."
+            },
+            {
+              "correct": [
+                "136",
+                "102",
+                "119",
+                "204"
+              ],
+              "wrong": [
+                "180",
+                "126"
+              ],
+              "explain": "Wielokrotności liczby 17: 136, 102, 119, 204 – dzielą się przez 17 bez reszty."
+            },
+            {
+              "correct": [
+                "153",
+                "34"
+              ],
+              "wrong": [
+                "38",
+                "158",
+                "74",
+                "64"
+              ],
+              "explain": "Wielokrotności liczby 17: 153, 34 – dzielą się przez 17 bez reszty."
+            },
+            {
+              "correct": [
+                "51",
+                "85",
+                "153",
+                "136"
+              ],
+              "wrong": [
+                "155",
+                "59"
+              ],
+              "explain": "Wielokrotności liczby 17: 51, 85, 153, 136 – dzielą się przez 17 bez reszty."
+            },
+            {
+              "correct": [
+                "102",
+                "51"
+              ],
+              "wrong": [
+                "64",
+                "54",
+                "130",
+                "35"
+              ],
+              "explain": "Wielokrotności liczby 17: 102, 51 – dzielą się przez 17 bez reszty."
+            },
+            {
+              "correct": [
+                "68",
+                "85",
+                "153"
+              ],
+              "wrong": [
+                "98",
+                "120",
+                "180"
+              ],
+              "explain": "Wielokrotności liczby 17: 68, 85, 153 – dzielą się przez 17 bez reszty."
+            },
+            {
+              "correct": [
+                "187",
+                "102",
+                "136",
+                "68"
+              ],
+              "wrong": [
+                "118",
+                "167"
+              ],
+              "explain": "Wielokrotności liczby 17: 187, 102, 136, 68 – dzielą się przez 17 bez reszty."
+            },
+            {
+              "correct": [
+                "34",
+                "51"
+              ],
+              "wrong": [
+                "143",
+                "144",
+                "95",
+                "106"
+              ],
+              "explain": "Wielokrotności liczby 17: 34, 51 – dzielą się przez 17 bez reszty."
+            },
+            {
+              "correct": [
+                "34",
+                "153",
+                "204"
+              ],
+              "wrong": [
+                "54",
+                "97",
+                "176"
+              ],
+              "explain": "Wielokrotności liczby 17: 34, 153, 204 – dzielą się przez 17 bez reszty."
+            },
+            {
+              "correct": [
+                "85",
+                "204",
+                "17",
+                "136"
+              ],
+              "wrong": [
+                "23",
+                "194"
+              ],
+              "explain": "Wielokrotności liczby 17: 85, 204, 17, 136 – dzielą się przez 17 bez reszty."
+            },
+            {
+              "correct": [
+                "153",
+                "68"
+              ],
+              "wrong": [
+                "146",
+                "100",
+                "200",
+                "20"
+              ],
+              "explain": "Wielokrotności liczby 17: 153, 68 – dzielą się przez 17 bez reszty."
+            },
+            {
+              "correct": [
+                "17",
+                "136",
+                "204"
+              ],
+              "wrong": [
+                "171",
+                "56",
+                "117"
+              ],
+              "explain": "Wielokrotności liczby 17: 17, 136, 204 – dzielą się przez 17 bez reszty."
+            },
+            {
+              "correct": [
+                "153",
+                "34",
+                "204",
+                "17"
+              ],
+              "wrong": [
+                "186",
+                "101"
+              ],
+              "explain": "Wielokrotności liczby 17: 153, 34, 204, 17 – dzielą się przez 17 bez reszty."
+            },
+            {
+              "correct": [
+                "187",
+                "136"
+              ],
+              "wrong": [
+                "86",
+                "65",
+                "154",
+                "150"
+              ],
+              "explain": "Wielokrotności liczby 17: 187, 136 – dzielą się przez 17 bez reszty."
+            }
+          ]
         }
       ]
     },

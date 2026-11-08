@@ -413,7 +413,7 @@ export default {
           "group": "w-expensive",
           "q": "Co znaczy „expensive”?",
           "correct": [
-            "drogi (kosztowny)"
+            "drogi"
           ],
           "wrong": [
             "dziwny",
