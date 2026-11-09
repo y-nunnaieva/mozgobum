@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+.summary-badge {
+  display: flex;
+  align-items: center;
+  gap: space(8);
+  margin-top: space(4);
+}
+
+.summary-dots {
+  display: flex;
+  gap: space(4);
+}
+
+.summary-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--off);
+}
+
+.summary-dot--on:nth-child(1) {
+  background: color-mix(in oklab, var(--yellow) 70%, var(--white));
+}
+
+.summary-dot--on:nth-child(2) {
+  background: color-mix(in oklab, var(--orange) 85%, var(--white));
+}
+
+.summary-dot--on:nth-child(3) {
+  background: var(--vivid-green);
+}

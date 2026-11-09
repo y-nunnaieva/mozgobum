@@ -5,6 +5,7 @@ import { useAccount } from "../account.js";
 import { Icon } from "./Icon.jsx";
 import { ProgressMeta } from "./ProgressMeta.jsx";
 import { ReviewBanner } from "./ReviewBanner.jsx";
+import { SummaryBadge } from "./SummaryBadge.jsx";
 
 export function ChapterPage({ subject: s, chapter: c }) {
   const own = [...c.subchapters, ...c.practices];
@@ -31,6 +32,7 @@ export function ChapterPage({ subject: s, chapter: c }) {
             <div class="banner-text">
               <h2 class="heading--5">{q.title}</h2>
               <ProgressMeta quiz={q} stats={stats} />
+              <SummaryBadge quiz={q} stats={stats} />
             </div>
             <Icon name="arrow_forward" class="banner-arrow" />
           </a>
