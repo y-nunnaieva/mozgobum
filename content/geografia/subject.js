@@ -1,5 +1,6 @@
 export default {
   name: "Geografia",
+  genitive: "geografii",
   glyph: "public",
   color: "yellow",
   alt: "purple",

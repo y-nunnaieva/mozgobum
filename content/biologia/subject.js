@@ -1,5 +1,6 @@
 export default {
   name: "Biologia",
+  genitive: "biologii",
   glyph: "eco",
   color: "lime",
   alt: "teal",

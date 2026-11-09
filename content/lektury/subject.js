@@ -1,5 +1,6 @@
 export default {
   name: "Lektury",
+  genitive: "lektur",
   glyph: "local_library",
   color: "denim",
   alt: "lime",

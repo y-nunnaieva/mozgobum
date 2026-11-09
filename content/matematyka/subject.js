@@ -1,5 +1,6 @@
 export default {
   name: "Matematyka",
+  genitive: "matematyki",
   glyph: "calculate",
   color: "teal",
   alt: "orange",

@@ -1,5 +1,6 @@
 export default {
   name: "Język angielski",
+  genitive: "języka angielskiego",
   glyph: "translate",
   color: "orange",
   alt: "blue",

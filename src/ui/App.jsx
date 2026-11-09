@@ -12,6 +12,7 @@ import {
 import { Backdrop } from "./Backdrop.jsx";
 import { ChapterPage } from "./ChapterPage.jsx";
 import { HomePage } from "./HomePage.jsx";
+import { NewsBar } from "./NewsBar.jsx";
 import { Icon } from "./Icon.jsx";
 import { QuizPage, hasMenu } from "./QuizPage.jsx";
 import { StatsPage } from "./StatsPage.jsx";
@@ -169,7 +170,11 @@ export function App() {
             </div>
           </nav>
           {drawerOpen && <div class="drawer-backdrop" onClick={() => setDrawerOpen(false)} />}
-          <div class="page"><div class="container">{!ACCOUNT_PAGES.includes(path) && <ViewingBar />}{content}</div></div>
+          <div class="page"><div class="container">
+            {!ACCOUNT_PAGES.includes(path) && <ViewingBar />}
+            {!playing && <NewsBar subjects={catalog.subjects} />}
+            {content}
+          </div></div>
         </div>
       </div>
     </>

@@ -1,0 +1,45 @@
+@use "../abstracts" as *;
+
+.news-bar {
+  @include row(space(8));
+  margin-bottom: space(24);
+  padding: space(8) space(8) space(8) space(16);
+  @include outlined(radius(12));
+  background: var(--tint);
+  font-size: text(sm);
+
+  > .icon {
+    font-size: 2rem;
+    color: var(--c-ink);
+  }
+
+}
+
+.news-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.news-close {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: radius(8);
+  background: none;
+  color: var(--muted);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color $hover;
+
+  svg {
+    fill: currentColor;
+  }
+
+  @include on-hover {
+    &:hover {
+      color: var(--ink);
+    }
+  }
+}

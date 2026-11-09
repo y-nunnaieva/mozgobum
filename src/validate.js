@@ -60,7 +60,7 @@ export function validateCatalog(catalog) {
       if (r.limit === undefined) errors.push(`${r.path}: review type must be one of kartkowka, sprawdzian`);
       else if (n > r.limit) errors.push(`${r.path}: ${n} questions after leaving out details, limit ${r.limit}`);
     }
-    if (!s.name || !s.glyph) errors.push(`${s.id}: subject.js needs name and glyph`);
+    if (!s.name || !s.glyph || !s.genitive) errors.push(`${s.id}: subject.js needs name, genitive and glyph`);
     for (const key of ["color", "alt"]) if (!PALETTE.includes(s[key])) errors.push(`${s.id}: subject.js ${key} must be one of ${PALETTE.join(", ")}`);
     if (!Array.isArray(s.icons) || !s.icons.length) errors.push(`${s.id}: subject.js needs icons`);
   }

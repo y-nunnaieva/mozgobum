@@ -10,11 +10,13 @@ import biotechSvg from "@material-symbols/svg-500/rounded/biotech-fill.svg?raw";
 import bookmarkSvg from "@material-symbols/svg-500/rounded/bookmark-fill.svg?raw";
 import bugReportSvg from "@material-symbols/svg-500/rounded/bug_report-fill.svg?raw";
 import calculateSvg from "@material-symbols/svg-500/rounded/calculate-fill.svg?raw";
+import campaignSvg from "@material-symbols/svg-500/rounded/campaign-fill.svg?raw";
 import casinoSvg from "@material-symbols/svg-500/rounded/casino-fill.svg?raw";
 import castleSvg from "@material-symbols/svg-500/rounded/castle-fill.svg?raw";
 import changeHistorySvg from "@material-symbols/svg-500/rounded/change_history-fill.svg?raw";
 import chatSvg from "@material-symbols/svg-500/rounded/chat-fill.svg?raw";
 import checkCircleSvg from "@material-symbols/svg-500/rounded/check_circle-fill.svg?raw";
+import closeSvg from "@material-symbols/svg-500/rounded/close-fill.svg?raw";
 import darkModeSvg from "@material-symbols/svg-500/rounded/dark_mode-fill.svg?raw";
 import deleteSvg from "@material-symbols/svg-500/rounded/delete-fill.svg?raw";
 import ecoSvg from "@material-symbols/svg-500/rounded/eco-fill.svg?raw";
@@ -72,11 +74,13 @@ export const ICONS = {
   bookmark: bookmarkSvg,
   bug_report: bugReportSvg,
   calculate: calculateSvg,
+  campaign: campaignSvg,
   casino: casinoSvg,
   castle: castleSvg,
   change_history: changeHistorySvg,
   chat: chatSvg,
   check_circle: checkCircleSvg,
+  close: closeSvg,
   dark_mode: darkModeSvg,
   delete: deleteSvg,
   eco: ecoSvg,

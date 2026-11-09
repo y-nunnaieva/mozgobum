@@ -1,5 +1,6 @@
 export default {
   name: "Język polski",
+  genitive: "języka polskiego",
   glyph: "menu_book",
   color: "purple",
   alt: "teal",
