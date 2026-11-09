@@ -1,14 +1,22 @@
 @use "../abstracts" as *;
 
 .news-bar {
-  @include row(space(8));
+  --c: var(--alt);
+  --line: calc(#{text(sm)} * 1.4);
+  @include row(space(8), flex-start);
   margin-bottom: space(24);
+
+  .viewing-bar + & {
+    margin-top: calc(#{space(12)} - #{space(24)});
+  }
+
   padding: space(8) space(8) space(8) space(16);
   @include outlined(radius(12));
   background: var(--tint);
   font-size: text(sm);
 
   > .icon {
+    margin-block: calc((var(--line) - 2rem) / 2);
     font-size: 2rem;
     color: var(--c-ink);
   }
@@ -25,21 +33,25 @@
   place-items: center;
   width: 32px;
   height: 32px;
+  margin-block: calc((var(--line) - 32px) / 2);
   border: 0;
   border-radius: radius(8);
   background: none;
-  color: var(--muted);
+  color: var(--ink);
   font-size: 2rem;
   cursor: pointer;
   transition: color $hover;
 
   svg {
     fill: currentColor;
+    stroke: currentColor;
+    stroke-width: 48;
+    stroke-linejoin: round;
   }
 
   @include on-hover {
     &:hover {
-      color: var(--ink);
+      color: var(--c-ink);
     }
   }
 }
