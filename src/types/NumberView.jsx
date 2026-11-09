@@ -7,7 +7,8 @@ export function NumberView({ question: q, onSubmit }) {
   // A space typed by the child starts a mixed number (1 2/3), so grouping pauses until
   // the value has no spaces again.
   const manualSpace = useRef(false);
-  const expectsFraction = parseNumber(q.answer)?.form !== "decimal";
+  // Tasks on fractions always get the fraction keyboard and hint, so a whole-number result is not given away.
+  const expectsFraction = q.fractionAnswer || parseNumber(q.answer)?.form !== "decimal";
 
   const submit = (e) => {
     e.preventDefault();
@@ -37,7 +38,7 @@ export function NumberView({ question: q, onSubmit }) {
   return (
     <form onSubmit={submit}>
       {expectsFraction && (
-        <p class="hint">Ułamek zapisz jako 3/4, liczbę mieszaną jako 1 2/3. Pamiętaj o skróceniu ułamka.</p>
+        <p class="hint">{q.hint ?? "Ułamek zapisz jako 3/4, liczbę mieszaną jako 1 2/3. Skróć ułamek i wyłącz całości, jeśli się da."}</p>
       )}
       <input
         class={`answer-input${result === null ? "" : result ? " answer-input--correct" : " answer-input--wrong"}`}

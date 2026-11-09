@@ -6,6 +6,7 @@ import { clearQuiz, useAccount } from "../account.js";
 import { isMastered, reviewStreak } from "../stats.js";
 import { Confirm } from "./Confirm.jsx";
 import { Icon } from "./Icon.jsx";
+import { MathText } from "./MathText.jsx";
 import { Meter } from "./Meter.jsx";
 
 const DAY = 24 * 60 * 60 * 1000;
@@ -41,7 +42,7 @@ function hardRows(quiz, stats) {
   const byUnit = new Map(allQuestions(quiz).map((q) => [q.unit, q]));
   return hardUnits({ sections: quiz.sections }, stats).map((unit) => {
     const q = byUnit.get(unit);
-    return { unit, label: q.skill ? `Typ zadania: ${q.skill}` : q.q, ...stats.units[unit] };
+    return { unit, label: q.skill ? `Typ zadania: ${q.skill}` : q.q, fractions: q.fractions, ...stats.units[unit] };
   });
 }
 
@@ -116,7 +117,7 @@ export function StatsPage({ quiz }) {
                   <li key={r.unit} class="stat-item">
                     <Icon name="error" class="stat-icon" />
                     <span>
-                      {r.label}
+                      <MathText text={r.label} on={r.fractions} />
                       <span class="meta">odpowiedzi {r.asked}, błędy {r.wrong}</span>
                     </span>
                   </li>

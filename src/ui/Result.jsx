@@ -1,6 +1,7 @@
 import { quizName } from "../content.js";
 import { questionTypes } from "../types/index.js";
 import { Icon } from "./Icon.jsx";
+import { MathText } from "./MathText.jsx";
 import { Mascot } from "./Mascot.jsx";
 
 const TITLES = { 3: "Perfekcyjnie!", 2: "Świetnie ci idzie!", 1: "Dobra robota, ćwicz dalej!" };
@@ -31,9 +32,9 @@ export function Result({ quiz, game, onAgain, onMenu, menuLabel }) {
               <div key={i} class={`answer-row answer-row--${ok ? "ok" : "bad"}`}>
                 <span class="box">{ok ? "✓" : "✗"}</span>
                 <div class="answer-row-text">
-                  <div class="answer-q">{q.q}</div>
+                  <div class="answer-q"><MathText text={q.q} on={q.fractions} /></div>
                   <div class="meta">
-                    {ok ? "Dobrze" : solution ? `Poprawnie: ${solution(q)}` : "Błędna odpowiedź"}
+                    {ok ? "Dobrze" : solution ? <>Poprawnie: <MathText text={solution(q)} on={q.fractions} /></> : "Błędna odpowiedź"}
                   </div>
                 </div>
               </div>

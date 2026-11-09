@@ -1,5 +1,6 @@
 import { useMemo, useState } from "preact/hooks";
 import { shuffle } from "../game.js";
+import { MathText } from "../ui/MathText.jsx";
 import { checkChoice } from "./choice.js";
 
 export function ChoiceView({ question: q, onSubmit }) {
@@ -43,7 +44,7 @@ export function ChoiceView({ question: q, onSubmit }) {
             onClick={() => tap(o.text)}
           >
             <span class="box">{done && (o.ok || picked.has(o.text)) ? (o.ok ? "✓" : "✗") : ""}</span>
-            <span>{o.text}</span>
+            <span><MathText text={o.text} on={q.fractions} /></span>
           </button>
         ))}
       </div>

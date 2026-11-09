@@ -6,6 +6,7 @@ import { questionTypes } from "../types/index.js";
 import { Confirm } from "./Confirm.jsx";
 import { Icon } from "./Icon.jsx";
 import { Mascot } from "./Mascot.jsx";
+import { MathText } from "./MathText.jsx";
 
 export function Game({ questions, results = [], sectionOf, onAnswer, onFinish, onExit, quiz }) {
   const [round, setRound] = useState(() => resumeRound(questions, results));
@@ -74,7 +75,7 @@ export function Game({ questions, results = [], sectionOf, onAnswer, onFinish, o
             <span class="q-label-text">{section.name}</span>
           </span>
         )}
-        <p class="question">{q.q}</p>
+        <p class="question"><MathText text={q.q} on={q.fractions} /></p>
       </div>
       <View key={attempt} question={q} onSubmit={answer} />
 
@@ -85,8 +86,8 @@ export function Game({ questions, results = [], sectionOf, onAnswer, onFinish, o
             <div>
               <b>{result ? "Brawo!" : "Niestety!"}</b>
               <p>
-                {!result && solution && <>Poprawna odpowiedź: <b>{solution(q)}</b>. </>}
-                {q.explain}
+                {!result && solution && <>Poprawna odpowiedź: <b><MathText text={solution(q)} on={q.fractions} /></b>. </>}
+                <MathText text={q.explain} on={q.fractions} />
               </p>
             </div>
             {!result && <p class="feedback-note">To pytanie trafi do trudnych.</p>}

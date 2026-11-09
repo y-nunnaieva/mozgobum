@@ -1,0 +1,33 @@
+@use "../abstracts" as *;
+
+// An inline-flex box sits on the baseline of its first line (the numerator), which lifts the text
+// to the numerator. "middle" centres the bar on the lowercase letters; the small lift puts it
+// at the middle of the digits and capitals around it.
+.frac-number {
+  position: relative;
+  top: -0.1em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.08em;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.frac {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0 0.06em;
+  font-size: 0.82em;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.frac-num {
+  padding: 0 0.12em 0.06em;
+  border-bottom: 0.09em solid currentColor;
+}
+
+.frac-den {
+  padding: 0.06em 0.12em 0;
+}

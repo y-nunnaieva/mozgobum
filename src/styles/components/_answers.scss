@@ -196,6 +196,8 @@ $pair-colors: blue, yellow, green, red, teal, purple;
   width: 100%;
   padding: space(12) space(16);
   font: #{weight(700)} text(2xl) $display;
+  // The display font's space is so narrow that "1 1/2" reads as "11/2".
+  word-spacing: 0.3em;
   text-align: center;
   color: var(--ink);
   background: var(--card);

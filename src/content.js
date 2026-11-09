@@ -60,7 +60,7 @@ export function buildCatalog(modules) {
           ...extra, path, title: data.title, subject: s, chapterTitle: c.title,
           sections: data.sections.map((sec) => ({
             ...sec,
-            questions: sec.questions.flatMap(expandVariants).map((q) => prepareQuestion(q, s.id, base, path, sec.name)),
+            questions: sec.questions.flatMap(expandVariants).map((q) => ({ ...prepareQuestion(q, s.id, base, path, sec.name), fractions: !!s.fractions })),
           })),
         };
       };
