@@ -4,16 +4,24 @@ import { render, screen, waitFor } from "@testing-library/preact";
 
 const SESSION_KEY = "sb-dpgueseaeqhjytqpqxuo-auth-token";
 const getSession = vi.fn();
+const tables = {};
 
 vi.mock("@supabase/supabase-js", () => ({
   createClient: () => ({
     auth: { getSession },
-    from: () => {
+    from: (table) => {
+      // Mimics the API's max_rows: a request without a range gets only the first 1000 rows.
+      let rows = (tables[table] ?? []).slice(0, 1000);
       const query = {
         select: () => query,
         eq: () => query,
+        order: () => query,
+        range: (from, to) => {
+          rows = (tables[table] ?? []).slice(from, Math.min(to + 1, from + 1000));
+          return query;
+        },
         single: () => Promise.resolve({ data: { id: "kid", nick: "kid", role: "child" }, error: null }),
-        then: (done) => Promise.resolve({ data: [], error: null }).then(done),
+        then: (done) => Promise.resolve({ data: rows, error: null }).then(done),
       };
       return query;
     },
@@ -26,7 +34,10 @@ const failed = { data: { session: null }, error: new Error("Failed to fetch") };
 async function startSignedIn() {
   vi.resetModules();
   const { startAccount, useAccount } = await import("./account.js");
-  const Status = () => <p>{useAccount().status}</p>;
+  const Status = () => {
+    const { status, stats } = useAccount();
+    return <p>{status}<span>{Object.keys(stats.units).length} units</span></p>;
+  };
   localStorage.setItem(SESSION_KEY, "{}");
   getSession.mockResolvedValue(session);
   startAccount();
@@ -41,6 +52,15 @@ beforeEach(() => {
   document.body.innerHTML = "";
   localStorage.clear();
   getSession.mockReset();
+  for (const table of Object.keys(tables)) delete tables[table];
+});
+
+describe("child stats from the database", () => {
+  it("loads every row, also past the API's 1000 row limit", async () => {
+    tables.unit_stats = Array.from({ length: 2500 }, (_, i) => ({ unit: `u${i}`, asked: 1, wrong: 0, streak: 1 }));
+    await startSignedIn();
+    await waitFor(() => screen.getByText("2500 units"));
+  });
 });
 
 describe("account after the phone wakes up", () => {

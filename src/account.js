@@ -49,19 +49,32 @@ const storage = {
   },
 };
 
+// The API returns at most 1000 rows per request (max_rows), so bigger tables are read in pages.
+const PAGE = 1000;
+
+async function fetchAll(sb, table, columns, childId, order) {
+  const rows = [];
+  for (let from = 0; ; from += PAGE) {
+    let query = sb.from(table).select(columns).eq("child_id", childId);
+    for (const column of order) query = query.order(column);
+    const { data, error } = await query.range(from, from + PAGE - 1);
+    if (error) throw error;
+    rows.push(...data);
+    if (data.length < PAGE) return rows;
+  }
+}
+
 async function fetchStats(childId) {
   const sb = await supabase();
   const [units, reviews, keys] = await Promise.all([
-    sb.from("unit_stats").select("unit, asked, wrong, streak").eq("child_id", childId),
-    sb.from("review_stats").select("review, last").eq("child_id", childId),
-    sb.from("review_keys").select("review, key, streak").eq("child_id", childId),
+    fetchAll(sb, "unit_stats", "unit, asked, wrong, streak", childId, ["unit"]),
+    fetchAll(sb, "review_stats", "review, last", childId, ["review"]),
+    fetchAll(sb, "review_keys", "review, key, streak", childId, ["review", "key"]),
   ]);
-  const error = units.error ?? reviews.error ?? keys.error;
-  if (error) throw error;
   const stats = emptyStats();
-  for (const { unit, asked, wrong, streak } of units.data) stats.units[unit] = { asked, wrong, streak };
-  for (const { review, last } of reviews.data) stats.reviews[review] = { keys: {}, last };
-  for (const { review, key, streak } of keys.data) stats.reviews[review].keys[key] = streak;
+  for (const { unit, asked, wrong, streak } of units) stats.units[unit] = { asked, wrong, streak };
+  for (const { review, last } of reviews) stats.reviews[review] = { keys: {}, last };
+  for (const { review, key, streak } of keys) stats.reviews[review].keys[key] = streak;
   return stats;
 }
 
